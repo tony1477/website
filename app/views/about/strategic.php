@@ -1,0 +1,71 @@
+<!--== Start Page Header Area ==-->
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/strategic.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8 m-auto text-center">
+                <div class="page-header-content-inner">
+                    <div class="page-header-content">
+                        <!-- <h2>Our Strategic</h2> -->
+                        <!-- <em>Wilian Perkasa try to provide the best Business Solutions for Clinets
+                            to grow up their Business very sharply and smoothly.</em> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--== End Page Header Area ==-->
+
+<!--== Start About Area Wrapper ==-->
+<!-- <div class="home-two-about-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 d-lg-none">
+                <figure class="about-thumb">
+                    <img src="public/assets/img/about-1.jpg" alt="Businex-About"/>
+                </figure>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="about-content about-content--2">
+                    <h6>ABOUT US</h6>
+                    <h2>We Make Relationship
+                        Between Business &
+                        Professionals</h2>
+                    <span class="about-since">Since 2017</span>
+                    <p><strong>Wilian Perkasa Group</strong> always try to provide the best Business Solutions for Clients to
+                        grow up their Business very sharply and smoothly. We volutated quia
+                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                        magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--== End About Area Wrapper ==-->
+
+<!--== Start Testimonial Area Wrapper ==-->
+<div class="about-area-wrapper sm-top">
+    <div class="container-fluid" style="border: 0px solid #000;">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 order-lg-0 order-md-0 order-md-3">
+                <?php require_once('sidebar.php')?>
+            </div>
+            <div class="col-md-9 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
+                <div class="about-content ms-0 contentweb">
+                    <?=$data['data']['content']?>
+                    <!-- <h2 class="text-center">Strategi Bisnis</h2>
+                    <p>Usaha perkebunan hulu merupakan proposisi jangka panjang, mengingat umur produktif pohon kelapa sawit 25 tahun. Strategi kami sejak awal adalah menjadi agribisnis yang berfokus pada hulu yang memiliki dan mengoperasikan aset perkebunan berkualitas baik dan memiliki kemampuan pemrosesan untuk menambah nilai produk hulu kami. Strategi ini akan memberikan hasil terbaik bagi pemegang saham dalam jangka panjang.</p>
+
+                    <p>Menjadi produsen hulu yang efisien dan produktif telah memungkinkan kami untuk mempertahankan struktur biaya rendah dan memberikan margin yang unggul sepanjang siklus ekonomi dan komoditas serta memaksimalkan potensi pendapatan dari aset kami. Ini telah memberi kami ketahanan yang lebih besar melalui siklus harga. Kemampuan kami untuk memproses semua produk hulu saat ini dan di masa mendatang akan memastikan bahwa kami dapat memperoleh margin tambahan yang tersedia dari aktivitas bernilai tambah ini.
+                    </p>
+
+                    <p>Kami bercita-cita untuk menjadi waralaba kelapa sawit yang bertanggung jawab secara sosial dan lingkungan yang tulang punggungnya adalah operasi perkebunan yang cukup besar dan menguntungkan yang terus memberikan kembali kepada masyarakat melalui program terstruktur yang bertujuan untuk meningkatkan mata pencaharian mereka yang tinggal di dalam atau di sekitar perkebunan kami.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sm-top-wt"></div>
+<!--== End Testimonial Area Wrapper ==-->
