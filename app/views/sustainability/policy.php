@@ -5,7 +5,7 @@
             <div class="col-lg-9">
                 <article class="blog-post-details">
                     <figure class="blog-post-thumb">
-                        <img src="<?=BASE_URL?>public/assets/img/sustainability/PO-800x445.jpg" alt="Blog"/>
+                        <img src="<?=BASE_URL?>public/assets/img/sustainability/PO-800x445.jpg" alt="Blog" width="100%" />
                     </figure>
 
                     <div class="blog-post-txt contentweb">
@@ -35,7 +35,7 @@
                 </article>
             </div>
 
-            <div class="col-lg-3" style="position:fixed; right:50px; z-index: 0;">
+            <div class="col-lg-3" style="position:relative; right:0px; z-index: 0;">
               <?php require_once('sidebar.php');?>
             </div>
         </div>

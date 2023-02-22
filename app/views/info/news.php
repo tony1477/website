@@ -27,9 +27,9 @@
                         <br />
                         <p>Kunjungi sosial media kami di <br />
                         <div class="px-5">
-                            <a href=""><i class="fa fa-instagram fs-2 text-danger"></i></a>
-                            <i class="fa fa-youtube-play fs-2 text-danger"></i>
-                            <i class="fa fa-linkedin fs-2 text-primary"></i>
+                            <a href="https://www.instagram.com/wilianperkasa" target="newtab"><i class="fa fa-instagram fs-2 text-danger"></i></a>
+                            <a href="https://www.youtube.com/@WilianPerkasa" target="newtab"><i class="fa fa-youtube-play fs-2 text-danger"></i></a>
+                            <a href="https://id.linkedin.com/company/wilian-perkasa" target="newtab"><i class="fa fa-linkedin fs-2 text-primary"></i></a>
                             </p>
                         </div>
                         <!-- <div class="col-md-6 col-lg-4">

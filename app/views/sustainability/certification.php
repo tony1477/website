@@ -26,7 +26,7 @@
                 </article>
             </div>
 
-            <div class="col-lg-3" style="position:fixed; right:50px; z-index: 0;">
+            <div class="col-lg-3" style="position:relative; right:0px; z-index: 0;">
                 <?php require_once('sidebar.php');?>
             </div>
         </div>

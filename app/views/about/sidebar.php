@@ -1,7 +1,7 @@
 <aside class="sidebar-area-wrapper mt-md-80 mt-sm-60">
                     <!-- Start Single Sidebar Wrap -->
                     <div class="single-sidebar-item-wrap">
-                        <h3 class="sidebar-title">NAVIGATION</h3>
+                        <!-- <h3 class="sidebar-title">NAVIGATION</h3> -->
                         <div class="sidebar-body">
                             <ul class="sidebar-list">
                                 <li><a href="<?=BASE_URL?>about/profile" class="<?=((isset($data['active']) && $data['active']=='profile') ? 'active' : '')?>">Profil Perusahaan</a></li>

@@ -24,7 +24,7 @@
                         <div class="about-widget" style="position:relative">
                             <!-- <a href="index.html"><img src="public/assets/img/logo-footer.png" alt="Logo" /></a> -->
                             <h4 class="widget-title">Kantor Pusat</h4>
-                            <p style="padding-bottom: 15px;"><i class="mdi mdi-map-marker-radius"></i> Jl. Sail 01 Pekanbaru - Riau 28281, Indonesia <br />
+                            <p style="padding-bottom: 15px; font-size:.75rem"><i class="mdi mdi-map-marker-radius"></i> Jl. Sail 01 Pekanbaru - Riau 28281, Indonesia <br />
                             <i class="mdi mdi-phone"></i> +62761 (31953) <br /> <i class="mdi mdi-email"></i> info@wilianperkasa.com</p>
                         </div>
                     </div>
@@ -77,9 +77,9 @@
                         <h4 class="widget-title">Ikuti Kami</h4>
                         <div class="widget-body">
                             <!-- <i class="fa fa-facebook fs-4" style="padding:5px;"></i> -->
-                            <a href="https://www.instagram.com/wilianperkasagroup" class="text-white"><i class="fa fa-instagram fs-4" style="padding:5px;"></i></a>
-                            <a href="https://www.linkedin.com/in/wilian-perkasa-group-741540212" class="text-white"><i class="fa fa-linkedin fs-4" style="padding:5px;"></i></a>
-                            <a href="https://www.youtube.com/wilianperkasagroup" class="text-white"><i class="fa fa-youtube-play fs-4" style="padding:5px;"></i></a>
+                            <a href="https://www.instagram.com/wilianperkasa" class="text-white" target="newtab"><i class="fa fa-instagram fs-4" style="padding:5px;"></i></a>
+                            <a href="https://id.linkedin.com/company/wilian-perkasa" class="text-white" target="newtab"><i class="fa fa-linkedin fs-4" style="padding:5px;"></i></a>
+                            <a href="https://www.youtube.com/@WilianPerkasa" class="text-white" target="newtab"><i class="fa fa-youtube-play fs-4" style="padding:5px;"></i></a>
                         </div>
                     </div>
                 </div>
