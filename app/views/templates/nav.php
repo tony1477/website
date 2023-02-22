@@ -39,6 +39,18 @@
                             <li><a href="#" style="color:#000"><img src="<?=BASE_URL?>public/assets/img/icons/usa.png" style="display:inline;"> IDN</a></li>
                             </ul>
                         </div> -->
+                        <div class="nav-wrapper">
+                            <div class="sl-nav">
+                                <ul>
+                                <li><img src="<?=BASE_URL?>public/assets/img/indonesia.png" style="display: inline; margin-top:-5px; width:24px"> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <div class="triangle"></div>
+                                    <ul>
+                                    <li><i class="sl-flag flag-usa"><div id="english"></div></i> <span>English</span></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
                         <!-- <li><a href="contact.html">Contact</a></li> -->
                     </ul>
                 </div>
