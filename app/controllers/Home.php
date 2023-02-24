@@ -8,4 +8,10 @@ class Home extends Controller {
         $this->view('home/index',$data);
         // $this->view('templates/template');
     }
+
+    public function index2()
+    {
+        $data['nav'] = $this->nav;
+        $this->view('home/index2',$data);
+    }
 }

@@ -22,6 +22,36 @@
         <div class="contact-content-wrap">
             <div class="row">
                 <div class="col-lg-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.649463039454!2d101.47618733346462!3d0.5271358181762673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ad31cdf3cea7%3A0xfae8b0a4ba97ac91!2sGedung%20Wilian%20Perkasa!5e0!3m2!1sid!2sid!4v1677115227893!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="contact-information contact-method">
+                        <div class="contact-info-con">
+                            <h3>Contact Info</h3>
+
+                            <div class="widget-item m-0">
+                                <address>
+                                    Sail 01 Street 28261, Riau - Indonesia
+                                    <br>
+                                    https://wilianperkasa.com
+                                    <br>
+                                    info@wilianperkasa.com
+                                    <br>
+                                    (+62761) 31953
+                                </address>
+                            </div>
+                            <div class="member-social-icons mt-30">
+                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                <a href="https://www.instagram.com/wilianperkasagroup/"><i class="mdi mdi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/wilian-perkasa-group-741540212"><i class="mdi mdi-linkedin"></i></a>
+                                <a href="https://www.youtube.com/wilianperkasagroup"><i class="mdi mdi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
                     <div class="alert alert-success alert-dismissible fade show d-none cf_alert" role="alert">
                         <strong>Terimakasih!</strong> Pesan Anda sudah kami terima.
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -86,32 +116,6 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="contact-information contact-method">
-                        <div class="contact-info-con">
-                            <h3>Contact Info</h3>
-
-                            <div class="widget-item m-0">
-                                <address>
-                                    Sail 01 Street 28261, Riau - Indonesia
-                                    <br>
-                                    https://wilianperkasa.com
-                                    <br>
-                                    info@wilianperkasa.com
-                                    <br>
-                                    (+62761) 31953
-                                </address>
-                            </div>
-                            <div class="member-social-icons mt-30">
-                                <a href="#"><i class="mdi mdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/wilianperkasagroup/"><i class="mdi mdi-instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/wilian-perkasa-group-741540212"><i class="mdi mdi-linkedin"></i></a>
-                                <a href="https://www.youtube.com/wilianperkasagroup"><i class="mdi mdi-youtube"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>

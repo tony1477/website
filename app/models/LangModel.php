@@ -31,7 +31,12 @@ class LangModel {
     ];
 
     private $menu = [
-        'home' => ['text' => 'Beranda','type'=>'header'],
+        'home' => ['text' => 'Beranda','type'=>'detail',
+                    'data' => [
+                        '' => 'Versi 1',
+                        'index2' => 'Versi 2'
+                    ]
+                ],
         'about' => ['text' => 'Tentang','type'=>'detail',
                     'data' => [
                         'profile' => 'Profil Perusahaan',

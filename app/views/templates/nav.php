@@ -1,4 +1,4 @@
-<header class="header-area">
+<header class="header-area transparent">
     <div class="container-fluid">
         <div class="row align-items-end">
             <div class="col-5 col-lg-2">

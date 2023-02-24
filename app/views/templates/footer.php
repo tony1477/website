@@ -37,7 +37,7 @@
                             <ul class="widget-list">
                                 <li><a href="<?=BASE_URL?>about/profile">Tentang</a></li>
                                 <li><a href="<?=BASE_URL?>info/contact">Kontak</a></li>
-                                <li><a href="<?=BASE_URL?>about/bod">Jajaran Managemen</a></li>
+                                <li><a href="<?=BASE_URL?>about/bod">Jajaran Manajemen</a></li>
                                 <li><a href="<?=BASE_URL?>info/career">Karir</a></li>
                             </ul>
                         </div>
@@ -90,7 +90,7 @@
                 <!-- <div class="widget-item"> -->
                     <!-- <h4 class="widget-title">Follow Us</h4> -->
                     <div class="widget-body">
-                        Copyright &copy; 2022 Wilian Perkasa Group. All Right Reserved
+                        Copyright &copy; 2022 Wilian Perkasa. All Right Reserved
                         <!-- Created By Martoni F -->
                     </div>
                 <!-- </div> -->
