@@ -124,7 +124,7 @@
                     <h2 class="text-danger"><em>The Spirit <br> of Change</em></h2>
                     <span class="about-since">Since 2019</span>
                     <p><strong>WILIAN PERKASA </strong>(WPG) merupakan perusahaan induk yang terlibat, baik secara langsung maupun melalui anak perusahaannya, dalam produksi dan penjualan minyak sawit mentah, inti sawit, produk minyak serai wangi, dan hasil pangan berkelanjutan lainnya.</p>
-                    <a href="<?=BASE_URL?>about/profile" class="btn-about">SELENGKAPNYA <i class="mdi mdi-chevron-double-right"></i></a>
+                    <a href="<?=BASE_URL?>about/profile" class="btn-about">Baca lebih lanjut <i class="mdi mdi-chevron-double-right"></i></a>
                 </div>
             </div>
         </div>
@@ -148,12 +148,12 @@
                     <div class="border-bot">
                         <p class="cat text-uppercase">KEBIJAKAN</p>
                     </div>
-                    <h6 class="title my-3">A Sustainable Empowerment of Local Communities and Labor Management (PEOPLE)</h6>
+                    <h6 class="title my-3">Pengelolaan Usaha yang Produktif dan Berkelanjutan</h6>
                     <div class="sum">
                         <p>Sebagai Industri Inti Sawit, kami berkomitmen untuk mengembangkan usaha lebih baik.</p>
                     </div>
                     <div class="link pt-1">
-                        <a class="btn-about" href="/sustainability/people"> 
+                        <a class="btn-about" href="<?=BASE_URL?>sustainability/policy"> 
                             Baca lebih lanjut <span class="pl-1 icon"><i class="mdi mdi-chevron-double-right"></i></span>
                         </a>
                     </div>
@@ -188,6 +188,7 @@
             <div class="col-md-6 col-lg-6">
                 <figure class="about-thumb">
                     <img src="<?=BASE_URL?>public/assets/img/sustainability/PO-800x445.jpg" alt="Sustainability Image" class="rounded img-thumb"/>
+                    <figcaption class="detail-thumb"><p>Berkomitmen untuk menghasilkan produk terbaik.</p></figcaption>
                 </figure>
             </div>
 
@@ -255,7 +256,7 @@
                 <div class="col-lg-6 col-xl-5 m-auto text-center">
                     <div class="section-title section-title--light">
                         <h6>BISNIS KAMI</h6>
-                        <h2 class="mb-0">Inti bisnis WPG, yang terus bertumbuh</h2>
+                        <h2 class="mb-0">Inti bisnis korporasi, yang terus bertumbuh</h2>
                     </div>
                 </div>
             </div>
@@ -434,16 +435,25 @@
     let imgArray = ['PO-800x445.jpg','[GetPaidStock.com]-6315c9a9237c6.jpg','sustainability.jpg','MatrixSpark-Community-Development.webp'];
     let titleArray = ['Kebijakan','Sertifikasi','Lingkungan','CSR'];
     let subTitleArray = [
-        'A Sustainable Empowerment of Local Communities and Labor Management (PEOPLE)',
-        'Product Quality Responsibility (PRODUCT)',
-        'Environmental-friendly Practices (PLANET)',
-        'Community Development Officer (CDO)'
+        'Pengelolaan Usaha yang Produktif dan Berkelanjutan',
+        'Tanggung Jawab Terhadap Kualitas Produk',
+        'Pengelolaan Lingkungan yang Lestari',
+        'Pemberdayaan Masyarakat dan Pengelolaan Ketenagakerjaan yang Berkelanjutan'
     ];
     let contentArray = [
         'Sebagai Industri Inti Sawit, kami berkomitmen untuk mengembangkan usaha lebih baik.',
         'Kami mematuhi semua peraturan perundang-undangan tentang pengelolaan lingkungan.',
         'Kami berkomitmen untuk penggunaan dan perlindungan lingkungan alam yang bertanggung jawab.',
         'Mensejahterakan masyarakat menjadi salah satu fokus utama kami dalam bertumbuh.'
+    ]
+    let linkArray = [
+        'policy','certification','environment','community'
+    ]
+    let imgCaption = [
+        'Berkomitmen untuk menghasilkan produk terbaik',
+        'Perseroan menjalankan bisnis sesuai dengan peraturan perundang-undangan ',
+        'Membangun dan melestarikan alam adalah tanggung jawab kami',
+        'Sumber daya manusia yang baik secara internal dan eksternal'
     ]
     for(let i of btnIcon) {
         i.addEventListener('click',e => {
@@ -462,10 +472,16 @@
             const imgThumb = document.querySelector('.img-thumb')
             const catTitle = document.querySelector('p.cat')
             const contentSum = document.querySelector('.sum p')
+            const arraySum = document.querySelector('.link a')
+            const linkTitle = document.querySelector('.detail .title')
+            const imgTitle = document.querySelector('.detail-thumb')
             const displayImg = imgArray[(img.dataset.value)-1]
-            imgThumb.src = '../public/assets/img/sustainability/'+displayImg
             catTitle.innerText = titleArray[(img.dataset.value)-1]
             contentSum.innerText = contentArray[(img.dataset.value)-1]
+            arraySum.href = '../sustainability/'+linkArray[(img.dataset.value)-1]
+            linkTitle.innerText = subTitleArray[(img.dataset.value)-1]
+            imgTitle.innerText = imgCaption[(img.dataset.value)-1]
+            imgThumb.src = '../public/assets/img/sustainability/'+displayImg
         });
     }
     </script>

@@ -71,7 +71,7 @@
                             <h5 class="text-white"><i class="mdi mdi-format-quote-open fs-2"></i>Inovasi membedakan antara pemimpin dan pengikut.<i class="mdi mdi-format-quote-close fs-2"></i></h5>
                             <div class="photo-caption">
                             <div class="rounded-photo">
-                                <img src="<?=BASE_URL?>public/assets/img/foto-md.jpg" class="rounded-circle">
+                                <img src="<?=BASE_URL?>public/assets/img/foto-md.jpg" class="rounded-circle" style="height:auto">
                             </div>
                             <div class="title">Erry Wilian</div>
                             <div class="position">FOUNDER</div>

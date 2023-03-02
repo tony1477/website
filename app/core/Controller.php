@@ -6,10 +6,12 @@ class Controller {
     public $view_folder = 'app/views/';
     public $catalog;
     public $nav;
-    
+    private $helper;
+
     public function __construct() {
         // $this->nav = $this->model('LangModel')->getNav();
         $this->menu = $this->model('LangModel')->getMenu();
+        $this->helper = new Helper();
     }
 
     public function view($main,$data=[]) {
@@ -26,5 +28,15 @@ class Controller {
     public function model($model) {
         require_once('app/models/'.$model.'.php');
         return new $model;
+    }
+
+    public function base_url()
+    {
+        return $this->helper->base_url();
+    }
+
+    public function getUrl()
+    {
+        return $this->helper->getUrl();
     }
 }

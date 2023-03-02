@@ -24,7 +24,7 @@
                         <div class="about-widget" style="position:relative">
                             <!-- <a href="index.html"><img src="public/assets/img/logo-footer.png" alt="Logo" /></a> -->
                             <h4 class="widget-title">Kantor Pusat</h4>
-                            <p style="padding-bottom: 15px; font-size:.75rem"><i class="mdi mdi-map-marker-radius"></i> Jl. Sail 01 Pekanbaru - Riau 28281, Indonesia <br />
+                            <p style="padding-bottom: 15px; font-size:.85rem"><i class="mdi mdi-map-marker-radius"></i> Jl. Sail 01 Pekanbaru - Riau 28281, Indonesia <br />
                             <i class="mdi mdi-phone"></i> +62761 (31953) <br /> <i class="mdi mdi-email"></i> info@wilianperkasa.com</p>
                         </div>
                     </div>
@@ -76,6 +76,24 @@
                     <div class="widget-item" style="position:relative">
                         <h4 class="widget-title">Ikuti Kami</h4>
                         <div class="widget-body">
+                            <div class="newsletter-section">
+                                Never miss a thing, sign up to the <span class="fw-bold">mailing list</span>
+                                <div class="newsletter-form">
+                                    <form name="subscribeForm" id="subscribeForm" novalidate="" class="">
+                                        <ul>
+                                            <li class="form-icon">
+                                                <i class="icofont-paper-plane"></i>
+                                            </li>
+                                            <li class="form-input">
+                                                <input ng-model="tb_sub_email" ng-required="true" type="email" placeholder="Enter your email" class="" required="required">
+                                            </li>
+                                            <li class="form-button">
+                                                <button type="button" class="" value="">Ikuti</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
                             <!-- <i class="fa fa-facebook fs-4" style="padding:5px;"></i> -->
                             <a href="https://www.instagram.com/wilianperkasa" class="text-white" target="newtab"><i class="fa fa-instagram fs-4" style="padding:5px;"></i></a>
                             <a href="https://id.linkedin.com/company/wilian-perkasa" class="text-white" target="newtab"><i class="fa fa-linkedin fs-4" style="padding:5px;"></i></a>
@@ -139,7 +157,7 @@
 <script src="<?=BASE_URL?>public/assets/js/plugins/magnific-popup.min.js"></script>
 
 <!--=== Active Js ===-->
-<script src="<?=BASE_URL?>public/assets/js/active.min.js"></script>
+<script src="<?=BASE_URL?>public/assets/js/active.js"></script>
 
 <!-- REVOLUTION JS FILES -->
 <script src="<?=BASE_URL?>public/assets/js/revslider/jquery.themepunch.tools.min.js"></script>

@@ -293,8 +293,11 @@
         ----------------------------*/
         if ($(window).scrollTop() >= 250) {
             $(".header-area").addClass('sticky');
+            // window.scrollTo(0,800)
+            $('.logo-area img').attr('src','../public/assets/img/WPG_logo_complete21.png')
         } else {
             $('.header-area').removeClass('sticky');
+            $('.logo-area img').attr('src','../public/assets/img/WPG_logo_complete1.png')
         }
 
         //Scroll top Hide Show
@@ -303,6 +306,12 @@
         } else {
             $('.btn-scroll-top').removeClass('show');
         }
+
+        // if($(window).scrollTop() >= 20) {
+        //     $(window).scrollTop(800)
+        // }
+
+
     });
 
     jQuery(window).on('load', function () {
