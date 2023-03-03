@@ -14,4 +14,10 @@ class Home extends Controller {
         $data['nav'] = $this->nav;
         $this->view('home/index2',$data);
     }
+
+    public function index3()
+    {
+        $data['nav'] = $this->nav;
+        $this->view_versi3('home/index3',$data);
+    }
 }
