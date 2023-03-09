@@ -26,16 +26,20 @@
             <div class="col-md-9 col-lg-10 order-md-2 order-lg-2 order-2 justify-content-md-end">
             <div class="member-details-bottom">
                     <div class="row mtn-50">
-                        <div class="col-xl-6 m-auto text-center">   
+                        <div class="col-lg-12 m-auto">   
                             <div class="member-education mem-achieve-item">
-                                <h4>Kejadian Penting</h4>
+                                <h4 class="text-center">Kejadian Penting</h4>
                                 <p>Sebelum WP menjadi seperti sekarang, banyak tantangan dan badai yang harus di lalui, tapi dengan semangat juang dan dukungan dari berbagai lini baik dari Internal WP dan Eksternal, sehingga WPG terus eksis dan membantu banyak masyarakat terlibat di dalamnya.</p>
+                                <p style="font-weight: 400;">Sejak awal berdirinya menjadi perusahaan pengelola perkebunan kelapa sawit, Perseroan telah membangun kerjasama dengan masyarakat dalam bentuk kemitraan inti-plasma dan kegiatan peningkatan ekonomi masyarakat (<em>Income Generating Activity</em>/IGA) baik melalui budidaya tanaman kelapa sawit maupun non kelapa sawit. Kerjasama tersebut memastikan bahwa kehadiran perkebunan kelapa sawit yang dikelola Perseroan juga memberikan manfaat yang besar bagi masyarakat sekitar.</p>
+                                <p style="font-weight: 400;">Eratnya hubungan perusahaan dengan masyarakat, tentunya Perseroan berupaya mewujudkan misinya dalam menjalankan tanggung jawab sosial perusahaan melalui kegiatan <em>Corporate Social Resposibility&nbsp;</em>(CSR) yang mengacu pada 4 pilar, yaitu kesehatan, pendidikan, ekonomi, dan lingkungan, sehingga diharapkan mampu berkontribusi dalam pembangunan dan kesejahteraan bangsa.</p>
+                                <p style="font-weight: 400;">Seiring dengan pertumbuhan usaha Perseroan, pada tahun 1997 Perseroan menjadi perusahaan publik, melakukan Penawaran Saham Perdana (<em>Initial Public Offering</em>/IPO) di Bursa Efek Indonesia (saat itu Bursa Efek Jakarta dan Bursa Efek Surabaya). Saat ini kepemilikan saham publik Perseroan mencapai 20,32% dari total 1,925 miliar saham yang beredar. Kepercayaan investor yang tinggi terhadap Perseroan dicerminkan dengan posisi harga saham yang kuat. Pada perdagangan yang berakhir tanggal 31 Desember 2021, harga saham Perseroan dengan kode perdagangan “AALI ditutup pada posisi Rp 9.500,-.</p>
                             </div>
                         </div>
                         <ul class="timeline">
                             <!-- Item 1 -->
                             <li>
                                 <p class="time-timeline-l">2009</p>
+                                <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="mx-3" />
                                 <div class="direction-r" onclick="showhistory(this)">
                                     <div class="flag-wrapper">
                                         <span class="flag">PT. Surya Palma Sejahtera</span>
@@ -50,6 +54,7 @@
                             <!-- Item 2 -->
                             <li>
                                 <p class="time-timeline-r">2012</p>
+                                <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="" />
                                 <div class="direction-l" onclick="showhistory(this)">
                                     <div class="flag-wrapper">
                                         <span class="flag">CV. Tani Sejahtera Perkasa</span>
@@ -64,6 +69,7 @@
                             <!-- Item 3 -->
                             <li>
                                 <p class="time-timeline-l">2014</p>
+                                <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="mx-3" />
                                 <div class="direction-r" onclick="showhistory(this)">
                                     <div class="flag-wrapper">
                                         <span class="flag">PT. Libo Sawit Perkasa</span>
@@ -76,6 +82,7 @@
                             </li>
                             <li>
                             <p class="time-timeline-r">2017</p>
+                            <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="" />
                                 <div class="direction-l">
                                 <a href="<?=BASE_URL?>about/milestone/ssp" class="timeline-link">
                                     <div class="flag-wrapper">
@@ -88,6 +95,7 @@
                             </li>
                             <li>
                                 <p class="time-timeline-l">2019</p>
+                                <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="mx-3" />
                                 <div class="direction-r">
                                 <a href="<?=BASE_URL?>about/milestone/wms" class="timeline-link">
                                     <div class="flag-wrapper">
@@ -100,6 +108,7 @@
                             </li>
                             <li>
                             <p class="time-timeline-r">2020</p>
+                            <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="" />
                                 <div class="direction-l">
                                 <a href="<?=BASE_URL?>about/milestone/swp" class="timeline-link">
                                     <div class="flag-wrapper">
@@ -112,6 +121,7 @@
                             </li>
                             <li>
                                 <p class="time-timeline-l">2022</p>
+                                <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="mx-3" />
                                 <div class="direction-r">
                                 <a href="<?=BASE_URL?>about/milestone/ssp2" class="timeline-link">
                                     <div class="flag-wrapper">

@@ -14,7 +14,7 @@ class Info extends Controller {
         $data['active'] = 'vision';
         $this->view('info/gallery_video',$data);
     }
-    public function photo() {
+    public function gallery() {
         $data['active'] = 'strategic';
         $this->view('info/gallery_photo',$data);
     }

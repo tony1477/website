@@ -113,9 +113,8 @@
     <div class="container">
         <div class="row align-items-lg-center">
             <div class="col-md-6 col-lg-6">
-                <figure class="about-thumb">
-                    <img src="<?=BASE_URL?>public/assets/img/about-1.jpg" alt="Businex-About" class="rounded" />
-                </figure>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="560" height="315" type="text/html" allow="autoplay" src="https://www.youtube.com/embed/r2u-sXXoKs8?autoplay=1&mute=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://wilianperkasa.com" title="Wilian Perkasa Office" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
             </div>
 
             <div class="col-md-6 col-lg-6">
@@ -135,7 +134,7 @@
 <!--== Start Feature Area Wrapper ==-->
 <div class="feature-area-wrapper" style="margin-top: 100px;">
     <div class="container">
-        <div class="row mtn-sm-60 mtn-md-5">
+        <div class="row mtn-sm-60 mtn-md-5"> 
             <div class="col-md-6 col-lg-6">
                 <!-- <div class="about-content">
                     <h6>Tentang Kami</h6>
@@ -249,89 +248,63 @@
 <!--== End Feature Area Wrapper ==-->
 
 <!--== Start Service Area Wrapper ==-->
-<div class="service-area-wrapper sm-top-wt">
-    <div class="service-area-top parallax" data-parallax-speed="0.75" data-bg="<?=BASE_URL?>public/assets/img/service/background-serivce2.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5 m-auto text-center">
-                    <div class="section-title section-title--light">
-                        <h6>BISNIS KAMI</h6>
-                        <h2 class="mb-0">Inti bisnis korporasi, yang terus bertumbuh</h2>
-                    </div>
+<section class="busines_home" style="padding: 3.5rem 5rem .5rem;">
+	<div class="list_business clearfix">
+        <div class="box big">
+            <div class="img">
+                <img src="https://www.anj-group.com/frontend/images/content/our_bisnis_big.jpg">
+            </div>
+            <div class="text">
+                <h1>BISNIS INTI KAMI</h1>
+                <p>Kami berkomitmen menghasilkan produk berkualitas dan ramah lingkungan dengan berpegang teguh pada tata kelola yang baik untuk mencapai kinerja unggul, mewujudkan kesejahteraan karyawan serta menjadikan masyarakat mitra setara. </p>
+                <div class="link">
+                    <a href="https://www.anj-group.com/en/oil-palm-plantation/index">KELAPA SAWIT  &gt;</a>
+                    <a href="https://www.anj-group.com/en/sago-harvesting-and-processing/index">PERKEBUNAN &gt;</a>
+                    <a href="https://www.anj-group.com/en/agriculture-products/index">Makanan & Minuman &gt;</a>
+                    <a href="https://www.anj-group.com/en/renewable-energy/index">Trading &gt;</a>
+                </div>
+            </div>
+        </div>
+		<div class="left">
+            <div class="box" onclick="location.href='https://www.anj-group.com/en/oil-palm-plantation/index'">
+                <div class="img">
+                    <img src="https://www.anj-group.com/frontend/uploads/defaults/Yhf16J20210416164254.png">
+                </div>
+                <div class="hov">
+                    <h2 style="opacity: 1; top: 0px;">KELAPA SAWIT </h2>
+                    <p style="opacity: 0; top: 0px;"></p>
+                </div>
+		    </div>
+            <div class="box" onclick="location.href='https://www.anj-group.com/en/sago-harvesting-and-processing/index'">
+                <div class="img">
+                    <img src="https://www.anj-group.com/frontend/uploads/defaults/dCbgiI20190319134041.jpg">
+                </div>
+                <div class="hov">
+                    <h2 style="opacity: 1; top: 0px;">PERKEBUNAN</h2>
+                    <p style="opacity: 0; top: 0px;"></p>
+                </div>
+		    </div>
+            <div class="box" onclick="location.href='https://www.anj-group.com/en/agriculture-products/index'">
+                <div class="img">
+                    <img src="https://www.anj-group.com/frontend/uploads/defaults/jPe2Lc20190319133643.jpg">
+                </div>
+                <div class="hov">
+                    <h2 style="opacity: 1; top: 0px;">FnB</h2>
+                    <p style="opacity: 0; top: 0px;"></p>
+                </div>
+            </div>
+            <div class="box" onclick="location.href='https://www.anj-group.com/en/renewable-energy/index'">
+                <div class="img">
+                    <img src="https://www.anj-group.com/frontend/uploads/defaults/KHyW8120210416165918.png">
+                </div>
+                <div class="hov">
+                    <h2 style="opacity: 1; top: 0px;">TRADING</h2>
+                    <p style="opacity: 0; top: 0px;"></p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="service-content-area">
-        <div class="container">
-            <div class="row mtn-30">
-                <div class="col-sm-6 col-lg-4">
-                    <!-- Start Service Item -->
-                    <div class="service-item">
-                        <figure class="service-thumb">
-                            <a href="service-details.html"><img src="<?=BASE_URL?>public/assets/img/service/sawit.jpg" alt="Businex-Service"/></a>
-
-                            <figcaption class="service-txt">
-                                <h5>Perkebunan</h5>
-                            </figcaption>
-                        </figure>
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <h5><a href="service-details.html" class="stretched-link"></a>Plantation</h5>
-                                <p>Our plantations are strategically located in the Riau, East and West Kalimantan provinces of Indonesia. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Service Item -->
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <!-- Start Service Item -->
-                    <div class="service-item">
-                        <figure class="service-thumb">
-                            <a href="service-details.html"><img src="<?=BASE_URL?>public/assets/img/service/mill.jpg" alt="Businex-Service"/></a>
-
-                            <figcaption class="service-txt">
-                                <h5>Pabrik Sawit</h5>
-                            </figcaption>
-                        </figure>
-
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <h5><a href="service-details.html" class="stretched-link">Mill Factory</a></h5>
-                                <p>Our palm oil seeds are produced in our dedicated seed garden.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Service Item -->
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <!-- Start Service Item -->
-                    <div class="service-item">
-                        <figure class="service-thumb">
-                            <a href="service-details.html"><img src="<?=BASE_URL?>public/assets/img/service/fnb.jpg" alt="Businex-Service"/></a>
-
-                            <figcaption class="service-txt">
-                                <h5>Makanan dan Minuman</h5>
-                            </figcaption>
-                        </figure>
-
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <h5><a href="service-details.html" class="stretched-link">Brand & Communication</a></h5>
-                                <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit consectetur adipisicing
-                                    elit. Asdipiscing elit. Consectetur adipisicing hastech.</p>
-                            </div>
-                        </div>
-                        <!-- End Service Item -->
-                    </div>
-                </div>                
-            </div>
-        </div>
-    </div>
-</div>
+</section>
 <!--== End Service Area Wrapper ==-->
 
 <!--== Start Blog Area Wrapper ==-->
@@ -340,7 +313,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <div class="section-title">
-                    <h6>Artikel</h6>
+                    <!-- <h6>Artikel</h6> -->
                     <h2 class="mb-0">Berita terkini</h2>
                 </div>
             </div>
@@ -396,30 +369,42 @@
 <div class="brand-logo-area" style="padding: 65px 0px;">
     <div class="container">
         <div class="row">
+            <div class="col-lg-12 col-sm-11 mx-auto">
+                <div class="row align-items-end mb-4">
+                    <div class="col-md-12 pl-4">
+                        <h3 class="fw-400 text-center">Gallery</h3>
+                    </div>
+                    <div class="col-md-12 text-end about-content">
+                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-12">
                 <div class="brand-logo-content slick-row-20">
                     <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/ssp.png" alt="WPG-Logo" style="width: 128px;"/></a>
+                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/SUSTAINABILITY/5f92d16fa1507.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/libo.png" alt="WPG-Logo" style="width: 128px;"/></a>
+                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/BH_0333.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/tsp.png" alt="WPG-Logo" style="width: 128px;"/></a>
+                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/DSC_9668.JPG" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/sps.png" alt="WPG-Logo" style="width: 128px;"/></a>
+                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/about-us/Organisationstructure1.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/kbp.png" alt="WPG-Logo" style="width: 128px;"/></a>
+                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/PRODUCT/5f92c758804d2.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/wtp.png" alt="WPG-Logo" style="width: 128px;"/></a>
+                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/about-us/BOVERVIEW1.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
                     </div>
                 </div>
             </div>

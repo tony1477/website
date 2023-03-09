@@ -32,7 +32,7 @@
                 <?=$row['profiledesc']?>
             </div>
             <div class="pict">
-                <img class="w-100 h-100 rounded" src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="Saud Usman Nasution">
+                <img class="w-100 h-100 rounded" src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="">
             </div>
         </div>
         </div>

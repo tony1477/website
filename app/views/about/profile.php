@@ -65,8 +65,8 @@
 
             <div class="col-md-6 col-lg-5 order-lg-2 order-md-1 order-1">
                 <figure class="about-thumb">
-                    <img src="<?=BASE_URL?>public/assets/img/about-1.jpg" alt="Gedung WPG"/>
-                    <figcaption>
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" type="text/html" allow="autoplay" src="https://www.youtube.com/embed/r2u-sXXoKs8?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://wilianperkasa.com" title="Wilian Perkasa Office" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%; height:450px;"></iframe>
+                    <!-- <figcaption>
                         <div class="caption-about">
                             <h5 class="text-white"><i class="mdi mdi-format-quote-open fs-2"></i>Inovasi membedakan antara pemimpin dan pengikut.<i class="mdi mdi-format-quote-close fs-2"></i></h5>
                             <div class="photo-caption">
@@ -76,7 +76,7 @@
                             <div class="title">Erry Wilian</div>
                             <div class="position">FOUNDER</div>
                         </div>
-                    </figcaption>
+                    </figcaption> -->
                 </figure>
             </div>
         </div>
