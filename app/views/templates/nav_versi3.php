@@ -2,13 +2,13 @@
     $strpos = strpos($this->getUrl(),'/',0);
     $url = substr($this->getUrl(),0,$strpos);
 ?>
-<header class="<?=($url=='home') ? 'header-area transparent' : 'header-area sticky'?>">
+<header class="<?=($url=='home' || $url=='') ? 'header-area transparent' : 'header-area sticky'?>">
     <div class="container-fluid">
         <div class="row align-items-end">
             <div class="col-5 col-lg-2">
                 <!-- Start Logo Area -->
                 <div class="logo-area resize-img">
-                    <a href="index.html"><img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete1.png" alt="Brand-Logo"></a>
+                    <a href="index.html"><img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete1_rev.png" alt="Brand-Logo"></a>
                     <!-- <div class="container-motto">
                         <p class="logo-motto">be Wise be Excellent</p>
                     </div> -->

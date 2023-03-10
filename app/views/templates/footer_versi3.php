@@ -26,7 +26,7 @@
                             <h4 class="widget-title">Kantor Pusat</h4>
                             <p style="/*padding-bottom: 15px;*/ font-size:.85rem"><i class="mdi mdi-map-marker-radius"></i> Jl. Sail 01 Pekanbaru - Riau 28281, Indonesia <br />
                             <i class="mdi mdi-phone"></i> +62761 (31953) <br /> <i class="mdi mdi-email"></i> info@wilianperkasa.com</p>
-                            <p style="font-size:.85rem"><a href="<?=BASE_URL?>privacy" class="btn-about text-white"><i class="mdi mdi-marker-check"></i> Privacy & Policy</a></p>
+                            <p style="font-size:.85rem"><a href="<?=BASE_URL?>privacy" class="btn-about text-privacy"><i class="mdi mdi-marker-check"></i> Privacy & Policy</a></p>
                         </div>
                     </div>
                 </div>

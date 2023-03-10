@@ -27,33 +27,63 @@
         // console.log(window.location.href)
         const fulllink = location.href;
         const url = fulllink.substring(27);
-        if(localStorage.getItem('bgcolor')!=null) { 
+        if(sessionStorage.getItem('bgcolor')!=null) { 
             switch(url) {
                 case 'index1_new': 
-                localStorage.setItem('bgcolor',"var(--nav-header-ver1)")
+                sessionStorage.setItem('bgcolor',"var(--nav-header-ver1)")
+                sessionStorage.setItem('fontcolor',"var(--nav-color-ver1)")
+                sessionStorage.setItem('footer-bg',"var(--nav-header-ver1)")
+                sessionStorage.setItem('footer-text',"var(--nav-color-ver1)")
+                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver1)")
+                sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
                 break;
 
                 case 'index2_new':
-                localStorage.setItem('bgcolor',"var(--nav-header-ver2)")
+                sessionStorage.setItem('bgcolor',"var(--nav-header-ver2)")
+                sessionStorage.setItem('fontcolor',"var(--nav-color-ver2)")
+                sessionStorage.setItem('footer-bg',"var(--nav-header-ver2)")
+                sessionStorage.setItem('footer-text',"var(--nav-color-ver2)")
+                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver2)")
+                sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
                 break;
 
                 case 'index3_new':
-                localStorage.setItem('bgcolor',"var(--nav-header-ver3)")
+                sessionStorage.setItem('bgcolor',"var(--nav-header-ver3)")
+                sessionStorage.setItem('fontcolor',"var(--nav-color-ver3)")
+                sessionStorage.setItem('footer-bg',"var(--nav-header-ver3)")
+                sessionStorage.setItem('footer-text',"var(--nav-color-ver3)")
+                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver3)")
+                sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
                 break;
                 
 
                 case 'index4_new':
-                localStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+                sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+                sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
+                sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
+                sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
+                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
+                sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
                 break;
 
                 default:
-                localStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+                sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+                sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
+                sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
+                sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
+                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
+                sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
             }
         }
         else {
-            localStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+            sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+            sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
+            sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
+            sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
+            sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
+            sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
         }
-        // $('.header-area.sticky').css('background','#000')
+        $('.header-area.sticky').css('background','#000')
         const bgSelector = $("[data-bg]");
         bgSelector.each(function (index, elem) {
             const element = $(elem),
@@ -325,17 +355,25 @@
             05. Sticky Header JS
         ----------------------------*/
         const headersticky = document.querySelector('.header-area.sticky')
+        const root = document.documentElement
+
         if ($(window).scrollTop() >= 250) {
             $(".header-area").addClass('sticky');
             // window.scrollTo(0,800)
-            headersticky.style.background = `${localStorage.getItem('bgcolor')}`
-            $('.logo-area img').attr('src','../public/assets/img/WPG_logo_complete21.png')
+            // headersticky.style.background = `${localStorage.getItem('bgcolor')}`
+            $('.logo-area img').attr('src',`../public/assets/img/${sessionStorage.getItem('imglogo')}`)
             $('ul.main-menu.nav').removeClass('resize-font')
             $('.logo-area').removeClass('resize-img')
+            
+            root.style.setProperty('--nav-header-background', sessionStorage.getItem('bgcolor'));
+            root.style.setProperty('--nav-menu-color', sessionStorage.getItem('fontcolor'));
+            root.style.setProperty('--footer-background', sessionStorage.getItem('footer-bg'));
+            root.style.setProperty('--footer-text-color', sessionStorage.getItem('footer-text'));
+            root.style.setProperty('--bg-copyright', sessionStorage.getItem('bgcopyright'));
         } else {
             $('.logo-area').addClass('resize-img')
             $('ul.main-menu.nav').addClass('resize-font')
-            $('.logo-area img').attr('src','../public/assets/img/WPG_logo_complete1.png')
+            $('.logo-area img').attr('src','../public/assets/img/WPG_logo_complete1_rev.png')
             $('.header-area').removeClass('sticky');
         }
 
