@@ -21,6 +21,39 @@
         /*--------------------------
             01. Background Image JS
         ---------------------------*/
+        const bgcolor = '#ededed'
+        
+        // localStorage.setItem('bgcolor',bgcolor);
+        // console.log(window.location.href)
+        const fulllink = location.href;
+        const url = fulllink.substring(27);
+        if(localStorage.getItem('bgcolor')!=null) { 
+            switch(url) {
+                case 'index1_new': 
+                localStorage.setItem('bgcolor',"var(--nav-header-ver1)")
+                break;
+
+                case 'index2_new':
+                localStorage.setItem('bgcolor',"var(--nav-header-ver2)")
+                break;
+
+                case 'index3_new':
+                localStorage.setItem('bgcolor',"var(--nav-header-ver3)")
+                break;
+                
+
+                case 'index4_new':
+                localStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+                break;
+
+                default:
+                localStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+            }
+        }
+        else {
+            localStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+        }
+        // $('.header-area.sticky').css('background','#000')
         const bgSelector = $("[data-bg]");
         bgSelector.each(function (index, elem) {
             const element = $(elem),
@@ -291,9 +324,11 @@
         /*--------------------------
             05. Sticky Header JS
         ----------------------------*/
+        const headersticky = document.querySelector('.header-area.sticky')
         if ($(window).scrollTop() >= 250) {
             $(".header-area").addClass('sticky');
             // window.scrollTo(0,800)
+            headersticky.style.background = `${localStorage.getItem('bgcolor')}`
             $('.logo-area img').attr('src','../public/assets/img/WPG_logo_complete21.png')
             $('ul.main-menu.nav').removeClass('resize-font')
             $('.logo-area').removeClass('resize-img')

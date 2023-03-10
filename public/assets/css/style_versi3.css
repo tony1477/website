@@ -1,3 +1,20 @@
+:root {
+    --nav-header-ver1: #ededed;
+    --blend-ver1: #d0ae41;
+    --nav-color-ver1: #212529;
+    --nav-header-ver2: #c31920;
+    --blend-ver2: #d0ae41;
+    --nav-color-ver2: #f8f9fa;
+    --nav-header-ver3: #3c210d;
+    --blend-ver3: #d0ae41;
+    --nav-color-ver3: #d0ae41;
+    --nav-header-ver4: #790002;
+    --blend-ver4: #d0ae41;
+    --nav-color-ver4: #f8f9fa;
+    --red-wp: #790002;
+    --gold-wp: #d0ae41;
+}
+
 @font-face {
     font-family: 'Apple Chancery';
     src: url('../fonts/apple_chancery-webfont.woff');
@@ -559,13 +576,13 @@ blockquote-title {
     margin-right: 30px;
     position: relative;
 }
-.main-menu > li:nth-child(6) {
+.main-menu > li:nth-child(7) {
     margin-right: 0;
     position: absolute;
     right: 7.5rem;
 }
 .main-menu > li > a {
-    color: #fff;
+    color: rgb(0 0 0 / 85%);
     display: block;
     line-height: 1;
     letter-spacing: 1.62px;
@@ -929,7 +946,7 @@ img .icon-language {
 .header-area.sticky {
     background: rgb(125,33,35);
     /* background: linear-gradient(90deg, rgba(125,33,35,1) 0%, rgba(55,84,144,1) 50%, rgba(237,180,100,0.7903536414565826) 100%); */
-    background: rgb(205 24 0);
+    background: var(--nav-header-ver4);
     padding: 20px 0px;
     -webkit-animation: slideInDown 0.6s forwards;
     animation: slideInDown 0.6s forwards;
@@ -1005,8 +1022,9 @@ img .icon-language {
 }
 .footer-area {
     background-color: #790003;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(205 24 0) 0%, rgb(165 42 25) 90% );
-    color: #FFFFFF;
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  var(--red-wp) 0%, var(--red-wp) 90% ); */
+    background: var(--nav-header-ver1);
+    color: var(--red-wp);
 }
 .footer-copy {
     padding:5px;

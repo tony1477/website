@@ -77,13 +77,14 @@ class LangModel {
     ];
 
     private $menu_versi3 = [
-        // 'home' => ['text' => 'Beranda','type'=>'detail',
-        //             'data' => [
-        //                 '' => 'Versi 1',
-        //                 'index2' => 'Versi 2',
-        //                 'index3' => 'Versi 3'
-        //             ]
-        //         ],
+        'home' => ['text' => 'Beranda','type'=>'detail',
+                    'data' => [
+                        'index1_new' => 'Versi 1',
+                        'index2_new' => 'Versi 2',
+                        'index3_new' => 'Versi 3',
+                        'index4_new' => 'Versi 4'
+                    ]
+                ],
         'about' => ['text' => 'Tentang','type'=>'detail',
                     'data' => [
                         'profile' => 'Profil Perusahaan',
