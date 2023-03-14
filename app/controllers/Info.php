@@ -20,7 +20,7 @@ class Info extends Controller {
     }
     public function contact() {
         $data['active'] = 'bod';
-        $this->view('info/contact',$data);
+        $this->view_versi3('info/contact',$data);
     }
     
     public function career($url=null) {

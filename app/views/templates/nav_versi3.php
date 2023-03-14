@@ -2,7 +2,7 @@
     $strpos = strpos($this->getUrl(),'/',0);
     $url = substr($this->getUrl(),0,$strpos);
 ?>
-<header class="<?=($url=='home' || $url=='') ? 'header-area transparent' : 'header-area sticky'?>">
+<header class="header-area <?=($url=='home' || $url=='') ? 'transparent' : 'transparent'?>">
     <div class="container-fluid">
         <div class="row align-items-end">
             <div class="col-5 col-lg-2">

@@ -48,7 +48,7 @@
                     </h3>
                     </div>
                 </div>
-                <div class="row values">
+                <div class="row values justify-content-lg-center">
                     <h3 class="text-center">Nilai Luhur</h3>
                     <img src="<?=BASE_URL?>public/assets/img/about/w.png" class="imgmodal" id="wisdom" onclick="showModal(this)">
                     <img src="<?=BASE_URL?>public/assets/img/about/i.png" class="imgmodal" id="intellectual" onclick="showModal(this)">

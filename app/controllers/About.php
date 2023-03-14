@@ -10,26 +10,26 @@ class About extends Controller {
         $data['data'] = $this->model('AboutModel')->getProfile(1);
         $data['data2'] = $this->model('AboutModel')->getProfile(2);
         // $data['data2'] = $this->model('AboutModel')->getProfile(2);
-        $this->view('about/profile',$data);
+        $this->view_versi3('about/profile',$data);
     }
 
     public function vision() {
         $data['active'] = 'vision';
-        $this->view('about/visi-misi',$data);
+        $this->view_versi3('about/visi-misi',$data);
     }
     public function strategic() {
         $data['active'] = 'strategic';
         $data['data'] = $this->model('AboutModel')->getStrategi();
-        $this->view('about/strategic',$data);
+        $this->view_versi3('about/strategic',$data);
     }
     public function bod() {
         $data['active'] = 'bod';
         $data['data'] = $this->model('AboutModel')->getBOD();
-        $this->view('about/bod',$data);
+        $this->view_versi3('about/bod',$data);
     }
     public function structureorg() {
         $data['active'] = 'structure';
-        $this->view('about/structure',$data);
+        $this->view_versi3('about/structure',$data);
     }
 
     public function milestone($company=null) {
@@ -38,11 +38,11 @@ class About extends Controller {
             if(file_exists('app/views/about/milestone/'.$company.'.php'))
                 $this->view('about/milestone/'.$company,$data);
             else
-                $this->view('about/milestone',$data);
+                $this->view_versi3('about/milestone',$data);
             return;
         }
         $data['active'] = 'milestone';
-        $this->view('about/milestone',$data);
+        $this->view_versi3('about/milestone',$data);
     }
 
     public function page() {

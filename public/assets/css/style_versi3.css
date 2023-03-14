@@ -250,7 +250,7 @@ button:focus {
 }
 .row:not(.g-0) {
     margin-left: -15px;
-    margin-right: -15px;
+    /* margin-right: -15px; */
 }
 .row:not(.g-0) > * {
     position: relative;
@@ -384,7 +384,7 @@ Container
     }
 }
 .btn-outline {
-    border: 2px solid #080b1a;
+    border: none;
     border-radius: 100px;
     color: #151515;
     display: inline-block;
@@ -392,6 +392,7 @@ Container
     font-weight: 600;
     line-height: 1;
     padding: 18px 55px;
+    background: #dcedf5;
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .btn-outline {
@@ -406,8 +407,9 @@ Container
     }
 }
 .btn-outline:hover {
-    background-color: #080b1a;
-    color: #fff;
+    background-color: var(--red-wp);
+    color: var(--bs-white);
+    border: none;
 }
 .slick-list .slick-slide {
     border: 0 solid transparent !important;
@@ -491,7 +493,7 @@ Container
     margin: 0 15px;
 }
 .btn-scroll-top {
-    background-color: #f8d80e;
+    background-color: rgb(174 139 29);
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -500,12 +502,12 @@ Container
     font-size: 1.5625rem;
     display: block;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
     position: fixed;
-    bottom: -60px;
+    bottom: -30px;
     right: 30px;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -529,7 +531,7 @@ Container
     background-color: #cd1800;
 }
 .btn-scroll-top.show {
-    bottom: 30px;
+    bottom: 35px;
     opacity: 1;
     visibility: visible;
 }
@@ -843,6 +845,7 @@ img .icon-language {
 }
 .sm-top {
     margin-top: 110px;
+    padding-bottom: 80px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .sm-top {
@@ -2539,7 +2542,7 @@ img .icon-language {
 }
 .home-two-about-area {
     background-color: #f8f9fc;
-    background-image: url(../img/about-2-bg.jpg);
+    background-image: url(https://www.asianagri.com/wp-content/uploads/2021/02/home-bg-3.jpg);
     background-position: center right;
     background-repeat: no-repeat;
 }
@@ -3737,7 +3740,8 @@ img .icon-language {
 
 .text-visi {
     color: rgba(60, 80,138,1);
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 1.75rem;
     margin-left:10px;
     font-family: "Open Sans", 'Montserrat'
 }
@@ -3760,7 +3764,7 @@ ul.text-misi {
 }
 
 ul.text-misi li {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: "Open Sans","Montserrat";
     /* padding-left: 10px; */
     line-height: 1.5    rem;
@@ -4056,7 +4060,7 @@ figcaption.detail-thumb {border-radius: 0px 0px 10px 10px;background: linear-gra
 
 .sidebar-list li a.active {
     color: #fff;
-    background: #0075B2;
+    background: rgb(174 139 29);
 }
 
 .main-menu.resize-font {
@@ -4259,4 +4263,168 @@ figcaption.detail-thumb {border-radius: 0px 0px 10px 10px;background: linear-gra
 
 .text-privacy {
     color: var(--footer-text-color);
+}
+
+form#contact-form input, form#contact-form textarea, form#contact-form select {
+    background: #dcedf5;
+    border: none;
+}
+
+form#contact-form input, form#contact-form select {
+    border-radius:50px;
+}
+
+form#contact-form textarea {
+    border-radius: 15px;
+}
+
+.select_box{
+    position: relative;
+}
+.select_box:after{
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #151515;
+    position: absolute;
+    top: 40%;
+    right: 1rem;
+    content: "";
+    z-index: 3;
+}
+.select_box select{
+    position: relative;
+    z-index: 2;
+}
+
+form#contact-form label {
+    font-weight: 600;
+}
+
+.row-bg-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+}
+
+.title-profile {
+    margin-left: 40px;
+}
+
+.title-profile h5 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;    
+}
+
+.img_profile {
+    padding: 0px 40px;
+}
+
+.col-6.content-profile {
+    padding: 15px 5px;
+    color: white;
+}
+
+.content-year-border {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.column-image-bg {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.nectar-shape-divider {
+    width: 100%;
+    left: 0;
+    bottom: 10;
+    height: 55%;
+    position: absolute;
+}
+
+.span_12 {
+    display: flex;
+    float: none;
+    z-index: 10;
+    width: auto;
+}
+
+.span_12 > .wpb_column {
+    float: none;
+}
+
+.span_12 .wpb_column {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.wpb_column.left_margin_10pct {
+    margin-left: 10%!important;
+}
+
+.wpb_column.right_margin_10pct {
+    margin-right: 10%!important;
+}
+
+.col.centered-text, .wpb_column.centered-text {
+    text-align: center;
+}
+
+.vc_column-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+
+.vc_column_container >.vc_column-inner {
+    position: relative;
+}
+
+.wpb_row .column-image-bg-wrap {
+    z-index: 0;
+    overflow: hidden;
+}
+
+.wpb_row .column-image-bg-wrap, .wpb_row .column-image-bg-wrap .inner-wrap, .wpb_row .column-image-bg-wrap .column-image-bg {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.wpb_column[data-bg-cover="true"] .column-image-bg, .wpb_column .column-inner[data-bg-cover="true"] .column-image-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.video-profile {
+    background-image: url('https://www.asianagri.com/wp-content/uploads/2021/08/plantation-video-bg.jpg');
+    position: relative;
+    left: 50%;
+    background-size: cover;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    top: 10rem;
+    width: 85%;
+    content: '';
+    height: 400px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    border-radius: 10px;
 }

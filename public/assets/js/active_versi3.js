@@ -66,13 +66,13 @@
                 sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
                 break;
 
-                default:
-                sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
-                sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
-                sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
-                sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
-                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
-                sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
+                // default:
+                // sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+                // sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
+                // sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
+                // sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
+                // sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
+                // sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
             }
         }
         else {
@@ -83,7 +83,7 @@
             sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
             sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
         }
-        $('.header-area.sticky').css('background','#000')
+        // $('.header-area.sticky').css('background','#000')
         const bgSelector = $("[data-bg]");
         bgSelector.each(function (index, elem) {
             const element = $(elem),

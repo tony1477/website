@@ -57,64 +57,70 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     <div class="contact-form-area contact-method">
-                        <h3>Send us a Message</h3>
+                        <h3>Hubungi Kami</h3>
 
                         <div class="contact-form-wrap">
-                            <form method="post"
-                                  id="contact-form" name="contact_form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="single-input-item">
-                                            <label>
-                                                <input type="text" name="firstname" placeholder="First Name *"
-                                                       required/>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="single-input-item">
-                                            <label>
-                                                <input type="text" name="lastname" placeholder="Last Name *" required/>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="single-input-item">
-                                            <label>
-                                                <input type="email" name="email" placeholder="Email address *"
-                                                       required/>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="single-input-item">
-                                            <label>
-                                                <input type="number" name="phone" placeholder="Your Phone"/>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="single-input-item">
-                                            <label for="con_message" class="sr-only m-0"></label>
-                                            <textarea name="message" id="con_message" cols="30" rows="7"
-                                                      placeholder="Message *" required></textarea>
-                                        </div>
-
-                                        <div class="single-input-item mb-0 mt-40">
-                                            <button class="btn-outline cf_send" type="submit">Send Message</button>
-                                            <div class="spinner-border d-none cf_loading" role="status">
-                                                <span class="visually-hidden">Loading...</span>
-                                              </div>
-                                        </div>
-                                        
-
-                                        <!-- <div class="form-message"></div> -->
-                                    </div>
+                            <form method="post" id="contact-form" name="contact_form">
+                            <div class="mb-3 row">
+                                <label for="inputPerihal" class="col-sm-2 col-form-label">Perihal</label>
+                                <div class="col-sm-10">
+                                <div class="select_box">
+                                <select class="form-select" aria-label="Pilih Perihal">
+                                    <option selected>Pilih Salah Satu</option>
+                                    <option value="1">Hubungan Investor</option>
+                                    <option value="2">Perihal Pemasaran Kecambah Sawit</option>
+                                    <option value="3">Perihal Pemasaran Sago</option>
+                                    <option value="4">Perihal Pemasaran Kelapa Sawit</option>
+                                    <option value="5">Perihal Sumber Daya Manusia</option>
+                                    <option value="6">Perihal Umum</option>
+                                </select>
                                 </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputNama" class="col-sm-2 col-form-label">Nama</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNama">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputPerusahaan" class="col-sm-2 col-form-label">Perusahaan</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPerusahaan">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputAlamat" class="col-sm-2 col-form-label">Alamat</label>
+                                <div class="col-sm-10">
+                                <textarea class="form-control" id="inputAlamat" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>
+                                <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="inputPhone" placeholder="+62 8XX-XXX-XXX">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="mail@yourdomain.com">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputPesan" class="col-sm-2 col-form-label">Pesan</label>
+                                <div class="col-sm-10">
+                                <textarea class="form-control" id="inputPesan" rows="3"></textarea>
+                            </div>
+                            <div class="single-input-item mb-3 my-5 row">
+                                <label class="col-sm-2 col-form-label"></label>
+                                <div class="col-sm-10">
+                                <button class="btn-outline cf_send" type="submit">Kirim</button>
+                                <div class="spinner-border d-none cf_loading" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                            </div>
                             </form>
                         </div>
                     </div>
