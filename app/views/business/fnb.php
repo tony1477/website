@@ -1,3 +1,17 @@
+<div class="page-header-area bg-img-news" data-bg="https://flipnfry.id/wp-content/uploads/2022/12/about-sect3.png" style="background-position: center center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8 m-auto text-center">
+                <div class="page-header-content-start">
+                    <div class="page-header-content" >
+                        <h2>F & B</h2>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--== Start About Area Wrapper ==-->
 <div class="about-area-wrapper sm-top">
     <div class="container">
