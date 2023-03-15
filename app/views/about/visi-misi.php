@@ -15,55 +15,78 @@
 </div>
 <!--== Start Testimonial Area Wrapper ==-->
 <div class="testimonial-area testimonial-area--2 bg-offwhite">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row sp-top">
-            <div class="col-md-2">
-                <?php require_once('sidebar.php')?>
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-6 visi-misi  d-flex justify-content-center" >
-                        <!-- <div class="logo-visi-misi d-flex justify-content-center"> -->
-                            <img src="<?=BASE_URL?>public/assets/img/about/3.png">
-                        <!-- </div> -->
+            <div class="col-md-6 col-lg-3">
+                <aside class="sidebar-area-wrapper mt-md-80 mt-sm-60">
+                    <!-- Start Single Sidebar Wrap -->
+                    <div class="single-sidebar-item-wrap">
+                        <!-- <h3 class="sidebar-title">NAVIGATION</h3> -->
+                        <div class="sidebar-body">
+                            <ul class="sidebar-list">
+                                <li><a href="http://localhost/webs/about/profile" class="">Profil Perusahaan</a></li>
+                                <li><a href="http://localhost/webs/about/vision" class="active">Visi - Misi , Nilai Luhur</a></li>
+                                <li><a href="http://localhost/webs/about/strategic" class="">Strategi Bisnis</a></li>
+                                <li><a href="http://localhost/webs/about/bod" class="">Profil Manajemen</a></li>
+                                <li><a href="http://localhost/webs/about/structureorg" class="">Struktur Organisasi</a></li>
+                                <li><a href="http://localhost/webs/about/milestone" class="">Sejarah Penting</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-6 visi-misi  d-flex justify-content-center">
-                        <!-- <div class="logo-visi-misi d-flex justify-content-center"> -->
-                            <img src="<?=BASE_URL?>public/assets/img/about/4.png">
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6" >
-                    <h3 class="text-center pb-5 text-visi-misi">VISI</h3>
-                    <p class="text-visi">Meningkatkan kualitas hidup melalui pengembangan multi industri dan  menjadi perusahaan yang dipercaya.</p>
-                    </div>
-                    <div class="col-6">
-                    <h3 class="text-center pb-5 text-visi-misi">MISI</h3>
-                    <ul class="text-misi">
+                    <!-- End Single Sidebar Wrap -->
+</aside>            </div>
+            <div class="col-md-6 col-md-9">
+    <div class="card mb-3" style="
+    border: 1px solid rgb(177 163 163 / 75%);
+">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://cms.sampoernaagro.com/storage/files/shares/about-us/BOVERVIEW2.jpg" class="img-fluid rounded" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="text-center pb-5 text-visi-misi">VISI</h3>
+        <p class="text-visi">Meningkatkan kualitas hidup melalui pengembangan multi industri dan  menjadi perusahaan yang dipercaya.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    
+                <div class="card mb-3" style="
+    margin-top: 5rem;
+">
+  <div class="row g-0 align-items-center">
+    <div class="col-md-4">
+      <img src="https://cms.sampoernaagro.com/storage/files/shares/about-us/VISIMISI1.jpg" class="rounded-start" alt="..." style="
+    height: 412px;
+    display: inline-block;
+">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="text-center pb-5 text-visi-misi">MISI</h3>
+        <ul class="text-misi" style="
+    margin-left: 1.5rem;
+">
                         <li>Menyediakan produk alami untuk bisnis maupun pelanggan dengan memberikan harga yang kompetitif dan mutu yang baik.</li>
                         <li>Menyediakan berbagai kesempatan bagi karyawan dan komunitas lokal agar mereka mempunyai standar kehidupan yang lebih baik.</li>
                         <li>Bertransformasi menjadi perusahaan dengan manajemen yang profesional dan sistem yang terintegrasi.</li>
                     </ul>
-                    </h3>
-                    </div>
-                </div>
-                <div class="row values justify-content-lg-center">
-                    <h3 class="text-center">Nilai Luhur</h3>
-                    <img src="<?=BASE_URL?>public/assets/img/about/w.png" class="imgmodal" id="wisdom" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/i.png" class="imgmodal" id="intellectual" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/l.png" class="imgmodal" id="loyal" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/in.png" class="imgmodal" id="integrity" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/a.png" class="imgmodal" id="accomplished" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/n.png" class="imgmodal" id="noble" onclick="showModal(this)">
-                </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                
+                
 
                 <div class="modal fade" id="wisdomModal">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content modal-values">
                             <div class="modal-body">
-                            <div class='content'>
-                                <img src="<?=BASE_URL?>public/assets/img/about/w.png" class="img-content" />
+                            <div class="content">
+                                <img src="http://localhost/webs/public/assets/img/about/w.png" class="img-content">
                                 <h3 class="text-underline values-title">Wisdom</h3>
                                 <p class="text-highlights">Bijaksana</p>
                                 <p class="values-description">Bersikap BIJAKSANA, sehingga mampu memahami dan membedakan tindakan yang benar atau salah dalam menangani pekerjaan ataupun masalah.</p>
@@ -76,8 +99,8 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content modal-values">
                             <div class="modal-body">
-                            <div class='content'>
-                                <img src="<?=BASE_URL?>public/assets/img/about/i.png" class="img-content" />
+                            <div class="content">
+                                <img src="http://localhost/webs/public/assets/img/about/i.png" class="img-content">
                                 <h3 class="text-underline values-title">Intellectual</h3>
                                 <p class="text-highlights">Rasional</p>
                                 <p class="values-description">Berpikir POSITIF dalam bertindak sehingga menciptakan profesionalisme dalam menghadapi orang ataupun situasi.</p>
@@ -90,8 +113,8 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content modal-values">
                             <div class="modal-body">
-                            <div class='content'>
-                                <img src="<?=BASE_URL?>public/assets/img/about/l.png" class="img-content" />
+                            <div class="content">
+                                <img src="http://localhost/webs/public/assets/img/about/l.png" class="img-content">
                                 <h3 class="text-underline values-title">Loyal</h3>
                                 <p class="text-highlights">Setia</p>
                                 <p class="values-description">Memiliki sifat SETIA dan bangga menjadi bagian dari Wilian Perkasa Group.</p>
@@ -104,8 +127,8 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content modal-values">
                             <div class="modal-body">
-                            <div class='content'>
-                                <img src="<?=BASE_URL?>public/assets/img/about/in.png" class="img-content" />
+                            <div class="content">
+                                <img src="http://localhost/webs/public/assets/img/about/in.png" class="img-content">
                                 <h3 class="text-underline values-title">Integrity</h3>
                                 <p class="text-highlights">Jujur</p>
                                 <p class="values-description">JUJUR dalam setiap tindakan dan memiliki etika dalam melakukan perbuatan tersebut.</p>
@@ -118,10 +141,10 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content modal-values">
                             <div class="modal-body">
-                            <div class='content'>
-                                <img src="<?=BASE_URL?>public/assets/img/about/a.png" class="img-content" />
+                            <div class="content">
+                                <img src="http://localhost/webs/public/assets/img/about/a.png" class="img-content">
                                 <h3 class="text-underline values-title">Accomplished</h3>
-                                <p class="text-highlights">Unggul & Terampil</p>
+                                <p class="text-highlights">Unggul &amp; Terampil</p>
                                 <p class="values-description">Memiliki skill (ketrampilan) yang kompeten dan selalu berusaha meningkatkan ketrampilan tersebut agar menjadi lebih sempurna dan semakin unggul di bidangnya.</p>
                             </div>
                             </div>
@@ -132,8 +155,8 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content modal-values">
                             <div class="modal-body">
-                            <div class='content'>
-                                <img src="<?=BASE_URL?>public/assets/img/about/n.png" class="img-content" />
+                            <div class="content">
+                                <img src="http://localhost/webs/public/assets/img/about/n.png" class="img-content">
                                 <h3 class="text-underline values-title">Noble</h3>
                                 <p class="text-highlights">Terhormat</p>
                                 <p class="values-description">Memiliki jiwa yang saling MENGHORMATI dan MENGHARGAI untuk menciptakan suasana nyaman di dalam pekerjaan.
@@ -141,13 +164,23 @@
                             </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="row values justify-content-lg-center">
+                    <h3 class="text-center">Nilai Luhur</h3>
+                    <img src="http://localhost/webs/public/assets/img/about/w.png" class="imgmodal" id="wisdom" onclick="showModal(this)">
+                    <img src="http://localhost/webs/public/assets/img/about/i.png" class="imgmodal" id="intellectual" onclick="showModal(this)">
+                    <img src="http://localhost/webs/public/assets/img/about/l.png" class="imgmodal" id="loyal" onclick="showModal(this)">
+                    <img src="http://localhost/webs/public/assets/img/about/in.png" class="imgmodal" id="integrity" onclick="showModal(this)">
+                    <img src="http://localhost/webs/public/assets/img/about/a.png" class="imgmodal" id="accomplished" onclick="showModal(this)">
+                    <img src="http://localhost/webs/public/assets/img/about/n.png" class="imgmodal" id="noble" onclick="showModal(this)">
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="sm-top-wt"></div>
 <!--== End Testimonial Area Wrapper ==-->
 
 <?php
