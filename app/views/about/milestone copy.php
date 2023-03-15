@@ -18,12 +18,12 @@
 
 <!--== Start Testimonial Area Wrapper ==-->
 <div class="about-area-wrapper sm-top">
-    <div class="container">
+    <div class="container-fluid" style="border: 0px solid #000;">
         <div class="row">
-            <div class="col-md-6 col-lg-3 order-lg-0 order-md-0 order-md-3">
+            <div class="col-md-3 col-lg-2 order-lg-0 order-md-0 order-md-3">
                 <?php require_once('sidebar.php')?>
             </div>
-            <div class="col-md-6 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
+            <div class="col-md-9 col-lg-10 order-md-2 order-lg-2 order-2 justify-content-md-end">
             <div class="member-details-bottom">
                     <div class="row mtn-50">
                         <div class="col-lg-12 m-auto">   
@@ -262,6 +262,7 @@
         </div>
     </div>
 </div>
+<div class="sm-top-wt"></div>
 <!--== End Testimonial Area Wrapper ==-->
 <?php
 $scriptfooter = <<<HEREDOC

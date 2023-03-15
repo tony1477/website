@@ -17,7 +17,7 @@
 <!--== End Page Header Area ==-->
 
 <!--== Start Contact Page Area Wrapper ==-->
-<div class="contact-page-area-wrapper sp-y">
+<div class="contact-page-area-wrapper">
     <div class="container">
         <div class="contact-content-wrap">
             <div class="row">

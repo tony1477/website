@@ -17,13 +17,13 @@
 <!--== End Page Header Area ==-->
 
 <!--== Start Team Area Wrapper ==-->
-<div class="team-page-area-wrapper bg-offwhite sp-y sm-top">
-    <div class="container-fluid">
+<div class="team-page-area-wrapper bg-offwhite sp-y">
+    <div class="container">
         <div class="row">
-            <div class="col-md-3 col-lg-2 order-lg-0 order-md-0 order-md-0">
+            <div class="col-md-6 col-lg-3 order-lg-0 order-md-0 order-md-0">
                 <?php require_once('sidebar.php')?>
             </div>
-            <div class="col-md-9 col-lg-10 order-1">
+            <div class="col-md-6 col-lg-9 order-1">
                 <div class="about-content ms-0">
                     <h2 class="text-center">Struktur Organisasi</h2>
                     <button class="btn btn-light border border-dark d-flex justify-content-end cursor-pointer align-items-center" onclick="downloadstructure()"><i class="fa fa-download mx-1"></i> Download Structure</button>

@@ -25,17 +25,17 @@
   }
   .outer-container{
     padding-top:10px;
-    padding-right:30px;
+    padding-right: 80px;
     padding-bottom:10px;
-    padding-left:30px;
+    /* padding-left:30px; */
   }
   .inner-container{
     max-width:1320px;
     flex-direction:column;
-    margin-top:80px;
+    /* margin-top:80px; */
     margin-right:0px;
     margin-bottom:0px;
-    margin-left:200px;
+    /* margin-left:200px; */
   }
   .card-container{
     overflow-x:visible;

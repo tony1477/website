@@ -35,13 +35,14 @@
 <!--== End Testimonial Area Wrapper ==-->
 <div class="video-profile1">
     <div class="w-100">
-        <div class="nectar-shape-divider-wrap " style="height:50%;" data-using-percent-val="true" data-height="50%" data-front="" data-style="straight_section" data-position="bottom">
+        <div class="nectar-shape-divider-wrap " style="height:50%; position:absolute; width:100%" data-using-percent-val="true" data-height="50%" data-front="" data-style="straight_section" data-position="bottom">
             <svg class="nectar-shape-divider" aria-hidden="true" fill="#004b31" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"> <polygon points="104 10, 104 0, 0 0, 0 10"></polygon> </svg>
         </div>
         <div class="container">
-            <div class="row" style="padding-bottom: 2em;">
+            <div class="row">
                 <div class="col-12">
                     <div class="video-profile">
+                    <i class="mdi mdi-play" style="position: relative;top: 44%;font-family: 'Material Design Icons';content: '\f40a';left: 48.5%;color: #fff;font-size: 2rem;transform: translate(-50%, -50%);"></i>
                     </div>
                 </div>
             </div>
