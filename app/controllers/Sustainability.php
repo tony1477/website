@@ -9,22 +9,22 @@ class Sustainability extends Controller {
   public function policy() {
     $data['active'] = 'policy';
     $data['data'] = $this->model('SustainabilityModel')->getPolicy();
-    $this->view('sustainability/policy',$data);
+    $this->view_versi3('sustainability/policy',$data);
   }
   public function certification() {
     $data['active'] = 'certification';
     $data['data'] = $this->model('SustainabilityModel')->getCertification();
-    $this->view('sustainability/certification',$data);
+    $this->view_versi3('sustainability/certification',$data);
   }
   public function environment() {
     $data['active'] = 'environment';
     $data['data'] = $this->model('SustainabilityModel')->getEnvironment();
-    $this->view('sustainability/environment',$data);
+    $this->view_versi3('sustainability/environment',$data);
   }
   public function community() {
     $data['active'] = 'community';
     $data['data'] = $this->model('SustainabilityModel')->getCSR();
-    $this->view('sustainability/community',$data);
+    $this->view_versi3('sustainability/community',$data);
   }
   public function osh() {
     $data['active'] = 'osh';

@@ -8,7 +8,7 @@
                                 <li><a href="<?=BASE_URL?>sustainability/certification" class="<?=((isset($data['active']) && $data['active']=='certification') ? 'active' : '')?>">SERTIFIKASI</a></li>
                                 <li><a href="<?=BASE_URL?>sustainability/environment" class="<?=((isset($data['active']) && $data['active']=='environment') ? 'active' : '')?>">LINGKUNGAN</a></li>
                                 <li><a href="<?=BASE_URL?>sustainability/community" class="<?=((isset($data['active']) && $data['active']=='community') ? 'active' : '')?>">CSR</a></li>
-                                <li><a href="<?=BASE_URL?>sustainability/osh" class="<?=((isset($data['active']) && $data['active']=='osh') ? 'active' : '')?>">KESEHATAN DAN KESELAMATAN PRODUK</a></li>
+                                <!-- <li><a href="<?=BASE_URL?>sustainability/osh" class="<?=((isset($data['active']) && $data['active']=='osh') ? 'active' : '')?>">KESEHATAN DAN KESELAMATAN PRODUK</a></li> -->
                             </ul>
                         </div>
                     </div>

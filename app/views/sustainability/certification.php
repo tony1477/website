@@ -1,3 +1,17 @@
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/contact_us.jpg" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8 m-auto text-center">
+                <div class="page-header-content-start">
+                    <div class="page-header-content" >
+                        <h2>Sertifikasi</h2>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--== Start Blog Details Page Content ==-->
 <div class="blog-details-page-content sp-y">
     <div class="container">
