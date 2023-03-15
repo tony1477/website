@@ -4,7 +4,7 @@ class Investor extends Controller {
     public function index() {
         // $this->comp_release();
         $data['active'] = 'index';
-        $this->view('investor/index',$data);
+        $this->view_versi3('investor/index',$data);
     }
 
     public function comp_release() {

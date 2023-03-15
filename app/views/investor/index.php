@@ -1,3 +1,18 @@
+<div class="page-header-area bg-img-news" data-bg="https://www.asianagri.com/wp-content/uploads/2021/08/about-us-planter.jpg" style="background-position:top center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8 m-auto text-center">
+                <div class="page-header-content-start">
+                    <div class="page-header-content" >
+                        <h2>Statistik Produksi</h2>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="about-area-wrapper sm-top">
     <div class="container-fluid" style="border: 0px solid #000;">
         <div class="row">
@@ -5,7 +20,7 @@
                 <?php require_once('sidebar.php')?>
             </div>
             <div class="col-md-9 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
-            <h2 class="text-center text-decoration-underline">Statistik Produksi</h2>
+            <!-- <h2 class="text-center text-decoration-underline">Statistik Produksi</h2> -->
                 <div class="row justify-content-center">
 <table class="table" style="margin-bottom: 0px; border- border-style: none;">
 <tbody>
