@@ -1,3 +1,18 @@
+<div class="page-header-area bg-img-news" data-bg="https://www.asianagri.com/wp-content/uploads/2021/06/banner-bg-1.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8 m-auto text-center">
+                <div class="page-header-content-start">
+                    <div class="page-header-content" >
+                        <h2>Gallery</h2>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-area-wrapper sm-top">
 <div class="container page-top">
         <div class="row">
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
@@ -50,6 +65,7 @@
 </div>
 
 <div class="sm-top-wt"></div>
+</div>
 <?php
 $scriptfooter = <<<EOF
 <script type="text/javascript">

@@ -7,7 +7,7 @@ class Info extends Controller {
 
     public function news() {
         $data['active'] = 'profile';
-        $this->view('info/news',$data);
+        $this->view_versi3('info/news',$data);
     }
 
     public function video() {
@@ -16,7 +16,7 @@ class Info extends Controller {
     }
     public function gallery() {
         $data['active'] = 'strategic';
-        $this->view('info/gallery_photo',$data);
+        $this->view_versi3('info/gallery_photo',$data);
     }
     public function contact() {
         $data['active'] = 'bod';
@@ -26,7 +26,7 @@ class Info extends Controller {
     public function career($url=null) {
         $data['data'] = $this->model('CareerModel')->getData(null);
         if($url!==null) return $this->careerpath($url);
-        $this->view('career/index',$data);
+        $this->view_versi3('career/index',$data);
     }
 
     public function careerpath(string $careerid) {
