@@ -20,4 +20,19 @@ class Helper {
   {
     return sprintf("%s", substr($_SERVER['QUERY_STRING'],4));
   }
+
+  public function getContent(string $position) 
+  {
+    return $this->getBankofLang($position);
+  }
+
+  private function getBankofLang(string $position)
+  {
+    // check session of lang
+    $folder = 'app/lang/id/lang.php'; 
+    if($_SESSION['lang']==='en') $folder = 'app/lang/en/lang.php'; 
+      // $bankArray = include $folder;
+      include $folder;
+      return $lang[$position];
+  }
 }

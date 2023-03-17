@@ -8,7 +8,7 @@
             <div class="col-5 col-lg-2">
                 <!-- Start Logo Area -->
                 <div class="logo-area resize-img">
-                    <a href="index.html"><img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete1_rev.png" alt="Brand-Logo"></a>
+                    <a href="<?=BASE_URL?>"><img src="<?=BASE_URL?>public/assets/img/WPG_logo_white.png" alt="Brand-Logo"></a>
                     <!-- <div class="container-motto">
                         <p class="logo-motto">be Wise be Excellent</p>
                     </div> -->
@@ -38,10 +38,14 @@
                         <div class="nav-wrapper">
                             <div class="sl-nav">
                                 <ul>
-                                <li><img src="http://localhost/webs/public/assets/img/indonesia.png" style="display: inline; margin-top:-5px; width:24px"> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                <li><img src="http://localhost/webs/public/assets/img/<?=$_SESSION['lang']=='id' ? 'indonesia.png' : 'usa.png'?>" style="display: inline; margin-top:-5px; width:24px"> <i class="fa fa-angle-down" aria-hidden="true"></i>
                                     <div class="triangle"></div>
                                     <ul>
-                                    <li><i class="sl-flag flag-usa"><div id="english"></div></i> <span>English</span></li>
+                                        <?php if($_SESSION['lang']=='id'):?>
+                                        <li><a href="<?=BASE_URL?>lang/en" class="text-dark"><i class="sl-flag flag-usa"><div id="english"></div></i> <span>EN</span></a></li>
+                                        <?php else: ?>
+                                        <li><a href="<?=BASE_URL?>lang/id" class="text-dark"><i class="sl-flag flag-id"><div id="indonesia"></div></i> <span>IDN</span></a></li>
+                                        <?php endif;?>
                                     </ul>
                                 </li>
                                 </ul>

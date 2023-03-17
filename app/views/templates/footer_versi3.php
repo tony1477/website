@@ -23,8 +23,8 @@
                     <div class="widget-item">
                         <div class="about-widget" style="position:relative">
                             <!-- <a href="index.html"><img src="public/assets/img/logo-footer.png" alt="Logo" /></a> -->
-                            <h4 class="widget-title">Kantor Pusat</h4>
-                            <p style="/*padding-bottom: 15px;*/ font-size:.85rem"><i class="mdi mdi-map-marker-radius"></i> Jl. Sail 01, Kec. Tenayan Raya Pekanbaru - Riau 28281, Indonesia <br />
+                            <h4 class="widget-title"><?=$this->getContent('footer-location-title')?></h4>
+                            <p style="font-size:.85rem"><i class="mdi mdi-map-marker-radius"></i> <?=$this->getContent('footer-location-address')?> <br />
                             <i class="mdi mdi-phone"></i> +62761 (31953) <br /> <i class="mdi mdi-email"></i> info@wilianperkasa.com</p>
                             <p style="font-size:.85rem"><a href="<?=BASE_URL?>privacy" class="btn-about text-privacy"><i class="mdi mdi-marker-check"></i> Privacy & Policy</a></p>
                         </div>
@@ -33,13 +33,13 @@
 
                 <div class="col-md-4 col-lg-2 m s-auto ">
                     <div class="widget-item" style="position:relative">
-                        <h4 class="widget-title" >Informasi</h4>
+                        <h4 class="widget-title" ><?=$this->getContent('footer-info-title')?></h4>
                         <div class="widget-body">
                             <ul class="widget-list">
-                                <li><a href="<?=BASE_URL?>about/profile">Tentang</a></li>
-                                <li><a href="<?=BASE_URL?>info/contact">Kontak</a></li>
-                                <li><a href="<?=BASE_URL?>about/bod">Jajaran Manajemen</a></li>
-                                <li><a href="<?=BASE_URL?>info/career">Karir</a></li>
+                                <li><a href="<?=BASE_URL?>about/profile"><?=$this->getContent('footer-info-about')?></a></li>
+                                <li><a href="<?=BASE_URL?>info/contact"><?=$this->getContent('footer-info-kontak')?></a></li>
+                                <li><a href="<?=BASE_URL?>about/bod"><?=$this->getContent('footer-info-manajemen')?></a></li>
+                                <li><a href="<?=BASE_URL?>info/career"><?=$this->getContent('footer-info-karir')?></a></li>
                             </ul>
                         </div>
                     </div>
@@ -47,13 +47,13 @@
                 
                 <div class="col-md-4 col-lg-2 ms-auto " >
                     <div class="widget-item">
-                        <h4 class="widget-title" style="position:relative">Bisnis Kami</h4>
+                        <h4 class="widget-title" style="position:relative"><?=$this->getContent('footer-bisnis-title')?></h4>
                         <div class="widget-body">
                             <ul class="widget-list">
-                                <li><a href="<?=BASE_URL?>business/plantation">Perkebunan</a></li>
-                                <li><a href="<?=BASE_URL?>business/mill">Pabrik Kelapa Sawit</a></li>
-                                <li><a href="<?=BASE_URL?>business/trading">Trading</a></li>
-                                <li><a href="<?=BASE_URL?>business/fnb">Makanan & Minuman</a></li>
+                                <li><a href="<?=BASE_URL?>business/plantation"><?=$this->getContent('footer-bisnis-kebun')?></a></li>
+                                <li><a href="<?=BASE_URL?>business/mill"><?=$this->getContent('footer-bisnis-pabrik')?></a></li>
+                                <li><a href="<?=BASE_URL?>business/trading"><?=$this->getContent('footer-bisnis-trading')?></a></li>
+                                <li><a href="<?=BASE_URL?>business/fnb"><?=$this->getContent('footer-bisnis-fnb')?></a></li>
                             </ul>
                         </div>
                     </div>
@@ -61,13 +61,13 @@
 
                 <div class="col-md-4 col-lg-2 ms-auto ">
                     <div class="widget-item" style="position:relative">
-                        <h4 class="widget-title">Keberlanjutan</h4>
+                        <h4 class="widget-title"><?=$this->getContent('footer-sustain-title')?></h4>
                         <div class="widget-body">
                             <ul class="widget-list">
-                                <li><a href="<?=BASE_URL?>sustainability/policy">Kebijakan</a></li>
-                                <li><a href="<?=BASE_URL?>sustainability/certification">Sertifikasi</a></li>
-                                <li><a href="<?=BASE_URL?>sustainability/environment">Lingkungan</a></li>
-                                <li><a href="<?=BASE_URL?>sustainability/community">Pengembangan Komunitas</a></li>
+                                <li><a href="<?=BASE_URL?>sustainability/policy"><?=$this->getContent('footer-sustain-kebijakan')?></a></li>
+                                <li><a href="<?=BASE_URL?>sustainability/certification"><?=$this->getContent('footer-sustain-sertifikasi')?></a></li>
+                                <li><a href="<?=BASE_URL?>sustainability/environment"><?=$this->getContent('footer-sustain-lingkungan')?></a></li>
+                                <li><a href="<?=BASE_URL?>sustainability/community"><?=$this->getContent('footer-sustain-csg')?></a></li>
                             </ul>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
 
                 <div class="col-md-6 col-lg-2 social-media order-md-4">
                     <div class="widget-item" style="position:relative">
-                        <h4 class="widget-title">Ikuti Kami</h4>
+                        <h4 class="widget-title"><?=$this->getContent('footer-social-title')?></h4>
                         <div class="widget-body">
                             <div class="newsletter-section">
                                 Never miss a thing, sign up to the <span class="fw-bold">mailing list</span>
@@ -188,7 +188,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
     <?php } ?>
 <?=(isset($scriptfooter) && ($scriptfooter!='') ? $scriptfooter:'')?>
-
 </body>
 
 </html>

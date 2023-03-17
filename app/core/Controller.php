@@ -8,9 +8,12 @@ class Controller {
     public $catalog;
     public $nav;
     private $helper;
+    private $menu_versi3;
+    private $menu;
 
     public function __construct() {
         // $this->nav = $this->model('LangModel')->getNav();
+        $this->getLang();
         $this->menu = $this->model('LangModel')->getMenu();
         $this->menu_versi3 = $this->model('LangModel')->getMenu_versi3();
         $this->helper = new Helper();
@@ -39,13 +42,19 @@ class Controller {
         return new $model;
     }
 
-    public function base_url()
-    {
-        return $this->helper->base_url();
-    }
-
     public function getUrl()
     {
         return $this->helper->getUrl();
+    }
+
+    public function getLang()
+    {
+        if(!isset($_SESSION['lang'])) $_SESSION['lang']='id';
+        return $_SESSION['lang'];
+    }
+
+    public function getContent($text)
+    {
+        return $this->helper->getContent($text);
     }
 }

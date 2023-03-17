@@ -39,91 +39,11 @@
     </div>
 </div>
 <?php endforeach;?>
-<!-- <div class="modal fade modal-director" id="wwModal" role="dialog" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-        <div class="modal-body p-0 d-flex">
-            <div class="detail">
-                <h3 >Corporate Service Director</h3>
-                <h5 class="mb-lg-4 mb-3 name ">Widiyati Wilian</h5>
-                <p>Lahir pada tahun 1974. Erry Wilian merupakan Founder dari Wilian Perkasa Group sejak tahun 2006. Saat ini, beliau juga menjabat sebagai Managing Director di Wilian Perkasa Group. Sebelumnya, sempat menjalani beberapa usaha , dimulai dari Inter Chemical dibidang water treatment pada tahun 1999. Selanjutnya join dengan partner dibidang trading sparepart dan kontraktor pabrik di tahun 2005 hingga 2006.Di tahun yang sama juga mendirikan PT Surya Palma Sejahtera usaha dibidang perkebunan kelapa sawit, dan di tahun 2012 ekpansi bisnis dengan mendirikan CV Tani Sejahtera Perkasa. Tahun 2016 beliau mulai membangun pabrik kelapa sawit pertama dengan nama PT Libo Sawit Perkasa, dan PT Semunai Sawit Perkasa. Tahun 2019 Beliau mulai melakukan managing group dengan mendirikan Wilian Perkasa Group.</p>
-            </div>
-            <div class="pict">
-                <img class="w-100 h-100 rounded" src="<?=BASE_URL?>public/assets/img/team/02.jpg" alt="Saud Usman Nasution">
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade modal-director" id="srModal" role="dialog" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-        <div class="modal-body p-0 d-flex">
-            <div class="detail">
-                <h3 >Production Mill Controller</h3>
-                <h5 class="mb-lg-4 mb-3 name ">Suresh A/L Sugoomaran</h5>
-                <p>Lahir pada tahun 1974. Erry Wilian merupakan Founder dari Wilian Perkasa Group sejak tahun 2006. Saat ini, beliau juga menjabat sebagai Managing Director di Wilian Perkasa Group. Sebelumnya, sempat menjalani beberapa usaha , dimulai dari Inter Chemical dibidang water treatment pada tahun 1999. Selanjutnya join dengan partner dibidang trading sparepart dan kontraktor pabrik di tahun 2005 hingga 2006.Di tahun yang sama juga mendirikan PT Surya Palma Sejahtera usaha dibidang perkebunan kelapa sawit, dan di tahun 2012 ekpansi bisnis dengan mendirikan CV Tani Sejahtera Perkasa. Tahun 2016 beliau mulai membangun pabrik kelapa sawit pertama dengan nama PT Libo Sawit Perkasa, dan PT Semunai Sawit Perkasa. Tahun 2019 Beliau mulai melakukan managing group dengan mendirikan Wilian Perkasa Group.</p>
-            </div>
-            <div class="pict">
-                <img class="w-100 h-100 rounded" src="<?=BASE_URL?>public/assets/img/team/03.jpg" alt="Saud Usman Nasution">
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade modal-director" id="prModal" role="dialog" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-        <div class="modal-body p-0 d-flex">
-            <div class="detail">
-                <h3 >Head of Internal Audit & Certification Compliance</h3>
-                <h5 class="mb-lg-4 mb-3 name ">Purwantoro</h5>
-                <p>Lahir pada tahun 1974. Erry Wilian merupakan Founder dari Wilian Perkasa Group sejak tahun 2006. Saat ini, beliau juga menjabat sebagai Managing Director di Wilian Perkasa Group. Sebelumnya, sempat menjalani beberapa usaha , dimulai dari Inter Chemical dibidang water treatment pada tahun 1999. Selanjutnya join dengan partner dibidang trading sparepart dan kontraktor pabrik di tahun 2005 hingga 2006.Di tahun yang sama juga mendirikan PT Surya Palma Sejahtera usaha dibidang perkebunan kelapa sawit, dan di tahun 2012 ekpansi bisnis dengan mendirikan CV Tani Sejahtera Perkasa. Tahun 2016 beliau mulai membangun pabrik kelapa sawit pertama dengan nama PT Libo Sawit Perkasa, dan PT Semunai Sawit Perkasa. Tahun 2019 Beliau mulai melakukan managing group dengan mendirikan Wilian Perkasa Group.</p>
-            </div>
-            <div class="pict">
-                <img class="w-100 h-100 rounded" src="<?=BASE_URL?>public/assets/img/team/04.jpg" alt="Saud Usman Nasution">
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade modal-director" id="lyModal" role="dialog" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-        <div class="modal-body p-0 d-flex">
-            <div class="detail">
-                <h3 >Head Of Finance and Accounting</h3>
-                <h5 class="mb-lg-4 mb-3 name ">Lainy</h5>
-                <p>Lahir pada tahun 1974. Erry Wilian merupakan Founder dari Wilian Perkasa Group sejak tahun 2006. Saat ini, beliau juga menjabat sebagai Managing Director di Wilian Perkasa Group. Sebelumnya, sempat menjalani beberapa usaha , dimulai dari Inter Chemical dibidang water treatment pada tahun 1999. Selanjutnya join dengan partner dibidang trading sparepart dan kontraktor pabrik di tahun 2005 hingga 2006.Di tahun yang sama juga mendirikan PT Surya Palma Sejahtera usaha dibidang perkebunan kelapa sawit, dan di tahun 2012 ekpansi bisnis dengan mendirikan CV Tani Sejahtera Perkasa. Tahun 2016 beliau mulai membangun pabrik kelapa sawit pertama dengan nama PT Libo Sawit Perkasa, dan PT Semunai Sawit Perkasa. Tahun 2019 Beliau mulai melakukan managing group dengan mendirikan Wilian Perkasa Group.</p>
-            </div>
-            <div class="pict">
-                <img class="w-100 h-100 rounded" src="<?=BASE_URL?>public/assets/img/team/04.jpg" alt="Saud Usman Nasution">
-            </div>
-        </div>
-        </div>
-    </div>
-</div> -->
 <div class="team-page-area-wrapper bg-offwhite sp-y">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <aside class="sidebar-area-wrapper mt-md-80 mt-sm-60">
-                    <!-- Start Single Sidebar Wrap -->
-                    <div class="single-sidebar-item-wrap">
-                        <!-- <h3 class="sidebar-title">NAVIGATION</h3> -->
-                        <div class="sidebar-body">
-                            <ul class="sidebar-list">
-                                <li><a href="http://localhost/webs/about/profile" class="">Profil Perusahaan</a></li>
-                                <li><a href="http://localhost/webs/about/vision" class="">Visi - Misi , Nilai Luhur</a></li>
-                                <li><a href="http://localhost/webs/about/strategic" class="">Strategi Bisnis</a></li>
-                                <li><a href="http://localhost/webs/about/bod" class="active">Profil Manajemen</a></li>
-                                <li><a href="http://localhost/webs/about/structureorg" class="">Struktur Organisasi</a></li>
-                                <li><a href="http://localhost/webs/about/milestone" class="">Sejarah Penting</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Single Sidebar Wrap -->
-                </aside>
+            <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
+                <?php require_once('sidebar.php')?>
             </div>
             <div class="col-md-6 col-lg-9">
                 <div class="about-content ms-0">

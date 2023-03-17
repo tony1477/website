@@ -63,7 +63,7 @@
                 sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
                 sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
                 sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
-                sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
+                sessionStorage.setItem('imglogo',"WPG_logo_gold.png")
                 break;
 
                 // default:
@@ -81,7 +81,7 @@
             sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
             sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
             sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
-            sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
+            sessionStorage.setItem('imglogo',"WPG_logo_gold.png")
         }
         // $('.header-area.sticky').css('background','#000')
         const bgSelector = $("[data-bg]");
@@ -350,6 +350,16 @@
         });
     });
 
+    function base_url() {
+        var pathparts = location.pathname.split('/');
+        if (location.host == 'localhost') {
+            var url = location.origin+'/'+pathparts[1].trim('/')+'/'; // http://localhost/myproject/
+        }else{
+            var url = location.origin; // http://stackoverflow.com
+        }
+        return url;
+    }
+
     $(window).on('scroll', function () {
         /*--------------------------
             05. Sticky Header JS
@@ -361,7 +371,7 @@
             $(".header-area").addClass('sticky');
             // window.scrollTo(0,800)
             // headersticky.style.background = `${localStorage.getItem('bgcolor')}`
-            $('.logo-area img').attr('src',`../public/assets/img/${sessionStorage.getItem('imglogo')}`)
+            $('.logo-area img').attr('src',`${base_url()}/public/assets/img/${sessionStorage.getItem('imglogo')}`)
             $('ul.main-menu.nav').removeClass('resize-font')
             $('.logo-area').removeClass('resize-img')
             
@@ -373,7 +383,7 @@
         } else {
             $('.logo-area').addClass('resize-img')
             $('ul.main-menu.nav').addClass('resize-font')
-            $('.logo-area img').attr('src','../public/assets/img/WPG_logo_complete1_rev.png')
+            $('.logo-area img').attr('src',`${base_url()}/public/assets/img/WPG_logo_white.png`)
             $('.header-area').removeClass('sticky');
         }
 

@@ -5,7 +5,7 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-inner">
                     <div class="page-header-content">
-                        <h2>CONTACT US</h2>
+                        <h2><?=$this->getContent('contact-topbar-title')?></h2>
                         <!-- <p>Businex always try to provide the best Business Solutions for Clinets
                             to grow up their Business very sharply and smoothly.</p> -->
                     </div>
@@ -28,11 +28,11 @@
                 <div class="col-lg-4">
                     <div class="contact-information contact-method">
                         <div class="contact-info-con">
-                            <h3>Contact Info</h3>
+                            <h3><?=$this->getContent('contact-sidebar-title')?></h3>
 
                             <div class="widget-item m-0">
                                 <address>
-                                    Sail 01 Street 28261, Riau - Indonesia
+                                    <?=$this->getContent('about-sidebar-address')?>
                                     <br>
                                     https://wilianperkasa.com
                                     <br>
@@ -57,16 +57,16 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     <div class="contact-form-area contact-method">
-                        <h3>Hubungi Kami</h3>
+                        <h3><?=$this->getContent('contact-form-title')?></h3>
 
                         <div class="contact-form-wrap">
                             <form method="post" id="contact-form" name="contact_form">
                             <div class="mb-3 row">
-                                <label for="inputPerihal" class="col-sm-2 col-form-label">Perihal</label>
+                                <label for="inputPerihal" class="col-sm-2 col-form-label"><?=$this->getContent('contact-form-about')?></label>
                                 <div class="col-sm-10">
                                 <div class="select_box">
                                 <select class="form-select" aria-label="Pilih Perihal">
-                                    <option selected>Pilih Salah Satu</option>
+                                    <option selected><?=$this->getContent('contact-form-select')?></option>
                                     <option value="1">Hubungan Investor</option>
                                     <option value="2">Perihal Pemasaran Kecambah Sawit</option>
                                     <option value="3">Perihal Pemasaran Sago</option>
@@ -78,25 +78,25 @@
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label for="inputNama" class="col-sm-2 col-form-label">Nama</label>
+                                <label for="inputNama" class="col-sm-2 col-form-label"><?=$this->getContent('contact-form-name')?></label>
                                 <div class="col-sm-10">
                                 <input type="text" class="form-control" id="inputNama">
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label for="inputPerusahaan" class="col-sm-2 col-form-label">Perusahaan</label>
+                                <label for="inputPerusahaan" class="col-sm-2 col-form-label"><?=$this->getContent('contact-form-company')?></label>
                                 <div class="col-sm-10">
                                 <input type="text" class="form-control" id="inputPerusahaan">
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label for="inputAlamat" class="col-sm-2 col-form-label">Alamat</label>
+                                <label for="inputAlamat" class="col-sm-2 col-form-label"><?=$this->getContent('contact-form-address')?></label>
                                 <div class="col-sm-10">
                                 <textarea class="form-control" id="inputAlamat" rows="3"></textarea>
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>
+                                <label for="inputPhone" class="col-sm-2 col-form-label"><?=$this->getContent('contact-sidebar-profile')?></label>
                                 <div class="col-sm-10">
                                 <input type="tel" class="form-control" id="inputPhone" placeholder="+62 8XX-XXX-XXX">
                                 </div>

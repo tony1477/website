@@ -17,24 +17,9 @@
 <div class="testimonial-area testimonial-area--2 bg-offwhite">
     <div class="container">
         <div class="row sp-top">
-            <div class="col-md-6 col-lg-3">
-                <aside class="sidebar-area-wrapper mt-md-80 mt-sm-60">
-                    <!-- Start Single Sidebar Wrap -->
-                    <div class="single-sidebar-item-wrap">
-                        <!-- <h3 class="sidebar-title">NAVIGATION</h3> -->
-                        <div class="sidebar-body">
-                            <ul class="sidebar-list">
-                                <li><a href="http://localhost/webs/about/profile" class="">Profil Perusahaan</a></li>
-                                <li><a href="http://localhost/webs/about/vision" class="active">Visi - Misi , Nilai Luhur</a></li>
-                                <li><a href="http://localhost/webs/about/strategic" class="">Strategi Bisnis</a></li>
-                                <li><a href="http://localhost/webs/about/bod" class="">Profil Manajemen</a></li>
-                                <li><a href="http://localhost/webs/about/structureorg" class="">Struktur Organisasi</a></li>
-                                <li><a href="http://localhost/webs/about/milestone" class="">Sejarah Penting</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Single Sidebar Wrap -->
-</aside>            </div>
+        <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
+                <?php require_once('sidebar.php')?>
+            </div>
             <div class="col-md-6 col-md-9">
     <div class="card mb-3" style="
     border: 1px solid rgb(177 163 163 / 75%);

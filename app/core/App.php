@@ -5,8 +5,11 @@ class App {
     protected $controller = 'Home';
     protected $method = 'index';
     protected $params = [];
+    public $controllers;
+
 
     public function __construct() {
+        session_start();
         $url = $this->parseURL();
         // var_dump($url);
         
@@ -16,6 +19,7 @@ class App {
             unset($url[0]);
         }
         
+        if($this->controller != 'lang') $_SESSION['last_page'] = $this->controller;
         require_once 'app/controllers/'.$this->controller.'.php';
         $this->controller = new $this->controller;
         
@@ -31,6 +35,7 @@ class App {
             $this->params = array_values($url);
         }
 
+        if($this->method != 'id' || $this->method != 'en') $_SESSION['last_page'] = $_SESSION['last_page'].'/'.$this->method;
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
 

@@ -76,15 +76,15 @@ class LangModel {
         'info/contact' => ['text' => 'Kontak','type'=>'header'],
     ];
 
-    private $menu_versi3 = [
-        'home' => ['text' => 'Beranda','type'=>'detail',
-                    'data' => [
-                        'index1_new' => 'Versi 1',
-                        'index2_new' => 'Versi 2',
-                        'index3_new' => 'Versi 3',
-                        'index4_new' => 'Versi 4'
-                    ]
-                ],
+    private $menu3_id = [
+        // 'home' => ['text' => 'Beranda','type'=>'detail',
+        //             'data' => [
+        //                 'index1_new' => 'Versi 1',
+        //                 'index2_new' => 'Versi 2',
+        //                 'index3_new' => 'Versi 3',
+        //                 'index4_new' => 'Versi 4'
+        //             ]
+        //         ],
         'about' => ['text' => 'Tentang','type'=>'detail',
                     'data' => [
                         'profile' => 'Profil Perusahaan',
@@ -99,9 +99,12 @@ class LangModel {
                            'plantation' => 'Perkebunan',
                            'mill' => 'Pabrik',
                            'trading' => 'Trading',
-                        //    'lemongrass' => 'Serai Wangi',
-                           'fnb' => 'Food & Beverage'],
+                           'agro' => 'Agronomy',
+                           //' lemongrass' => 'Serai Wangi',
+                           'fnb' => 'Makanan & Minuman',
+                           'location-map' => 'Peta Lokasi'
                         ],
+                    ],
         'investor' => ['text' => 'Investor','type'=>'header'],
         'sustainability' => ['text' => 'Keberlanjutan','type'=>'detail',
                             'data' => [
@@ -123,6 +126,58 @@ class LangModel {
         'info/contact' => ['text' => 'Kontak','type'=>'header'],
     ];
 
+    private $menu3_en = [
+        // 'home' => ['text' => 'Home','type'=>'detail',
+        //             'data' => [
+        //                 'index1_new' => 'Version 1',
+        //                 'index2_new' => 'Version 2',
+        //                 'index3_new' => 'Version 3',
+        //                 'index4_new' => 'Version 4'
+        //             ]
+        //         ],
+        'about' => ['text' => 'About','type'=>'detail',
+                    'data' => [
+                        'profile' => 'Company Profile',
+                        'vision' => 'Vision Mision',
+                        'strategic' => 'Strategic',
+                        'bod' => 'Management',
+                        'structureorg' => 'Structure Organization',
+                        'milestone' => 'Milestone'
+                        ]
+                    ],
+        'business' => ['text' => 'Our Business','type'=>'detail',
+                       'data' => [
+                           'plantation' => 'Plantation',
+                           'mill' => 'Palm Mill Oil',
+                           'trading' => 'Trading',
+                           //'lemongrass' => 'Serai Wangi',
+                           'agro' => 'Agronomy',
+                           'fnb' => 'Food & Beverage',
+                           'location-map' => 'Location Map'
+                        ],
+                    ],
+        'investor' => ['text' => 'Investor Relation','type'=>'header'],
+        'sustainability' => ['text' => 'Sustainability','type'=>'detail',
+                            'data' => [
+                                'policy' => 'Policy',
+                                'certification' => 'Certification',
+                                'environment' => 'Environment',
+                                // 'community' => 'Pengembangan Komunitas',
+                                'community' => 'CSG',
+                                // 'osh' => 'Keselamatan & Kesehatan Kerja'
+                            ],
+                        ],
+        'info' => ['text' => 'Information','type'=>'detail',
+                            'data' => [
+                                'news' => 'News & Event',
+                                // 'video' => 'Album Video',
+                                'gallery' => 'Gallery',
+                                'career' => 'Career'
+                            ],
+                        ],
+        'info/contact' => ['text' => 'Contact Us','type'=>'header'],
+    ];
+
     // public function getNav() {
     //     return $this->nav;
     // }
@@ -133,6 +188,7 @@ class LangModel {
 
     public function getMenu_versi3()
     {
-        return $this->menu_versi3;
+        // if($_SESSION['lang']=='id') $menu = $this->menu3_id;
+        return $_SESSION['lang'] == 'id' ? $this->menu3_id : $this->menu3_en;
     }
 }

@@ -4,7 +4,7 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2>Our Profile</h2>
+                        <h2><?=$this->getContent('about-topbar-title')?></h2>
                       
                     </div>
                 </div>
@@ -18,7 +18,7 @@
 <div class="about-area-wrapper sm-top">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-3 order-lg-0 order-md-0 order-md-3">
+            <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
                 <?php require_once('sidebar.php')?>
             </div>
             <div class="col-md-6 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
@@ -59,7 +59,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="title-profile">
-                <h5>PERJALANAN WILIAN PERKASA</h5>
+                <h5><?=$this->getContent('about-content-title')?></h5>
             </div>
             <div class="col-md-6">
                 <div class="row img_profile">
@@ -100,7 +100,7 @@
             </div>
             <p>&nbsp;</p>                   
             <div class="col-md-12 text-end mt-3 about-content">
-                <p><a href="http://localhost/webs/about/milestone" class="btn-about text-white">SELENGKAPNYA <i class="mdi mdi-chevron-double-right"></i></a></p>
+                <p><a href="http://localhost/webs/about/milestone" class="btn-about text-white"><?=$this->getContent('readmore')?> <i class="mdi mdi-chevron-double-right"></i></a></p>
             </div>
         </div>
     </div>
