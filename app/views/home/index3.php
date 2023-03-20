@@ -119,11 +119,7 @@
 
             <div class="col-md-6 col-lg-6">
                 <div class="about-content">
-                    <h6>Tentang Kami</h6>
-                    <h2 class="text-danger"><em>The Spirit <br> of Change</em></h2>
-                    <span class="about-since">Since 2019</span>
-                    <p><strong>WILIAN PERKASA </strong>(WPG) merupakan perusahaan induk yang terlibat, baik secara langsung maupun melalui anak perusahaannya, dalam produksi dan penjualan minyak sawit mentah, inti sawit, produk minyak serai wangi, dan hasil pangan berkelanjutan lainnya.</p>
-                    <a href="<?=BASE_URL?>about/profile" class="btn-about">Baca lebih lanjut <i class="mdi mdi-chevron-double-right"></i></a>
+                    <?=$this->getContentDb('home-about-profile')?>
                 </div>
             </div>
         </div>
@@ -136,13 +132,6 @@
     <div class="container">
         <div class="row mtn-sm-60 mtn-md-5"> 
             <div class="col-md-6 col-lg-6">
-                <!-- <div class="about-content">
-                    <h6>Tentang Kami</h6>
-                    <h2 class="text-danger"><em>The Spirit <br> of Change</em></h2>
-                    <span class="about-since">Since 2019</span>
-                    <p><strong>WILIAN PERKASA </strong>(WPG) merupakan perusahaan induk yang terlibat, baik secara langsung maupun melalui anak perusahaannya, dalam produksi dan penjualan minyak sawit mentah, inti sawit, produk minyak serai wangi, dan hasil pangan berkelanjutan lainnya.</p>
-                    <a href="<?=BASE_URL?>about/profile" class="btn-about">SELENGKAPNYA <i class="mdi mdi-chevron-double-right"></i></a>
-                </div> -->
                 <div class="detail about-content">
                     <div class="border-bot">
                         <p class="cat text-uppercase">KEBIJAKAN</p>
@@ -189,59 +178,7 @@
                     <img src="<?=BASE_URL?>public/assets/img/sustainability/PO-800x445.jpg" alt="Sustainability Image" class="rounded img-thumb"/>
                     <figcaption class="detail-thumb"><p>Berkomitmen untuk menghasilkan produk terbaik.</p></figcaption>
                 </figure>
-            </div>
-
-            <!-- <div class="col-md-3 flip-card">
-                <div class="icon-box-item">
-                    <div class="icon-box__icon border-icon flip-card-inner">
-                        <a href="#">
-                        <img src="<?=BASE_URL?>public/assets/img/feature/privacy-policy.png" alt="Businex-Feature"/>
-                        </a>
-                    </div>
-                    <div class="icon-box__info">
-                        <h5>Kebijakan</h5>
-                        <p>Sebagai Industri Inti Sawit, WPG berkomitmen untuk mengembangkan usaha lebih baik. </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 flip-card">
-                <div class="icon-box-item">
-                    <div class="icon-box__icon border-icon flip-card-inner">
-                        <img src="<?=BASE_URL?>public/assets/img/feature/badge.png" alt="Businex-Feature"/>
-                    </div>
-                    <div class="icon-box__info">
-                        <h5>Sertifikasi</h5>
-                        <p>WPG mematuhi semua peraturan perundang-undangan tentang pengelolaan lingkungan.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 flip-card">
-                <div class="icon-box-item">
-                    <div class="icon-box__icon border-icon flip-card-inner">
-                        <img src="<?=BASE_URL?>public/assets/img/feature/ecology-and-environment.png" alt="Businex-Feature"/>
-                    </div>
-                    <div class="icon-box__info ">
-                        <h5>Lingkungan</h5>
-                        <p>WPG berkomitmen untuk penggunaan dan perlindungan lingkungan alam yang bertanggung jawab. </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 flip-card">
-                <div class="icon-box-item">
-                    <div class="icon-box__icon border-icon flip-card-inner">
-                        <img src="<?=BASE_URL?>public/assets/img/feature/community.png" alt="Businex-Feature"/>
-                    </div>
-                    <div class="icon-box__info">
-                        <h5>Pengembangan Kelompok</h5>
-                        <p>Mensejahterakan masyarakat menjadi salah satu fokus utama WPG dalam bertumbuh.</p>
-                    </div>
-                </div>
-            </div> -->
-            
-            
+            </div>          
         </div>
     </div>
 </div>
@@ -255,14 +192,7 @@
                 <img src="https://www.anj-group.com/frontend/images/content/our_bisnis_big.jpg">
             </div>
             <div class="text">
-                <h1>BISNIS INTI KAMI</h1>
-                <p>Kami berkomitmen menghasilkan produk berkualitas dan ramah lingkungan dengan berpegang teguh pada tata kelola yang baik untuk mencapai kinerja unggul, mewujudkan kesejahteraan karyawan serta menjadikan masyarakat mitra setara. </p>
-                <div class="link">
-                    <a href="https://www.anj-group.com/en/oil-palm-plantation/index">KELAPA SAWIT  &gt;</a>
-                    <a href="https://www.anj-group.com/en/sago-harvesting-and-processing/index">PERKEBUNAN &gt;</a>
-                    <a href="https://www.anj-group.com/en/agriculture-products/index">Makanan & Minuman &gt;</a>
-                    <a href="https://www.anj-group.com/en/renewable-energy/index">Trading &gt;</a>
-                </div>
+                <?=$this->getContentDb('home-business-content')?>
             </div>
         </div>
 		<div class="left">

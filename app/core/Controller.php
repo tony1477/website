@@ -57,4 +57,9 @@ class Controller {
     {
         return $this->helper->getContent($text);
     }
+
+    public function getContentDb($text)
+    {
+        return $this->helper->getContentDb($text);
+    }
 }

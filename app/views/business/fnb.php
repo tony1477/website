@@ -4,7 +4,7 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2>F & B</h2>
+                        <h2><?=$this->getContent('fnb')?></h2>
                       
                     </div>
                 </div>
@@ -18,14 +18,8 @@
         <div class="row align-items-lg-center">
             <div class="col-md-6 col-lg-7 order-1">
                 <div class="about-content ms-0 contentweb">
-                    <?=$data['data']['content']?>
-                    <!-- <h2>Makanan & Minuman</h2>
-                    <p><strong>Our business</strong> comprises the integrated cultivation and harvesting of fresh fruit bunches from our oil palm plantations, milling them into crude palm oil, palm kernel and palm kernel oil, and selling the oils. WPG owns six oil palm producing plantations:</p>
-
-                    <ul>
-                        <li class="fw-bold"><i class="fa fa-chevron-circle-right text-danger"></i> PT. Karya Boga Perkasa</li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid et, recusandae reiciendis repellendus debitis blanditiis at obcaecati veniam placeat amet!.</p>
-                    </ul> -->
+                    <?php //$data['data']['content']?>
+                    <?=$this->getContentDb('business-fnb-content')?>
                 </div>
             </div>
 
@@ -44,7 +38,7 @@
 <!--== End About Area Wrapper ==-->
 
 <!--== Start Fun Fact Area Wrapper ==-->
-<div class="fun-fact-area sm-top parallax" data-parallax-speed="0.70" data-bg="<?=BASE_URL?>public/assets/img/fun-fact-bg.webp">
+<!-- <div class="fun-fact-area sm-top parallax" data-parallax-speed="0.70" data-bg="<?=BASE_URL?>public/assets/img/fun-fact-bg.webp">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -76,5 +70,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--== End Fun Fact Area Wrapper ==-->

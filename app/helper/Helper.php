@@ -1,6 +1,8 @@
 <?php
 
 class Helper {
+
+  private $model;
   
   public function full_url() {
     return sprintf(
@@ -26,7 +28,12 @@ class Helper {
     return $this->getBankofLang($position);
   }
 
-  private function getBankofLang(string $position)
+  public function getContentDb(string $position) :string
+  {
+    return $this->getContentFromDb($position);
+  }
+
+  private function getBankofLang(string $position) 
   {
     // check session of lang
     $folder = 'app/lang/id/lang.php'; 
@@ -34,5 +41,14 @@ class Helper {
       // $bankArray = include $folder;
       include $folder;
       return $lang[$position];
+  }
+
+  private function getContentFromDb($position)
+  {
+    require_once 'app/models/ContentModel.php';
+    $this->model = new ContentModel();
+    $content = $this->model->getData($position);
+    if($_SESSION['lang']=='id') return $content['text_id'];
+    return $content['text_en'];
   }
 }

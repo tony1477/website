@@ -14,13 +14,13 @@ class App {
         // var_dump($url);
         
         if(empty($url)) $url[0] = 'home';
-        if(file_exists('app/controllers/'.$url[0].'.php')) {
+        if(file_exists('app/controllers/'.ucfirst($url[0]).'.php')) {
             $this->controller = $url[0];
             unset($url[0]);
         }
         
         if($this->controller != 'lang') $_SESSION['last_page'] = $this->controller;
-        require_once 'app/controllers/'.$this->controller.'.php';
+        require_once 'app/controllers/'.ucfirst($this->controller).'.php';
         $this->controller = new $this->controller;
         
         if(isset($url[1])) {
@@ -35,7 +35,7 @@ class App {
             $this->params = array_values($url);
         }
 
-        if($this->method != 'id' || $this->method != 'en') $_SESSION['last_page'] = $_SESSION['last_page'].'/'.$this->method;
+        if($this->method != 'idn' || $this->method != 'eng') $_SESSION['last_page'] = $_SESSION['last_page'].'/'.$this->method;
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
 

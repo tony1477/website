@@ -4,8 +4,7 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2>Perkebunan</h2>
-                      
+                        <h2><?=$this->getContent('business-plant-topbar')?></h2>
                     </div>
                 </div>
             </div>
@@ -21,22 +20,8 @@
         <div class="row align-items-lg-center">
             <div class="col-md-6 col-lg-7 order-1">
                 <div class="about-content ms-0 contentweb">
-                    <?=$data['data']['content']?>
-                    <!-- <h2>Perkebunan</h2>
-                    <p>Bisnis kami terdiri dari penanaman dan pemanenan terpadu tandan buah segar dari perkebunan kelapa sawit kami, mengolahnya menjadi minyak sawit mentah, inti sawit, dan minyak inti sawit, serta menjual minyak yang dihasilkannya. WPG saat ini memiliki perkebunan kelapa sawit yang telah berproduksi:</p>
-
-                    <ul>
-                        <li class="fw-bold"><i class="fa fa-chevron-circle-right text-danger"></i> PT. Surya Palma Sejahtera</li>
-                        <p>Perkebunan kelapa sawit seluas 9.988 hektare di Binanga, Sumatera Utara, dioperasikan oleh anak perusahaan kami, PT Surya Palma Sejahtera (SPS).</p>
-                        <li class="fw-bold"><i class="fa fa-chevron-circle-right text-danger"></i> CV. Tani Sejahtera Perkasa</li>
-                        <p>Perkebunan kelapa sawit seluas 9.412 hektare di Padang Sidempuan, Sumatera Utara, dioperasikan oleh anak perusahaan kami, CV. Tani Sejahtera Perkasa (TSP).</p>
-                        <li class="fw-bold"><i class="fa fa-chevron-circle-right text-danger"></i> PT. Serai Wangi Perkasa</li>
-                        <p>Perkebunan kelapa sawit seluas 9.412 hektare di Padang Sidempuan, Sumatera Utara, dioperasikan oleh anak perusahaan kami, CV. Tani Sejahtera Perkasa (TSP).</p>
-                    </ul>
-                    <br />
-                    <p>
-                    Kami berkomitmen untuk memproduksi minyak sawit yang dapat dilacak, bertanggung jawab, dan berkelanjutan melalui praktik-praktik berkelanjutan, yang diterapkan di seluruh perkebunan kami . Kebijakan ini juga diterapkan selama periode replanting yang terjadi setiap 25 tahun untuk menjaga produktivitas dan kesehatan perkebunan kami.
-                    </p> -->
+                    <?=$this->getContentDb('business-plant-content')?>
+                    <?php //$data['data']['content']?>
                 </div>
             </div>
 
@@ -62,7 +47,7 @@
             <div class="col-6 col-md-6"></div>
             <div class="col-6 col-md-6 text-end">
                 <div class="counter-item">
-                    <h6 class="counter-txt"><a href="<?=BASE_URL?>business/mill" class="text-white">Selanjutnya <i class="mdi mdi-arrow-right-bold-circle"></i><br />Pabrik Sawit</a></h6>
+                    <h6 class="counter-txt"><a href="<?=BASE_URL?>business/mill" class="text-white"><?=$this->getContent('next')?> <i class="mdi mdi-arrow-right-bold-circle"></i><br /><?=$this->getContent('mills')?></a></h6>
                 </div>
             </div>
         </div>

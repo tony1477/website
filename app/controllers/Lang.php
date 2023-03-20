@@ -9,21 +9,21 @@ class Lang extends Controller {
 
     public function index()
     {
-        $this->id();
+        $this->idn();
     }
     
-    public function id()
+    public function idn()
     {
         // echo 'id';
         $_SESSION['lang'] = 'id';
-        $last_page = substr($_SESSION['last_page'],0,-3);
+        $last_page = substr($_SESSION['last_page'],0,-4);
         $this->reloadPage($last_page);
     }
-    public function en()
+    public function eng()
     {
         // echo 'en';
         $_SESSION['lang'] = 'en';
-        $last_page = substr($_SESSION['last_page'],0,-3);
+        $last_page = substr($_SESSION['last_page'],0,-4);
         $this->reloadPage($last_page);
     }
 

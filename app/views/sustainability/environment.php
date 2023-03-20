@@ -4,8 +4,7 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2>Lingkungan</h2>
-                      
+                        <h2><?=$this->getContent('sustain-environment-topbar')?></h2>
                     </div>
                 </div>
             </div>
@@ -23,18 +22,8 @@
                     </figure>
 
                     <div class="blog-post-txt contentweb">
-                        <?=$data['data']['content']?>
-                        <!-- <h5>Hutan alam tropis menyimpan simpanan besar karbon, dan gas rumah kaca (GRK) dilepaskan ketika hutan-hutan ini dibuka. Mengingat kontribusi substansial dan berkelanjutan dari deforestasi di wilayah tropis terhadap peningkatan GRK di atmosfer, ada kebutuhan yang tak terbantahkan untuk mengurangi, meminimalkan, dan pada akhirnya menghilangkan deforestasi tersebut.</h5><br />
-
-                        <br />
-                        <h6 class="fw-bold text-warning">TANPA PENGEMBANGAN HUTAN HIGH CARBON STOCK (HCS)</h6>
-                        <p>Setelah dikeluarkannya Kebijakan Minyak Sawit Berkelanjutan kami pada tahun 2015, untuk menghindari pelepasan karbon yang tersimpan ke atmosfer, First Resources tidak melakukan pengembangan baru di hutan SKT sebagaimana didefinisikan dalam Pendekatan SKT (HCSA), yang membedakan kawasan hutan yang harus dilindungi, dan lahan terdegradasi yang dapat dikembangkan. Sejak saat itu kami telah mengidentifikasi area untuk dilestarikan dan tidak dikembangkan dengan mengacu pada metodologi SKT dan melibatkan pakar SKT pihak ketiga.</p>
-                        
-                        <br />
-                        <p>Sejak itu kami telah mengidentifikasi sekitar 20.000 hektar lahan sebagai kawasan konservasi yang telah digali dari rencana pengembangan Grup, sesuai dengan Kebijakan kami. Ini adalah kawasan dengan potensi hutan SKT, kawasan Nilai Konservasi Tinggi (NKT) atau kawasan gambut.</p>
-                        
-                        <br />
-                        <p>Ke depan, semua pembukaan lahan baru untuk perkebunan kelapa sawit akan didahului dengan penilaian HCV-HCSA yang terintegrasi. Hal ini sejalan dengan persyaratan kriteria 7.12 dari revisi Prinsip dan Kriteria Roundtable of Sustainable Palm Oil (RSPO) yang dirilis pada November 2018..</p> -->
+                        <?php //$data['data']['content']?>
+                        <?=$this->getContentDb('sustain-environment-content')?>
                     </div>
                 </article>
             </div>

@@ -50,14 +50,13 @@
                     <div class="row">
                         <div class="col-lg-7 col-md-6 left order-md-1 order-2">
                             <div class="position-relative h-100">
-                                <div class="w-title mb-md-0 mb-4"><!---->
-                                    <h2 class="fw-400 mb-0">Profil Manajemen</h2>
-                                </div>
-                                <div class="text-justify">
-                                    <div class="detail">
-                                        <p>Seluruh anggota Dewan, selain Komisaris Utama yang berafiliasi, merupakan profesional dengan bidang spesialis masing-masing. Dewan Komisaris selalu memonitor penerapan GCG secara berkelanjutan, memberikan masukan serta mendorong Direksi untuk dapat mencapai kinerja operasional termasuk upaya optimal dalam meningkatkan daya saing perusahaan melalui pencapaian produktivitas yang lebih tinggi.</p>
-                                    </div>
-                                </div>
+                                <!-- <div class="w-title mb-md-0 mb-4"> -->
+                                <!-- </div> -->
+                                <!-- <div class="text-justify"> -->
+                                    <!-- <div class="detail"> -->
+                                    <!-- </div> -->
+                                <!-- </div>  -->
+                                <?=$this->getContentDb('about-bod-content')?>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6 px-md-3 px-0 right order-md-2 order-1">

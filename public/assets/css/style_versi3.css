@@ -3731,9 +3731,14 @@ img .icon-language {
 }
 
 .text-visi-misi {
-    font-size: 28px;
+    font-size: 2.5rem;
+    font-weight: 600;
     letter-spacing: 10px;
     /* border: 1px solid #000; */
+    background: -webkit-linear-gradient(90deg, rgb(44 55 90), rgb(60 80 138));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .text-visi {
@@ -3742,7 +3747,7 @@ img .icon-language {
     font-size: 1.75rem;
     margin-left:10px;
     font-family: "Open Sans", 'Montserrat';
-    text-align: end;
+    text-align: center;
 }
 
 .text-visi::before {
@@ -3750,7 +3755,7 @@ img .icon-language {
     font-family: "FontAwesome";
     position: relative;
     left: -15px;
-    top: 0;
+    top: -1.95rem;
 }
 
 .text-misi {
@@ -4463,4 +4468,10 @@ form#contact-form label {
     width: 50%;
     text-align: center;
     border-radius: .78rem;
+}
+
+.about.milestone-year {
+    background: rgb(174, 139, 29);
+    padding: 5px 10px;
+    border-radius: 25px;
 }

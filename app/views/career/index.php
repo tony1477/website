@@ -5,8 +5,8 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-inner">
                     <div class="page-header-content">
-                        <h2>Karir</h2>
-                        <p><i class="mdi mdi-format-quote-open"></i><em>Great things in business are never done by one person. They're done by a team of people.</em><i class="mdi mdi-format-quote-close"></i></p>
+                        <h2><?=$this->getContent('career-topbar-title')?></h2>
+                        <p><i class="mdi mdi-format-quote-open"></i><em><?=$this->getContent('career-topbar-subtitle')?></em><i class="mdi mdi-format-quote-close"></i></p>
                     </div>
                 </div>
             </div>
@@ -16,33 +16,18 @@
 <!--== End Page Header Area ==-->
 <div class="row">
     <div class="col-12 justify-content-center">
-        <h3 class="text-center m-sm-5">Open Position In : </h3>
+        <h3 class="text-center m-sm-5"><?=$this->getContent('career-content-title')?> : </h3>
     </div>
     <div class="col-5"></div>
     <div class="col-2 d-flex justify-content-center" style="margin-top:-15px">
         <select name="list_career" id="list_career" class="form-select d-flex justify-content-center mx-auto">
-            <option value="All Branch">Semua Cabang</option>
-            <option value="Head Office">Head Office </option>
-            <option value="Singapura">Singapura </option>
-            <option value="Jakarta">Jakarta </option>
-            <option value="Siak">Siak </option>
-            <option value="Bengkalis">Bengkalis </option>
-            <option value="Kampar">Kampar </option>
+            <?=$this->getContent('career-content-select')?>
         </select>
     </div>
     <div class="col-5"></div>
     <div class="col-12 d-flex justify-content-center">
         <div class="listjob" style="position:relative;">
-            <a href="javascript:void(0)" class="fw-bold selected-career" onclick="getList(this)">All Position</a>
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Direktur</a>
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Sr. Manager</a>
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Manager</a>
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Asst.Manager</a>
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Supervisor</a>
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Asst.Supervisor</a>
-            <!-- <a href="javascript:void(0)" class="" onclick="getList(this)">Asst</a> -->
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Staff</a>
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Admin</a>
+            <?=$this->getContent('career-content-position')?>
         </div>
     </div>
 </div>

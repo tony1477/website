@@ -25,7 +25,8 @@
                 <div class="about-content ms-0">
                     
                     <!-- <h2><?php //$data['data']['title']?></h2> -->
-                    <?php echo ($data['data']['content']);?>
+                    <?php //echo ($data['data']['content']);?>
+                    <?=$this->getContentDb('about-profile-content')?>
                     <?php //endforeach;?>
                 </div>
             </div>
@@ -68,39 +69,22 @@
             </div>
             <div class="col-md-6">
                 <div class="row">
+                    <?php 
+                    $i=0;
+                    foreach($this->getContent('about-profile-milestone') as $milestone):?>
                     <div class="col-6 content-profile">
                         <div class="content-year-border">
-                            <h5 style="background: rgb(174 139 29);padding: 5px 10px;border-radius: 25px;"><strong style="color: #ffffff;">2006</strong></h5>
+                           <?=$milestone['year']?>
                         </div>
-			            <h5 style="color: white;"><strong>PT. Surya Palma Sejahtera</strong></h5>
-                        <p>Perkebunan Kelapa Sawit Pertama yang menjadi industri agribisnis terpadu dan berkelanjutan.</p>
+			            <?=$milestone['title']?>
+                        <?=$milestone['caption']?>
                     </div>
-                    <div class="col-6 content-profile">
-                        <div class="content-year-border">
-                            <h5 style="background: rgb(174 139 29);padding: 5px 10px;border-radius: 25px;"><strong style="color: #ffffff;">2006</strong></h5>
-                        </div>
-			            <h5 style="color: white;"><strong>PT. Surya Palma Sejahtera</strong></h5>
-                        <p>Perkebunan Kelapa Sawit Pertama yang menjadi industri agribisnis terpadu dan berkelanjutan.</p>
-                    </div>
-                    <div class="col-6 content-profile">
-                        <div class="content-year-border">
-                            <h5 style="background: rgb(174 139 29);padding: 5px 10px;border-radius: 25px;"><strong style="color: #ffffff;">2006</strong></h5>
-                        </div>
-			            <h5 style="color: white;"><strong>PT. Surya Palma Sejahtera</strong></h5>
-                        <p>Perkebunan Kelapa Sawit Pertama yang menjadi industri agribisnis terpadu dan berkelanjutan.</p>
-                    </div>
-                    <div class="col-6 content-profile">
-                        <div class="content-year-border">
-                            <h5 style="background: rgb(174 139 29);padding: 5px 10px;border-radius: 25px;"><strong style="color: #ffffff;">2006</strong></h5>
-                        </div>
-			            <h5 style="color: white;"><strong>PT. Surya Palma Sejahtera</strong></h5>
-                        <p>Perkebunan Kelapa Sawit Pertama yang menjadi industri agribisnis terpadu dan berkelanjutan.</p>
-                    </div>
+                    <?php endforeach;?>
                 </div>
             </div>
             <p>&nbsp;</p>                   
             <div class="col-md-12 text-end mt-3 about-content">
-                <p><a href="http://localhost/webs/about/milestone" class="btn-about text-white"><?=$this->getContent('readmore')?> <i class="mdi mdi-chevron-double-right"></i></a></p>
+                <p><a href="<?=BASE_URL?>about/milestone" class="btn-about text-white"><?=$this->getContent('readmore')?> <i class="mdi mdi-chevron-double-right"></i></a></p>
             </div>
         </div>
     </div>

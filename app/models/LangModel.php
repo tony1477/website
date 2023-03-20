@@ -138,7 +138,7 @@ class LangModel {
         'about' => ['text' => 'About','type'=>'detail',
                     'data' => [
                         'profile' => 'Company Profile',
-                        'vision' => 'Vision Mision',
+                        'vision' => 'Vision Mission',
                         'strategic' => 'Strategic',
                         'bod' => 'Management',
                         'structureorg' => 'Structure Organization',
@@ -175,12 +175,8 @@ class LangModel {
                                 'career' => 'Career'
                             ],
                         ],
-        'info/contact' => ['text' => 'Contact Us','type'=>'header'],
+        'info/contact' => ['text' => 'Contact','type'=>'header'],
     ];
-
-    // public function getNav() {
-    //     return $this->nav;
-    // }
 
     public function getMenu() {
         return $this->menu;

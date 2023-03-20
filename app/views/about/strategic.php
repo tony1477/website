@@ -24,7 +24,8 @@
             </div>
             <div class="col-md-9 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
                 <div class="about-content ms-0 contentweb">
-                    <?=$data['data']['content']?>
+                    <?php //$data['data']['content']?>
+                    <?=$this->getContentDb('about-strategic-content')?>
                     <!-- <h2 class="text-center">Strategi Bisnis</h2>
                     <p>Usaha perkebunan hulu merupakan proposisi jangka panjang, mengingat umur produktif pohon kelapa sawit 25 tahun. Strategi kami sejak awal adalah menjadi agribisnis yang berfokus pada hulu yang memiliki dan mengoperasikan aset perkebunan berkualitas baik dan memiliki kemampuan pemrosesan untuk menambah nilai produk hulu kami. Strategi ini akan memberikan hasil terbaik bagi pemegang saham dalam jangka panjang.</p>
 

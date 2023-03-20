@@ -2,22 +2,129 @@
     $lang = [
         // for common
         'readmore' => 'READ MORE',
+        'next' => 'Next Page',
+        'mills' => 'Oil Palm',
+        'trading' => 'Trading',
+        'fnb' => 'Foods & Beverages',
+        'policy' => 'Policy',
+        'certification' => 'Certification',
+        'environment' => 'Environment',
+        'csg' => 'C S G',
         // for about-sidebar
         'about-sidebar-profile' => 'Company Profile',
-        'about-sidebar-vision' => 'Vision - Mision, Core Values',
+        'about-sidebar-vision' => 'Vision - Mission, Core Values',
         'about-sidebar-strategic' => 'Business Strategic',
         'about-sidebar-bod' => 'Board Of Director',
         'about-sidebar-structure' => 'Structure Organization',
         'about-sidebar-milestone' => 'Milestone',
         // for about-topbar
         'about-topbar-title' => 'Our Profile',
-        //for about-content
+        // for about-content
         'about-content-title' => 'OUR HISTORY',
-        //for sustain-sidebar
+        'about-profile-milestone' => [
+            [
+                'year' => '<h5 class="about milestone-year text-white fw-bold">2006</h6>',
+                'title' => '<h5 class="about milestone-subtitle text-white fw-bold">PT. Surya Palma Sejahtera</h5>',
+                'caption' => '<p>The First Oil Palm Plantation to become an integrated and sustainable agribusiness industry.</p>'
+            ],
+            [
+                'year' => '<h5 class="about milestone-year text-white fw-bold">2012</h5>',
+                'title' => '<h5 class="about milestone-subtitle text-white fw-bold">CV. Tani Sejahtera Perkasa</h5>',
+                'caption' => '<p>Second Oil Palm Plantation established in 2012.</p>'
+            ],
+            [
+                'year' => '<h5 class="about milestone-year text-white fw-bold">2014</h5>',
+                'title' => '<h5 class="about milestone-subtitle text-white fw-bold">PT. Libo Sawit Perkasa</h5>',
+                'caption' => '<p>The first palm kernel oil processing run by the Founder.</p>'
+            ],
+            [
+                'year' => '<h5 class="about milestone-year text-white fw-bold">2017</h5>',
+                'title' => '<h5 class="about milestone-subtitle text-white fw-bold">PT. Semunai Sawit Perkasa</h5>',
+                'caption' => '<p>The second palm oil kernel mill to be run operating in the Siak Region.</p>'
+            ]
+        ],
+        // for vision-topbar-title
+        'vision-topbar-title' => 'Vision - Mission - Values',
+        'about-vision-title' => 'VISION',
+        'about-vision-content' => 'To Improve stakeholders lives through multi-industry expansion and be the must trusted corporation.',
+        'about-mission-title' => 'MISSION',
+        'about-mission-content' => '
+        <li>To provide natural product for both business and customer by providing competitive price and in acceptable quality.</li>
+        <li>Providing more opportunities for our employees and local communities to have a better standard of living.</li>
+        <li>Transform into a professional management and an integrated system.</li>
+        ',
+        'about-values-title' => 'CORE VALUES',
+        //for about-bod
+        'about-bod-title' => 'Management Profile',
+        'about-bod-content' => "All members of the Board, apart from the affiliated Main Commissioner, are professionals with their respective specialist fields. The Board of Commissioners always monitors the implementation of GCG on an ongoing basis, provides input and encourages the Board of Directors to be able to achieve operational performance including optimal efforts to increase the company's competitiveness by achieving higher productivity.",
+        // for business-topbar
+        'business-plant-topbar' => 'Plantation',
+        'business-mill-topbar' => 'Oil Palm',
+        'business-trading-topbar' => 'Trading',
+        // for sustain-topbar
+        'sustain-policy-topbar' => 'Policy',
+        'sustain-certification-topbar' => 'Certification',
+        'sustain-environment-topbar' => 'Environment',
+        'sustain-csg-topbar' => 'C S G',
+        // for sustain-sidebar
         'sustain-sidebar-policy' => 'Policy',
         'sustain-sidebar-certification' => 'Certification',
         'sustain-sidebar-environment' => 'Environment',
         'sustain-sidebar-csg' => 'C S G',
+        // for news-topbar
+        'news-topbar-title' => 'News',
+        // for news-content
+        'news-content-title' => "There is no latest news",
+        'news-content-subtitle' => "Follow our social media for updates",
+        // for career-topbar
+        'career-topbar-title' => 'Career',
+        'career-topbar-subtitle' => "Great things in business are never done by one person. They're done by a team of people.",
+        // for career-content
+        'career-content-title' => 'Open Position In',
+        'career-content-select' => '
+            <option value="All Branch">All Branch</option>
+            <option value="Head Office">Head Office </option>
+            <option value="Singapura">Singapore </option>
+            <option value="Jakarta">Jakarta </option>
+            <option value="Siak">Siak Regency</option>
+            <option value="Bengkalis">Bengkalis Regency</option>
+            <option value="Kampar">Kampar Regency</option>',
+        'career-content-position' => '<a href="javascript:void(0)" class="fw-bold selected-career" onclick="getList(this)">All Position</a>
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Directore</a>
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Sr. Manager</a>
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Manager</a>
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Asst.Manager</a>
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Supervisor</a>
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Asst.Supervisor</a>
+            <!-- <a href="javascript:void(0)" class="" onclick="getList(this)">Asst</a> -->
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Staff</a>
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Admin</a>
+        ',
+        // for contact-topbar
+        'contact-topbar-title' => 'CONTACT US',
+        // for contact-sidebar
+        'contact-sidebar-title' => 'Contact Info',
+        'contact-sidebar-address' => 'Sail 01 Street 28261, Rejosari<br />
+        Kec. Tenayan Raya, Kota Pekanbaru<br />
+        Riau - Indonesia',
+        // for contact-form
+        'contact-form-title' => "Feel free to reach out to us",
+        'contact-form-select' => '<option selected>Choose One</option>',
+        'contact-form-list' => '<option value="1">Investor Relation</option>
+            <option value="2">Marketing Seeds</option>
+            <option value="3">Marketing Palm</option>
+            <option value="4">Marketing Fnb</option>
+            <option value="5">Human Resources</option>
+            <option value="6">General Enquiries</option>
+        ',
+        'contact-form-about' => 'About',
+        'contact-form-name' => 'Name',
+        'contact-form-company' => 'Company',
+        'contact-form-address' => 'Address',
+        'contact-form-phone' => 'Phone',
+        'contact-form-email' => 'Email',
+        'contact-form-message' => 'Message',
+        'contact-form-send' => 'Send',
         // for Footer
         'footer-location-title' => 'Head Office',
         'footer-location-address' => 'Sail Street 01, Kec. Tenayan Raya Pekanbaru - Riau 28281, Indonesia',

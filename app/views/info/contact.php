@@ -17,7 +17,7 @@
 <!--== End Page Header Area ==-->
 
 <!--== Start Contact Page Area Wrapper ==-->
-<div class="contact-page-area-wrapper">
+<div class="contact-page-area-wrapper sp-top">
     <div class="container">
         <div class="contact-content-wrap">
             <div class="row">
@@ -32,7 +32,7 @@
 
                             <div class="widget-item m-0">
                                 <address>
-                                    <?=$this->getContent('about-sidebar-address')?>
+                                    <?=$this->getContent('contact-sidebar-address')?>
                                     <br>
                                     https://wilianperkasa.com
                                     <br>
@@ -66,13 +66,8 @@
                                 <div class="col-sm-10">
                                 <div class="select_box">
                                 <select class="form-select" aria-label="Pilih Perihal">
-                                    <option selected><?=$this->getContent('contact-form-select')?></option>
-                                    <option value="1">Hubungan Investor</option>
-                                    <option value="2">Perihal Pemasaran Kecambah Sawit</option>
-                                    <option value="3">Perihal Pemasaran Sago</option>
-                                    <option value="4">Perihal Pemasaran Kelapa Sawit</option>
-                                    <option value="5">Perihal Sumber Daya Manusia</option>
-                                    <option value="6">Perihal Umum</option>
+                                    <?=$this->getContent('contact-form-select')?>
+                                    <?=$this->getContent('contact-form-list')?>
                                 </select>
                                 </div>
                                 </div>
@@ -96,26 +91,26 @@
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label for="inputPhone" class="col-sm-2 col-form-label"><?=$this->getContent('contact-sidebar-profile')?></label>
+                                <label for="inputPhone" class="col-sm-2 col-form-label"><?=$this->getContent('contact-form-phone')?></label>
                                 <div class="col-sm-10">
                                 <input type="tel" class="form-control" id="inputPhone" placeholder="+62 8XX-XXX-XXX">
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                <label for="inputEmail" class="col-sm-2 col-form-label"><?=$this->getContent('contact-form-email')?></label>
                                 <div class="col-sm-10">
                                 <input type="email" class="form-control" id="inputEmail" placeholder="mail@yourdomain.com">
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label for="inputPesan" class="col-sm-2 col-form-label">Pesan</label>
+                                <label for="inputPesan" class="col-sm-2 col-form-label"><?=$this->getContent('contact-form-message')?></label>
                                 <div class="col-sm-10">
                                 <textarea class="form-control" id="inputPesan" rows="3"></textarea>
                             </div>
                             <div class="single-input-item mb-3 my-5 row">
                                 <label class="col-sm-2 col-form-label"></label>
                                 <div class="col-sm-10">
-                                <button class="btn-outline cf_send" type="submit">Kirim</button>
+                                <button class="btn-outline cf_send" type="submit"><?=$this->getContent('contact-form-send')?></button>
                                 <div class="spinner-border d-none cf_loading" role="status">
                                     <span class="visually-hidden">Loading...</span>
                                 </div>

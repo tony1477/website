@@ -28,11 +28,7 @@
                     <div class="row mtn-50">
                         <div class="col-lg-12 m-auto">   
                             <div class="member-education mem-achieve-item">
-                                <h4 class="text-center">Kejadian Penting</h4>
-                                <p>Sebelum WP menjadi seperti sekarang, banyak tantangan dan badai yang harus di lalui, tapi dengan semangat juang dan dukungan dari berbagai lini baik dari Internal WP dan Eksternal, sehingga WPG terus eksis dan membantu banyak masyarakat terlibat di dalamnya.</p>
-                                <p style="font-weight: 400;">Sejak awal berdirinya menjadi perusahaan pengelola perkebunan kelapa sawit, Perseroan telah membangun kerjasama dengan masyarakat dalam bentuk kemitraan inti-plasma dan kegiatan peningkatan ekonomi masyarakat (<em>Income Generating Activity</em>/IGA) baik melalui budidaya tanaman kelapa sawit maupun non kelapa sawit. Kerjasama tersebut memastikan bahwa kehadiran perkebunan kelapa sawit yang dikelola Perseroan juga memberikan manfaat yang besar bagi masyarakat sekitar.</p>
-                                <p style="font-weight: 400;">Eratnya hubungan perusahaan dengan masyarakat, tentunya Perseroan berupaya mewujudkan misinya dalam menjalankan tanggung jawab sosial perusahaan melalui kegiatan <em>Corporate Social Resposibility&nbsp;</em>(CSR) yang mengacu pada 4 pilar, yaitu kesehatan, pendidikan, ekonomi, dan lingkungan, sehingga diharapkan mampu berkontribusi dalam pembangunan dan kesejahteraan bangsa.</p>
-                                <p style="font-weight: 400;">Seiring dengan pertumbuhan usaha Perseroan, pada tahun 1997 Perseroan menjadi perusahaan publik, melakukan Penawaran Saham Perdana (<em>Initial Public Offering</em>/IPO) di Bursa Efek Indonesia (saat itu Bursa Efek Jakarta dan Bursa Efek Surabaya). Saat ini kepemilikan saham publik Perseroan mencapai 20,32% dari total 1,925 miliar saham yang beredar. Kepercayaan investor yang tinggi terhadap Perseroan dicerminkan dengan posisi harga saham yang kuat. Pada perdagangan yang berakhir tanggal 31 Desember 2021, harga saham Perseroan dengan kode perdagangan “AALI ditutup pada posisi Rp 9.500,-.</p>
+                                <?=$this->getContentDb('about-milestone-content')?>
                             </div>
                         </div>
                         <ul class="timeline">

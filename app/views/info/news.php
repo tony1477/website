@@ -5,7 +5,7 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-inner">
                     <div class="page-header-content">
-                        <h2>News</h2>
+                        <h2><?=$this->getContent('news-topbar-title')?></h2>
                         <!-- <p>Businex always try to provide the best Business Solutions for Clinets
                             to grow up their Business very sharply and smoothly.</p> -->
                     </div>
@@ -23,9 +23,9 @@
             <div class="col-12">
                 <div class="blog-content-wrapper">
                     <div class="row mtn-30">
-                        <h2>Belum ada berita terbaru</h2>
+                        <h2><?=$this->getContent('news-content-title')?></h2>
                         <br />
-                        <p>Kunjungi sosial media kami di <br />
+                        <p><?=$this->getContent('news-content-subtitle')?> <br />
                         <div class="px-5">
                             <a href="https://www.instagram.com/wilianperkasa" target="newtab"><i class="fa fa-instagram fs-2 text-danger"></i></a>
                             <a href="https://www.youtube.com/@WilianPerkasa" target="newtab"><i class="fa fa-youtube-play fs-2 text-danger"></i></a>

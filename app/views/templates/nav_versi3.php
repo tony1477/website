@@ -42,9 +42,9 @@
                                     <div class="triangle"></div>
                                     <ul>
                                         <?php if($_SESSION['lang']=='id'):?>
-                                        <li><a href="<?=BASE_URL?>lang/en" class="text-dark"><i class="sl-flag flag-usa"><div id="english"></div></i> <span>EN</span></a></li>
+                                        <li><a href="<?=BASE_URL?>lang/eng" class="text-dark"><i class="sl-flag flag-usa"><div id="english"></div></i> <span>EN</span></a></li>
                                         <?php else: ?>
-                                        <li><a href="<?=BASE_URL?>lang/id" class="text-dark"><i class="sl-flag flag-id"><div id="indonesia"></div></i> <span>IDN</span></a></li>
+                                        <li><a href="<?=BASE_URL?>lang/idn" class="text-dark"><i class="sl-flag flag-id"><div id="indonesia"></div></i> <span>IDN</span></a></li>
                                         <?php endif;?>
                                     </ul>
                                 </li>

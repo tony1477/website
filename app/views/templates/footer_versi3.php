@@ -37,9 +37,9 @@
                         <div class="widget-body">
                             <ul class="widget-list">
                                 <li><a href="<?=BASE_URL?>about/profile"><?=$this->getContent('footer-info-about')?></a></li>
-                                <li><a href="<?=BASE_URL?>info/contact"><?=$this->getContent('footer-info-kontak')?></a></li>
-                                <li><a href="<?=BASE_URL?>about/bod"><?=$this->getContent('footer-info-manajemen')?></a></li>
-                                <li><a href="<?=BASE_URL?>info/career"><?=$this->getContent('footer-info-karir')?></a></li>
+                                <li><a href="<?=BASE_URL?>info/contact"><?=$this->getContent('footer-info-contact')?></a></li>
+                                <li><a href="<?=BASE_URL?>about/bod"><?=$this->getContent('footer-info-management')?></a></li>
+                                <li><a href="<?=BASE_URL?>info/career"><?=$this->getContent('footer-info-career')?></a></li>
                             </ul>
                         </div>
                     </div>
@@ -50,8 +50,8 @@
                         <h4 class="widget-title" style="position:relative"><?=$this->getContent('footer-bisnis-title')?></h4>
                         <div class="widget-body">
                             <ul class="widget-list">
-                                <li><a href="<?=BASE_URL?>business/plantation"><?=$this->getContent('footer-bisnis-kebun')?></a></li>
-                                <li><a href="<?=BASE_URL?>business/mill"><?=$this->getContent('footer-bisnis-pabrik')?></a></li>
+                                <li><a href="<?=BASE_URL?>business/plantation"><?=$this->getContent('footer-bisnis-plant')?></a></li>
+                                <li><a href="<?=BASE_URL?>business/mill"><?=$this->getContent('footer-bisnis-mill')?></a></li>
                                 <li><a href="<?=BASE_URL?>business/trading"><?=$this->getContent('footer-bisnis-trading')?></a></li>
                                 <li><a href="<?=BASE_URL?>business/fnb"><?=$this->getContent('footer-bisnis-fnb')?></a></li>
                             </ul>
@@ -64,9 +64,9 @@
                         <h4 class="widget-title"><?=$this->getContent('footer-sustain-title')?></h4>
                         <div class="widget-body">
                             <ul class="widget-list">
-                                <li><a href="<?=BASE_URL?>sustainability/policy"><?=$this->getContent('footer-sustain-kebijakan')?></a></li>
-                                <li><a href="<?=BASE_URL?>sustainability/certification"><?=$this->getContent('footer-sustain-sertifikasi')?></a></li>
-                                <li><a href="<?=BASE_URL?>sustainability/environment"><?=$this->getContent('footer-sustain-lingkungan')?></a></li>
+                                <li><a href="<?=BASE_URL?>sustainability/policy"><?=$this->getContent('footer-sustain-policy')?></a></li>
+                                <li><a href="<?=BASE_URL?>sustainability/certification"><?=$this->getContent('footer-sustain-certification')?></a></li>
+                                <li><a href="<?=BASE_URL?>sustainability/environment"><?=$this->getContent('footer-sustain-environment')?></a></li>
                                 <li><a href="<?=BASE_URL?>sustainability/community"><?=$this->getContent('footer-sustain-csg')?></a></li>
                             </ul>
                         </div>
