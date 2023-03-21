@@ -963,8 +963,8 @@ img .icon-language {
     /* background: linear-gradient(90deg, rgba(125,33,35,1) 0%, rgba(55,84,144,1) 50%, rgba(237,180,100,0.7903536414565826) 100%); */
     background: var(--nav-header-background);
     padding: 20px 0px;
-    -webkit-animation: slideInDown 0.6s forwards;
-    animation: slideInDown 0.6s forwards;
+    -webkit-animation: fadeIn 0.6s forwards;
+    animation: fadeInDown 0.6s forwards;
     /* padding: 5px 0 15px; */
     position: fixed;
     left: 0;
@@ -3790,8 +3790,18 @@ ul.text-misi li::before {
 }
 
 .values img {
-    width:200px;
+    width: 70px;
     cursor: pointer;
+}
+
+.img-values:hover {
+    transform: scale(1.11);
+    animation: .5 all;
+    /* content: 'CLICK HERE'; */
+}
+
+.img-values {
+    height: 100px;
 }
 
 .values {
@@ -3801,6 +3811,7 @@ ul.text-misi li::before {
 .values h3{
     padding-top: 5rem;
     padding-bottom:50px;
+    font-weight: 600;
 }
 
 .modal-values {
@@ -3819,12 +3830,14 @@ ul.text-misi li::before {
 }
 
 .img-content {
-    width:150px;
+    width: 140px;
     position: absolute;
     border:0px solid #000;
     margin-left: -40px;
     z-index: 1;
-    top:0px;
+    bottom: 0px;
+    padding: 2px 10px;
+    /* margin-bottom: 2rem; */
 }
 
 .values-title, .values-description {
@@ -4474,4 +4487,18 @@ form#contact-form label {
     background: rgb(174, 139, 29);
     padding: 5px 10px;
     border-radius: 25px;
+}
+
+.icon-values {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+.img-values h5 {
+    font-size: .95rem;
+    color: #b6932d;    
+    font-weight: 600;
+    margin-top: .6rem;
 }

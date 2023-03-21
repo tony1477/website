@@ -55,7 +55,7 @@
                         <div class="modal-content modal-values">
                             <div class="modal-body">
                                 <div class="content">
-                                    <img src="<?=BASE_URL?>public/assets/img/about/w.png" class="img-content">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/1.png" class="img-content">
                                     <h3 class="text-underline values-title">Wisdom</h3>
                                     <p class="text-highlights">Bijaksana</p>
                                     <p class="values-description">Bersikap BIJAKSANA, sehingga mampu memahami dan membedakan tindakan yang benar atau salah dalam menangani pekerjaan ataupun masalah.</p>
@@ -69,7 +69,7 @@
                         <div class="modal-content modal-values">
                             <div class="modal-body">
                                 <div class="content">
-                                    <img src="<?=BASE_URL?>public/assets/img/about/i.png" class="img-content">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/2.png" class="img-content">
                                     <h3 class="text-underline values-title">Intellectual</h3>
                                     <p class="text-highlights">Rasional</p>
                                     <p class="values-description">Berpikir POSITIF dalam bertindak sehingga menciptakan profesionalisme dalam menghadapi orang ataupun situasi.</p>
@@ -83,7 +83,7 @@
                         <div class="modal-content modal-values">
                             <div class="modal-body">
                                 <div class="content">
-                                    <img src="<?=BASE_URL?>public/assets/img/about/l.png" class="img-content">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/3.png" class="img-content">
                                     <h3 class="text-underline values-title">Loyal</h3>
                                     <p class="text-highlights">Setia</p>
                                     <p class="values-description">Memiliki sifat SETIA dan bangga menjadi bagian dari Wilian Perkasa Group.</p>
@@ -97,7 +97,7 @@
                         <div class="modal-content modal-values">
                             <div class="modal-body">
                                 <div class="content">
-                                    <img src="<?=BASE_URL?>public/assets/img/about/in.png" class="img-content">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/4.png" class="img-content">
                                     <h3 class="text-underline values-title">Integrity</h3>
                                     <p class="text-highlights">Jujur</p>
                                     <p class="values-description">JUJUR dalam setiap tindakan dan memiliki etika dalam melakukan perbuatan tersebut.</p>
@@ -111,7 +111,7 @@
                         <div class="modal-content modal-values">
                             <div class="modal-body">
                                 <div class="content">
-                                    <img src="<?=BASE_URL?>public/assets/img/about/a.png" class="img-content">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/5.png" class="img-content">
                                     <h3 class="text-underline values-title">Accomplished</h3>
                                     <p class="text-highlights">Unggul &amp; Terampil</p>
                                     <p class="values-description">Memiliki skill (ketrampilan) yang kompeten dan selalu berusaha meningkatkan ketrampilan tersebut agar menjadi lebih sempurna dan semakin unggul di bidangnya.</p>
@@ -125,7 +125,7 @@
                         <div class="modal-content modal-values">
                             <div class="modal-body">
                                 <div class="content">
-                                    <img src="<?=BASE_URL?>public/assets/img/about/n.png" class="img-content">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/6.png" class="img-content">
                                     <h3 class="text-underline values-title">Noble</h3>
                                     <p class="text-highlights">Terhormat</p>
                                     <p class="values-description">Memiliki jiwa yang saling MENGHORMATI dan MENGHARGAI untuk menciptakan suasana nyaman di dalam pekerjaan.</p>
@@ -135,15 +135,36 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-12">
+            <div class="col-md-3 col-lg-3"></div>
+            <div class="col-md-9 col-lg-9">
                 <div class="row values justify-content-lg-center">
                     <h3 class="text-center"><?=$this->getContent('about-values-title')?></h3>
-                    <img src="<?=BASE_URL?>public/assets/img/about/flat/01. wisdom.jpg" class="imgmodal" id="wisdom" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/flat/02. intellectual.jpg" class="imgmodal" id="intellectual" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/flat/03. loyal.jpg" class="imgmodal" id="loyal" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/flat/04. integrity.jpg" class="imgmodal" id="integrity" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/flat/05. accomplish.jpg" class="imgmodal" id="accomplished" onclick="showModal(this)">
-                    <img src="<?=BASE_URL?>public/assets/img/about/flat/06. noble.jpg" class="imgmodal" id="noble" onclick="showModal(this)">
+                    <div class="icon-values">
+                        <div class="img-values text-center">
+                            <img src="<?=BASE_URL?>public/assets/img/about/flat/1.png" class="imgmodal" id="wisdom" onclick="showModal(this)">
+                            <h5>WISDOM</h5>
+                        </div>
+                        <div class="img-values text-center">
+                            <img src="<?=BASE_URL?>public/assets/img/about/flat/2.png" class="imgmodal" id="intellectual" onclick="showModal(this)">
+                            <h5>INTELLECTUAL</h5>
+                        </div>
+                        <div class="img-values text-center">
+                            <img src="<?=BASE_URL?>public/assets/img/about/flat/3.png" class="imgmodal" id="loyal" onclick="showModal(this)">
+                            <h5>LOYAL</h5>
+                        </div>
+                        <div class="img-values text-center">
+                            <img src="<?=BASE_URL?>public/assets/img/about/flat/4.png" class="imgmodal" id="integrity" onclick="showModal(this)">
+                            <h5>INTEGRITY</h5>
+                        </div>
+                        <div class="img-values text-center">
+                            <img src="<?=BASE_URL?>public/assets/img/about/flat/5.png" class="imgmodal" id="accomplished" onclick="showModal(this)">
+                            <h5>ACCOMPLISHED</h5>
+                        </div>
+                        <div class="img-values text-center">
+                            <img src="<?=BASE_URL?>public/assets/img/about/flat/6.png" class="imgmodal" id="noble" onclick="showModal(this)">
+                            <h5>NOBLE</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
