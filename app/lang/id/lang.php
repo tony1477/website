@@ -3,6 +3,7 @@
         // for common
         'readmore' => 'BACA LEBIH LANJUT',
         'next' => 'Selanjutnya',
+        'plantation' => 'Perkebunan',
         'mills' => 'Pabrik Kelapa Sawit',
         'trading' => 'Trading', 
         'fnb' => 'Makanan & Minuman',
@@ -10,6 +11,7 @@
         'certification' => 'Sertifikasi',
         'environment' => 'Lingkungan',
         'csg' => 'C S G',
+        'moreinfo-visit-us' => 'Informasi lebih lanjut, kunjungi',
         // for about-sidebar
         'about-sidebar-profile' => 'Profil Perusahaan',
         'about-sidebar-vision' => 'Visi - Misi, Nilai Luhur',
@@ -72,6 +74,8 @@
         'sustain-sidebar-certification' => 'Certification',
         'sustain-sidebar-environment' => 'Environment',
         'sustain-sidebar-csg' => 'C S G',
+        // for investor-topbar-title
+        'investor-topbar-title' => 'Sorotan Produksi',
         // for news-topbar
         'news-topbar-title' => 'Berita',
         // for news-content

@@ -1034,6 +1034,7 @@ img .icon-language {
 }
 .row-footer-copy {
     margin-top: 17px;
+    margin-top: .45rem;
 }
 .footer-area {
     background-color: #790003;
@@ -1057,6 +1058,7 @@ img .icon-language {
 }
 .widget-item {
     margin-top: 38px;
+    margin-top: 1.25rem;
 }
 .social-media {
     /* border:1px solid #000; */
@@ -1940,6 +1942,10 @@ img .icon-language {
 .blog-content-wrapper.blog-list .blog-item .blog-content {
     padding-top: 25px;
     padding-bottom: 20px;
+}
+
+.blog-content-wrapper a.icon-social-media {
+    padding: 0rem .45rem;
 }
 @media only screen and (min-width: 1200px), only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (min-width: 992px) and (max-width: 1199.98px) {
     .blog-content-wrapper.blog-list .blog-item .blog-content {
@@ -3899,6 +3905,10 @@ p.values-description {
     color: rgba(125,33,35,9);
   }
 
+  .about-content.contentweb p {
+    text-align: justify;
+  }
+
 .modal .custom-modal {
     display: flex;
     align-items: center;
@@ -4435,7 +4445,7 @@ form#contact-form label {
 .video-profile {
     background-image: url('https://www.asianagri.com/wp-content/uploads/2021/08/plantation-video-bg.jpg');
     position: relative;
-    left: 50%;
+    left: 45%;
     background-size: cover;
     right: 50%;
     transform: translate(-50%, -50%);

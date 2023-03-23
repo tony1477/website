@@ -134,7 +134,7 @@
             <div class="col-md-6 col-lg-6">
                 <div class="detail about-content">
                     <div class="border-bot">
-                        <p class="cat text-uppercase">KEBIJAKAN</p>
+                        <p class="cat text-uppercase"><?=$this->getContent('policy')?></p>
                     </div>
                     <h6 class="title my-3">Pengelolaan Usaha yang Produktif dan Berkelanjutan</h6>
                     <div class="sum">
@@ -151,25 +151,25 @@
                         <div class="icon-sus active">
                             <img class="w-100 dark d-none" src="<?=BASE_URL?>public/assets/img/feature/privacy-policy.png" data-value="1">
                             <img class="w-100" src="<?=BASE_URL?>public/assets/img/feature/privacy-policy-white.png" >
-                        </div><span>Kebijakan</span>
+                        </div><span><?=$this->getContent('policy')?></span>
                     </div>
                     <div class="symbol text-center">
                         <div class="icon-sus">
                             <img class="w-100 dark" src="<?=BASE_URL?>public/assets/img/feature/badge.png" data-value="2">
                             <img class="w-100 d-none" src="<?=BASE_URL?>public/assets/img/feature/badge-white.png" >
-                        </div><span>Sertifikasi</span>
+                        </div><span><?=$this->getContent('certification')?></span>
                     </div>
                     <div class="symbol text-center">
                         <div class="icon-sus">
                             <img class="w-100 dark" src="<?=BASE_URL?>public/assets/img/feature/ecology-and-environment.png" data-value="3">
                             <img class="w-100 d-none" src="<?=BASE_URL?>public/assets/img/feature/ecology-and-environment-white.png" >
-                        </div><span>Lingkungan</span>
+                        </div><span><?=$this->getContent('environment')?></span>
                     </div>
                     <div class="symbol text-center">
                         <div class="icon-sus">
                             <img class="w-100 dark" src="<?=BASE_URL?>public/assets/img/feature/community.png" data-value="4">
                             <img class="w-100 d-none" src="<?=BASE_URL?>public/assets/img/feature/community-white.png">
-                        </div><span>CSR</span>
+                        </div><span><?=$this->getContent('csg')?></span>
                     </div>
                 </div>
             </div>
@@ -196,39 +196,39 @@
             </div>
         </div>
 		<div class="left">
-            <div class="box" onclick="location.href='https://www.anj-group.com/en/oil-palm-plantation/index'">
+            <div class="box" onclick="location.href='<?=BASE_URL?>business/plantation'">
                 <div class="img">
                     <img src="https://www.anj-group.com/frontend/uploads/defaults/Yhf16J20210416164254.png">
                 </div>
                 <div class="hov">
-                    <h2 style="opacity: 1; top: 0px;">KELAPA SAWIT </h2>
+                    <h2 style="opacity: 1; top: 0px;"><?=$this->getContent('plantation')?> </h2>
                     <p style="opacity: 0; top: 0px;"></p>
                 </div>
 		    </div>
-            <div class="box" onclick="location.href='https://www.anj-group.com/en/sago-harvesting-and-processing/index'">
+            <div class="box" onclick="location.href='<?=BASE_URL?>business/mill'">
                 <div class="img">
                     <img src="https://www.anj-group.com/frontend/uploads/defaults/dCbgiI20190319134041.jpg">
                 </div>
                 <div class="hov">
-                    <h2 style="opacity: 1; top: 0px;">PERKEBUNAN</h2>
+                    <h2 style="opacity: 1; top: 0px;"><?=$this->getContent('mills')?></h2>
                     <p style="opacity: 0; top: 0px;"></p>
                 </div>
 		    </div>
-            <div class="box" onclick="location.href='https://www.anj-group.com/en/agriculture-products/index'">
+            <div class="box" onclick="location.href='<?=BASE_URL?>business/trading'">
                 <div class="img">
                     <img src="https://www.anj-group.com/frontend/uploads/defaults/jPe2Lc20190319133643.jpg">
                 </div>
                 <div class="hov">
-                    <h2 style="opacity: 1; top: 0px;">FnB</h2>
+                    <h2 style="opacity: 1; top: 0px;"><?=$this->getContent('trading')?></h2>
                     <p style="opacity: 0; top: 0px;"></p>
                 </div>
             </div>
-            <div class="box" onclick="location.href='https://www.anj-group.com/en/renewable-energy/index'">
+            <div class="box" onclick="location.href='<?=BASE_URL?>business/fnb'">
                 <div class="img">
                     <img src="https://www.anj-group.com/frontend/uploads/defaults/KHyW8120210416165918.png">
                 </div>
                 <div class="hov">
-                    <h2 style="opacity: 1; top: 0px;">TRADING</h2>
+                    <h2 style="opacity: 1; top: 0px;"><?=$this->getContent('fnb')?></h2>
                     <p style="opacity: 0; top: 0px;"></p>
                 </div>
             </div>
@@ -238,7 +238,7 @@
 <!--== End Service Area Wrapper ==-->
 
 <!--== Start Blog Area Wrapper ==-->
-<div class="blog-area-wrapper sm-top">
+<div class="blog-area-wrapper sm-top d-none">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -305,7 +305,7 @@
                         <h3 class="fw-400 text-center">Gallery</h3>
                     </div>
                     <div class="col-md-12 text-end about-content">
-                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
+                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>info/gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
                     </div>
                 </div>
             </div>
@@ -344,6 +344,15 @@
 <?php
     $scriptfooter = <<<HEREDOC
     <script type="text/javascript">
+    function base_url() {
+        var pathparts = location.pathname.split('/');
+        if (location.host == 'localhost') {
+            var url = location.origin+'/'+pathparts[1].trim('/')+'/'; 
+        }else{
+            var url = location.origin; 
+        }
+        return url;
+    }
     const btnIcon = document.querySelectorAll('.w-100')
     const iconSus = document.querySelectorAll('.icon-sus')
     const imgdark = document.querySelectorAll('img.dark')
@@ -396,7 +405,7 @@
             arraySum.href = '../sustainability/'+linkArray[(img.dataset.value)-1]
             linkTitle.innerText = subTitleArray[(img.dataset.value)-1]
             imgTitle.innerText = imgCaption[(img.dataset.value)-1]
-            imgThumb.src = '../public/assets/img/sustainability/'+displayImg
+            imgThumb.src = base_url()+'public/assets/img/sustainability/'+displayImg
         });
     }
     </script>
