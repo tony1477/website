@@ -4,7 +4,7 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2>Statistik Produksi</h2>
+                        <h2><?=$this->getContent('investor-topbar-title')?></h2>
                       
                     </div>
                 </div>
@@ -22,7 +22,7 @@
             <div class="col-md-9 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
             <!-- <h2 class="text-center text-decoration-underline">Statistik Produksi</h2> -->
                 <div class="row justify-content-center">
-<table class="table" style="margin-bottom: 0px; border- border-style: none;">
+<table class="table" style="margin-bottom: 0px; border-style: none;">
 <tbody>
 <tr>
 <td style="border-top: 0px;"><h3 class="title-report">Laporan Produksi CPO</h3></td>
@@ -68,7 +68,7 @@
 </table>
 <canvas id="prodcpo" width="400" height="80"></canvas>
 <div class="mb-50"></div>
-<table class="table" style="margin-bottom: 0px; border- border-style: none;">
+<table class="table" style="margin-bottom: 0px; border-style: none;">
 <tbody>
 <tr>
 <td style="border-top: 0px;"><h3 class="title-report">Laporan Produksi PK</h3></td>
@@ -114,7 +114,7 @@
 </table>
 <canvas id="prodpk" width="400" height="80"></canvas>
 <div class="mb-50"></div>
-<table class="table" style="margin-bottom: 0px; border- border-style: none;">
+<table class="table" style="margin-bottom: 0px; border-style: none;">
 <tbody>
 <tr>
 <td style="border-top: 0px;"><h3 class="title-report">Laporan Rendemen CPO</h3></td>
@@ -160,7 +160,7 @@
 </table>
 <canvas id="rendcpo" width="400" height="80"></canvas>
 <div class="mb-50"></div>
-<table class="table" style="margin-bottom: 0px; border- border-style: none;">
+<table class="table" style="margin-bottom: 0px; border-style: none;">
 <tbody>
 <tr>
 <td style="border-top: 0px;"><h3 class="title-report">Laporan Rendemen PK</h3></td>

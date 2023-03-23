@@ -27,9 +27,9 @@
                         <br />
                         <p><?=$this->getContent('news-content-subtitle')?> <br />
                         <div class="px-5">
-                            <a href="https://www.instagram.com/wilianperkasa" target="newtab"><i class="fa fa-instagram fs-2 text-danger"></i></a>
-                            <a href="https://www.youtube.com/@WilianPerkasa" target="newtab"><i class="fa fa-youtube-play fs-2 text-danger"></i></a>
-                            <a href="https://id.linkedin.com/company/wilian-perkasa" target="newtab"><i class="fa fa-linkedin fs-2 text-primary"></i></a>
+                            <a href="https://www.instagram.com/wilianperkasa" target="newtab" class="icon-social-media"><i class="fa fa-instagram fs-2 text-danger"></i></a>
+                            <a href="https://www.youtube.com/@WilianPerkasa" target="newtab" class="icon-social-media"><i class="fa fa-youtube-play fs-2 text-danger"></i></a>
+                            <a href="https://id.linkedin.com/company/wilian-perkasa" target="newtab" class="icon-social-media"><i class="fa fa-linkedin fs-2 text-primary"></i></a>
                             </p>
                         </div>
                         <!-- <div class="col-md-6 col-lg-4">
