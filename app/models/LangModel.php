@@ -148,7 +148,7 @@ class LangModel {
         'business' => ['text' => 'Our Business','type'=>'detail',
                        'data' => [
                            'plantation' => 'Plantation',
-                           'mill' => 'Palm Mill Oil',
+                           'mill' => 'Palm Oil Mill',
                            'trading' => 'Trading',
                            //'lemongrass' => 'Serai Wangi',
                            'agro' => 'Agronomy',
