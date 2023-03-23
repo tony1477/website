@@ -49,7 +49,7 @@
                 <div class="about-content ms-0">
                     <div class="row">
                         <div class="col-lg-7 col-md-6 left order-md-1 order-2">
-                            <div class="position-relative h-100">
+                            <div class="position-relative h-100" style="text-align: justify;">
                                 <!-- <div class="w-title mb-md-0 mb-4"> -->
                                 <!-- </div> -->
                                 <!-- <div class="text-justify"> -->

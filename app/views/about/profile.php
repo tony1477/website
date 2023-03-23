@@ -41,7 +41,8 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-3"></div>
+                <div class="col-9">
                     <div class="video-profile">
                     <i class="mdi mdi-play" style="position: relative;top: 44%;font-family: 'Material Design Icons';content: '\f40a';left: 48.5%;color: #fff;font-size: 2rem;transform: translate(-50%, -50%);"></i>
                     </div>
