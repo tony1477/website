@@ -20,6 +20,11 @@
                 <div class="about-content ms-0 contentweb">
                     <?php //$data['data']['content']?>
                     <?=$this->getContentDb('business-fnb-content')?>
+                    <p></p>
+
+                    <p class="text-start"><?=$this->getContent('moreinfo-visit-us')?>:</p>
+
+                    <button class="btn btn-outline-secondary text-dark"><a href="https://flipnfry.id/" class="text-dark" target="_blank">FlipnFry</a></button>
                 </div>
             </div>
 
@@ -32,6 +37,7 @@
                     <img src="<?=BASE_URL?>public/assets/img/business/fnb.jpeg" alt="Businex-Service Details"/>
                 </figure>
             </div>
+
         </div>
     </div>
 </div>
