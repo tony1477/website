@@ -100,29 +100,6 @@
                                     <div class="col-11">
                                         <div class="form-card">
                                             <h3 class="mt-0 mb-4 text-center">Silahkan lengkapi data Pribadi</h3>
-                                            <!-- <form onsubmit="event.preventDefault()">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" id="bk_nm" placeholder="BBB Bank"> <label>BANK NAME</label> </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" name="ben_nm" id="ben-nm" placeholder="John Smith"> <label>BENEFICIARY NAME</label> </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" name="scode" placeholder="ABCDAB1S" class="placeicon" minlength="8" maxlength="11"> <label>SWIFT CODE</label> </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12"> <input type="submit" value="Pay $ 100" class="btn btn-success placeicon"> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <p class="text-center mb-5" id="below-btn"><a href="#">Use a test card</a></p>
-                                                    </div>
-                                                </div>
-                                            </form> -->
                                             <form onsubmit="event.preventDefault()">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
@@ -373,7 +350,17 @@
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="inputRelationFam1">Hubungan Keluarga </label>
-                                                <input type="text" class="form-control" id="inputRelationFam1" placeholder="Nama Perusahaan">
+                                                <select id="inputRelationFam1" class="custom-select">
+                                                        <option>Pilih</option>
+                                                        <option value="Adik">Adik</option> 
+                                                        <option value="Anak">Anak</option>
+                                                        <option value="Ayah">Ayah</option>
+                                                        <option value="Abang">Abang</option>
+                                                        <option value="Ibu">Ibu</option>
+                                                        <option value="Istri">Istri</option>
+                                                        <option value="Suami">Suami</option>
+                                                        <option value="Kakak">Kakak</option>
+                                                </select>
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="inputFamilyName1">Nama </label>
@@ -389,117 +376,90 @@
                                             </div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputFamilyEducation1">Tanggal Bergabung </label>
+                                                <label for="inputFamilyEducation1">Pendidikan Terakhir </label>
                                                 <select id="inputFamilyEducation1" class="custom-select">
                                                         <option>Pilih</option>
-                                                        <option value="Pria">Pria</option> 
-                                                        <option value="Wanita">Wanita</option>
+                                                        <option value="D1">D1</option> 
+                                                        <option value="D2">D2</option>
+                                                        <option value="D3">D3</option>
+                                                        <option value="D4">D4</option>
+                                                        <option value="S1">S1</option>
+                                                        <option value="S2">S2</option>
+                                                        <option value="S3">S3</option>
+                                                        <option value="SD">SD</option>
+                                                        <option value="SMA">SMA/SLTA/SMK/MAN</option>
+                                                        <option value="SMP">SMP/SLTP/MTSn</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputResignDate1">Pekerjaan </label>
-                                                <input type="text" class="form-control" id="inputResignDate1" placeholder="Tanggal Berhenti">
-                                            </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputLengthWork">Lama Bekerja (Tahun) </label>
-                                                <input type="number" class="form-control" data-maxlength="2" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" />
+                                            <div class="form-group col-md-6">
+                                                <label for="inputFamilyJobs">Pekerjaan </label>
+                                                <input type="text" class="form-control" id="inputFamilyJobs" placeholder="Pekerjaan">
                                             </div>
                                             <div class="col-md-2"></div>
                                             <div class="col-md-1"></div>
-                                            <div class="form-group col-md-11">
-                                                <label for="inputJobDesc">Tugas & Tanggung Jawab </label>
-                                                <textarea class="form-control" id="inputJobDesc" placeholder="Tugas & Tanggung Jawab Pekerjaan"></textarea>
-                                            </div>
-                                            <div class="col-md-1"></div>
-                                            <div class="form-group col-md-11">
-                                                <label for="inputReason">Alasan Berhenti </label>
-                                                <textarea class="form-control" id="inputReason" placeholder="Alasan Berhenti"></textarea>
-                                            </div>
-                                            <div class="col-md-1"></div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputLastWage">Penghasilan Terakhir </label>
-                                                <input type="number" class="form-control number-separator" id="inputLastWage"  data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" placeholder="Penghasilan Terakhir" />
+                                                <label for="inputFamilyBirth">Tempat Lahir </label>
+                                                <input type="text" class="form-control" id="inputFamilyBirth" placeholder="Tempat Lahir">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label for="inputFamilyBirthdate">Tanggal Lahir </label>
+                                                <input type="text" class="form-control" id="inputFamilyBirthdate" placeholder="Tanggal Lahir">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label for="inputFamilyStatus">Almarhum </label>
+                                                <select id="inputFamilyStatus" class="custom-select">
+                                                        <option>Pilih</option>
+                                                        <option value="Yes">Yes</option> 
+                                                        <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2"></div>
+                                            <div class="col-md-1"></div>
+                                            <div class="form-group col-md-5">
+                                                <label for="inputFamilyComp">Perusahaan </label>
+                                                <input type="text" class="form-control" id="inputFamilyComp" placeholder="Perusahaan">
+                                            </div>
+                                            <div class="col-md-6"></div>
+                                            <div class="col-md-1"></div>
+                                            <div class="form-group col-md-11">
+                                                <label for="inputFamilyCompAddress">Alamat Perusahaan </label>
+                                                <textarea class="form-control" id="inputFamilyCompAddress" placeholder="Alamat Perusahaan"></textarea>
                                             </div>
                                         </div>
-                                        <div id="dstJob"></div>
-                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmJob"><i class="fa fa-plus"></i> Add More</button> </div>
+                                        <div id="dstFamily"></div>
+                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmFamily"><i class="fa fa-plus"></i> Add More</button> </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--<div id="menu7" class="tab-pane">
-                                <div class="row justify-content-center">
-                                    <div class="col-11">
-                                        <div class="form-card">
-                                            <h3 class="mt-0 mb-4 text-center">Enter bank details to pay</h3>
-                                            <form onsubmit="event.preventDefault()">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" id="bk_nm" placeholder="BBB Bank"> <label>BANK NAME</label> </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" name="ben_nm" id="ben-nm" placeholder="John Smith"> <label>BENEFICIARY NAME</label> </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" name="scode" placeholder="ABCDAB1S" class="placeicon" minlength="8" maxlength="11"> <label>SWIFT CODE</label> </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12"> <input type="submit" value="Pay $ 100" class="btn btn-success placeicon"> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <p class="text-center mb-5" id="below-btn"><a href="#">Use a test card</a></p>
-                                                    </div>
-                                                </div>
-                                            </form>
+                            <div id="menu7" class="tab-pane">
+                            <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="form-row" id="srcContactEm" style="display: none">
+                                            <div class="col-1"><button class="btn btn-outline-secondary btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-times text-end"></i> Hapus</button>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label for="inputContactFam">Hubungan </label>
+                                                <input type="text" class="form-control"  id="inputContactFam"  placeholder="Hubungan" />
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputContactName">Nama </label>
+                                                <input type="text" class="form-control" id="inputContactName" placeholder="Jabatan">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputContactTelp">No. Telepon </label>
+                                                <input type="text" class="form-control" id="inputContactTelp" placeholder="Jabatan">
+                                            </div>
+                                            <div class="col-md-1"></div>
+                                            <div class="form-group col-md-11">
+                                                <label for="inputContactAddress">Alamat </label>
+                                                <textarea class="form-control" id="inputContactAddress" placeholder="Alamat"></textarea>
+                                            </div>
                                         </div>
+                                        <div id="dstContactEm"></div>
+                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmContactEm"><i class="fa fa-plus"></i> Add More</button> </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="menu8" class="tab-pane">
-                                <div class="row justify-content-center">
-                                    <div class="col-11">
-                                        <div class="form-card">
-                                            <h3 class="mt-0 mb-4 text-center">Enter your card details to pay</h3>
-                                            <form onsubmit="event.preventDefault()">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" id="cr_no" placeholder="0000 0000 0000 0000" minlength="19" maxlength="19"> <label>CARD NUMBER</label> </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="input-group"> <input type="text" name="exp" id="exp" placeholder="MM/YY" minlength="5" maxlength="5"> <label>CARD EXPIRY</label> </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="input-group"> <input type="password" name="cvcpwd" placeholder="&#9679;&#9679;&#9679;" class="placeicon" minlength="3" maxlength="3"> <label>CVV</label> </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12"> <input type="submit" value="Pay $ 100" class="btn btn-success placeicon"> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <p class="text-center mb-5" id="below-btn"><a href="#">Use a test card</a></p>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="menu9" class="tab-pane">
-                                <div class="row justify-content-center">
-                                    <div class="col-11">
-                                        <h3 class="mt-0 mb-4 text-center">Scan the QR code to pay</h3>
-                                        <div class="row justify-content-center">
-                                            <div id="qr"> <img src="https://i.imgur.com/DD4Npfw.jpg" width="200px" height="200px"> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="submit my-5 d-flex justify-content-center gap-3">
                             <button type="submit" class="btn btn-primary mr-5">Kirim</button>
@@ -601,6 +561,14 @@
             // console.log('run')
             cloneClickJob();
         })
+        $('#addfrmFamily').click(function() {
+            // console.log('run')
+            cloneClickFamily();
+        })
+        $('#addfrmContactEm').click(function() {
+            // console.log('run')
+            cloneClickContact();
+        })
     })
 
     let counterIdentity = 1;
@@ -648,6 +616,36 @@
             if(theName) newField[i].name = theName + counter
         }
         let insertHere = document.querySelector('#dstJob')
+        insertHere.parentNode.insertBefore(newFields,insertHere)
+        // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
+    }
+    function cloneClickFamily() {
+        // console.log($('.headfrmIdentity .frmIdentity'))
+        counterJob++
+        let newFields = document.querySelector('#srcFamily').cloneNode(true)
+        newFields.id = '';
+        newFields.style.display = 'flex'
+        let newField = newFields.childNodes
+        for(let i=0; i<newField.length; i++) {
+            let theName = newField[i].namespace
+            if(theName) newField[i].name = theName + counter
+        }
+        let insertHere = document.querySelector('#dstFamily')
+        insertHere.parentNode.insertBefore(newFields,insertHere)
+        // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
+    }
+    function cloneClickContact() {
+        // console.log($('.headfrmIdentity .frmIdentity'))
+        counterJob++
+        let newFields = document.querySelector('#srcContactEm').cloneNode(true)
+        newFields.id = '';
+        newFields.style.display = 'flex'
+        let newField = newFields.childNodes
+        for(let i=0; i<newField.length; i++) {
+            let theName = newField[i].namespace
+            if(theName) newField[i].name = theName + counter
+        }
+        let insertHere = document.querySelector('#dstContactEm')
         insertHere.parentNode.insertBefore(newFields,insertHere)
         // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
     }

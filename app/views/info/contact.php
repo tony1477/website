@@ -32,20 +32,20 @@
 
                             <div class="widget-item m-0">
                                 <address>
+                                    <i class="mdi mdi-map-marker-radius" style="margin-left: -.7rem;"></i>
                                     <?=$this->getContent('contact-sidebar-address')?>
                                     <br>
-                                    https://wilianperkasa.com
+                                    <i class="mdi mdi-web" style="margin-left: -.7rem;"></i> wilianperkasa.com
                                     <br>
-                                    info@wilianperkasa.com
+                                    <i class="mdi mdi-email" style="margin-left: -.7rem;"></i> info@wilianperkasa.com
                                     <br>
-                                    (+62761) 31953
+                                    <i class="mdi mdi-phone" style="margin-left: -.7rem;"></i> (+62761) 31953
                                 </address>
                             </div>
                             <div class="member-social-icons mt-30">
-                                <a href="#"><i class="mdi mdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/wilianperkasagroup/"><i class="mdi mdi-instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/wilian-perkasa-group-741540212"><i class="mdi mdi-linkedin"></i></a>
-                                <a href="https://www.youtube.com/wilianperkasagroup"><i class="mdi mdi-youtube"></i></a>
+                                <a href="https://www.instagram.com/wilianperkasa/" target="_blank"><i class="mdi mdi-instagram"></i></a>
+                                <a href="https://id.linkedin.com/company/wilian-perkasa" target="_blank"><i class="mdi mdi-linkedin"></i></a>
+                                <a href="https://www.youtube.com/@WilianPerkasa" target="_blank"><i class="mdi mdi-youtube"></i></a>
                             </div>
                         </div>
                     </div>
