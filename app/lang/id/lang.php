@@ -10,7 +10,7 @@
         'policy' => 'Kebijakan',
         'certification' => 'Sertifikasi',
         'environment' => 'Lingkungan',
-        'csg' => 'C S G',
+        'gcg' => 'G C G',
         'moreinfo-visit-us' => 'Informasi lebih lanjut, kunjungi',
         // for about-sidebar
         'about-sidebar-profile' => 'Profil Perusahaan',
@@ -68,12 +68,12 @@
          'sustain-policy-topbar' => 'Kebijakan',
          'sustain-certification-topbar' => 'Sertifikasi',
          'sustain-environment-topbar' => 'Lingkungan',
-         'sustain-csg-topbar' => 'C S G',
+         'sustain-gcg-topbar' => 'G C G',
         // for sustain-sidebar
         'sustain-sidebar-policy' => 'Policy',
         'sustain-sidebar-certification' => 'Certification',
         'sustain-sidebar-environment' => 'Environment',
-        'sustain-sidebar-csg' => 'C S G',
+        'sustain-sidebar-gcg' => 'Good Corp. Governance',
         // for investor-topbar-title
         'investor-topbar-title' => 'Sorotan Produksi',
         // for news-topbar
@@ -147,6 +147,6 @@
         'footer-sustain-policy' => 'Kebijakan',
         'footer-sustain-certification' => 'Sertifikasi',
         'footer-sustain-environment' => 'Lingkungan',
-        'footer-sustain-csg' => 'CSG',
+        'footer-sustain-gcg' => 'Tata Kelola Perusahaan',
         'footer-social-title' => 'Ikuti Kami',
     ];

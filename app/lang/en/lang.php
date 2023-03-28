@@ -10,7 +10,7 @@
         'policy' => 'Policy',
         'certification' => 'Certification',
         'environment' => 'Environment',
-        'csg' => 'C S G',
+        'gcg' => 'G C G',
         'moreinfo-visit-us' => 'For more information, please visit',
         // for about-sidebar
         'about-sidebar-profile' => 'Company Profile',
@@ -67,12 +67,12 @@
         'sustain-policy-topbar' => 'Policy',
         'sustain-certification-topbar' => 'Certification',
         'sustain-environment-topbar' => 'Environment',
-        'sustain-csg-topbar' => 'C S G',
+        'sustain-gcg-topbar' => 'Good Corp. Governance',
         // for sustain-sidebar
         'sustain-sidebar-policy' => 'Policy',
         'sustain-sidebar-certification' => 'Certification',
         'sustain-sidebar-environment' => 'Environment',
-        'sustain-sidebar-csg' => 'C S G',
+        'sustain-sidebar-gcg' => 'Good Corp. Governance',
         // for investor-topbar
         'investor-topbar-title' => 'Highlights Production',
         // for news-topbar
@@ -146,6 +146,6 @@
         'footer-sustain-policy' => 'Policy',
         'footer-sustain-certification' => 'Certification',
         'footer-sustain-environment' => 'Environment',
-        'footer-sustain-csg' => 'CSG',
+        'footer-sustain-gcg' => 'Good Corp. Governance',
         'footer-social-title' => 'Follow Us',
     ];

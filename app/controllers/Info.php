@@ -24,13 +24,15 @@ class Info extends Controller {
     }
     
     public function career($url=null) {
-        $data['data'] = $this->model('CareerModel')->getData(null);
         if($url!==null) return $this->careerpath($url);
+        $data['data'] = $this->model('CareerModel')->getData(null);
         $this->view_versi3('career/index',$data);
     }
 
     public function careerpath(string $careerid) {
-        $data['id'] = $careerid;
+        $id = substr($careerid,strpos($careerid,'-')+1);
+        $data['model'] = $this->model('CareerModel')->getData($id);
+        if($data['model']==null) header('location:'.BASE_URL.'info/career');
         $this->viewwotemplate('career/form',$data);
     }
     public function page() {

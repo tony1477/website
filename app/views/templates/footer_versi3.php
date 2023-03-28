@@ -67,7 +67,7 @@
                                 <li><a href="<?=BASE_URL?>sustainability/policy"><?=$this->getContent('footer-sustain-policy')?></a></li>
                                 <li><a href="<?=BASE_URL?>sustainability/certification"><?=$this->getContent('footer-sustain-certification')?></a></li>
                                 <li><a href="<?=BASE_URL?>sustainability/environment"><?=$this->getContent('footer-sustain-environment')?></a></li>
-                                <li><a href="<?=BASE_URL?>sustainability/community"><?=$this->getContent('footer-sustain-csg')?></a></li>
+                                <li><a href="<?=BASE_URL?>sustainability/gcg"><?=$this->getContent('footer-sustain-gcg')?></a></li>
                             </ul>
                         </div>
                     </div>

@@ -4,15 +4,14 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2>CSR</h2>
-                      
+                        <h2><?=$this->getContent('sustain-gcg-topbar')?></h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--== Start Blog Details Page Content ==-->
+<!-- == Start Blog Details Page Content == -->
 <div class="blog-details-page-content sp-y">
     <div class="container">
         <div class="row">

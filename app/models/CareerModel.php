@@ -11,13 +11,13 @@ class CareerModel {
   }
 
   public function getData($id) {
-    $where=null;
-    $this->db->query('select careerid,postdate,lastdate,title,location,requirement,jobdesc,notes,position from '.$this->table." where status=:status {$where}");
-    $this->db->bind('status',1);
-    if($id!=null) {
-      $where = ' and careerid = :careerid';
-      $this->db->bind('careerid',$id);
-    }
+    $where = null;
+    if($id!=null) $where = ' and careerid = :careerid';
+    
+    $this->db->query("select careerid,postdate,lastdate,title,location,requirement,jobdesc,notes,position from ".$this->table." where status = :status {$where}");
+    $this->db->bind(':status',1);
+    
+    if($where!=null) $this->db->bind(':careerid',$id);
     return $this->db->fetchAll();
   }
 }

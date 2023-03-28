@@ -169,7 +169,7 @@
                         <div class="icon-sus">
                             <img class="w-100 dark" src="<?=BASE_URL?>public/assets/img/feature/community.png" data-value="4">
                             <img class="w-100 d-none" src="<?=BASE_URL?>public/assets/img/feature/community-white.png">
-                        </div><span><?=$this->getContent('csg')?></span>
+                        </div><span><?=$this->getContent('gcg')?></span>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
 	<div class="list_business clearfix">
         <div class="box big">
             <div class="img">
-                <img src="https://www.anj-group.com/frontend/images/content/our_bisnis_big.jpg">
+                <img src="<?=BASE_URL?>public/assets/img/business/business-1.jpg">
             </div>
             <div class="text">
                 <?=$this->getContentDb('home-business-content')?>
@@ -198,7 +198,7 @@
 		<div class="left">
             <div class="box" onclick="location.href='<?=BASE_URL?>business/plantation'">
                 <div class="img">
-                    <img src="https://www.anj-group.com/frontend/uploads/defaults/Yhf16J20210416164254.png">
+                    <img src="<?=BASE_URL?>public/assets/img/business/home-plant.jpg">
                 </div>
                 <div class="hov">
                     <h2 style="opacity: 1; top: 0px;"><?=$this->getContent('plantation')?> </h2>
@@ -207,7 +207,7 @@
 		    </div>
             <div class="box" onclick="location.href='<?=BASE_URL?>business/mill'">
                 <div class="img">
-                    <img src="https://www.anj-group.com/frontend/uploads/defaults/dCbgiI20190319134041.jpg">
+                    <img src="<?=BASE_URL?>public/assets/img/business/home-mill.jpg">
                 </div>
                 <div class="hov">
                     <h2 style="opacity: 1; top: 0px;"><?=$this->getContent('mills')?></h2>
@@ -216,7 +216,7 @@
 		    </div>
             <div class="box" onclick="location.href='<?=BASE_URL?>business/trading'">
                 <div class="img">
-                    <img src="https://www.anj-group.com/frontend/uploads/defaults/jPe2Lc20190319133643.jpg">
+                    <img src="<?=BASE_URL?>public/assets/img/business/home-trading.jpg">
                 </div>
                 <div class="hov">
                     <h2 style="opacity: 1; top: 0px;"><?=$this->getContent('trading')?></h2>
@@ -225,7 +225,7 @@
             </div>
             <div class="box" onclick="location.href='<?=BASE_URL?>business/fnb'">
                 <div class="img">
-                    <img src="https://www.anj-group.com/frontend/uploads/defaults/KHyW8120210416165918.png">
+                    <img src="<?=BASE_URL?>public/assets/img/business/home-fnb.jpg">
                 </div>
                 <div class="hov">
                     <h2 style="opacity: 1; top: 0px;"><?=$this->getContent('fnb')?></h2>
@@ -357,7 +357,7 @@
     const iconSus = document.querySelectorAll('.icon-sus')
     const imgdark = document.querySelectorAll('img.dark')
     let imgArray = ['PO-800x445.jpg','[GetPaidStock.com]-6315c9a9237c6.jpg','sustainability.jpg','MatrixSpark-Community-Development.webp'];
-    let titleArray = ['Kebijakan','Sertifikasi','Lingkungan','CSR'];
+    let titleArray = ['Kebijakan','Sertifikasi','Lingkungan','Tata Kelola Perusahaan'];
     let subTitleArray = [
         'Pengelolaan Usaha yang Produktif dan Berkelanjutan',
         'Tanggung Jawab Terhadap Kualitas Produk',
@@ -371,7 +371,7 @@
         'Mensejahterakan masyarakat menjadi salah satu fokus utama kami dalam bertumbuh.'
     ]
     let linkArray = [
-        'policy','certification','environment','community'
+        'policy','certification','environment','gcg'
     ]
     let imgCaption = [
         'Berkomitmen untuk menghasilkan produk terbaik',
@@ -402,7 +402,7 @@
             const displayImg = imgArray[(img.dataset.value)-1]
             catTitle.innerText = titleArray[(img.dataset.value)-1]
             contentSum.innerText = contentArray[(img.dataset.value)-1]
-            arraySum.href = '../sustainability/'+linkArray[(img.dataset.value)-1]
+            arraySum.href = base_url()+'sustainability/'+linkArray[(img.dataset.value)-1]
             linkTitle.innerText = subTitleArray[(img.dataset.value)-1]
             imgTitle.innerText = imgCaption[(img.dataset.value)-1]
             imgThumb.src = base_url()+'public/assets/img/sustainability/'+displayImg

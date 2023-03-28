@@ -81,7 +81,7 @@
             sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
             sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
             sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
-            sessionStorage.setItem('imglogo',"WPG_logo_gold.png")
+            sessionStorage.setItem('imglogo',"WPG_logo_gold1.png")
         }
         // $('.header-area.sticky').css('background','#000')
         const bgSelector = $("[data-bg]");

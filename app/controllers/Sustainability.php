@@ -21,7 +21,7 @@ class Sustainability extends Controller {
     $data['data'] = $this->model('SustainabilityModel')->getEnvironment();
     $this->view_versi3('sustainability/environment',$data);
   }
-  public function community() {
+  public function gcg() {
     $data['active'] = 'community';
     $data['data'] = $this->model('SustainabilityModel')->getCSR();
     $this->view_versi3('sustainability/community',$data);
