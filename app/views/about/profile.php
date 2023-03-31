@@ -34,7 +34,7 @@
     </div>
 </div>
 <!--== End Testimonial Area Wrapper ==-->
-<div class="video-profile1">
+<div class="animate-box video-profile1" data-animate-effect="fadeIn">
     <div class="w-100">
         <div class="nectar-shape-divider-wrap " style="height:50%; position:absolute; width:100%" data-using-percent-val="true" data-height="50%" data-front="" data-style="straight_section" data-position="bottom">
             <svg class="nectar-shape-divider" aria-hidden="true" fill="#004b31" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"> <polygon points="104 10, 104 0, 0 0, 0 10"></polygon> </svg>
@@ -52,11 +52,11 @@
     </div>
 </div>
 <!--== Start History Area Wrapper ==-->
-<div class="history-area sp-y bg-offwhite" style="
-    background-image: url('https://www.asianagri.com/wp-content/uploads/2021/02/home-bg-4.jpg');
+<div class="animate-box history-area sp-y bg-offwhite" style="
+    background-image: url('<?=BASE_URL?>public/assets/img/about/about2.jpg');
     background-position: right center;
-    position: relative;">
-    <div class="row-bg-overlay" style="background: rgba(0,75,49,0.83);background: linear-gradient(90deg,rgb(207 163 10 / 85%) 0%,rgb(68 59 59 / 85%) 100%);opacity: 1;"></div>
+    position: relative;" data-animate-effect="fadeInUp">
+    <div class="row-bg-overlay" style="background: rgba(0,75,49,0.83);background: linear-gradient(90deg,rgb(34 33 30 / 95%) 0%,rgb(147 107 18 / 85%) 100%);opacity: 1;"></div>
     
     <div class="container">
         <div class="row align-items-center">
@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-6">
                 <div class="row img_profile">
-                    <img class="rounded" data-delay="0" width="100%" src="https://www.asianagri.com/wp-content/uploads/2021/08/vision-mission-corevalues.jpg" alt="" sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw" srcset="https://www.asianagri.com/wp-content/uploads/2021/08/vision-mission-corevalues.jpg 900w, https://www.asianagri.com/wp-content/uploads/2021/08/vision-mission-corevalues-300x200.jpg 300w, https://www.asianagri.com/wp-content/uploads/2021/08/vision-mission-corevalues-768x511.jpg 768w">
+                    <img class="rounded" width="100%" src="<?=BASE_URL?>public/assets/img/about/about2.jpg" alt="" >
                 </div>
             </div>
             <div class="col-md-6">
@@ -73,18 +73,18 @@
                     <?php 
                     $i=0;
                     foreach($this->getContent('about-profile-milestone') as $milestone):?>
-                    <div class="col-6 content-profile">
+                    <div class="animate-box col-6 content-profile" data-animate-effect="fadeInUp">
                         <div class="content-year-border">
                            <?=$milestone['year']?>
                         </div>
 			            <?=$milestone['title']?>
                         <?=$milestone['caption']?>
                     </div>
-                    <?php endforeach;?>
+                    <?php $i++; endforeach;?>
                 </div>
             </div>
             <p>&nbsp;</p>                   
-            <div class="col-md-12 text-end mt-3 about-content">
+            <div class="animate-box col-md-12 text-end mt-3 about-content">
                 <p><a href="<?=BASE_URL?>about/milestone" class="btn-about text-white"><?=$this->getContent('readmore')?> <i class="mdi mdi-chevron-double-right"></i></a></p>
             </div>
         </div>

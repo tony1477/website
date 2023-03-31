@@ -1,9 +1,9 @@
 <!--== Start Page Header Area ==-->
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/news/notes3.jpg">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/news/notes3.jpg" style="background-position:top center">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
-                <div class="page-header-content-inner">
+                <div class="page-header-content-start">
                     <div class="page-header-content">
                         <h2><?=$this->getContent('news-topbar-title')?></h2>
                         <!-- <p>Businex always try to provide the best Business Solutions for Clinets

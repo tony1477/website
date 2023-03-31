@@ -1,4 +1,4 @@
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/contact_us.jpg" >
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/sustainability/topbar-sustainability-image.jpg" >
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
@@ -19,13 +19,16 @@
             <div class="col-lg-9">
                 <article class="blog-post-details">
                     <figure class="blog-post-thumb">
-                        <img src="<?=BASE_URL?>public/assets/img/sustainability/PO-800x445.jpg" alt="Blog" width="100%" />
+                        <img src="<?=BASE_URL?>public/assets/img/sustainability/policy.jpg" alt="Blog" width="100%" class="rounded shadow" />
                     </figure>
 
                     <div class="blog-post-txt contentweb">
                         <?php //$data['data']['content']?>
                         <?=$this->getContentDb('sustain-policy-content')?>
                     </div>
+                    <!-- <div class="animate-box" data-animate-effect="fadeInUp">
+                        <h3>TEST INI</h3>
+                    </div> -->
                 </article>
             </div>
 

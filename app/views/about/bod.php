@@ -32,7 +32,13 @@
                 <?=$row['profiledesc']?>
             </div>
             <div class="pict">
-                <img class="w-100 h-100 rounded" src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="">
+                <div class="card" style="margin-right:1.5rem; margin-top:1.4rem">
+                    <img class="card-img-top rounded-end" src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="<?=$row['profileposition']?> - <?=$row['profilename']?>" />
+                    <div class="card-body">
+                        <h3 class="card-text"><?=$row['profilename']?></h3>
+                        <h5><?=$row['profileposition']?></h5>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
@@ -60,7 +66,7 @@
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6 px-md-3 px-0 right order-md-2 order-1">
-                            <img alt="" class="w-100 rounded" src="https://cms.sampoernaagro.com/storage/files/shares/about-us/Organisationstructure1.jpg">
+                            <img alt="" class="w-100 rounded shadow" src="<?=BASE_URL?>public/assets/img/team/WP_THEMANAGERS.jpg">
                         </div>
                     </div>
                 </div> 
@@ -85,106 +91,106 @@
                             <div class="swiper-container team-swiper swiper-initialized swiper-horizontal swiper-pointer-events">
                                 <div class="swiper-wrapper" id="swiper-wrapper-ec04e6c9fde0d3c0" aria-live="polite" style="transform: translate3d(-1158px, 0px, 0px); transition-duration: 0ms;">
                                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#WidiyatiWilianModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mrs-widiyati.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Widiyati Wilian</p>
                                             <p class="text-blk text-center">Corporate Service Director</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#SureshALSugoomaranModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mr-suresh.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Suresh AL Sugoomaran</p>
                                             <p class="text-blk text-center">Production Mill Controller</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#PurwantoroModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mr-purwantoro.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Purwantoro</p>
                                             <p class="text-blk text-center">Head Of IA &amp; CC</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#LainyModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mrs-lainy.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Lainy</p>
                                             <p class="text-blk text-center">Head of Fin &amp; Acc</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#ErryWilianModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/pak-md.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mr-erry.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Erry Wilian</p>
                                             <p class="text-blk text-center">Managing Director</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#WidiyatiWilianModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mrs-widiyati.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Widiyati Wilian</p>
                                             <p class="text-blk text-center">Corporate Service Director</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#SureshALSugoomaranModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mr-suresh.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Suresh AL Sugoomaran</p>
                                             <p class="text-blk text-center">Production Mill Controller</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#PurwantoroModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mr-purwantoro.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Purwantoro</p>
                                             <p class="text-blk text-center">Head Of IA &amp; CC</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#LainyModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mrs-lainy.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Lainy</p>
                                             <p class="text-blk text-center">Head of Fin &amp; Acc</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#ErryWilianModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/pak-md.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/pak-md.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Erry Wilian</p>
                                             <p class="text-blk text-center">Managing Director</p>
                                             </a>
                                         </div>
                                     </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#WidiyatiWilianModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mrs-widiyati.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Widiyati Wilian</p>
                                             <p class="text-blk text-center">Corporate Service Director</p>
                                             </a>
                                         </div>
                                     </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 153px; margin-right: 40px;">
-                                        <div class="card">
+                                        <div class="card shadow">
                                             <a class="" data-bs-toggle="modal" href="#SureshALSugoomaranModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mr-suresh.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Suresh AL Sugoomaran</p>
                                             <p class="text-blk text-center">Production Mill Controller</p>
                                             </a>
@@ -192,7 +198,7 @@
                                     </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 153px; margin-right: 40px;">
                                         <div class="card">
                                             <a class="" data-bs-toggle="modal" href="#PurwantoroModal">
-                                            <img src="http://localhost/webs/public/assets/img/team/02.jpg" alt="Founder" class="team-member-image" role="button">
+                                            <img src="<?=BASE_URL?>public/assets/img/team/mr-purwantoro.jpg" alt="Founder" class="team-member-image" role="button">
                                             <p class="text-blk name text-center">Purwantoro</p>
                                             <p class="text-blk text-center">Head Of IA &amp; CC</p>
                                             </a>

@@ -1,9 +1,9 @@
 <!--== Start Page Header Area ==-->
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/career/slider-index-02.jpg">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/career/WP_career.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
-                <div class="page-header-content-inner">
+                <div class="page-header-content-inner page-header-career">
                     <div class="page-header-content">
                         <h2><?=$this->getContent('career-topbar-title')?></h2>
                         <p><i class="mdi mdi-format-quote-open"></i><em><?=$this->getContent('career-topbar-subtitle')?></em><i class="mdi mdi-format-quote-close"></i></p>

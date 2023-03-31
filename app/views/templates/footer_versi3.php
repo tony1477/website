@@ -178,6 +178,7 @@
 
 <!--=== REVOLUTION JS ===-->
 <script src="<?=BASE_URL?>public/assets/js/revslider/rev-active.js"></script>
+<script src="<?=BASE_URL?>public/assets/js/main.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <?php if(end($arr)=='bod') { ?>
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"> -->

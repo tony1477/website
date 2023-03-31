@@ -7,11 +7,14 @@
         'mills' => 'Pabrik Kelapa Sawit',
         'trading' => 'Trading', 
         'fnb' => 'Makanan & Minuman',
+        'location-map' => 'Peta Lokasi',
+        'agronomy' => 'Agronomy',
         'policy' => 'Kebijakan',
         'certification' => 'Sertifikasi',
         'environment' => 'Lingkungan',
         'gcg' => 'G C G',
         'moreinfo-visit-us' => 'Informasi lebih lanjut, kunjungi',
+        'subsdiary-location' => 'Anak Perusahaan Dan Peta Lokasi',
         // for about-sidebar
         'about-sidebar-profile' => 'Profil Perusahaan',
         'about-sidebar-vision' => 'Visi - Misi, Nilai Luhur',
@@ -33,17 +36,17 @@
             [
                 'year' => '<h5 class="about milestone-year text-white fw-bold">2012</h5>',
                 'title' => '<h5 class="about milestone-subtitle text-white fw-bold">CV. Tani Sejahtera Perkasa</h5>',
-                'caption' => '<p>Perkebunan Kelapa Sawit kedua yang didirikan pada tahun 2012.</p>'
+                'caption' => '<p>PENGEMBANGAN Perkebunan Kelapa Sawit kedua yang didirikan pada tahun 2012.</p>'
             ],
             [
                 'year' => '<h5 class="about milestone-year text-white fw-bold">2014</h5>',
                 'title' => '<h5 class="about milestone-subtitle text-white fw-bold">PT. Libo Sawit Perkasa</h5>',
-                'caption' => '<p>Pengolahan inti minyak kelapa sawit yang pertama yang dijalankan oleh Founder.</p>'
+                'caption' => '<p>OPERASIONAL PABRIK  PABRIK Pengolahan inti minyak kelapa sawit yang pertama.</p>'
             ],
             [
                 'year' => '<h5 class="about milestone-year text-white fw-bold">2017</h5>',
                 'title' => '<h5 class="about milestone-subtitle text-white fw-bold">PT. Semunai Sawit Perkasa</h5>',
-                'caption' => '<p>Pengolahan inti minyak kelapa sawit yang kedua yang dijalankan yang beroperasi di Wilayah Siak.</p>'
+                'caption' => '<p>OPERASIONAL PABRIK PENGOLAHAN Kelapa Sawit Pertama yang menjadi industri agribisnis terpadu dan berkelanjutan.</p>'
             ]
         ],
         // for vision-topbar-title
@@ -59,7 +62,7 @@
         'about-values-title' => 'NILAI LUHUR',
         //for about-bod
         'about-bod-title' => 'Profil Manajemen',
-        'about-bod-content' => "Seluruh anggota Dewan, selain Komisaris Utama yang berafiliasi, merupakan profesional dengan bidang spesialis masing-masing. Dewan Komisaris selalu memonitor penerapan GCG secara berkelanjutan, memberikan masukan serta mendorong Direksi untuk dapat mencapai kinerja operasional termasuk upaya optimal dalam meningkatkan daya saing perusahaan melalui pencapaian produktivitas yang lebih tinggi.",
+        'about-bod-content' => "Seluruh anggota Dewan, selain Managing Director yang berafiliasi, merupakan profesional dengan bidang spesialis masing-masing. Corporate Head selalu memonitor penerapan Good Corporate Governance (GCG) secara berkelanjutan, memberikan masukan serta mendorong menajemen i untuk dapat mencapai kinerja operasional termasuk upaya optimal dalam meningkatkan daya saing perusahaan melalui pencapaian produktivitas yang lebih tinggi.",
         // for business-topbar
         'business-plant-topbar' => 'Perkebunan',
         'business-mill-topbar' => 'Pabrik Kelapa Sawit',
@@ -68,12 +71,12 @@
          'sustain-policy-topbar' => 'Kebijakan',
          'sustain-certification-topbar' => 'Sertifikasi',
          'sustain-environment-topbar' => 'Lingkungan',
-         'sustain-gcg-topbar' => 'G C G',
+         'sustain-gcg-topbar' => 'Tata Kelola Perusahaan',
         // for sustain-sidebar
-        'sustain-sidebar-policy' => 'Policy',
-        'sustain-sidebar-certification' => 'Certification',
-        'sustain-sidebar-environment' => 'Environment',
-        'sustain-sidebar-gcg' => 'Good Corp. Governance',
+        'sustain-sidebar-policy' => 'Kebijakan',
+        'sustain-sidebar-certification' => 'Sertfikasi',
+        'sustain-sidebar-environment' => 'Lingkungan',
+        'sustain-sidebar-gcg' => 'Tata Kelola Perusahaan',
         // for investor-topbar-title
         'investor-topbar-title' => 'Sorotan Produksi',
         // for news-topbar

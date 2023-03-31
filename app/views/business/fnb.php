@@ -1,4 +1,4 @@
-<div class="page-header-area bg-img-news" data-bg="https://flipnfry.id/wp-content/uploads/2022/12/about-sect3.png" style="background-position: center center;">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/business/fnb-topbar.png" style="background-position: center center;">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
@@ -42,39 +42,3 @@
     </div>
 </div>
 <!--== End About Area Wrapper ==-->
-
-<!--== Start Fun Fact Area Wrapper ==-->
-<!-- <div class="fun-fact-area sm-top parallax" data-parallax-speed="0.70" data-bg="<?=BASE_URL?>public/assets/img/fun-fact-bg.webp">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="brand-logo-content slick-row-20">
-                    <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/ssp.png" alt="WPG-Logo" style="width: 128px;"/></a>
-                    </div>
-
-                    <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/libo.png" alt="WPG-Logo" style="width: 128px;"/></a>
-                    </div>
-
-                    <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/tsp.png" alt="WPG-Logo" style="width: 128px;"/></a>
-                    </div>
-
-                    <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/sps.png" alt="WPG-Logo" style="width: 128px;"/></a>
-                    </div>
-
-                    <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/kbp.png" alt="WPG-Logo" style="width: 128px;"/></a>
-                    </div>
-
-                    <div class="brand-logo-item">
-                        <a href="#"><img src="<?=BASE_URL?>public/assets/img/brand-logo/wtp.png" alt="WPG-Logo" style="width: 128px;"/></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!--== End Fun Fact Area Wrapper ==-->

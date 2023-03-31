@@ -38,7 +38,7 @@
                         <div class="nav-wrapper">
                             <div class="sl-nav">
                                 <ul>
-                                <li><img src="http://localhost/webs/public/assets/img/<?=$_SESSION['lang']=='id' ? 'indonesia.png' : 'usa.png'?>" style="display: inline; margin-top:-5px; width:24px"> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                <li><img src="<?=BASE_URL?>public/assets/img/<?=$_SESSION['lang']=='id' ? 'indonesia.png' : 'usa.png'?>" style="display: inline; margin-top:-5px; width:24px"> <i class="fa fa-angle-down" aria-hidden="true"></i>
                                     <div class="triangle"></div>
                                     <ul>
                                         <?php if($_SESSION['lang']=='id'):?>

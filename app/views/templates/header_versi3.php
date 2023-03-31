@@ -21,6 +21,7 @@
     <link href="<?=BASE_URL?>public/assets/css/magnific-popup.min.css" rel="stylesheet"/>
     <!--== All Animate CSS ==-->
     <link href="<?=BASE_URL?>public/assets/css/animate.min.css" rel="stylesheet"/>
+    <link href="<?=BASE_URL?>public/assets/css/animate2.min.css" rel="stylesheet"/>
     <!--== All FontAwesome CSS ==-->
     <link href="<?=BASE_URL?>public/assets/css/font-awesome.min.css" rel="stylesheet"/>
     <!--== All Material Icons CSS ==-->

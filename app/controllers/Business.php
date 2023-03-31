@@ -31,6 +31,15 @@ class Business extends Controller {
         $this->view_versi3('business/fnb',$data);
     }
 
+    public function agronomy()
+    {
+        $this->view_versi3('business/agronomy');
+    }
+    public function location_map()
+    {
+        $this->view_versi3('business/location-map');
+    }
+
     public function page() {
 
     }

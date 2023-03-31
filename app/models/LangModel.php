@@ -98,10 +98,10 @@ class LangModel {
                        'data' => [
                            'plantation' => 'Perkebunan',
                            'mill' => 'Pabrik',
-                           'trading' => 'Trading',
-                           'agro' => 'Agronomy',
-                           //' lemongrass' => 'Serai Wangi',
+                           'agronomy' => 'Agronomy', 
                            'fnb' => 'Makanan & Minuman',
+                           'trading' => 'Trading',
+                           //' lemongrass' => 'Serai Wangi',
                            'location-map' => 'Peta Lokasi'
                         ],
                     ],
@@ -149,10 +149,10 @@ class LangModel {
                        'data' => [
                            'plantation' => 'Plantation',
                            'mill' => 'Palm Oil Mill',
+                           'agronomy' => 'Agronomy',
+                           'fnb' => 'Food & Beverage',
                            'trading' => 'Trading',
                            //'lemongrass' => 'Serai Wangi',
-                           'agro' => 'Agronomy',
-                           'fnb' => 'Food & Beverage',
                            'location-map' => 'Location Map'
                         ],
                     ],

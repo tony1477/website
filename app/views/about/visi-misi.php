@@ -20,8 +20,8 @@
             <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
                 <?php require_once('sidebar.php')?>
             </div>
-            <div class="col-md-6 col-md-9">
-                <div class="card mb-3" style="border: 1px solid rgb(177 163 163 / 75%);">
+            <div class="col-md-6 col-lg-9">
+                <div class="animate-box card mb-3" style="border: 1px solid rgb(177 163 163 / 75%);" data-animate-effect="fadeIn">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="<?=BASE_URL?>public/assets/img/Bendera.jpg" class="img-fluid rounded" alt="...">
@@ -34,10 +34,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3" style="margin-top: 5rem;">
+                <div class="animate-box card mb-3" style="margin-top: 5rem;" data-animate-effect="fadeInUp">
                     <div class="row g-0 align-items-center">
                         <div class="col-md-4">
-                            <img src="https://cms.sampoernaagro.com/storage/files/shares/about-us/VISIMISI1.jpg" class="rounded-start" alt="..." style="height: 412px;display: inline-block;">
+                            <img src="<?=BASE_URL?>public/assets/img/about/WP_MILL (80).jpg" class="rounded-start" alt="..." style="height: 412px;display: inline-block;">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -86,7 +86,7 @@
                                     <img src="<?=BASE_URL?>public/assets/img/about/flat/3.png" class="img-content">
                                     <h3 class="text-underline values-title">Loyal</h3>
                                     <p class="text-highlights">Setia</p>
-                                    <p class="values-description">Memiliki sifat SETIA dan bangga menjadi bagian dari Wilian Perkasa Group.</p>
+                                    <p class="values-description">Memiliki sifat SETIA dan bangga menjadi bagian dari Wilian Perkasa .</p>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@
             </div>
             <div class="col-md-3 col-lg-3"></div>
             <div class="col-md-9 col-lg-9">
-                <div class="row values justify-content-lg-center">
+                <div class="animate-box row values justify-content-lg-center" data-animate-effect="fadeIn">
                     <h3 class="text-center"><?=$this->getContent('about-values-title')?></h3>
                     <div class="icon-values">
                         <div class="img-values text-center">

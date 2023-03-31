@@ -30,7 +30,7 @@
                     <div class="tp-caption tp-resizeme slide-txt " data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
-                         data-fontweight="['400','400','400','400']" data-width="['600','600','600','320']"
+                         data-fontweight="['400','400','400','400']" data-width="['600','600','6001','320']"
                          data-height="none" data-whitespace="normal" data-visibility="['on','on','on','on']"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":360,"split":"lines","splitdelay":0.1,"speed":500,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -112,12 +112,23 @@
 <div class="about-area-wrapper sm-top">
     <div class="container">
         <div class="row align-items-lg-center">
-            <div class="col-md-6 col-lg-6">
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="560" height="315" type="text/html" allow="autoplay" src="https://www.youtube.com/embed/r2u-sXXoKs8?autoplay=1&mute=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://wilianperkasa.com" title="Wilian Perkasa Office" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              
+            <div class="animate-box col-md-6 col-lg-6" data-animate-effect="fadeInLeft">
+                <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="560" height="315" type="text/html" allow="autoplay" src="https://www.youtube.com/embed/r2u-sXXoKs8?autoplay=1&mute=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://wilianperkasa.com" title="Wilian Perkasa Office" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                -->
+                <div class="video-player">
+                    <video controls="" poster="<?=BASE_URL?>public/assets/img/video-sample.jpg" autoplay="">
+                        <source src="<?=BASE_URL?>public/assets/videos/WP 5 MIN.mp4" type="video/mp4">
+                        <source src="video.webm" type="video/webm">
+                        <source src="video.ogv" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div class="cover-image" style="background-image: url('<?=BASE_URL?>public/assets/img/video-sample.jpg')">
+                        <button class="play-button"></button>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-md-6 col-lg-6">
+            <div class="animate-box col-md-6 col-lg-6" data-animate-effect="fadeInRight">
                 <div class="about-content">
                     <?=$this->getContentDb('home-about-profile')?>
                 </div>
@@ -129,7 +140,7 @@
 
 <!--== Start Feature Area Wrapper ==-->
 <div class="feature-area-wrapper" style="margin-top: 100px;">
-    <div class="container">
+    <div class="animate-box container" data-animate-effect="fadeInUp">
         <div class="row mtn-sm-60 mtn-md-5"> 
             <div class="col-md-6 col-lg-6">
                 <div class="detail about-content">
@@ -175,7 +186,7 @@
             </div>
             <div class="col-md-6 col-lg-6">
                 <figure class="about-thumb">
-                    <img src="<?=BASE_URL?>public/assets/img/sustainability/PO-800x445.jpg" alt="Sustainability Image" class="rounded img-thumb"/>
+                    <img src="<?=BASE_URL?>public/assets/img/sustainability/policy.jpg" alt="Sustainability Image" class="rounded img-thumb"/>
                     <figcaption class="detail-thumb"><p>Berkomitmen untuk menghasilkan produk terbaik.</p></figcaption>
                 </figure>
             </div>          
@@ -185,7 +196,7 @@
 <!--== End Feature Area Wrapper ==-->
 
 <!--== Start Service Area Wrapper ==-->
-<section class="busines_home" style="padding: 3.5rem 5rem .5rem;">
+<section class="animate-box busines_home" style="padding: 3.5rem 5rem .5rem;" data-animate-effect="fadeInUp">
 	<div class="list_business clearfix">
         <div class="box big">
             <div class="img">
@@ -193,6 +204,14 @@
             </div>
             <div class="text">
                 <?=$this->getContentDb('home-business-content')?>
+                <div class="link">
+                    <a href="<?=BASE_URL?>business/plantation"><?=$this->getContent('plantation')?> </a>
+                    <a href="<?=BASE_URL?>business/mill"><?=$this->getContent('mills')?> </a>
+                    <a href="<?=BASE_URL?>business/agronomy"><?=$this->getContent('agronomy')?> </a>
+                    <a href="<?=BASE_URL?>business/fnb"><?=$this->getContent('fnb')?> </a>
+                    <a href="<?=BASE_URL?>business/trading"><?=$this->getContent('trading')?> </a>
+                    <a href="<?=BASE_URL?>business/locationmap"><?=$this->getContent('location-map')?> </a>
+                </div>
             </div>
         </div>
 		<div class="left">
@@ -311,31 +330,35 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="animate-box col-12" data-animate-effect="fadeInUp">
                 <div class="brand-logo-content slick-row-20">
                     <div class="brand-logo-item">
-                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/SUSTAINABILITY/5f92d16fa1507.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
+                        <a href="javascript:void;"><img src="<?=BASE_URL?>public/assets/img/album/slider-1.jpg" alt="Membawa TBS di Kebun Sawit Wilian Perkasa" style="width: 350px;" height="320px" /></a>
+                    </div>
+                    <div class="brand-logo-item">
+                        <a href="javascript:void;"><img src="<?=BASE_URL?>public/assets/img/album/slider-2.jpg" alt="Sustainability Wilian Perkasa" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/BH_0333.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
+                        <a href="javascript:void;"><img src="<?=BASE_URL?>public/assets/img/album/slider-3.jpg" alt="Kebun Nilam" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/DSC_9668.JPG" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
+                        <a href="javascript:void;"><img src="<?=BASE_URL?>public/assets/img/album/slider-4.jpg" alt="CSR Wilian Perkasa" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/about-us/Organisationstructure1.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
+                        <a href="javascript:void;"><img src="<?=BASE_URL?>public/assets/img/album/slider-5.jpg" alt="Kebun Sawit Wilian Perkasa" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/PRODUCT/5f92c758804d2.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
+                        <a href="javascript:void;"><img src="<?=BASE_URL?>public/assets/img/album/slider-6.jpg" alt="Kebun Nilam" style="width: 350px;" height="320px" /></a>
                     </div>
 
                     <div class="brand-logo-item">
-                        <a href="#"><img src="https://cms.sampoernaagro.com/storage/files/shares/about-us/BOVERVIEW1.jpg" alt="WPG-Logo" style="width: 350px;" height="320px" /></a>
+                        <a href="javascript:void;"><img src="<?=BASE_URL?>public/assets/img/album/slider-7.jpg" alt="Buah Kelapa Sawit Wilian Perkasa" style="width: 350px;" height="320px" /></a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -356,7 +379,7 @@
     const btnIcon = document.querySelectorAll('.w-100')
     const iconSus = document.querySelectorAll('.icon-sus')
     const imgdark = document.querySelectorAll('img.dark')
-    let imgArray = ['PO-800x445.jpg','[GetPaidStock.com]-6315c9a9237c6.jpg','sustainability.jpg','MatrixSpark-Community-Development.webp'];
+    let imgArray = ['policy.jpg','certification.jpg','environment.jpg','gcg.jpg'];
     let titleArray = ['Kebijakan','Sertifikasi','Lingkungan','Tata Kelola Perusahaan'];
     let subTitleArray = [
         'Pengelolaan Usaha yang Produktif dan Berkelanjutan',
@@ -408,6 +431,29 @@
             imgThumb.src = base_url()+'public/assets/img/sustainability/'+displayImg
         });
     }
+
+    window.addEventListener('load', function() {
+        var video = document.querySelector('video');
+        var cover = document.querySelector('.cover-image');
+        var playButton = document.querySelector('.play-button');
+        
+        playButton.addEventListener('click', function() {
+            video.play();
+            // video.classList.add('playing');
+            playButton.style.display = 'none';
+        });
+        
+        video.addEventListener('play', function() {
+            playButton.style.display = 'none';
+            cover.style.display = 'none';
+        });
+        
+        video.addEventListener('pause', function() {
+            playButton.style.display = 'block';
+            // video.classList.remove('playing');
+            cover.style.display = 'flex';
+        });
+    });
     </script>
     HEREDOC;
 ?>

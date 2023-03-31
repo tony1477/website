@@ -1,4 +1,4 @@
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/contact_us.jpg" >
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/sustainability/topbar-sustainability-image.jpg" >
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
@@ -18,7 +18,7 @@
             <div class="col-lg-9">
                 <article class="blog-post-details">
                     <figure class="blog-post-thumb">
-                        <img src="<?=BASE_URL?>public/assets/img/sustainability/sustainability.jpg" alt="Blog"/>
+                        <img src="<?=BASE_URL?>public/assets/img/sustainability/environment.jpg" alt="Blog" class="rounded shadow" />
                     </figure>
 
                     <div class="blog-post-txt contentweb">
