@@ -1,10 +1,10 @@
-<div class="page-header-area bg-img-news" data-bg="https://www.asianagri.com/wp-content/uploads/2021/06/banner-bg-1.jpg">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/business/plant-business-page1.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2><?=$this->getContent('business-plant-topbar')?></h2>
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('business-plant-topbar')?></h2>
                     </div>
                 </div>
             </div>
@@ -18,23 +18,13 @@
         <!-- <img src="<?=BASE_URL?>public/assets/img/business/Ruyi - goldfoil.jpg"> -->
         <!-- </div> -->
         <div class="row align-items-lg-center">
-            <div class="col-md-6 col-lg-7 order-1">
+            <div class="col-md-12 col-lg-12 order-1">
                 <div class="about-content ms-0 contentweb">
                     <?=$this->getContentDb('business-plant-content')?>
                     <?php //$data['data']['content']?>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-5 order-0 order-md-1">
-                <!-- <figure class="about-thumb">
-                    <img src="<?=BASE_URL?>public/assets/img/our business/plantation.jpeg" alt="Businex-About"/>
-                </figure> -->
-                <figure class="service-details-thumb">
-                    <img src="<?=BASE_URL?>public/assets/img/business/plantation.jpeg" alt="Businex-Service Details"/>
-                    <img src="<?=BASE_URL?>public/assets/img/business/plantation2.jpeg" alt="Businex-Service Details"/>
-                    <img src="<?=BASE_URL?>public/assets/img/business/seraiwangi3.jpeg" alt="Businex-Service Details"/>
-                </figure>
-            </div>
         </div>
     </div>
 </div>

@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6 px-md-3 px-0 right order-md-2 order-1">
-                            <img alt="" class="w-100 rounded shadow" src="<?=BASE_URL?>public/assets/img/team/WP_THEMANAGERS.jpg">
+                            <img alt="" class="w-100 rounded shadow" src="<?=BASE_URL?>public/assets/img/team/2Ver2.jpg">
                         </div>
                     </div>
                 </div> 

@@ -4,7 +4,7 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2><?=$this->getContent('location-map')?></h2>
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('location-map')?></h2>
                       
                     </div>
                 </div>

@@ -1049,6 +1049,8 @@ img .icon-language {
     /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  var(--red-wp) 0%, var(--red-wp) 90% ); */
     background: var(--footer-background);
     color: var(--footer-text-color);
+    z-index: 10;
+    position: relative;
 }
 .footer-copy {
     padding:5px;
@@ -3374,11 +3376,11 @@ img .icon-language {
     -webkit-box-align: end;
     -webkit-align-items: end;
     -ms-flex-align: end;
-    align-items: end;
+    align-items: center;
     -webkit-box-pack: start;
     -webkit-justify-content: start;
     -ms-flex-pack: start;
-    justify-content: start;
+    justify-content: center;
     color: #FFFFFF;
 }
 
@@ -4539,7 +4541,7 @@ form#contact-form label {
     height: 0;
     background-color: #000;
     /* border: 1px solid #fff; */
-    /* border-radius: .35rem; */
+    border-radius: .35rem;
 }
 
 .video-player video {
@@ -4636,4 +4638,27 @@ form#contact-form label {
 
 .color-nilam {
     background: var(--box-nilam-color);
+}
+
+
+.business-page-title {
+    display: flex;
+    justify-content: center;
+}
+
+.business-page-title h4.title {
+    color: #790102;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 50%;
+    margin-bottom: 1rem;
+    /* border-bottom: 2px solid #cea20a; */
+}
+
+.business-page-title h4::after {
+    content: '';
+    border-bottom: 2px solid #cea20a;
+    height: 1rem;
+    display: block;
 }

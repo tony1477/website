@@ -27,62 +27,62 @@
         // console.log(window.location.href)
         const fulllink = location.href;
         const url = fulllink.substring(27);
-        if(sessionStorage.getItem('bgcolor')!=null) { 
-            switch(url) {
-                case 'index1_new': 
-                sessionStorage.setItem('bgcolor',"var(--nav-header-ver1)")
-                sessionStorage.setItem('fontcolor',"var(--nav-color-ver1)")
-                sessionStorage.setItem('footer-bg',"var(--nav-header-ver1)")
-                sessionStorage.setItem('footer-text',"var(--nav-color-ver1)")
-                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver1)")
-                sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
-                break;
+        // if(sessionStorage.getItem('bgcolor')!=null) { 
+        //     switch(url) {
+        //         case 'index1_new': 
+        //         sessionStorage.setItem('bgcolor',"var(--nav-header-ver1)")
+        //         sessionStorage.setItem('fontcolor',"var(--nav-color-ver1)")
+        //         sessionStorage.setItem('footer-bg',"var(--nav-header-ver1)")
+        //         sessionStorage.setItem('footer-text',"var(--nav-color-ver1)")
+        //         sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver1)")
+        //         sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
+        //         break;
 
-                case 'index2_new':
-                sessionStorage.setItem('bgcolor',"var(--nav-header-ver2)")
-                sessionStorage.setItem('fontcolor',"var(--nav-color-ver2)")
-                sessionStorage.setItem('footer-bg',"var(--nav-header-ver2)")
-                sessionStorage.setItem('footer-text',"var(--nav-color-ver2)")
-                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver2)")
-                sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
-                break;
+        //         case 'index2_new':
+        //         sessionStorage.setItem('bgcolor',"var(--nav-header-ver2)")
+        //         sessionStorage.setItem('fontcolor',"var(--nav-color-ver2)")
+        //         sessionStorage.setItem('footer-bg',"var(--nav-header-ver2)")
+        //         sessionStorage.setItem('footer-text',"var(--nav-color-ver2)")
+        //         sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver2)")
+        //         sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
+        //         break;
 
-                case 'index3_new':
-                sessionStorage.setItem('bgcolor',"var(--nav-header-ver3)")
-                sessionStorage.setItem('fontcolor',"var(--nav-color-ver3)")
-                sessionStorage.setItem('footer-bg',"var(--nav-header-ver3)")
-                sessionStorage.setItem('footer-text',"var(--nav-color-ver3)")
-                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver3)")
-                sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
-                break;
+        //         case 'index3_new':
+        //         sessionStorage.setItem('bgcolor',"var(--nav-header-ver3)")
+        //         sessionStorage.setItem('fontcolor',"var(--nav-color-ver3)")
+        //         sessionStorage.setItem('footer-bg',"var(--nav-header-ver3)")
+        //         sessionStorage.setItem('footer-text',"var(--nav-color-ver3)")
+        //         sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver3)")
+        //         sessionStorage.setItem('imglogo',"WPG_logo_complete4_rev.png")
+        //         break;
                 
 
-                case 'index4_new':
-                sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
-                sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
-                sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
-                sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
-                sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
-                sessionStorage.setItem('imglogo',"WPG_logo_gold.png")
-                break;
+        //         case 'index4_new':
+        //         sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+        //         sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
+        //         sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
+        //         sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
+        //         sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
+        //         sessionStorage.setItem('imglogo',"WPG_logo_gold.png")
+        //         break;
 
-                // default:
-                // sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
-                // sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
-                // sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
-                // sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
-                // sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
-                // sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
-            }
-        }
-        else {
-            sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
-            sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
-            sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
-            sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
-            sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
-            sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
-        }
+        //         // default:
+        //         // sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+        //         // sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
+        //         // sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
+        //         // sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
+        //         // sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
+        //         // sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
+        //     }
+        // }
+        // else {
+        //     sessionStorage.setItem('bgcolor',"var(--nav-header-ver4)")
+        //     sessionStorage.setItem('fontcolor',"var(--nav-color-ver4)")
+        //     sessionStorage.setItem('footer-bg',"var(--nav-header-ver4)")
+        //     sessionStorage.setItem('footer-text',"var(--nav-color-ver4)")
+        //     sessionStorage.setItem('bgcopyright',"var(--bg-copyright-ver4)")
+        //     sessionStorage.setItem('imglogo',"WPG_logo_complete3_rev.png")
+        // }
         // $('.header-area.sticky').css('background','#000')
         const bgSelector = $("[data-bg]");
         bgSelector.each(function (index, elem) {
@@ -371,15 +371,15 @@
             $(".header-area").addClass('sticky');
             // window.scrollTo(0,800)
             // headersticky.style.background = `${localStorage.getItem('bgcolor')}`
-            $('.logo-area img').attr('src',`${base_url()}/public/assets/img/${sessionStorage.getItem('imglogo')}`)
+            $('.logo-area img').attr('src',`${base_url()}/public/assets/img/WPG_logo_complete3_rev.png`)
             $('ul.main-menu.nav').removeClass('resize-font')
             $('.logo-area').removeClass('resize-img')
             
-            root.style.setProperty('--nav-header-background', sessionStorage.getItem('bgcolor'));
-            root.style.setProperty('--nav-menu-color', sessionStorage.getItem('fontcolor'));
-            root.style.setProperty('--footer-background', sessionStorage.getItem('footer-bg'));
-            root.style.setProperty('--footer-text-color', sessionStorage.getItem('footer-text'));
-            root.style.setProperty('--bg-copyright', sessionStorage.getItem('bgcopyright'));
+            root.style.setProperty('--nav-header-background', '#790002');
+            root.style.setProperty('--nav-menu-color', '#f8f9fa');
+            root.style.setProperty('--footer-background', '#790002');
+            root.style.setProperty('--footer-text-color', '#f8f9fa');
+            root.style.setProperty('--bg-copyright', 'linear-gradient(90deg, rgb(165 19 22) 28%, rgb(120 14 15) 100%)');
         } else {
             $('.logo-area').addClass('resize-img')
             $('ul.main-menu.nav').addClass('resize-font')
