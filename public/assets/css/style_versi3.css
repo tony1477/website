@@ -3866,7 +3866,7 @@ ul.text-misi li::before {
 
 .content > p.text-highlights {
     margin-top: -15px;
-    color: rgba(60, 80,138,.85);
+    color: var(--red-wp);
     font-weight: 700;
     font-size:1.2rem;
 }
@@ -4665,4 +4665,13 @@ form#contact-form label {
 .text-bold-values {
     font-weight: 600;
     color: var(--red-wp);
+}
+
+.bg-overlay {
+    background: url('../../assets/img/footer-bg-37.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    background-position: bottom center;
+    z-index: -1;
 }

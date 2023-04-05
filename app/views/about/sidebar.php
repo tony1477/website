@@ -1,4 +1,4 @@
-<aside class="sidebar-area-wrapper mt-md-80 mt-sm-60" style="position: sticky; top:7rem">
+<aside class="sidebar-area-wrapper mt-md-80 mt-sm-60" style="position: sticky; top:7rem; z-index:2">
                     <!-- Start Single Sidebar Wrap -->
                     <div class="single-sidebar-item-wrap">
                         <!-- <h3 class="sidebar-title">NAVIGATION</h3> -->

@@ -13,7 +13,7 @@
     </div>
 </div>
 <!--== Start About Area Wrapper ==-->
-<div class="about-area-wrapper sm-top">
+<div class="about-area-wrapper sm-top ">
     <div class="container">
         <div class="row align-items-lg-center">
             <div class="col-md-12 col-lg-12 order-1">
@@ -28,7 +28,7 @@
 <!--== End About Area Wrapper ==-->
 
 <!--== Start Fun Fact Area Wrapper ==-->
-<div class="sm-top our-business">
+<div class="our-business">
     <div class="container">
         <div class="row mtn-40">
             <div class="col-6 col-md-6"></div>

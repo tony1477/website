@@ -16,7 +16,7 @@
 </div>
 <!--== End Page Header Area ==-->
 <!--== Start Testimonial Area Wrapper ==-->
-<div class="about-area-wrapper sm-top">
+<div class="about-area-wrapper sm-top bg-overlay">
     <div class="container" style="border: 0px solid #000;">
         <div class="row">
             <div class="col-md-6 col-lg-3 order-lg-0 order-md-0 order-md-3">
@@ -39,5 +39,5 @@
         </div>
     </div>
 </div>
-<div class="sm-top-wt"></div>
+<!-- <div class="sm-top-wt"></div> -->
 <!--== End Testimonial Area Wrapper ==-->

@@ -17,7 +17,7 @@
 <!--== End Page Header Area ==-->
 
 <!--== Start Testimonial Area Wrapper ==-->
-<div class="about-area-wrapper sm-top">
+<div class="about-area-wrapper sm-top bg-overlay">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-3 order-lg-0 order-md-0 order-md-3">

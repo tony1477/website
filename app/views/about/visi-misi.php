@@ -14,7 +14,7 @@
     </div>
 </div>
 <!--== Start Testimonial Area Wrapper ==-->
-<div class="testimonial-area testimonial-area--2 bg-offwhite">
+<div class="testimonial-area testimonial-area--2 bg-offwhite bg-overlay">
     <div class="container">
         <div class="row sp-top">
             <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">

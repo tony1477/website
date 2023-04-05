@@ -31,7 +31,7 @@
 <!--== End About Area Wrapper ==-->
 
 <!--== Start Fun Fact Area Wrapper ==-->
-<div class="sm-top our-business">
+<div class="our-business">
     <div class="container">
         <div class="row mtn-40">
             <div class="col-6 col-md-6"></div>

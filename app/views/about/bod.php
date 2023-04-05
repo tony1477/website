@@ -45,7 +45,7 @@
     </div>
 </div>
 <?php endforeach;?>
-<div class="team-page-area-wrapper bg-offwhite sp-y">
+<div class="team-page-area-wrapper bg-offwhite sp-y bg-overlay">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
