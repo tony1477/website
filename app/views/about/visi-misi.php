@@ -58,7 +58,7 @@
                                     <img src="<?=BASE_URL?>public/assets/img/about/flat/1.png" class="img-content">
                                     <h3 class="text-underline values-title">Wisdom</h3>
                                     <p class="text-highlights">Bijaksana</p>
-                                    <p class="values-description">Bersikap BIJAKSANA, sehingga mampu memahami dan membedakan tindakan yang benar atau salah dalam menangani pekerjaan ataupun masalah.</p>
+                                    <p class="values-description">Bersikap <span class="text-bold-values">BIJAKSANA</span>, sehingga mampu memahami dan membedakan tindakan yang benar atau salah dalam menangani pekerjaan ataupun masalah.</p>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                     <img src="<?=BASE_URL?>public/assets/img/about/flat/2.png" class="img-content">
                                     <h3 class="text-underline values-title">Intellectual</h3>
                                     <p class="text-highlights">Rasional</p>
-                                    <p class="values-description">Berpikir POSITIF dalam bertindak sehingga menciptakan profesionalisme dalam menghadapi orang ataupun situasi.</p>
+                                    <p class="values-description">Berpikir <span class="text-bold-values">POSITIF</span> dalam bertindak sehingga menciptakan profesionalisme dalam menghadapi orang ataupun situasi.</p>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                                     <img src="<?=BASE_URL?>public/assets/img/about/flat/3.png" class="img-content">
                                     <h3 class="text-underline values-title">Loyal</h3>
                                     <p class="text-highlights">Setia</p>
-                                    <p class="values-description">Memiliki sifat SETIA dan bangga menjadi bagian dari Wilian Perkasa .</p>
+                                    <p class="values-description">Memiliki sifat <span class="text-bold-values">SETIA</span> dan bangga menjadi bagian dari Wilian Perkasa .</p>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                                     <img src="<?=BASE_URL?>public/assets/img/about/flat/4.png" class="img-content">
                                     <h3 class="text-underline values-title">Integrity</h3>
                                     <p class="text-highlights">Jujur</p>
-                                    <p class="values-description">JUJUR dalam setiap tindakan dan memiliki etika dalam melakukan perbuatan tersebut.</p>
+                                    <p class="values-description"><span class="text-bold-values">JUJUR</span> dalam setiap tindakan dan memiliki etika dalam melakukan perbuatan tersebut.</p>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                                     <img src="<?=BASE_URL?>public/assets/img/about/flat/5.png" class="img-content">
                                     <h3 class="text-underline values-title">Accomplished</h3>
                                     <p class="text-highlights">Unggul &amp; Terampil</p>
-                                    <p class="values-description">Memiliki skill (ketrampilan) yang kompeten dan selalu berusaha meningkatkan ketrampilan tersebut agar menjadi lebih sempurna dan semakin unggul di bidangnya.</p>
+                                    <p class="values-description">Memiliki skill <span class="text-bold-values">(KETRAMPILAN)</span> yang kompeten dan selalu berusaha meningkatkan ketrampilan tersebut agar menjadi lebih sempurna dan semakin unggul di bidangnya.</p>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                                     <img src="<?=BASE_URL?>public/assets/img/about/flat/6.png" class="img-content">
                                     <h3 class="text-underline values-title">Noble</h3>
                                     <p class="text-highlights">Terhormat</p>
-                                    <p class="values-description">Memiliki jiwa yang saling MENGHORMATI dan MENGHARGAI untuk menciptakan suasana nyaman di dalam pekerjaan.</p>
+                                    <p class="values-description">Memiliki jiwa yang saling <span class="text-bold-values">MENGHORMATI</span> dan MENGHARGAI untuk menciptakan suasana nyaman di dalam pekerjaan.</p>
                                 </div>
                             </div>
                         </div>
