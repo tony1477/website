@@ -1,5 +1,5 @@
 :root {
-    --nav-header-ver1: #ededed;
+    /* --nav-header-ver1: #ededed;
     --blend-ver1: #d0ae41;
     --nav-color-ver1: #212529;
     --bg-copyright-ver1: linear-gradient(90deg, rgb(229 228 228) 28%, rgb(193 193 193) 100%);
@@ -10,7 +10,7 @@
     --nav-header-ver3: #3c210d;
     --blend-ver3: #d0ae41;
     --nav-color-ver3: #d0ae41;
-    --bg-copyright-ver3: linear-gradient(90deg, rgb(76 40 13) 28%, rgb(106 51 9) 100%);
+    --bg-copyright-ver3: linear-gradient(90deg, rgb(76 40 13) 28%, rgb(106 51 9) 100%); */
     --nav-header-ver4: #790002;
     --blend-ver4: #d0ae41;
     --nav-color-ver4: #f8f9fa;
@@ -22,15 +22,14 @@
     --nav-menu-color: #d0ae41;
     --footer-background: #790002;
     --footer-text-color: #fff;
-
-    --bg-copyright: linear-gradient(90deg, rgb(229 228 228) 28%, rgb(193 193 193) 100%);
+    /* --bg-copyright: linear-gradient(90deg, rgb(229 228 228) 28%, rgb(193 193 193) 100%); */
+    --bg-copyright: linear-gradient(90deg, rgb(165 19 22) 28%, rgb(120 14 15) 100%);
     --box-plant-color: #04fe06;
     --box-mill-color: #0405fd;
     --box-ho-color: #ff0103;
     --box-fnb-color: #f06837;
     --box-trading-color: #eee331;
     --box-nilam-color: #45ea2e;
-    
 }
 
 @font-face {
@@ -1056,10 +1055,10 @@ img .icon-language {
     padding:5px;
     display: flex;
     justify-content: center;
-    background-color: #4158D0;
+    /* background-color: #4158D0;
     background: rgb(111,123,182);
     background: -moz-linear-gradient(90deg, rgba(111,123,182,1) 28%, rgba(79,8,23,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(111,123,182,1) 28%, rgba(79,8,23,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(111,123,182,1) 28%, rgba(79,8,23,1) 100%); */
     background: var(--bg-copyright);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6f7bb6",endColorstr="#4f0817",GradientType=1);
     /* background-image: linear-gradient(43deg, #4158D0 0%,#ff7070 50%); */
@@ -4465,7 +4464,7 @@ form#contact-form label {
 }
 
 .video-profile {
-    background-image: url('http://localhost/webs/public/assets/img/video-sample.jpg');
+    background-image: url('../../assets/img/video-sample.jpg');
     position: relative;
     left: 45%;
     background-size: cover;
@@ -4661,4 +4660,9 @@ form#contact-form label {
     border-bottom: 2px solid #cea20a;
     height: 1rem;
     display: block;
+}
+
+.text-bold-values {
+    font-weight: 600;
+    color: var(--red-wp);
 }
