@@ -364,8 +364,7 @@
         </div>
     </div>
 </div>
-<?php
-    $scriptfooter = <<<HEREDOC
+
     <script type="text/javascript">
     function base_url() {
         var pathparts = location.pathname.split('/');
@@ -455,5 +454,3 @@
         });
     });
     </script>
-    HEREDOC;
-?>

@@ -9,7 +9,7 @@ class ContentModel {
         $this->db = new Database;
     }
 
-    public function getData(string $position) 
+    public function getData($position) 
     {
         $this->db->query('select text_id, text_en from '.$this->table.' where position = :position and status = :status');
         $this->db->bind('position',$position);

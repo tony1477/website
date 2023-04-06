@@ -23,17 +23,17 @@ class Helper {
     return sprintf("%s", substr($_SERVER['QUERY_STRING'],4));
   }
 
-  public function getContent(string $position) 
+  public function getContent($position) 
   {
     return $this->getBankofLang($position);
   }
 
-  public function getContentDb(string $position) :string
+  public function getContentDb($position) 
   {
     return $this->getContentFromDb($position);
   }
 
-  private function getBankofLang(string $position) 
+  private function getBankofLang($position) 
   {
     // check session of lang
     $folder = 'app/lang/id/lang.php'; 
