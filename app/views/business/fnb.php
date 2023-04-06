@@ -32,3 +32,17 @@
     </div>
 </div>
 <!--== End About Area Wrapper ==-->
+
+<!--== Start Fun Fact Area Wrapper ==-->
+<div class="our-business">
+    <div class="container">
+        <div class="row mtn-40">
+            <div class="col-12 col-md-12 text-end">
+                <div class="counter-item">
+                    <h6 class="counter-txt"><a href="<?=BASE_URL?>business/trading" class="text-white"> Next <i class="mdi mdi-arrow-right-bold-circle"></i><br /><?=$this->getContent('trading')?></a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--== End Fun Fact Area Wrapper ==-->

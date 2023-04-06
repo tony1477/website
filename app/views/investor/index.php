@@ -1,19 +1,32 @@
-<div class="page-header-area bg-img-news" data-bg="https://www.asianagri.com/wp-content/uploads/2021/08/about-us-planter.jpg" style="background-position:top center">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/business/plant-business-page1.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2><?=$this->getContent('investor-topbar-title')?></h2>
-                      
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('investor-topbar-title')?></h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <div class="about-area-wrapper sm-top">
+    <div class="container">
+        <div class="row align-items-lg-center">
+            <div class="col-md-12 col-lg-12 order-1">
+              <div class="about-content ms-0 contentweb">
+                <div class="animate-box business-page-title" data-animate-effect="fadeInUp">
+                  <h4 class="title">SOROTAN PRODUKSI</h4>
+                </div>
+                <p class="animate-box" data-animate-effect="fadeInUp" style="text-align:justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis quisquam ipsam molestias sed et, sequi vero, natus sapiente ullam dolor voluptate neque consectetur omnis iusto rerum hic eius at deleniti minima ipsa. Eos atque in cumque nulla sed, ducimus veritatis voluptatibus voluptas vel. Fuga labore id officiis debitis distinctio!.</p>
+                <p class="animate-box" data-animate-effect="fadeInUp" style="text-align:justify"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt aspernatur quas modi, quo magnam a sint repudiandae amet quod possimus omnis repellat provident? Quas consequatur cupiditate adipisci fugit vero voluptatum!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-area-wrapper">
     <div class="container-fluid" style="border: 0px solid #000;">
         <div class="row">
             <div class="col-md-3 col-lg-2 order-lg-0 order-md-0 order-md-3">
@@ -205,6 +218,12 @@
 </tbody>
 </table>
 <canvas id="rendpk" width="400" height="80"></canvas>
+<div class="business-page">
+  <a href="mailto:investor@wilianperkasa.com" class="title">Hubungi Tim Investor Kami : </a>
+  <div class="my-1">
+  <a href="<?=BASE_URL?>sustainability/gcg" class="title">Pelajari lebih lanjut tentang Tata Kelola kami : </a>
+  </div>
+</div>
                 </div>
             </div>
         </div>

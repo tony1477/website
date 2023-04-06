@@ -34,7 +34,7 @@
             <div class="col-6 col-md-6"></div>
             <div class="col-6 col-md-6 text-end">
                 <div class="counter-item">
-                    <h6 class="counter-txt"><a href="<?=BASE_URL?>business/trading" class="text-white"><?=$this->getContent('next')?> <i class="mdi mdi-arrow-right-bold-circle"></i><br /><?=$this->getContent('trading')?></a></h6>
+                    <h6 class="counter-txt"><a href="<?=BASE_URL?>business/agronomy" class="text-white"><?=$this->getContent('next')?> <i class="mdi mdi-arrow-right-bold-circle"></i><br /><?=$this->getContent('agronomy')?></a></h6>
                 </div>
             </div>
         </div>
