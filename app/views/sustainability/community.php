@@ -12,7 +12,7 @@
     </div>
 </div>
 <!-- == Start Blog Details Page Content == -->
-<div class="blog-details-page-content sp-y">
+<div class="blog-details-page-content sp-y bg-overlay">
     <div class="container">
         <div class="row">
             <div class="col-lg-9">

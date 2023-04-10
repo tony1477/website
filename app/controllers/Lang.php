@@ -27,7 +27,7 @@ class Lang extends Controller {
         $this->reloadPage($last_page);
     }
 
-    private function reloadPage(string $last_page)
+    private function reloadPage($last_page)
     {
         $url = explode('/',$last_page);
         header('Location: '. BASE_URL.$last_page);

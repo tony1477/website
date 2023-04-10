@@ -17,7 +17,7 @@
 <!--== End Page Header Area ==-->
 
 <!--== Start Team Area Wrapper ==-->
-<div class="team-page-area-wrapper bg-offwhite sp-y">
+<div class="team-page-area-wrapper bg-offwhite sp-y bg-overlay">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-3 order-lg-0 order-md-0 order-md-0">
@@ -26,11 +26,10 @@
             <div class="col-md-6 col-lg-9 order-1">
                 <div class="about-content ms-0">
                     <h2 class="text-center">Struktur Organisasi</h2>
-                    <button class="btn btn-light border border-dark d-flex justify-content-end cursor-pointer align-items-center" onclick="downloadstructure()"><i class="fa fa-download mx-1"></i> Download Structure</button>
                     <div class="row">
                         <!-- <a href="<?=BASE_URL?>public/assets/img/about/struktur-org.png"><img src="<?=BASE_URL?>public/assets/img/about/struktur-org.png" alt="Sturcture Organization" class="img-scale" /></a> -->
                         <!-- <div class="img-magnifier-container"> -->
-                            <img id="myimage" src="<?=BASE_URL?>public/assets/img/about/struktur-org.png" class="img-scale" alt="Structure WPG">
+                            <img id="myimage" src="<?=BASE_URL?>public/assets/img/team/struktur.png" class="img-scale" alt="Structure WPG">
                         <!-- </div> -->
                     </div>
                 </div>

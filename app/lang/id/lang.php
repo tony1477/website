@@ -3,6 +3,7 @@
         // for common
         'readmore' => 'BACA LEBIH LANJUT',
         'next' => 'Selanjutnya',
+        'prev' => 'Sebelumnya',
         'plantation' => 'Perkebunan',
         'mills' => 'Pabrik Kelapa Sawit',
         'trading' => 'Trading', 
@@ -13,6 +14,7 @@
         'certification' => 'Sertifikasi',
         'environment' => 'Lingkungan',
         'gcg' => 'G C G',
+        'head-office' => 'Kantor Pusat / Regional',
         'moreinfo-visit-us' => 'Informasi lebih lanjut, kunjungi',
         'subsdiary-location' => 'Anak Perusahaan Dan Peta Lokasi',
         // for about-sidebar
@@ -60,8 +62,15 @@
         <li>Bertransformasi menjadi perusahaan dengan manajemen yang profesional dan sistem yang terintegrasi.</li>
         ',
         'about-values-title' => 'NILAI LUHUR',
+        'about-values-wisdom-dual' => "<h5>WISDOM<br>(BIJAKSANA)</h5>",
+        'about-values-intellectual-dual' => "<h5>INTELLECTUAL<br>(RASIONAL)</h5>",
+        'about-values-loyal-dual' => "<h5>LOYAL<br>(SETIA)</h5>",
+        'about-values-integrity-dual' => "<h5>INTEGRITY<br>(JUJUR)</h5>",
+        'about-values-accomplished-dual' => "<h5>ACCOMPLISHED<br>(UNGGUL & TERAMPIL)</h5>",
+        'about-values-noble-dual' => "<h5>NOBLE<br>(TERHORMAT)</h5>",
         //for about-bod
         'about-bod-title' => 'Profil Manajemen',
+        'about-bod-management' => 'MANAJEMEN',
         'about-bod-content' => "Seluruh anggota Dewan, selain Managing Director yang berafiliasi, merupakan profesional dengan bidang spesialis masing-masing. Corporate Head selalu memonitor penerapan Good Corporate Governance (GCG) secara berkelanjutan, memberikan masukan serta mendorong menajemen i untuk dapat mencapai kinerja operasional termasuk upaya optimal dalam meningkatkan daya saing perusahaan melalui pencapaian produktivitas yang lebih tinggi.",
         // for business-topbar
         'business-plant-topbar' => 'Perkebunan',
@@ -143,6 +152,7 @@
         'footer-info-career' => 'Karir',
         'footer-bisnis-title' => 'Bisnis Kami',
         'footer-bisnis-plant' => 'Perkebunan',
+        'footer-bisnis-agro' => 'Agronomy',
         'footer-bisnis-mill' => 'Pabrik Kelapa Sawit',
         'footer-bisnis-trading' => 'Trading',
         'footer-bisnis-fnb' => 'Makanan & Minuman',

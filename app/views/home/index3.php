@@ -129,7 +129,7 @@
             </div>
 
             <div class="animate-box col-md-6 col-lg-6" data-animate-effect="fadeInRight">
-                <div class="about-content">
+                <div class="about-content" style="padding-right: 0px;">
                     <?=$this->getContentDb('home-about-profile')?>
                 </div>
             </div>
@@ -143,7 +143,7 @@
     <div class="animate-box container" data-animate-effect="fadeInUp">
         <div class="row mtn-sm-60 mtn-md-5"> 
             <div class="col-md-6 col-lg-6">
-                <div class="detail about-content">
+                <div class="detail about-content" style="margin-left:0px">
                     <div class="border-bot">
                         <p class="cat text-uppercase"><?=$this->getContent('policy')?></p>
                     </div>
@@ -157,7 +157,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="icon-sustain warp-icons d-sm-flex d-none justify-content-between">
+                <div class="icon-sustain warp-icons d-sm-flex d-none justify-content-between" style="margin-left:-3.5rem">
                     <div class="symbol text-center">
                         <div class="icon-sus active">
                             <img class="w-100 dark d-none" src="<?=BASE_URL?>public/assets/img/feature/privacy-policy.png" data-value="1">
@@ -210,7 +210,7 @@
                     <a href="<?=BASE_URL?>business/agronomy"><?=$this->getContent('agronomy')?> </a>
                     <a href="<?=BASE_URL?>business/fnb"><?=$this->getContent('fnb')?> </a>
                     <a href="<?=BASE_URL?>business/trading"><?=$this->getContent('trading')?> </a>
-                    <a href="<?=BASE_URL?>business/locationmap"><?=$this->getContent('location-map')?> </a>
+                    <a href="<?=BASE_URL?>business/location-map"><?=$this->getContent('location-map')?> </a>
                 </div>
             </div>
         </div>
@@ -364,8 +364,9 @@
         </div>
     </div>
 </div>
-
-    <script type="text/javascript">
+<?php
+$scriptfooter = "
+    <script type=\"text/javascript\">
     function base_url() {
         var pathparts = location.pathname.split('/');
         if (location.host == 'localhost') {
@@ -453,4 +454,5 @@
             cover.style.display = 'flex';
         });
     });
-    </script>
+    </script>";
+?>

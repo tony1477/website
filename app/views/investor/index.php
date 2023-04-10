@@ -26,7 +26,7 @@
         </div>
     </div>
 </div>
-<div class="about-area-wrapper">
+<div class="about-area-wrapper bg-overlay">
     <div class="container-fluid" style="border: 0px solid #000;">
         <div class="row">
             <div class="col-md-3 col-lg-2 order-lg-0 order-md-0 order-md-3">
@@ -219,7 +219,15 @@
 </table>
 <canvas id="rendpk" width="400" height="80"></canvas>
 <div class="business-page">
-  <a href="mailto:investor@wilianperkasa.com" class="title">Hubungi Tim Investor Kami : </a>
+  <a class="title">Hubungi Tim Investor Kami : </a>
+  <br />
+  <i class="fa fa-envelope" style="color: var(--red-wp);"></i> <a href="mailto:investor@wilianperkasa.com" class="link" style="
+    color: var(--red-wp);
+    font-weight: 600;">Email : investor@wilianperkasa.com </a>
+    <br />
+    <i class="fa fa-phone" style="color: var(--red-wp);"></i> <a href="tel:085x" class="link" style="
+    color: var(--red-wp);
+    font-weight: 600;">Phone : +628 5xx xxxx </a>
   <div class="my-1">
   <a href="<?=BASE_URL?>sustainability/gcg" class="title">Pelajari lebih lanjut tentang Tata Kelola kami : </a>
   </div>
@@ -229,7 +237,6 @@
         </div>
     </div>
 </div>
-<div class="sm-top-wt"></div>
 <?php
 $scriptfooter = <<<EOF
 <script>

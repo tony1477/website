@@ -33,7 +33,7 @@ class Controller {
         require_once 'app/views/'.$this->layout_versi3.'.php';
     }
 
-    public function viewwotemplate(string $view, array $data) {
+    public function viewwotemplate( $view,  $data) {
         require_once 'app/views/'.$view.'.php';
     }
 

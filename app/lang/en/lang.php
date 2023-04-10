@@ -3,6 +3,7 @@
         // for common
         'readmore' => 'READ MORE',
         'next' => 'Next Page',
+        'prev' => 'Prev Page',
         'plantation' => 'Plantation',
         'mills' => 'Palm Oil Mill',
         'trading' => 'Trading',
@@ -13,6 +14,7 @@
         'certification' => 'Certification',
         'environment' => 'Environment',
         'gcg' => 'G C G',
+        'head-office' => 'Head Office / Regional Office',
         'moreinfo-visit-us' => 'For more information, please visit',
         'subsdiary-location' => 'Subsidiaries and Location Map',
         // for about-sidebar
@@ -59,6 +61,12 @@
         <li>Transform into a professional management and an integrated system.</li>
         ',
         'about-values-title' => 'CORE VALUES',
+        'about-values-wisdom-dual' => "<h5>BIJAKSANA<br>(WISDOM)</h5>",
+        'about-values-intellectual-dual' => "<h5>RASIONAL<br>(INTELLECTUAL)</h5>",
+        'about-values-loyal-dual' => "<h5>SETIA<br>(LOYAL)</h5>",
+        'about-values-integrity-dual' => "<h5>JUJUR<br>(INTEGRITY)</h5>",
+        'about-values-accomplished-dual' => "<h5>UNGGUL & TERAMPIL<br>(ACCOMPLISHED)</h5>",
+        'about-values-noble-dual' => "<h5>TERHORMAT<br>(NOBLE)</h5>",
         //for about-bod
         'about-bod-title' => 'Management Profile',
         'about-bod-content' => "All members of the Board, apart from the affiliated Main Commissioner, are professionals with their respective specialist fields. The Board of Commissioners always monitors the implementation of GCG on an ongoing basis, provides input and encourages the Board of Directors to be able to achieve operational performance including optimal efforts to increase the company's competitiveness by achieving higher productivity.",
@@ -142,6 +150,7 @@
         'footer-info-career' => 'Career',
         'footer-bisnis-title' => 'Our Business',
         'footer-bisnis-plant' => 'Plantation',
+        'footer-bisnis-agro' => 'Agronomy',
         'footer-bisnis-mill' => 'Palm Mill Oils',
         'footer-bisnis-trading' => 'Trading',
         'footer-bisnis-fnb' => 'Food & Beverages',

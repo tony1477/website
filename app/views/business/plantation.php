@@ -12,7 +12,7 @@
     </div>
 </div>
 <!--== Start About Area Wrapper ==-->
-<div class="about-area-wrapper sm-top">
+<div class="about-area-wrapper sm-top bg-overlay">
     <div class="container">
         <!-- <div style="background: linear-gradient(87deg, rgba(5,10,38,0.8883928571428571) 7%, rgba(234,235,236,0.8267682072829132) 100%); height:484px; width:100%; background-size: cover; position: absolute; box-sizing: border-box; opacity: .6; left:0"> -->
         <!-- <img src="<?=BASE_URL?>public/assets/img/business/Ruyi - goldfoil.jpg"> -->
@@ -32,7 +32,7 @@
 
 <!--== Start Fun Fact Area Wrapper ==-->
 <div class="our-business">
-    <div class="container">
+    <div class="container" style="padding-right:3.5rem">
         <div class="row mtn-40">
             <div class="col-6 col-md-6"></div>
             <div class="col-6 col-md-6 text-end">

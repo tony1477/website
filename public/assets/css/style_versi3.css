@@ -1141,6 +1141,7 @@ img .icon-language {
     padding-left: 5px;
 }
 
+
 .widget-list li a:hover::after {
     /* color: #080b1a; */
     content: '\f13e';
@@ -3014,7 +3015,7 @@ img .icon-language {
 .our-business {
     background: rgb(81,121,173);
     background: linear-gradient(87deg, rgba(81,121,173,0.8673844537815126) 0%, rgba(19,52,121,1) 100%);
-    padding: 40px 0 35px;
+    /* padding: 40px 0 35px; */
     position: relative;
     box-sizing: border-box;
     /* transition: transform 4.4s linear 3.5s; */
@@ -3295,7 +3296,8 @@ img .icon-language {
 16. Fun Fact Style CSS
 ==========================*/
 .counter-item {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin: 20px 0px;
 }
 
 .counter-number {
@@ -3319,7 +3321,7 @@ img .icon-language {
     color: #f8f9fc;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .counter-txt {
@@ -3796,17 +3798,19 @@ ul.text-misi li {
 }
 
 ul.text-misi li::before {
-    content:'';
-    background: crimson;
+    content: '\f565';
+    /* background: crimson; */
     width: 10px;
     /* display: inline-block; */
-    /* height: 10px; */
-    height:10px;
+    height: 10px;
+    /* height:10px; */
     border-radius: 5px;
     position: absolute;
     /* top:5px; */
     left:-25px;
-    top:7px;
+    /* top:7px; */
+    font-family: 'Material Design Icons';
+    color: var(--red-wp);
 }
 
 .values img {
@@ -4643,6 +4647,7 @@ form#contact-form label {
 .business-page-title {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .business-page-title h4.title {
@@ -4709,3 +4714,17 @@ a.title:hover::before {
       transform: scaleX(1);
     }
   }
+
+.first-cap::first-letter {
+    color: var(--red-wp);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about-content h2 {
+    margin-bottom: rem;
+}
+
+h3.card-text {
+    font-size: 1.75rem;
+}

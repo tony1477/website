@@ -13,7 +13,7 @@
     </div>
 </div>
 <!--== Start About Area Wrapper ==-->
-<div class="blog-details-page-content sp-y">
+<div class="blog-details-page-content sp-y bg-overlay">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -41,7 +41,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-plant.png" width="32"/></td>
+                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-plant.png" width="32"/> <?=$this->getContent('plantation')?></td>
                                                 <td>
                                                     <div class="box-company color-plant"></div>
                                                     <span class="text-location-map">SPS</span>
@@ -52,7 +52,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-mill.png" width="32"/></td>
+                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-mill.png" width="32"/> <?=$this->getContent('mills')?></td>
                                                 <td>
                                                     <div class="box-company color-mill"></div>
                                                     <span class="text-location-map">SSP</span>
@@ -66,7 +66,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-ho.png" width="32"/></td>
+                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-ho.png" width="32"/> <?=$this->getContent('head-office')?></td>
                                                 <td>
                                                     <div class="box-company color-ho"></div>
                                                     <span class="text-location-map">WMS</span>
@@ -74,7 +74,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-fnb.png" width="32"/></td>
+                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-fnb.png" width="32"/> <?=$this->getContent('fnb')?></td>
                                                 <td>
                                                     <div class="box-company color-fnb"></div>
                                                     <span class="text-location-map">KBP</span>
@@ -82,7 +82,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-trading.png" width="32"/></td>
+                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-trading.png" width="32"/> <?=$this->getContent('trading')?></td>
                                                 <td>
                                                     <div class="box-company color-trading"></div>
                                                     <span class="text-location-map">WTP</span>
@@ -90,7 +90,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-nilam.png" width="32"/></td>
+                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-nilam.png" width="32"/> <?=$this->getContent('agronomy')?></td>
                                                 <td>
                                                     <div class="box-company color-nilam"></div>
                                                     <span class="text-location-map">SWP</span>

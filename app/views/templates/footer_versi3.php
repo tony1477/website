@@ -50,7 +50,7 @@
                         <h4 class="widget-title" style="position:relative"><?=$this->getContent('footer-bisnis-title')?></h4>
                         <div class="widget-body">
                             <ul class="widget-list">
-                                <li><a href="<?=BASE_URL?>business/plantation"><?=$this->getContent('footer-bisnis-plant')?></a></li>
+                                <li><a href="<?=BASE_URL?>business/plantation" data-attr="except"><?=$this->getContent('footer-bisnis-plant')?></a> & <a href="<?=BASE_URL?>business/agronomy"><?=$this->getContent('footer-bisnis-agro')?></a></li>
                                 <li><a href="<?=BASE_URL?>business/mill"><?=$this->getContent('footer-bisnis-mill')?></a></li>
                                 <li><a href="<?=BASE_URL?>business/trading"><?=$this->getContent('footer-bisnis-trading')?></a></li>
                                 <li><a href="<?=BASE_URL?>business/fnb"><?=$this->getContent('footer-bisnis-fnb')?></a></li>

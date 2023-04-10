@@ -33,7 +33,7 @@
 </div>
 <!-- Button trigger modal -->
 <!--== Start Team Area Wrapper ==-->
-<div class="team-page-area-wrapper bg-offwhite pt-5 mt-5 " >
+<div class="team-page-area-wrapper bg-offwhite pt-5 mt-5 bg-overlay" style="padding-bottom:5rem">
     <div class="container">
         <div class="row mtn-30">
             <?php foreach($data['data'] as $list):?>
@@ -66,7 +66,6 @@
 </div>
 <!--== End Team Area Wrapper ==-->
 
-<div class="bg-offwhite" style="padding-top:100px"></div>
 <!-- Modal -->
 <?php foreach($data['data'] as $row):?>
     <div class="modal fade" id="exampleModal<?=$row['careerid']?>" tabindex="-1" aria-labelledby="exampleModal<?=$row['careerid']?>Title" aria-hidden="true">

@@ -29,7 +29,7 @@ class Info extends Controller {
         $this->view_versi3('career/index',$data);
     }
 
-    public function careerpath(string $careerid) {
+    public function careerpath($careerid) {
         $id = substr($careerid,strpos($careerid,'-')+1);
         $data['model'] = $this->model('CareerModel')->getData($id);
         if($data['model']==null) header('location:'.BASE_URL.'info/career');

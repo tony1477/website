@@ -142,27 +142,27 @@
                     <div class="icon-values">
                         <div class="img-values text-center">
                             <img src="<?=BASE_URL?>public/assets/img/about/flat/1.png" class="imgmodal" id="wisdom" onclick="showModal(this)">
-                            <h5>WISDOM</h5>
+                            <?=$this->getContent('about-values-wisdom-dual')?>
                         </div>
                         <div class="img-values text-center">
                             <img src="<?=BASE_URL?>public/assets/img/about/flat/2.png" class="imgmodal" id="intellectual" onclick="showModal(this)">
-                            <h5>INTELLECTUAL</h5>
+                            <?=$this->getContent('about-values-intellectual-dual')?>
                         </div>
                         <div class="img-values text-center">
                             <img src="<?=BASE_URL?>public/assets/img/about/flat/3.png" class="imgmodal" id="loyal" onclick="showModal(this)">
-                            <h5>LOYAL</h5>
+                            <?=$this->getContent('about-values-loyal-dual')?>
                         </div>
                         <div class="img-values text-center">
                             <img src="<?=BASE_URL?>public/assets/img/about/flat/4.png" class="imgmodal" id="integrity" onclick="showModal(this)">
-                            <h5>INTEGRITY</h5>
+                            <?=$this->getContent('about-values-integrity-dual')?>
                         </div>
                         <div class="img-values text-center">
                             <img src="<?=BASE_URL?>public/assets/img/about/flat/5.png" class="imgmodal" id="accomplished" onclick="showModal(this)">
-                            <h5>ACCOMPLISHED</h5>
+                            <?=$this->getContent('about-values-accomplished-dual')?>
                         </div>
                         <div class="img-values text-center">
                             <img src="<?=BASE_URL?>public/assets/img/about/flat/6.png" class="imgmodal" id="noble" onclick="showModal(this)">
-                            <h5>NOBLE</h5>
+                            <?=$this->getContent('about-values-noble-dual')?>
                         </div>
                     </div>
                 </div>
