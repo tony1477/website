@@ -101,6 +101,42 @@
                          data-paddingleft="[40,40,80,30]">Learn More
                     </div> -->
                 </li>
+
+                <!-- SLIDE  -->
+                <li data-index="rs-28" data-transition="slidingoverlayleft,slideoverup"
+                    data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"
+                    data-easein="default,default,default" data-easeout="default,default,default"
+                    data-masterspeed="default,default,default" data-thumb="<?=BASE_URL?>public/assets/img/slider/02_thumb.jpg"
+                    data-rotate="0,0,0" data-saveperformance="off" data-title="Slide">
+                    <!-- MAIN IMAGE -->
+                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-07.jpeg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
+                         data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
+
+                </li>
+
+                <!-- SLIDE  -->
+                <li data-index="rs-28" data-transition="random-premium"
+                    data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"
+                    data-easein="default,default,default" data-easeout="default,default,default"
+                    data-masterspeed="default,default,default" data-thumb="<?=BASE_URL?>public/assets/img/slider/02_thumb.jpg"
+                    data-rotate="0,0,0" data-saveperformance="off" data-title="Slide">
+                    <!-- MAIN IMAGE -->
+                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-01.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
+                         data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
+
+                </li>
+
+                <!-- SLIDE  -->
+                <li data-index="rs-28" data-transition="slidingoverlayright,slideoverup"
+                    data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"
+                    data-easein="default,default,default" data-easeout="default,default,default"
+                    data-masterspeed="default,default,default" data-thumb="<?=BASE_URL?>public/assets/img/slider/02_thumb.jpg"
+                    data-rotate="0,0,0" data-saveperformance="off" data-title="Slide">
+                    <!-- MAIN IMAGE -->
+                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-08.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
+                         data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
+
+                </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
         </div>

@@ -14,6 +14,7 @@
         'certification' => 'Sertifikasi',
         'environment' => 'Lingkungan',
         'gcg' => 'G C G',
+        'investor' => 'Investor',
         'head-office' => 'Kantor Pusat / Regional',
         'moreinfo-visit-us' => 'Informasi lebih lanjut, kunjungi',
         'subsdiary-location' => 'Anak Perusahaan Dan Peta Lokasi',

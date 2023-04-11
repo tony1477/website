@@ -14,6 +14,7 @@
         'certification' => 'Certification',
         'environment' => 'Environment',
         'gcg' => 'G C G',
+        'investor' => 'Investor',
         'head-office' => 'Head Office / Regional Office',
         'moreinfo-visit-us' => 'For more information, please visit',
         'subsdiary-location' => 'Subsidiaries and Location Map',

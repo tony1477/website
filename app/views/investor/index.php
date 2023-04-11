@@ -4,23 +4,76 @@
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('investor-topbar-title')?></h2>
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('investor')?></h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="about-area-wrapper sm-top">
+<div class="about-area-wrapper sm-top bg-overlay">
     <div class="container">
         <div class="row align-items-lg-center">
             <div class="col-md-12 col-lg-12 order-1">
               <div class="about-content ms-0 contentweb">
                 <div class="animate-box business-page-title" data-animate-effect="fadeInUp">
-                  <h4 class="title">SOROTAN PRODUKSI</h4>
+                  <h4 class="title">Profil Perusahaan</h4>
                 </div>
-                <p class="animate-box" data-animate-effect="fadeInUp" style="text-align:justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis quisquam ipsam molestias sed et, sequi vero, natus sapiente ullam dolor voluptate neque consectetur omnis iusto rerum hic eius at deleniti minima ipsa. Eos atque in cumque nulla sed, ducimus veritatis voluptatibus voluptas vel. Fuga labore id officiis debitis distinctio!.</p>
-                <p class="animate-box" data-animate-effect="fadeInUp" style="text-align:justify"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt aspernatur quas modi, quo magnam a sint repudiandae amet quod possimus omnis repellat provident? Quas consequatur cupiditate adipisci fugit vero voluptatum!</p>
+                <p class="first-cap animate-box" data-animate-effect="fadeInUp" style="text-align:justify">Wilian Perkasa (WP), adalah merupakan perusahaan Multi Industry, WP didirikan pada tahun 2019.</p>
+                <p class="animate-box" data-animate-effect="fadeInUp" style="text-align:justify">Wilian Perkasa adalah perusahaan Multi Industry yang berkembang dengan kegiatan usaha dari Plantation, Agronomy, Pabrik pengolahan Kelapa Sawit, Trading dan Makanan & Minuman, yang menghasilkan portofolio produk berbasis kelapa sawit yang beragam dan unit industry lainnya dengan rantai pasokan yang terintegrasi dan efisien.</p>
+                </div>
+
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card bg-dark text-white">
+                      <img src="..." class="card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="<?=BASE_URL?>public/assets/img/Bendera.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: var(--red-wp)">Mengapa berinvestasi di Wilian Perkasa (WP)?</h5>
+                            <p class="card-text">
+                              <ul>
+                                <li>Visi Misi jangka Panjang dalam Multi Industry yang dinamis.</li>
+                                <li>Potensi dan Pengembangan Unit multi bisnis industry yang terdepan dalam produktivitas.</li>
+                                <li>Potensi & Jaringan pemasok pihak ke-tiga yang luas dengan ketertelusuran.</li>
+                                <li>Mengelola keuangan perusahaan secara optimal dan sehat (revenue, share, dividen). </li>
+                                <li>Portofolio produk bernilai tambah yang beragam.</li>
+                                <li>Mendorong Transformasi Organisasi ke Budaya Kinerja Tinggi.</li>
+                                <li>Meningkatkan pendapatan penjualan hasil usaha dan Standard Hidup.</li>
+                              </ul>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="business-page">
+                    <a class="title">Hubungi Tim Investor Kami : </a>
+                    <br /><i class="fa fa-envelope" style="color: var(--red-wp);"></i> <a href="mailto:investor@wilianperkasa.com" class="link" style="
+                    color: var(--red-wp);
+                    font-weight: 600;">Email : investor@wilianperkasa.com </a>
+                    <br />
+                    <i class="fa fa-phone" style="color: var(--red-wp);"></i> <a href="tel:085x" class="link" style="
+                    color: var(--red-wp);
+                    font-weight: 600;">Phone : +628 5xx xxxx </a>
+                    <div class="my-1">
+                      <a href="<?=BASE_URL?>sustainability/gcg" class="title">Pelajari lebih lanjut tentang Tata Kelola kami : </a>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -34,205 +87,7 @@
             </div>
             <div class="col-md-9 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
             <!-- <h2 class="text-center text-decoration-underline">Statistik Produksi</h2> -->
-                <div class="row justify-content-center">
-<table class="table" style="margin-bottom: 0px; border-style: none;">
-<tbody>
-<tr>
-<td style="border-top: 0px;"><h3 class="title-report">Laporan Produksi CPO</h3></td>
-</tr>
-</tbody>
-</table>
-<table class="table table-bordered">
-<thead style="background: darkseagreen; color: white; padding: 0.25rem !important;">
-<tr><th style="text-align: center;" scope="col" rowspan="2">Keterangan</th><th style="text-align: center;" colspan="7">Target Produksi CPO VS Realisasi Produksi CPO</th></tr>
-</thead>
-<tbody>
-<tr style="background: darkseagreen; color: white; text-align: center;">
-<td style="padding: 0.25rem !important;"></td>
-<td style="padding: 0.25rem !important;">2016</td>
-<td style="padding: 0.25rem !important;">2017</td>
-<td style="padding: 0.25rem !important;">2018</td>
-<td style="padding: 0.25rem !important;">2019</td>
-<td style="padding: 0.25rem !important;">2020</td>
-<td style="padding: 0.25rem !important;">2021</td>
-<td style="padding: 0.25rem !important;">2022</td>
-</tr>
-<tr style="text-align:center;">
-<td style="padding: 0.25rem !important;">Target Produksi (tonase)</td>
-<td style="padding: 0.25rem !important;">30.000</td>
-<td style="padding: 0.25rem !important;">50.000</td>
-<td style="padding: 0.25rem !important;">60.000</td>
-<td style="padding: 0.25rem !important;">70.000</td>
-<td style="padding: 0.25rem !important;">80.000</td>
-<td style="padding: 0.25rem !important;">90.000</td>
-<td style="padding: 0.25rem !important;">110.000</td>
-</tr>
-<tr style="text-align:center;">
-<td style="padding: 0.25rem !important;">Realisasi Produksi (tonase)</td>
-<td style="padding: 0.25rem !important;">39.621</td>
-<td style="padding: 0.25rem !important;">56.762</td>
-<td style="padding: 0.25rem !important;">103.834</td>
-<td style="padding: 0.25rem !important;">104.504</td>
-<td style="padding: 0.25rem !important;">100.581</td>
-<td style="padding: 0.25rem !important;">100.654</td>
-<td style="padding: 0.25rem !important;">~</td>
-</tr>
-</tbody>
-</table>
-<canvas id="prodcpo" width="400" height="80"></canvas>
-<div class="mb-50"></div>
-<table class="table" style="margin-bottom: 0px; border-style: none;">
-<tbody>
-<tr>
-<td style="border-top: 0px;"><h3 class="title-report">Laporan Produksi PK</h3></td>
-</tr>
-</tbody>
-</table>
-<table class="table table-bordered">
-<thead style="background: darkseagreen; color: white; padding: 0.25rem !important;">
-<tr><th style="text-align: center;" scope="col" rowspan="2">Keterangan</th><th style="text-align: center;" colspan="7">Target Produksi PK VS Realisasi Produksi PK</th></tr>
-</thead>
-<tbody>
-<tr style="background: darkseagreen; color: white; text-align:center;">
-<td style="padding: 0.25rem !important;"></td>
-<td style="padding: 0.25rem !important;">2016</td>
-<td style="padding: 0.25rem !important;">2017</td>
-<td style="padding: 0.25rem !important;">2018</td>
-<td style="padding: 0.25rem !important;">2019</td>
-<td style="padding: 0.25rem !important;">2020</td>
-<td style="padding: 0.25rem !important;">2021</td>
-<td style="padding: 0.25rem !important;">2022</td>
-</tr>
-<tr style="text-align: center;">
-<td style="padding: 0.25rem !important;">Target Produksi (tonase)</td>
-<td style="padding: 0.25rem !important;">50.000</td>
-<td style="padding: 0.25rem !important;">70.000</td>
-<td style="padding: 0.25rem !important;">100.000</td>
-<td style="padding: 0.25rem !important;">130.000</td>
-<td style="padding: 0.25rem !important;">160.000</td>
-<td style="padding: 0.25rem !important;">190.000</td>
-<td style="padding: 0.25rem !important;">120.000</td>
-</tr>
-<tr style="text-align: center;">
-<td style="padding: 0.25rem !important;">Realisasi Produksi (tonase)</td>
-<td style="padding: 0.25rem !important;">69.620</td>
-<td style="padding: 0.25rem !important;">106.762</td>
-<td style="padding: 0.25rem !important;">163.834</td>
-<td style="padding: 0.25rem !important;">174.504</td>
-<td style="padding: 0.25rem !important;">180.581</td>
-<td style="padding: 0.25rem !important;">190.654</td>
-<td style="padding: 0.25rem !important;">122.589</td>
-</tr>
-</tbody>
-</table>
-<canvas id="prodpk" width="400" height="80"></canvas>
-<div class="mb-50"></div>
-<table class="table" style="margin-bottom: 0px; border-style: none;">
-<tbody>
-<tr>
-<td style="border-top: 0px;"><h3 class="title-report">Laporan Rendemen CPO</h3></td>
-</tr>
-</tbody>
-</table>
-<table class="table table-bordered">
-<thead style="background: darkseagreen; color: white; padding: 0.25rem !important;">
-<tr><th style="text-align: center;" scope="col" rowspan="2">Keterangan</th><th style="text-align: center;" colspan="7">Target Rendemen CPO VS Realisasi Rendemen CPO</th></tr>
-</thead>
-<tbody>
-<tr style="background: darkseagreen; color: white; text-align:center;">
-<td style="padding: 0.25rem !important;"></td>
-<td style="padding: 0.25rem !important;">2016</td>
-<td style="padding: 0.25rem !important;">2017</td>
-<td style="padding: 0.25rem !important;">2018</td>
-<td style="padding: 0.25rem !important;">2019</td>
-<td style="padding: 0.25rem !important;">2020</td>
-<td style="padding: 0.25rem !important;">2021</td>
-<td style="padding: 0.25rem !important;">2022</td>
-</tr>
-<tr style="text-align: center;">
-<td style="padding: 0.25rem !important;">Target Rendemen (%)</td>
-<td style="padding: 0.25rem !important;">17,00</td>
-<td style="padding: 0.25rem !important;">17,50</td>
-<td style="padding: 0.25rem !important;">18,00</td>
-<td style="padding: 0.25rem !important;">18,00</td>
-<td style="padding: 0.25rem !important;">18,00</td>
-<td style="padding: 0.25rem !important;">18,00</td>
-<td style="padding: 0.25rem !important;">18,00</td>
-</tr>
-<tr style="text-align: center;">
-<td style="padding: 0.25rem !important;">Realisasi Rendemen (%)</td>
-<td style="padding: 0.25rem !important;">18,76</td>
-<td style="padding: 0.25rem !important;">18,31</td>
-<td style="padding: 0.25rem !important;">19,06</td>
-<td style="padding: 0.25rem !important;">19,05</td>
-<td style="padding: 0.25rem !important;">18,53</td>
-<td style="padding: 0.25rem !important;">18,12</td>
-<td style="padding: 0.25rem !important;">~</td>
-</tr>
-</tbody>
-</table>
-<canvas id="rendcpo" width="400" height="80"></canvas>
-<div class="mb-50"></div>
-<table class="table" style="margin-bottom: 0px; border-style: none;">
-<tbody>
-<tr>
-<td style="border-top: 0px;"><h3 class="title-report">Laporan Rendemen PK</h3></td>
-</tr>
-</tbody>
-</table>
-<table class="table table-bordered">
-<thead style="background: darkseagreen; color: white; padding: 0.25rem !important;">
-<tr><th style="text-align: center;" scope="col" rowspan="2">Keterangan</th><th style="text-align: center;" colspan="7">Target Rendemen PK VS Realisasi Rendemen PK</th></tr>
-</thead>
-<tbody>
-<tr style="background: darkseagreen; color: white; text-align:center;">
-<td style="padding: 0.25rem !important;"></td>
-<td style="padding: 0.25rem !important;">2016</td>
-<td style="padding: 0.25rem !important;">2017</td>
-<td style="padding: 0.25rem !important;">2018</td>
-<td style="padding: 0.25rem !important;">2019</td>
-<td style="padding: 0.25rem !important;">2020</td>
-<td style="padding: 0.25rem !important;">2021</td>
-<td style="padding: 0.25rem !important;">2022</td>
-</tr>
-<tr style="text-align: center;">
-<td style="padding: 0.25rem !important;">Target Rendemen (%)</td>
-<td style="padding: 0.25rem !important;">4,00</td>
-<td style="padding: 0.25rem !important;">4,50</td>
-<td style="padding: 0.25rem !important;">5,00</td>
-<td style="padding: 0.25rem !important;">5,00</td>
-<td style="padding: 0.25rem !important;">5,00</td>
-<td style="padding: 0.25rem !important;">5,00</td>
-<td style="padding: 0.25rem !important;">5,00</td>
-</tr>
-<tr style="text-align: center;">
-<td style="padding: 0.25rem !important;">Realisasi Rendemen (%)</td>
-<td style="padding: 0.25rem !important;">4,76</td>
-<td style="padding: 0.25rem !important;">5,15</td>
-<td style="padding: 0.25rem !important;">5,20</td>
-<td style="padding: 0.25rem !important;">5,19</td>
-<td style="padding: 0.25rem !important;">5,01</td>
-<td style="padding: 0.25rem !important;">5,02</td>
-<td style="padding: 0.25rem !important;">~</td>
-</tr>
-</tbody>
-</table>
-<canvas id="rendpk" width="400" height="80"></canvas>
-<div class="business-page">
-  <a class="title">Hubungi Tim Investor Kami : </a>
-  <br />
-  <i class="fa fa-envelope" style="color: var(--red-wp);"></i> <a href="mailto:investor@wilianperkasa.com" class="link" style="
-    color: var(--red-wp);
-    font-weight: 600;">Email : investor@wilianperkasa.com </a>
-    <br />
-    <i class="fa fa-phone" style="color: var(--red-wp);"></i> <a href="tel:085x" class="link" style="
-    color: var(--red-wp);
-    font-weight: 600;">Phone : +628 5xx xxxx </a>
-  <div class="my-1">
-  <a href="<?=BASE_URL?>sustainability/gcg" class="title">Pelajari lebih lanjut tentang Tata Kelola kami : </a>
-  </div>
-</div>
-                </div>
+               
             </div>
         </div>
     </div>
