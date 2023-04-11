@@ -22,7 +22,7 @@
         'about-sidebar-profile' => 'Company Profile',
         'about-sidebar-vision' => 'Vision - Mission, Core Values',
         'about-sidebar-strategic' => 'Business Strategic',
-        'about-sidebar-bod' => 'Board Of Director',
+        'about-sidebar-bod' => 'Management Structure',
         'about-sidebar-structure' => 'Structure Organization',
         'about-sidebar-milestone' => 'Milestone',
         // for about-topbar
@@ -70,6 +70,7 @@
         'about-values-noble-dual' => "<h5>TERHORMAT<br>(NOBLE)</h5>",
         //for about-bod
         'about-bod-title' => 'Management Profile',
+        'about-bod-management' => 'MANAGEMENT',
         'about-bod-content' => "All members of the Board, apart from the affiliated Main Commissioner, are professionals with their respective specialist fields. The Board of Commissioners always monitors the implementation of GCG on an ongoing basis, provides input and encourages the Board of Directors to be able to achieve operational performance including optimal efforts to increase the company's competitiveness by achieving higher productivity.",
         // for business-topbar
         'business-plant-topbar' => 'Plantation',

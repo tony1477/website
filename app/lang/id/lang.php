@@ -22,7 +22,7 @@
         'about-sidebar-profile' => 'Profil Perusahaan',
         'about-sidebar-vision' => 'Visi - Misi, Nilai Luhur',
         'about-sidebar-strategic' => 'Strategi Bisnis',
-        'about-sidebar-bod' => 'Jajaran Manajemen',
+        'about-sidebar-bod' => 'Struktur Manajemen',
         'about-sidebar-structure' => 'Struktur Organisasi',
         'about-sidebar-milestone' => 'Peristiwa Penting',
         // for about-topbar
@@ -62,7 +62,7 @@
         <li>Menyediakan berbagai kesempatan bagi karyawan dan komunitas lokal agar mereka mempunyai standar kehidupan yang lebih baik.</li>
         <li>Bertransformasi menjadi perusahaan dengan manajemen yang profesional dan sistem yang terintegrasi.</li>
         ',
-        'about-values-title' => 'NILAI LUHUR',
+        'about-values-title' => 'NILAI-NILAI LUHUR PERUSAHAAN',
         'about-values-wisdom-dual' => "<h5>WISDOM<br>(BIJAKSANA)</h5>",
         'about-values-intellectual-dual' => "<h5>INTELLECTUAL<br>(RASIONAL)</h5>",
         'about-values-loyal-dual' => "<h5>LOYAL<br>(SETIA)</h5>",

@@ -59,7 +59,7 @@
                                 <?=$this->getContentDb('about-bod-content')?>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-6 px-md-3 px-0 right order-md-2 order-1">
+                        <div class="animate-box col-lg-5 col-md-6 px-md-3 px-0 right order-md-2 order-1" data-animate-effect="fadeIn">
                             <img alt="" class="w-100 rounded shadow" src="<?=BASE_URL?>public/assets/img/team/2Ver2.jpg">
                         </div>
                     </div>
@@ -67,13 +67,13 @@
             </div>
             <div class="col-lg-3"></div>
             <div class="col-lg-9">
-                <div class="profile line-board"></div>
+                <div class="animate-box profile line-board"></div>
                 <div class="profile board-title">
-                    <h3><?=$this->getContent('about-bod-management')?></h3>
+                    <h3 class="animate-box"><?=$this->getContent('about-bod-management')?></h3>
                 </div>
                 <div class="responsive-container-block outer-container">
                     <div class="responsive-container-block inner-container">
-                        <div class="responsive-container-block card-container">
+                        <div class="animate-box responsive-container-block card-container">
                             <div class="btn">
                                 <div class="swiper-button-nexts" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ec04e6c9fde0d3c0">
                                 <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg" class="arrow-right">
@@ -89,12 +89,14 @@
                                     foreach($datas as $row) : 
                                     $name = str_replace(' ','',$row['profilename']); 
                                     ?>
-                                    <div class="swiper-slide">
+                                    <div class="animate-box swiper-slide" data-animate-effect="fadeIn">
                                         <div class="card shadow">
                                         <a class="" data-bs-toggle="modal" href="#<?=$name?>Modal">
                                         <img src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="Founder" class="team-member-image" role="button"/>
-                                        <p class="text-blk name text-center"><?=$row['profilename']?></p>
-                                        <p class="text-blk text-center"><?=$row['profileposition']?></p>
+                                        <div class="mt-bod" style="height: 120px;">
+                                            <p class="text-blk name text-center"><?=$row['profilename']?></p>
+                                            <p class="text-blk text-center"><?=$row['profileposition']?></p>
+                                        </div>
                                         </a>
                                         </div>
                                     </div>

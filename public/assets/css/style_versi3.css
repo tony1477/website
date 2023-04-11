@@ -3667,22 +3667,22 @@ img .icon-language {
 
  .detailhist {
     /* background-color: #000; */
-    width:450px;
+    width: 350px;
     height:auto;
-    border:0px solid #000;
+    /* border: 2px solid #000; */
     background-color: rgba(248,248,248,.5);
     font-size: .8rem;
  }
 
  .detailhist-r {
     /* background-color: #000; */
-    width:450px;
+    width: 350px;
     height:auto;
     border:0px solid #000;
     background-color: rgba(248,248,248,.5);
     font-size: .8rem;
     margin-right:-150px;
-    /* position: absolute; */   
+    /* position: absolute; */
  }
 
 .listjob {
@@ -3957,6 +3957,10 @@ p.values-description {
 
   .about-content.contentweb p {
     text-align: justify;
+  }
+
+  .contentweb em {
+    font-weight: 600;
   }
 
 .modal .custom-modal {
@@ -4756,4 +4760,12 @@ a.title:hover::before {
 
 h3.card-text {
     font-size: 1.75rem;
+}
+
+.custom-container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
 }
