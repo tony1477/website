@@ -19,7 +19,7 @@
             <div class="col-lg-12">
                 <article class="blog-post-details">
                     <figure class="blog-post-thumb">
-                        <img src="<?=BASE_URL?>public/assets/img/business/location-map2.jpg" alt="Blog" class="rounded shadow" />
+                        <img src="<?=BASE_URL?>public/assets/img/business/location-map3.jpg" alt="Blog" class="rounded shadow" />
                     </figure>
 
                     <div class="animate-box blog-post-txt contentweb">

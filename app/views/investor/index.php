@@ -17,34 +17,41 @@
             <div class="col-md-12 col-lg-12 order-1">
               <div class="about-content ms-0 contentweb">
                 <div class="animate-box business-page-title" data-animate-effect="fadeInUp">
-                  <h4 class="title">Profil Perusahaan</h4>
+                  <h4 class="animate-box title">Profil Perusahaan</h4>
                 </div>
                 <p class="first-cap animate-box" data-animate-effect="fadeInUp" style="text-align:justify">Wilian Perkasa (WP), adalah merupakan perusahaan Multi Industry, WP didirikan pada tahun 2019.</p>
                 <p class="animate-box" data-animate-effect="fadeInUp" style="text-align:justify">Wilian Perkasa adalah perusahaan Multi Industry yang berkembang dengan kegiatan usaha dari Plantation, Agronomy, Pabrik pengolahan Kelapa Sawit, Trading dan Makanan & Minuman, yang menghasilkan portofolio produk berbasis kelapa sawit yang beragam dan unit industry lainnya dengan rantai pasokan yang terintegrasi dan efisien.</p>
                 </div>
 
-                <div class="row">
+                <div class="row mt-4">
                   <div class="col-6">
-                    <div class="card bg-dark text-white">
-                      <img src="..." class="card-img" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                      </div>
+                    <div class="animate-box card" style="padding:1rem .8rem; height:530px">
+                        <p class="card-text fst-italic fw-bold" style="color: var(--red-wp)">Strategi bisnis WP dibangun berdasarkan keunggulan minyak sawit sebagai bahan utama untuk kebutuhan sehari-hari berdasarkan preferensi konsumen global yang terus berkembang menuju produk yang lebih sehat dan diproduksi secara bertanggung jawab:</p>
+
+                        <ul class="list-investor" style="margin-left:.5rem;">
+                          <li>Pemenuhan kebutuhan pelanggan.</li>
+                          <li>Peningkatan Kepuasan Pelangan.</li>
+                          <li>Pengembangan Jaringan Pelanggan.</li>
+                          <li>Penguatan Citra Perusahaan. </li>
+                          <li>Keberlanjutan ada dalam unit usaha WP.</li>
+                        </ul>
+
+                        <p class="card-text mt-3">Strategi Bisnis ini akan mendukung Perusahaan dalam mengoptimalkan marjin di sepanjang mata rantai unit usaha dalam tumbuh berkembang, mencapai pertumbuhan berkelanjutan dan menghasilkan profitabilitas jangka panjang.</p>
+
+                        <p class="card-text">WP menerapkan kebijakan hubungan investor secara transparasi guna membangun komunikasi secara berkala, efektif, dan terbuka.</p>
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="animate-box card mb-3">
                       <div class="row g-0">
                         <div class="col-md-4">
-                          <img src="<?=BASE_URL?>public/assets/img/Bendera.jpg" class="img-fluid rounded-start" alt="...">
+                          <img src="<?=BASE_URL?>public/assets/img/investor/wp-mill2.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
                             <h5 class="card-title fw-bold" style="color: var(--red-wp)">Mengapa berinvestasi di Wilian Perkasa (WP)?</h5>
                             <p class="card-text">
-                              <ul>
+                              <ul class="list-investor">
                                 <li>Visi Misi jangka Panjang dalam Multi Industry yang dinamis.</li>
                                 <li>Potensi dan Pengembangan Unit multi bisnis industry yang terdepan dalam produktivitas.</li>
                                 <li>Potensi & Jaringan pemasok pihak ke-tiga yang luas dengan ketertelusuran.</li>
@@ -58,6 +65,17 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="animate-box col-12" data-animate-effect="fadeIn">
+                    <img src="<?=BASE_URL?>public/assets/img/investor/chart1.png" class="w-100 rounded shadow" alt="chart-1" />
+                  </div>
+                  <div class="animate-box col-6" data-animate-effect="fadeIn">
+                    <img src="<?=BASE_URL?>public/assets/img/investor/chart2.png" class="w-100 rounded shadow" alt="chart-2" />
+                  </div>
+                  <div class="animate-box col-6" data-animate-effect="fadeIn">
+                    <img src="<?=BASE_URL?>public/assets/img/investor/chart3.png" class="w-100 rounded shadow" alt="chart-3" />
                   </div>
                 </div>
                 <div class="row justify-content-center">
@@ -79,19 +97,7 @@
         </div>
     </div>
 </div>
-<div class="about-area-wrapper bg-overlay">
-    <div class="container-fluid" style="border: 0px solid #000;">
-        <div class="row">
-            <div class="col-md-3 col-lg-2 order-lg-0 order-md-0 order-md-3">
-                <?php require_once('sidebar.php')?>
-            </div>
-            <div class="col-md-9 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
-            <!-- <h2 class="text-center text-decoration-underline">Statistik Produksi</h2> -->
-               
-            </div>
-        </div>
-    </div>
-</div>
+
 <?php
 $scriptfooter = <<<EOF
 <script>

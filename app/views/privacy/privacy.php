@@ -1,4 +1,4 @@
-<div class="container page-top">          
+<div class="container page-top" style="text-align:justify">          
     <h1>Kebijakan Privasi</h1>
     <h2></h2>
     <div class="listing">

@@ -3792,7 +3792,7 @@ ul.text-misi li {
     font-size: 1.25rem;
     font-family: "Open Sans","Montserrat";
     /* padding-left: 10px; */
-    line-height: 1.5    rem;
+    line-height: 1.5rem;
     position: relative;
     text-align: justify;
 }
@@ -3811,6 +3811,35 @@ ul.text-misi li::before {
     /* top:7px; */
     font-family: 'Material Design Icons';
     color: var(--red-wp);
+}
+
+ul.list-investor li {
+    /* font-size: 1.1rem; */
+    /* font-family: "Open Sans","Montserrat"; */
+    /* padding-left: 10px; */
+    line-height: 1.5rem;
+    position: relative;
+    left: 1rem;
+    text-align: justify;
+    font-weight: 600;
+    margin-top: .25rem;
+    margin-right: 2rem;
+}
+
+ul.list-investor li::before {
+    content: '\f134';
+    /* background: crimson; */
+    width: 10px;
+    /* display: inline-block; */
+    height: 10px;
+    /* height:10px; */
+    border-radius: 5px;
+    position: absolute;
+    /* top:5px; */
+    left:-25px;
+    /* top:7px; */
+    font-family: 'Material Design Icons';
+    /* color: var(--red-wp); */
 }
 
 .values img {

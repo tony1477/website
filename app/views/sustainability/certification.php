@@ -1,10 +1,10 @@
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/sustainability/topbar-sustainability-image.jpg" >
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/sustainability/certification.jpg" >
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
                     <div class="page-header-content" >
-                        <h2><?=$this->getContent('sustain-certification-topbar')?></h2>
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('sustain-certification-topbar')?></h2>
                     </div>
                 </div>
             </div>
