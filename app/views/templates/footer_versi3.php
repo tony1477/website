@@ -180,13 +180,17 @@
 <script src="<?=BASE_URL?>public/assets/js/revslider/rev-active.js"></script>
 <script src="<?=BASE_URL?>public/assets/js/main.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<?php 
+    $arrCustomJs = ['about','business','investor','sustainability','info'];
+    if(in_array($arr[2],$arrCustomJs)): ?>
+    <script src="<?=BASE_URL?>public/assets/js/custom_js.js"></script>
+    <?php endif;?>
 <?php if(end($arr)=='bod') { ?>
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <?php } ?>
 <?php if(end($arr)=='investor') { ?>
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"> -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
     <?php } ?>
 <?=(isset($scriptfooter) && ($scriptfooter!='') ? $scriptfooter:'')?>
 </body>

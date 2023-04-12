@@ -368,6 +368,7 @@
         const root = document.documentElement
 
         if ($(window).scrollTop() >= 250) {
+            $('.navigation-area').removeClass('hideEl')
             $(".header-area").addClass('sticky');
             // window.scrollTo(0,800)
             // headersticky.style.background = `${localStorage.getItem('bgcolor')}`

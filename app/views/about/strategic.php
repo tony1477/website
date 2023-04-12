@@ -1,19 +1,18 @@
 <!--== Start Page Header Area ==-->
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/strategic.jpg">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/business/plant-business-page1.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
-                <div class="page-header-content-inner">
-                    <div class="page-header-content">
-                        <!-- <h2>Our Strategic</h2> -->
-                        <!-- <em>Wilian Perkasa try to provide the best Business Solutions for Clinets
-                            to grow up their Business very sharply and smoothly.</em> -->
+                <div class="page-header-content-start">
+                    <div class="page-header-content" >
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('strategic-topbar-title')?></h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--== Sta
 <!--== End Page Header Area ==-->
 <!--== Start Testimonial Area Wrapper ==-->
 <div class="about-area-wrapper sm-top bg-overlay">

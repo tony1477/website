@@ -1,12 +1,11 @@
-<div class="page-header-area bg-img" data-bg="<?=BASE_URL?>public/assets/img/fun-fact-bg.webp">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/Bendera.jpg" style="background-position:top -90rem center">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
                 <div class="page-header-content-start">
-                    <div class="page-header-content">
-                        <h2><?=$this->getContent('vision-topbar-title')?></h2>
-                        <!-- <em>Wilian Perkasa try to provide the best Business Solutions for Clinets
-                            to grow up their Business very sharply and smoothly.</em> -->
+                    <div class="page-header-content" >
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('vision-topbar-title')?></h2>
+                      
                     </div>
                 </div>
             </div>

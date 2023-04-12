@@ -23,21 +23,20 @@
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":10,"split":"lines","splitdelay":0.1,"speed":600,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['left']">
-                        GROW TOGETHER <br>  WITH US
+                        <?=$this->getContentDb('home-slider-title-1')?>
                     </div>
 
                     <!-- LAYER NR. 2 -->
-                    <div class="tp-caption tp-resizeme slide-txt " data-x="['left','left','left','left']"
+                    <div class="tp-caption tp-resizeme slide-txt content-slider " data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
                          data-fontweight="['400','400','400','400']" data-width="['600','600','6001','320']"
                          data-height="none" data-whitespace="normal" data-visibility="['on','on','on','on']"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":360,"split":"lines","splitdelay":0.1,"speed":500,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
-                        <p class="text-dark ">
-                        Strategi pertumbuhan kami kini telah beralih dari yang sebelumnya didominasi oleh ekspansi perkebunan, menjadi strategi yang difokuskan pada penguatan internal melalui inisiatif peningkatan kualitas dalam berbagai aspek.</p>
+                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[20,20,20,20]"
+                         data-paddingright="[20,20,20,20]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]">
+                       <?=$this->getContentDb('home-slider-content-1')?>
 
                     </div>
 
@@ -73,20 +72,20 @@
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":10,"split":"chars","splitdelay":0.1,"speed":1000,"split_direction":"forward","frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['left']">
-                        INVEST MONEY <br> WITH US
+                        <?=$this->getContentDb('home-slider-title-2')?>
                     </div>
 
                     <!-- LAYER NR. 5 -->
-                    <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
+                    <div class="content-slider tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
                          data-fontweight="['400','400','400','400']" data-width="['600','600','600','320']"
                          data-height="none" data-whitespace="normal" data-visibility="['on','on','on','on']"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":360,"split":"lines","splitdelay":0.1,"speed":500,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
-                         <p class="text-dark">Kami yakin dengan sumber daya manusia sebagai aset utama, serta memegang teguh core value perusahaan, akan menjadi kunci keberhasilan kami dalam menghadapi berbagai tantangan di masa yang akan datang.</p>
+                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[20,20,20,20]"
+                         data-paddingright="[20,20,20,20]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]">
+                         <?=$this->getContentDb('home-slider-content-2')?>
 
                     </div>
 
@@ -109,7 +108,7 @@
                     data-masterspeed="default,default,default" data-thumb="<?=BASE_URL?>public/assets/img/slider/02_thumb.jpg"
                     data-rotate="0,0,0" data-saveperformance="off" data-title="Slide">
                     <!-- MAIN IMAGE -->
-                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-07.jpeg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
+                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-03.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
 
                 </li>
@@ -133,7 +132,7 @@
                     data-masterspeed="default,default,default" data-thumb="<?=BASE_URL?>public/assets/img/slider/02_thumb.jpg"
                     data-rotate="0,0,0" data-saveperformance="off" data-title="Slide">
                     <!-- MAIN IMAGE -->
-                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-08.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
+                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-04.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
 
                 </li>

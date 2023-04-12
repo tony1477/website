@@ -1,11 +1,11 @@
 <!--== Start Page Header Area ==-->
-<div class="page-header-area bg-img-clear" data-bg="<?=BASE_URL?>public/assets/img/about/Quotefancy-24150-3840x2160.jpg" style="background-position: 0px 30%; ">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/team/lounge-head-office.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
-                <div class="page-header-content-inner">
+                <div class="page-header-content-start">
                     <div class="page-header-content">
-                        <!-- <h2>KNOW ABOUT BUSINEX THE ULTIMATE TEAM</h2> -->
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('structure-topbar-title')?></h2>
                         <!-- <p>Businex always try to provide the best Business Solutions for Clinets
                             to grow up their Business very sharply and smoothly.</p> -->
                     </div>

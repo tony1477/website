@@ -18,6 +18,9 @@
         'head-office' => 'Head Office / Regional Office',
         'moreinfo-visit-us' => 'For more information, please visit',
         'subsdiary-location' => 'Subsidiaries and Location Map',
+        // for privacy
+        'home-topbar-privacy' => 'Privacy & Policy',
+        'privacy-policy' => 'Privacy Policy',
         // for about-sidebar
         'about-sidebar-profile' => 'Company Profile',
         'about-sidebar-vision' => 'Vision - Mission, Core Values',
@@ -27,6 +30,10 @@
         'about-sidebar-milestone' => 'Milestone',
         // for about-topbar
         'about-topbar-title' => 'Our Profile',
+        'strategic-topbar-title' => 'Business Strategic',
+        'bod-topbar-title' => 'Management Structure',
+        'structure-topbar-title' => 'Organization Structure',
+        'milestone-topbar-title' => 'Milestone',
         // for about-content
         'about-content-title' => 'OUR HISTORY',
         'about-profile-milestone' => [

@@ -1,13 +1,11 @@
 <!--== Start Page Header Area ==-->
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/strategic.jpg">
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/about/milestone/logo-landmark.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
-                <div class="page-header-content-inner">
+                <div class="page-header-content-start">
                     <div class="page-header-content">
-                        <!-- <h2>Our Strategic</h2> -->
-                        <!-- <em>Wilian Perkasa try to provide the best Business Solutions for Clinets
-                            to grow up their Business very sharply and smoothly.</em> -->
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('milestone-topbar-title')?></h2>
                     </div>
                 </div>
             </div>
@@ -29,6 +27,7 @@
                         <div class="col-lg-12 m-auto">   
                             <div class="member-education mem-achieve-item" style="text-align: justify;">
                                 <?=$this->getContentDb('about-milestone-content')?>
+                                <p class="animate-box text-center" data-animate-effect="fadeIn">* Click judul untuk lihat detail </p>
                             </div>
                         </div>
                         <ul class="timeline">
@@ -132,7 +131,7 @@
                                             <span class="time-wrapper"></span>
                                         </div>
                                         <div class="desc">Perkebunan Kelapa Sawit kedua yang didirikan pada tahun 2012.</div>
-                                        <div class="detailhist d-none"><img src="<?=BASE_URL?>public/assets/img/about/milestone/ssp.jpg" style="margin:5px; width:350px" class="rounded">
+                                        <div class="detailhist d-none"><img src="<?=BASE_URL?>public/assets/img/about/milestone/tsp.jpg" style="margin:5px; width:350px" class="rounded">
                                         <p style="text-align:justify;">Pertengahan tahun 2012, ekspansi dan berkembangunan unit operasional perkebunan baru akhirnya dapat  terealisasi,  dimana unit perkebunan  kelapa sawit kembali, yang berada di daerah Kampar – Riau.</p></div>
                                     </div>
                                 </div>
@@ -147,7 +146,7 @@
                                             <span class="time-wrapper"></span>
                                         </div>
                                         <div class="desc">Bisnis Perkebunan Kelapa Sawit Pertama yang menjadi industri agribisnis terpadu dan berkelanjutan.</div>
-                                        <div class="detailhist-r d-none" style="margin-left:-3.5rem;"><img src="<?=BASE_URL?>public/assets/img/about/milestone/lsp.jpg" style="margin:5px; width:350px;" class="rounded">
+                                        <div class="detailhist-r d-none" style="margin-left:-3.5rem;"><img src="<?=BASE_URL?>public/assets/img/about/milestone/sps.jpg" style="margin:5px; width:350px;" class="rounded">
                                         <p style="text-align:justify;">Tahun 2009 merupakan awal dari Wilian Perkasa memulai bisnis di bidang Kelapa Sawit, khususnya di perkebunan. Dengan perkebunan kelapa sawit ini, nanti nya membawa berbagai perubahan yang membuat Wilian Perkasa menjadi korporasi yang lebih baik.</p>
                                         </div>
                                 </div>

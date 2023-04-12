@@ -16,11 +16,11 @@
         <div class="row align-items-lg-center">
             <div class="col-md-12 col-lg-12 order-1">
               <div class="about-content ms-0 contentweb">
-                <div class="animate-box business-page-title" data-animate-effect="fadeInUp">
-                  <h4 class="animate-box title">Profil Perusahaan</h4>
+                <div class="animate-box business-page-title justify-content-center" data-animate-effect="fadeInUp">
+                  <h4 class="animate-box text-center title" data-effect-before="none">Profil Perusahaan</h4>
                 </div>
-                <p class="first-cap animate-box" data-animate-effect="fadeInUp" style="text-align:justify">Wilian Perkasa (WP), adalah merupakan perusahaan Multi Industry, WP didirikan pada tahun 2019.</p>
-                <p class="animate-box" data-animate-effect="fadeInUp" style="text-align:justify">Wilian Perkasa adalah perusahaan Multi Industry yang berkembang dengan kegiatan usaha dari Plantation, Agronomy, Pabrik pengolahan Kelapa Sawit, Trading dan Makanan & Minuman, yang menghasilkan portofolio produk berbasis kelapa sawit yang beragam dan unit industry lainnya dengan rantai pasokan yang terintegrasi dan efisien.</p>
+                <p class="first-cap animate-box" data-animate-effect="fadeInUp" style="text-align:justify">Wilian Perkasa (WP), adalah merupakan perusahaan <em>multi industri</em>, <em>WP</em> didirikan pada tahun 2019.</p>
+                <p class="animate-box" data-animate-effect="fadeInUp" style="text-align:justify">Wilian Perkasa adalah perusahaan <em>multi industri</em> yang berkembang dengan kegiatan usaha dari <em>Plantation</em>, <em>Agronomy</em>, Pabrik pengolahan Kelapa Sawit, <em>Trading</em> dan Makanan & Minuman, yang menghasilkan portofolio produk berbasis kelapa sawit yang beragam dan unit industri lainnya dengan rantai pasokan yang terintegrasi dan efisien.</p>
                 </div>
 
                 <div class="row mt-4">
@@ -36,9 +36,9 @@
                           <li>Keberlanjutan ada dalam unit usaha WP.</li>
                         </ul>
 
-                        <p class="card-text mt-3">Strategi Bisnis ini akan mendukung Perusahaan dalam mengoptimalkan marjin di sepanjang mata rantai unit usaha dalam tumbuh berkembang, mencapai pertumbuhan berkelanjutan dan menghasilkan profitabilitas jangka panjang.</p>
+                        <p class="card-text mt-3">Strategi Bisnis ini akan mendukung Perusahaan dalam mengoptimalkan <em>margin</em> di sepanjang mata rantai unit usaha dalam tumbuh berkembang, mencapai pertumbuhan berkelanjutan dan menghasilkan profitabilitas jangka panjang.</p>
 
-                        <p class="card-text">WP menerapkan kebijakan hubungan investor secara transparasi guna membangun komunikasi secara berkala, efektif, dan terbuka.</p>
+                        <p class="card-text"><em>WP</em> menerapkan kebijakan hubungan investor secara transparasi guna membangun komunikasi secara berkala, efektif, dan terbuka.</p>
                     </div>
                   </div>
                   <div class="col-6">
@@ -52,8 +52,8 @@
                             <h5 class="card-title fw-bold" style="color: var(--red-wp)">Mengapa berinvestasi di Wilian Perkasa (WP)?</h5>
                             <p class="card-text">
                               <ul class="list-investor">
-                                <li>Visi Misi jangka Panjang dalam Multi Industry yang dinamis.</li>
-                                <li>Potensi dan Pengembangan Unit multi bisnis industry yang terdepan dalam produktivitas.</li>
+                                <li>Visi Misi jangka panjang dalam multi industri yang dinamis.</li>
+                                <li>Potensi dan Pengembangan Unit multi bisnis industri yang terdepan dalam produktivitas.</li>
                                 <li>Potensi & Jaringan pemasok pihak ke-tiga yang luas dengan ketertelusuran.</li>
                                 <li>Mengelola keuangan perusahaan secara optimal dan sehat (revenue, share, dividen). </li>
                                 <li>Portofolio produk bernilai tambah yang beragam.</li>
@@ -89,7 +89,7 @@
                     color: var(--red-wp);
                     font-weight: 600;">Phone : +628 5xx xxxx </a>
                     <div class="my-1">
-                      <a href="<?=BASE_URL?>sustainability/gcg" class="title">Pelajari lebih lanjut tentang Tata Kelola kami : </a>
+                      <a href="<?=BASE_URL?>sustainability/gcg" class="title">Pelajari lebih lanjut tentang Tata Kelola Perusahaan kami : </a>
                     </div>
                   </div>
                 </div>

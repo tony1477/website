@@ -27,7 +27,7 @@
                         <?php //$this->getContentDb('business-certification-content')?>
                         <h3><?=$this->getContent('subsdiary-location')?></h3>
                         <div class="border-bottom"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eligendi repudiandae quaerat enim ipsam accusantium quia, a debitis vitae excepturi, aliquam ex expedita dolores magnam laborum mollitia explicabo incidunt asperiores!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, possimus? Tempora, necessitatibus modi sit doloremque nemo optio. Officiis porro maxime at, provident earum optio, dolorum similique doloremque, et facilis consectetur?</h3>
+                       <?=$this->getContentDb('business-location-content')?>
 
                         <div class="animate-box row">
                             <div class="col-8">

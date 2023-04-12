@@ -3,11 +3,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
-                <div class="page-header-content-inner">
+                <div class="page-header-content-start">
                     <div class="page-header-content">
-                        <!-- <h2>KNOW ABOUT BUSINEX THE ULTIMATE TEAM</h2> -->
-                        <!-- <p>Businex always try to provide the best Business Solutions for Clinets
-                            to grow up their Business very sharply and smoothly.</p> -->
+                        <h2 style="text-transform:uppercase; margin-top:5rem"><?=$this->getContent('bod-topbar-title')?></h2>
                     </div>
                 </div>
             </div>
@@ -35,8 +33,8 @@
                 <div class="card" style="margin-right:1.5rem; margin-top:1.4rem">
                     <img class="card-img-top rounded-end" src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="<?=$row['profileposition']?> - <?=$row['profilename']?>" />
                     <div class="card-body">
-                        <h3 class="card-text"><?=$row['profilename']?></h3>
-                        <h5><?=$row['profileposition']?></h5>
+                        <h3 class="card-text text-center"><?=$row['profilename']?></h3>
+                        <h5 class="text-center"><?=$row['profileposition']?></h5>
                     </div>
                 </div>
             </div>

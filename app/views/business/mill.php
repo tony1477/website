@@ -30,15 +30,15 @@
 <!--== Start Fun Fact Area Wrapper ==-->
 <div class="our-business">
     <div class="container" style="padding-right:3.5rem">
-        <div class="row mtn-40">
-            <div class="col-6 col-md-6 text-start">
+        <div class="row mtn-40 justify-content-between">
+            <div class="col-lg-3 col-md-6 text-start">
             <div class="counter-item">
-                    <h6 class="counter-txt"><a href="<?=BASE_URL?>business/plantation" class="text-white"><i class="mdi mdi-arrow-left-bold-circle"></i> <?=$this->getContent('prev')?> <br /><?=$this->getContent('plantation')?></a></h6>
+                    <h6 class="counter-txt prev"><a href="<?=BASE_URL?>business/plantation" class="text-white"><i class="mdi mdi-arrow-left-bold-circle"></i> <?=$this->getContent('prev')?> <br /><?=$this->getContent('plantation')?></a></h6>
                 </div>
             </div>
-            <div class="col-6 col-md-6 text-end">
+            <div class="col-lg-3 col-md-6 text-end">
                 <div class="counter-item">
-                    <h6 class="counter-txt"><a href="<?=BASE_URL?>business/agronomy" class="text-white"><?=$this->getContent('next')?> <i class="mdi mdi-arrow-right-bold-circle"></i><br /><?=$this->getContent('agronomy')?></a></h6>
+                    <h6 class="counter-txt next"><a href="<?=BASE_URL?>business/agronomy" class="text-white"><?=$this->getContent('next')?> <i class="mdi mdi-arrow-right-bold-circle"></i><br /><?=$this->getContent('agronomy')?></a></h6>
                 </div>
             </div>
         </div>

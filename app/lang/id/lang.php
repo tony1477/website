@@ -18,6 +18,9 @@
         'head-office' => 'Kantor Pusat / Regional',
         'moreinfo-visit-us' => 'Informasi lebih lanjut, kunjungi',
         'subsdiary-location' => 'Anak Perusahaan Dan Peta Lokasi',
+        // for privacy
+        'home-topbar-privacy' => 'Kebijakan Privasi',
+        'privacy-policy' => 'Kebijakan Privasi',
         // for about-sidebar
         'about-sidebar-profile' => 'Profil Perusahaan',
         'about-sidebar-vision' => 'Visi - Misi, Nilai Luhur',
@@ -27,6 +30,10 @@
         'about-sidebar-milestone' => 'Peristiwa Penting',
         // for about-topbar
         'about-topbar-title' => 'Profil Perusahaan',
+        'strategic-topbar-title' => 'Strategi Bisnis',
+        'bod-topbar-title' => 'Struktur Manajemen',
+        'structure-topbar-title' => 'Struktur Organisasi',
+        'milestone-topbar-title' => 'Peristiwa Penting',
         //for about-content
         'about-content-title' => 'PERJALANAN WILIAN PERKASA',
         // for about-profile-milestone
