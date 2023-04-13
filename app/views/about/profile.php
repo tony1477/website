@@ -15,7 +15,7 @@
 <!--== End Page Header Area ==-->
 
 <!--== Start Testimonial Area Wrapper ==-->
-<div class="about-area-wrapper sm-top">
+<div class="about-area-wrapper sm-top bg-overlay">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
@@ -30,21 +30,17 @@
                     <?php //endforeach;?>
                 </div>
             </div>
+            <div class="col-md-6 col-lg-3 order-3"></div>
+            <div class="col-md-6 col-lg-9 order-4 mt-5">
+                <figure class="about-thumb video-button-thumb" style="border-radius: .55rem;">
+                <img src="<?=BASE_URL?>public/assets/img/video-sample.jpg" alt="Businex-About">
+                    <a href="<?=BASE_URL?>/public/assets/videos/WP 15 MIN.mp4" class="btn-play"><i class="fa fa-play"></i></a>
+                </figure>
+            </div>
         </div>
     </div>
 </div>
 <!--== End Testimonial Area Wrapper ==-->
-<div class="video-player">
-                    <video controls="" poster="<?=BASE_URL?>public/assets/img/video-sample.jpg" autoplay="">
-                        <source src="<?=BASE_URL?>public/assets/videos/WP 5 MIN.mp4" type="video/mp4">
-                        <source src="video.webm" type="video/webm">
-                        <source src="video.ogv" type="video/ogg">
-                        Your browser does not support HTML5 video.
-                    </video>
-                    <div class="cover-image" style="background-image: url('<?=BASE_URL?>public/assets/img/video-sample.jpg')">
-                        <button class="play-button"></button>
-                    </div>
-                </div>
 <!--== Start History Area Wrapper ==-->
 <div class="animate-box history-area sp-y bg-offwhite" style="
     background-image: url('<?=BASE_URL?>public/assets/img/about/about2.jpg');

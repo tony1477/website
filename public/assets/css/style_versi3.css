@@ -2592,7 +2592,7 @@ img .icon-language {
 }
 .video-button-thumb:after {
     content: "";
-    background-color: #080b1a;
+    background-color: rgb(8 11 26 / 85%);
     opacity: 0.5;
     height: 100%;
     width: 100%;
@@ -4810,3 +4810,79 @@ h3.card-text {
     padding:.5rem;
     border-radius:.25rem;
 }
+
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    margin:.7rem 0;
+}
+
+.arrow-button .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  
+  .arrow-button a {
+    position: relative;
+  }
+  
+  @keyframes occasional-arrow-bounce {
+    0% { transform: translateY(0); }
+    79% { transform: translateY(0); }
+    80% { transform: translateY(2px); }
+    100% { transform: translateY(-4px); }
+  }
+  
+  .arrow-button a:after {
+    color: #790002;
+    content: '\02193';
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    left: 50%;
+    margin-left: -10px;
+    animation: occasional-arrow-bounce 3s infinite 2s alternate ease-out;
+    font-family: 'FontAwesome';
+  }
+  
+  .arrow-button .circle {
+    height: 124px;
+    width: 124px;
+  }
+    
+  .arrow-button .background {
+    fill: transparent;
+    stroke: rgba(0, 0, 0, 0.1);
+    transition: all 200ms ease;
+  }
+    
+  .arrow-button .foreground {
+    fill: transparent;
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+    stroke: #d0ae41;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    transition: all 800ms ease;
+  }
+      
+  .arrow-button a:hover .foreground {
+    stroke-dashoffset: 0;
+    transform: rotate(90deg);
+  }
+  
+  @keyframes arrow-bounce {
+    0% { transform: translateY(2px); }
+    100% { transform: translateY(-4px); }
+  }
+  
+  .arrow-button a:hover:after {
+    animation: arrow-bounce 0.5s infinite alternate ease-out;
+  }

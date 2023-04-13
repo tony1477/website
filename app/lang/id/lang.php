@@ -18,6 +18,7 @@
         'head-office' => 'Kantor Pusat / Regional',
         'moreinfo-visit-us' => 'Informasi lebih lanjut, kunjungi',
         'subsdiary-location' => 'Anak Perusahaan Dan Peta Lokasi',
+        'click-to-detail' => 'Click judul untuk lihat detail',
         // for privacy
         'home-topbar-privacy' => 'Kebijakan Privasi',
         'privacy-policy' => 'Kebijakan Privasi',

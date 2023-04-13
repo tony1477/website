@@ -62,4 +62,19 @@ class Controller {
     {
         return $this->helper->getContentDb($text);
     }
+
+    public function getNewsTitle($resource)
+    {
+        return $this->helper->getNewsTitle($resource);
+    }
+
+    public function getNewsHighlight($resource)
+    {
+        return $this->helper->getNewsHighlight($resource);
+    }
+
+    public function getNewsContent($resource)
+    {
+        return $this->helper->getNewsContent($resource);
+    }
 }

@@ -51,4 +51,28 @@ class Helper {
     if($_SESSION['lang']=='id') return $content['text_id'];
     return $content['text_en'];
   }
+
+  public function getNewsTitle($array) 
+  {
+    require_once 'app/models/NewsModel.php';
+    $this->model = new NewsModel();
+    if($_SESSION['lang']=='id') return $array['title_id'];
+    return $array['title_en'];
+  }
+
+  public function getNewsHighlight($array) 
+  {
+    require_once 'app/models/NewsModel.php';
+    $this->model = new NewsModel();
+    if($_SESSION['lang']=='id') return $array['highlight_id'];
+    return $array['highlight_en'];
+  }
+
+  public function getNewsContent($array) 
+  {
+    require_once 'app/models/NewsModel.php';
+    $this->model = new NewsModel();
+    if($_SESSION['lang']=='id') return $array['content_id'];
+    return $array['content_en'];
+  }
 }

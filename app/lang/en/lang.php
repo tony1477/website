@@ -18,6 +18,7 @@
         'head-office' => 'Head Office / Regional Office',
         'moreinfo-visit-us' => 'For more information, please visit',
         'subsdiary-location' => 'Subsidiaries and Location Map',
+        'click-to-detail' => 'Click title to see details',
         // for privacy
         'home-topbar-privacy' => 'Privacy & Policy',
         'privacy-policy' => 'Privacy Policy',

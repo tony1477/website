@@ -27,7 +27,7 @@
                     </div>
 
                     <!-- LAYER NR. 2 -->
-                    <div class="tp-caption tp-resizeme slide-txt content-slider " data-x="['left','left','left','left']"
+                    <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
                          data-fontweight="['400','400','400','400']" data-width="['600','600','6001','320']"
@@ -76,7 +76,7 @@
                     </div>
 
                     <!-- LAYER NR. 5 -->
-                    <div class="content-slider tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
+                    <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
                          data-fontweight="['400','400','400','400']" data-width="['600','600','600','320']"
@@ -142,9 +142,20 @@
     </div>
 </div>
 <!--== End Slider Area Wrapper ==-->
+<div class="arrow-button">
+    <a href="#">
+    <span class="visually-hidden">Scroll down you dafty</span>
+    <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+        <g>
+        <ellipse class="background" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="1"/>
+        <ellipse class="foreground" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="2"/>
+        </g>
+    </svg>
+    </a>
+</div>
 
 <!--== Start About Area Wrapper ==-->
-<div class="about-area-wrapper sm-top">
+<div class="about-area-wrapper sm-top" id="start-home">
     <div class="container">
         <div class="row align-items-lg-center">
             <div class="animate-box col-md-6 col-lg-6" data-animate-effect="fadeInLeft">
@@ -402,6 +413,13 @@
 <?php
 $scriptfooter = "
     <script type=\"text/javascript\">
+
+    $('.arrow-button').click(function() {
+        $('html, body').animate({
+            scrollTop: $('#start-home').offset().top - 95
+        }, 2000);
+    });
+
     function base_url() {
         var pathparts = location.pathname.split('/');
         if (location.host == 'localhost') {

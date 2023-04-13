@@ -27,7 +27,7 @@
                         <div class="col-lg-12 m-auto">   
                             <div class="member-education mem-achieve-item" style="text-align: justify;">
                                 <?=$this->getContentDb('about-milestone-content')?>
-                                <p class="animate-box text-center" data-animate-effect="fadeIn">* Click judul untuk lihat detail </p>
+                                <p class="animate-box text-center" data-animate-effect="fadeIn">* <?=$this->getContent('click-to-detail')?></p>
                             </div>
                         </div>
                         <ul class="timeline">
