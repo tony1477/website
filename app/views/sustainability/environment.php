@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-lg-9">
                 <article class="blog-post-details">
-                    <figure class="blog-post-thumb">
+                    <figure class="blog-post-thumb animate-box">
                         <img src="<?=BASE_URL?>public/assets/img/sustainability/environment.jpg" alt="Blog" class="rounded shadow" />
                     </figure>
 

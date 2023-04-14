@@ -162,7 +162,7 @@
                 <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="560" height="315" type="text/html" allow="autoplay" src="https://www.youtube.com/embed/r2u-sXXoKs8?autoplay=1&mute=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://wilianperkasa.com" title="Wilian Perkasa Office" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 -->
                 <div class="video-player">
-                    <video controls="" poster="<?=BASE_URL?>public/assets/img/video-sample.jpg" autoplay="">
+                    <video controls="" poster="<?=BASE_URL?>public/assets/img/video-sample.jpg" class="home-video">
                         <source src="<?=BASE_URL?>public/assets/videos/WP 5 MIN.mp4" type="video/mp4">
                         <source src="video.webm" type="video/webm">
                         <source src="video.ogv" type="video/ogg">
@@ -177,6 +177,7 @@
             <div class="animate-box col-md-6 col-lg-6" data-animate-effect="fadeInRight">
                 <div class="about-content" style="padding-right: 0px;">
                     <?=$this->getContentDb('home-about-profile')?>
+                    <a href="<?=BASE_URL?>about/profile" class="btn-about"><?=ucfirst($this->getContent('readmore'))?> <i class="mdi mdi-chevron-double-right"></i></a>
                 </div>
             </div>
         </div>
@@ -193,9 +194,9 @@
                     <div class="border-bot">
                         <p class="cat text-uppercase"><?=$this->getContent('policy')?></p>
                     </div>
-                    <h6 class="title my-3">Pengelolaan Usaha yang Produktif dan Berkelanjutan</h6>
+                    <h6 class="title my-3">Prinsip Keberlanjutan Dalam Menjalankan Bisnis Usaha</h6>
                     <div class="sum">
-                        <p>Sebagai Industri Inti Sawit, kami berkomitmen untuk mengembangkan usaha lebih baik.</p>
+                        <p>Transformasi bisnis yang baik dalam pandangan kami, adalah bisnis yang dilakukan secara berkelanjutan sesuai dengan tiga pilar utama.</p>
                     </div>
                     <div class="link pt-1">
                         <a class="btn-about" href="<?=BASE_URL?>sustainability/policy"> 
@@ -302,64 +303,6 @@
 </section>
 <!--== End Service Area Wrapper ==-->
 
-<!--== Start Blog Area Wrapper ==-->
-<div class="blog-area-wrapper sm-top d-none">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <div class="section-title">
-                    <!-- <h6>Artikel</h6> -->
-                    <h2 class="mb-0">Berita terkini</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mtn-35">
-            <div class="col-md-6 col-lg-4">
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <h2 class="h5"><a href="blog-details.html">Soft Opening SSP Unit 2</a></h2>
-                        <p>18 Agustus 2022, WPG resmi melaksanan <em>soft opening</em> Pabrik Kelapa Sawit Semunai Unit 2 di kawasan Pangkalan Ribut, Rohul </p>
-
-                        <div class="blog-meta">
-                            <!-- <a href="#">By: Albert Max</a> -->
-                            <a href="#">August 18, 2022</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <h2 class="h5"><a href="blog-details.html">Happy Birthday!! Mr. Erry W.</a></h2>
-                        <p>Hari ini menjadi hari yang bersejarah bagi WPG , karena mengadakan kegiatan untuk menyambut 17-an sekaligus merayakan Ultah Bapak Erry.</p>
-
-                        <div class="blog-meta">
-                            <!-- <a href="#">By: Mohin Smith</a> -->
-                            <a href="#">August 23, 2022</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <h2 class="h5"><a href="blog-details.html">WPG CUP 2022</a></h2>
-                        <p>Dalam meningkatkan kerjasama dan kebersamaan di WPG, Kami mengadakan Pertandingan seluruh grup dari WPG.</p>
-                        <div class="blog-meta">
-                            <!-- <a href="#">By: Raju Ahammad</a> -->
-                            <a href="#">July 10, 2022</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--== End Blog Area Wrapper ==-->
-
 <!--== Start Brand Logo Area Wrapper ==-->
 <div class="brand-logo-area" style="padding: 65px 0px;">
     <div class="container">
@@ -418,6 +361,10 @@ $scriptfooter = "
         $('html, body').animate({
             scrollTop: $('#start-home').offset().top - 95
         }, 2000);
+
+        $('.home-video').trigger('play');
+        // video.classList.add('playing');
+        $('.play-button').css('display','none');
     });
 
     function base_url() {
@@ -435,16 +382,16 @@ $scriptfooter = "
     let imgArray = ['policy.jpg','certification.jpg','environment.jpg','gcg.jpg'];
     let titleArray = ['Kebijakan','Sertifikasi','Lingkungan','Tata Kelola Perusahaan'];
     let subTitleArray = [
-        'Pengelolaan Usaha yang Produktif dan Berkelanjutan',
-        'Tanggung Jawab Terhadap Kualitas Produk',
-        'Pengelolaan Lingkungan yang Lestari',
-        'Pemberdayaan Masyarakat dan Pengelolaan Ketenagakerjaan yang Berkelanjutan'
+        'Prinsip Keberlanjutan Dalam Menjalankan Bisnis Usaha',
+        'Sistem Manajemen & Sertifikasi Untuk Aspek Ekonomi',
+        'Wilian Perkasa Berkomitmen Untuk Mengelola Lingkungan',
+        'Meningkatkan Nilai Perseroan yang Kompetitif dan Berkualitas.'
     ];
     let contentArray = [
-        'Sebagai Industri Inti Sawit, kami berkomitmen untuk mengembangkan usaha lebih baik.',
+        'Transformasi bisnis yang baik dalam pandangan kami, adalah bisnis yang dilakukan secara berkelanjutan sesuai dengan tiga pilar utama.',
         'Kami mematuhi semua peraturan perundang-undangan tentang pengelolaan lingkungan.',
-        'Kami berkomitmen untuk penggunaan dan perlindungan lingkungan alam yang bertanggung jawab.',
-        'Mensejahterakan masyarakat menjadi salah satu fokus utama kami dalam bertumbuh.'
+        'Wilian Perkasa berkomitmen untuk mengelola lingkungan dan berupaya untuk selalu menerapkan praktik bisnis yang meminimalkan dampak terhadap lingkungan.',
+        'Wilian Perkasa tidak hanya berupaya dalam penaatan peraturan perundang-undangan yang berlaku saja, namun juga menerapkan prinsip-prinsip tata kelola perusahaan yang baik...'
     ]
     let linkArray = [
         'policy','certification','environment','gcg'
@@ -486,9 +433,9 @@ $scriptfooter = "
     }
 
     window.addEventListener('load', function() {
-        var video = document.querySelector('video');
-        var cover = document.querySelector('.cover-image');
-        var playButton = document.querySelector('.play-button');
+        const video = document.querySelector('video');
+        const cover = document.querySelector('.cover-image');
+        const playButton = document.querySelector('.play-button');
         
         playButton.addEventListener('click', function() {
             video.play();

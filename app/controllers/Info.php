@@ -11,12 +11,14 @@ class Info extends Controller {
         $data['active'] = 'profile';
         $model = $this->model('NewsModel');
         $data['news'] = $model->getPageNews();
+        $data['title'] = $this->getContent('news');
         $this->view_versi3('info/news',$data);
     }
 
     public function detail_news($url) {
         $model = $this->model('NewsModel');
         $data['news'] = $model->getDetailNews($url);
+        $data['title'] = $this->getContent('detail-news');
         $this->view_versi3('info/news-detail',$data);
     }
 
@@ -27,17 +29,20 @@ class Info extends Controller {
 
     public function gallery() {
         $data['active'] = 'strategic';
+        $data['title'] = $this->getContent('gallery');
         $this->view_versi3('info/gallery_photo',$data);
     }
 
     public function contact() {
         $data['active'] = 'bod';
+        $data['title'] = $this->getContent('contact');
         $this->view_versi3('info/contact',$data);
     }
     
     public function career($url=null) {
         if($url!==null) return $this->careerpath($url);
         $data['data'] = $this->model('CareerModel')->getData(null);
+        $data['title'] = $this->getContent('career');
         $this->view_versi3('career/index',$data);
     }
 

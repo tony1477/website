@@ -2589,6 +2589,7 @@ img .icon-language {
 }
 .video-button-thumb {
     position: relative;
+    animation: all 1s ease-in-out;
 }
 .video-button-thumb:after {
     content: "";
@@ -4709,13 +4710,13 @@ form#contact-form label {
     /* border-bottom: 2px solid #cea20a; */
 }
 
-.business-page-title h4:not([data-effect-before="none"])::before {
+/* .business-page-title h4:not([data-effect-before="none"])::before {
     content: "\f10d";
     font-family: 'FontAwesome';
     top: -.5rem;
     position: relative;
     left: -.5rem;
-}
+} */
 
 .business-page-title h4::after {
     content: '';

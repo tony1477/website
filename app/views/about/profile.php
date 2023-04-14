@@ -31,9 +31,9 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 order-3"></div>
-            <div class="col-md-6 col-lg-9 order-4 mt-5">
+            <div class="animate-box col-md-6 col-lg-9 order-4 mt-5" data-animate-effect="fadeIn" style="padding-right:5rem">
                 <figure class="about-thumb video-button-thumb" style="border-radius: .55rem;">
-                <img src="<?=BASE_URL?>public/assets/img/video-sample.jpg" alt="Businex-About">
+                <img src="<?=BASE_URL?>public/assets/img/video-sample2.jpg" alt="Wilian Perkasa's Company Profile">
                     <a href="<?=BASE_URL?>/public/assets/videos/WP 15 MIN.mp4" class="btn-play"><i class="fa fa-play"></i></a>
                 </figure>
             </div>

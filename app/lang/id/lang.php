@@ -1,6 +1,25 @@
 <?php
     $lang = [
         // for common
+        'home' => 'Beranda',
+        'company-profile' => 'Profil Perusahaan',
+        'vision' => 'Visi Misi - Nilai Nilai Luhur Perusahaan',
+        'strategic-business' => 'Strategi Bisnis',
+        'bod' => 'Jajaran Manajemen',
+        'structure-org' => 'Struktur Organisasi',
+        'milestone' => 'Peristiwa Penting',
+        'business-plantation' => 'Bisnis Perkebunan',
+        'business-mill' => 'Bisnis Pengolahan Sawit',
+        'business-agro' => 'Bisnis Agronomi',
+        'business-fnb' => 'Bisnis Makanan dan Minuman',
+        'business-trading' => 'Bisnis Trading',
+        'investor-relation' => 'Hubungan Investor',
+        'gcg-title' => 'Tata Kelola Perusahaan yang Baik',
+        'news' => 'Berita & Event',
+        'detail-news' => 'Baca ',
+        'gallery' => 'Galeri Album',
+        'career' => 'Karir di Wilian Perkasa',
+        'contact' => 'Hubungi Kami',
         'readmore' => 'BACA LEBIH LANJUT',
         'next' => 'Selanjutnya',
         'prev' => 'Sebelumnya',
@@ -138,8 +157,8 @@
         'contact-form-select' => '<option selected>Pilih salah satu</option>',
         'contact-form-list' => '<option value="1">Hubungan Investor</option>
             <option value="2">Perihal Pemasaran Kecambah Sawit</option>
-            <option value="3">Perihal Pemasaran Sago</option>
-            <option value="4">Perihal Pemasaran Kelapa Sawit</option>
+            <option value="3">Perihal Pemasaran Kelapa Sawit</option>
+            <option value="4">Perihal Makanan & Minuman</option>
             <option value="5">Perihal Sumber Daya Manusia</option>
             <option value="6">Perihal Umum</option>
         ',

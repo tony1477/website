@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="id">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Wilian Perkasa Group</title>
+    <title>Wilian Perkasa <?=($data['title'] != '' ? '| '.$data['title'] : '')?></title>
 
     <!--== Favicon ==-->
     <link rel="shortcut icon" href="<?=BASE_URL?>public/assets/img/favicon.png" type="image/x-icon"/>

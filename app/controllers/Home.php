@@ -25,6 +25,7 @@ class Home extends Controller {
     public function index1_new()
     {
         $data['nav'] = $this->nav;
+        $data['title'] = $this->getContent('home');
         $this->view_versi3('home/index3',$data);
     }
 

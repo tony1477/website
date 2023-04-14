@@ -40,7 +40,7 @@
             <div class="col-sm-6 col-lg-3 titlejob <?=$list['position']?>" id="<?=$list['location']?>">
                 <div class="team-mem-item">
                     <figure class="member-pic">
-                        <img src="<?=BASE_URL?>public/assets/img/career/careerbg.webp" alt="Team-Businex"/>
+                        <img src="<?=BASE_URL?>public/assets/img/career/careerbg.jpg" alt="Team-Businex"/>
                     </figure>
                     <div class="member-info">
                         <h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal<?=$list['careerid']?>" class="stretched-link"><?=$list['title']?></a></h5>

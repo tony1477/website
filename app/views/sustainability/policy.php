@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-9">
                 <article class="blog-post-details">
-                    <figure class="blog-post-thumb">
+                    <figure class="animate-box blog-post-thumb" data-animate-effect="fadeIn">
                         <img src="<?=BASE_URL?>public/assets/img/sustainability/policy.jpg" alt="Blog" width="100%" class="rounded shadow" />
                     </figure>
 
