@@ -677,7 +677,8 @@ blockquote-title {
     padding: 10px 20px;
 }
 .main-menu > li.has-submenu .submenu-nav > li:hover > a {
-    background-color: #ffdc00;
+    /* background-color: #ffdc00; */
+    background-color: rgb(174 139 29);
     color: #fff;
 }
 .main-menu > li.has-submenu .submenu-nav-mega {
@@ -4813,9 +4814,10 @@ h3.card-text {
 }
 
 .arrow-button {
+    margin-top: -8rem;
     display: flex;
     justify-content: center;
-    margin:.7rem 0;
+    /* margin:.7rem 0; */
 }
 
 .arrow-button .visually-hidden {
@@ -4841,14 +4843,15 @@ h3.card-text {
   }
   
   .arrow-button a:after {
-    color: #790002;
+    /* color: #790002; */
+    color: #fff;
     content: '\02193';
-    font-size: 40px;
+    font-size: 60px;
     position: absolute;
     top: 50%;
-    margin-top: -28px;
+    margin-top: -45px;
     left: 50%;
-    margin-left: -10px;
+    margin-left: -13.5px;
     animation: occasional-arrow-bounce 3s infinite 2s alternate ease-out;
     font-family: 'FontAwesome';
   }
@@ -4860,11 +4863,13 @@ h3.card-text {
     
   .arrow-button .background {
     fill: transparent;
-    stroke: rgba(0, 0, 0, 0.1);
+    /* stroke: rgba(0, 0, 0, 0.1); */
+    stroke: #fff;
     transition: all 200ms ease;
   }
     
   .arrow-button .foreground {
+    /* stroke: var(--red-wp); */
     fill: transparent;
     stroke-dasharray: 377;
     stroke-dashoffset: 377;

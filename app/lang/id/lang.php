@@ -111,7 +111,7 @@
          'sustain-gcg-topbar' => 'Tata Kelola Perusahaan',
         // for sustain-sidebar
         'sustain-sidebar-policy' => 'Kebijakan',
-        'sustain-sidebar-certification' => 'Sertfikasi',
+        'sustain-sidebar-certification' => 'Sertifikasi',
         'sustain-sidebar-environment' => 'Lingkungan',
         'sustain-sidebar-gcg' => 'Tata Kelola Perusahaan',
         // for investor-topbar-title

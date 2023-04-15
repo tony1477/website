@@ -163,6 +163,7 @@ EOF;
 ?>
 <script type="text/javascript">
     function applyjob(val) {
-        window.location.href = "<?=BASE_URL?>info/career/careerpath-"+val;
+        // window.location.href = "<?=BASE_URL?>info/career/careerpath-"+val;
+        window.open("<?=BASE_URL?>info/career/careerpath-"+val, '_blank').focus();
     }
 </script>

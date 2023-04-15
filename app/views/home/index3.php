@@ -4,7 +4,7 @@
          data-source="gallery">
         <div id="rev_slider_11_1" class="rev_slider fullwidthabanner" data-version="5.4.7">
             <ul>
-                <!-- SLIDE  -->
+                <!-- SLIDE  1-->
                 <li data-index="rs-27" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default"
                     data-thumb="<?=BASE_URL?>public/assets/img/slider/01_thumb.jpg" data-rotate="0" data-saveperformance="off"
@@ -14,7 +14,7 @@
                          data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
-                    <!-- LAYER NR. 1 -->
+                    <!-- LAYER NR. 1.1 -->
                     <div class="tp-caption tp-resizeme slide-heading text-white" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['250','204','200','201']" data-fontsize="['60','60','50','30']"
@@ -26,7 +26,7 @@
                         <?=$this->getContentDb('home-slider-title-1')?>
                     </div>
 
-                    <!-- LAYER NR. 2 -->
+                    <!-- LAYER NR. 1.2 -->
                     <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
@@ -40,7 +40,7 @@
 
                     </div>
 
-                    <!-- LAYER NR. 3 -->
+                    <!-- LAYER NR. 1.3 -->
                     <!-- <div class="tp-caption Button-Outline-Secondary rev-btn" id="slide-27-layer-11"
                          data-x="['left','left','left','left']" data-hoffset="['135','135','45','40']"
                          data-y="['top','top','top','top']" data-voffset="['490','470','490','465']" data-width="none"
@@ -53,7 +53,7 @@
                     </div> -->
                 </li>
 
-                <!-- SLIDE  -->
+                <!-- SLIDE  2-->
                 <li data-index="rs-28" data-transition="slidingoverlayvertical,slidingoverlayleft,slideoverup"
                     data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"
                     data-easein="default,default,default" data-easeout="default,default,default"
@@ -63,7 +63,7 @@
                     <img src="<?=BASE_URL?>public/assets/img/slider/slider-06.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
 
-                    <!-- LAYER NR. 4 -->
+                    <!-- LAYER NR. 2.1 -->
                     <div class="tp-caption tp-resizeme slide-heading text-white" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['250','204','200','201']" data-fontsize="['60','60','50','30']"
@@ -75,7 +75,7 @@
                         <?=$this->getContentDb('home-slider-title-2')?>
                     </div>
 
-                    <!-- LAYER NR. 5 -->
+                    <!-- LAYER NR. 2.2 -->
                     <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
@@ -89,20 +89,22 @@
 
                     </div>
 
-                    <!-- LAYER NR. 6 -->
-                    <!-- <div class="tp-caption Button-Outline-Secondary rev-btn" data-x="['left','left','left','left']"
+                    <!-- LAYER NR. 2.3 -->
+                    <a href="<?=BASE_URL?>investor">
+                    <div class="tp-caption Button-Outline-Secondary rev-btn" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','45','40']" data-y="['top','top','top','top']"
-                         data-voffset="['490','500','490','465']" data-width="none" data-height="none"
+                         data-voffset="['630','500','490','465']" data-width="none" data-height="none"
                          data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off"
                          data-frames='[{"delay":650,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"350","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgb(8, 11, 26);"}]'
                          data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[40,40,40,30]" data-paddingbottom="[0,0,0,0]"
-                         data-paddingleft="[40,40,80,30]">Learn More
-                    </div> -->
+                         data-paddingleft="[40,40,80,30]"><?=$this->getContent('readmore')?>
+                    </div>
+                    </a>
                 </li>
 
-                <!-- SLIDE  -->
-                <li data-index="rs-28" data-transition="slidingoverlayleft,slideoverup"
+                <!-- SLIDE  3 -->
+                <li data-index="rs-29" data-transition="slidingoverlayleft,slideoverup"
                     data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"
                     data-easein="default,default,default" data-easeout="default,default,default"
                     data-masterspeed="default,default,default" data-thumb="<?=BASE_URL?>public/assets/img/slider/02_thumb.jpg"
@@ -111,10 +113,36 @@
                     <img src="<?=BASE_URL?>public/assets/img/slider/slider-03.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
 
+                    <!-- LAYER NR. 3.2 -->
+                    <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
+                         data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
+                         data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
+                         data-fontweight="['400','400','400','400']" data-width="['600','600','600','320']" data-color="['#fff']"
+                         data-height="none" data-whitespace="normal" data-visibility="['on','on','on','on']" 
+                         data-type="text" data-responsive_offset="on"
+                         data-frames='[{"delay":360,"split":"lines","splitdelay":0.1,"speed":500,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[20,20,20,20]"
+                         data-paddingright="[20,20,20,20]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]">
+                         <?=$this->getContentDb('home-slider-content-3')?>
+                    </div>
+
+                    <!-- LAYER NR. 3.3 -->
+                    <a href="<?=BASE_URL?>business/plantation">
+                    <div class="tp-caption Button-Outline-Secondary rev-btn" data-x="['left','left','left','left']"
+                         data-hoffset="['135','135','45','40']" data-y="['top','top','top','top']"
+                         data-voffset="['500','500','490','465']" data-width="none" data-height="none"
+                         data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off"
+                         data-frames='[{"delay":650,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"350","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgb(8, 11, 26);"}]'
+                         data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[40,40,40,30]" data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[40,40,80,30]"><?=$this->getContent('readmore')?>
+                    </div>
+                    </a>
+
                 </li>
 
-                <!-- SLIDE  -->
-                <li data-index="rs-28" data-transition="random-premium"
+                <!-- SLIDE  4 -->
+                <li data-index="rs-30" data-transition="random-premium"
                     data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"
                     data-easein="default,default,default" data-easeout="default,default,default"
                     data-masterspeed="default,default,default" data-thumb="<?=BASE_URL?>public/assets/img/slider/02_thumb.jpg"
@@ -123,10 +151,37 @@
                     <img src="<?=BASE_URL?>public/assets/img/slider/slider-01.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
 
+                    <!-- LAYER NR. 4.2 -->
+                    <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
+                         data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
+                         data-voffset="['400','370','370','300']" data-fontsize="['18','20','20','20']"
+                         data-fontweight="['400','400','400','400']" data-width="['600','600','600','320']"
+                         data-height="none" data-whitespace="normal" data-color="['#fff','#42023d']" data-visibility="['on','on','on','on']" 
+                         data-type="text" data-responsive_offset="on"
+                         data-frames='[{"delay":360,"split":"lines","splitdelay":0.1,"speed":500,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[20,20,20,20]"
+                         data-paddingright="[20,20,20,20]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]">
+                         <?=$this->getContentDb('home-slider-content-4')?>
+                    </div>
+
+                    <!-- LAYER NR. 4.3 -->
+                    <a href="<?=BASE_URL?>business/mill">
+                    <div class="tp-caption Button-Outline-Secondary rev-btn" data-x="['left','left','left','left']"
+                         data-hoffset="['135','135','45','40']" data-y="['top','top','top','top']"
+                         data-voffset="['500','500','490','465']" data-width="none" data-height="none"
+                         data-whitespace="nowrap" data-type="button" 
+                        data-responsive_offset="on" data-responsive="off"
+                         data-frames='[{"delay":650,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"350","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgb(8, 11, 26);"}]'
+                         data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[40,40,40,30]" data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[40,40,80,30]"><?=$this->getContent('readmore')?>
+                    </div>
+                    </a>
+
                 </li>
 
-                <!-- SLIDE  -->
-                <li data-index="rs-28" data-transition="slidingoverlayright,slideoverup"
+                <!-- SLIDE  5 -->
+                <li data-index="rs-31" data-transition="slidingoverlayright,slideoverup"
                     data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"
                     data-easein="default,default,default" data-easeout="default,default,default"
                     data-masterspeed="default,default,default" data-thumb="<?=BASE_URL?>public/assets/img/slider/02_thumb.jpg"
@@ -134,6 +189,45 @@
                     <!-- MAIN IMAGE -->
                     <img src="<?=BASE_URL?>public/assets/img/slider/slider-04.jpg" alt="Businex" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
+
+                    <!-- LAYER NR. 5.1 -->
+                    <div class="tp-caption tp-resizeme slide-heading text-white" data-x="['left','left','left','left']"
+                         data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
+                         data-voffset="['250','204','200','201']" data-fontsize="['45','60','50','30']"
+                         data-fontweight="['600']" data-lineheight="['40','70','60','40']"
+                         data-width="['650','650','600','320']" data-height="none" data-whitespace="normal"
+                         data-type="text" data-responsive_offset="on"
+                         data-frames='[{"delay":10,"split":"chars","splitdelay":0.1,"speed":1000,"split_direction":"forward","frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['left']">
+                        <?=$this->getContentDb('home-slider-title-5')?>
+                    </div>
+
+                    <!-- LAYER NR. 5.2 -->
+                    <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
+                         data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
+                         data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
+                         data-fontweight="['400','400','400','400']" data-width="['600','600','600','320']" data-color="['#fff']"
+                         data-height="none" data-whitespace="normal" data-visibility="['on','on','on','on']"
+                         data-type="text" data-responsive_offset="on"
+                         data-frames='[{"delay":360,"split":"lines","splitdelay":0.1,"speed":500,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[20,20,20,20]"
+                         data-paddingright="[20,20,20,20]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]">
+                         <?=$this->getContentDb('home-slider-content-5')?>
+
+                    </div>
+
+                    <!-- LAYER NR. 5.3 -->
+                    <a href="<?=BASE_URL?>sustainability/gcg">
+                    <div class="tp-caption Button-Outline-Secondary rev-btn" data-x="['left','left','left','left']"
+                         data-hoffset="['135','135','45','40']" data-y="['top','top','top','top']"
+                         data-voffset="['530','500','490','465']" data-width="none" data-height="none"
+                         data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off"
+                         data-frames='[{"delay":650,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"350","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgb(8, 11, 26);"}]'
+                         data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[40,40,40,30]" data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[40,40,80,30]"><?=$this->getContent('readmore')?>
+                    </div>
+                    </a>
 
                 </li>
             </ul>

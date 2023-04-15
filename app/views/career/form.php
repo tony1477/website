@@ -622,11 +622,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <div class="submit my-5 d-flex justify-content-center gap-3">
+                                    <button type="submit" class="btn btn-success mr-5">Kirim</button>
+                                    <button type="button" class="btn btn-danger">Reset Form</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="submit my-5 d-flex justify-content-center gap-3">
-                            <button type="submit" class="btn btn-success mr-5">Kirim</button>
-                            <button type="button" class="btn btn-danger">Reset Form</button>
                         </div>
                     </div>
                 </div>
