@@ -36,7 +36,7 @@
                 <div class="animate-box card mb-3" style="margin-top: 5rem;" data-animate-effect="fadeInUp">
                     <div class="row g-0 align-items-center">
                         <div class="col-md-4">
-                            <img src="<?=BASE_URL?>public/assets/img/about/WP_MILL (80).jpg" class="rounded-start" alt="..." style="height: 412px;display: inline-block;">
+                            <img src="<?=BASE_URL?>public/assets/img/about/wp-mill.jpg" class="rounded-start" alt="..." style="height: 412px;display: inline-block;">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">

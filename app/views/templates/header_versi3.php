@@ -63,6 +63,9 @@
     <script>
     imageZoom()
     </script>
+    <?php }
+    if(end($arr)=='contact'){ ?>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <?php } ?>
 </head>
 <?php require_once('body_versi3.php');?>

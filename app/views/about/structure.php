@@ -29,7 +29,7 @@
                     <div class="row">
                         <!-- <a href="<?=BASE_URL?>public/assets/img/about/struktur-org.png"><img src="<?=BASE_URL?>public/assets/img/about/struktur-org.png" alt="Sturcture Organization" class="img-scale" /></a> -->
                         <!-- <div class="img-magnifier-container"> -->
-                            <img id="myimage" src="<?=BASE_URL?>public/assets/img/team/struktur.png" class="img-scale" alt="Structure WPG">
+                            <img id="myimage" src="<?=BASE_URL?>public/assets/img/team/struktur_new.png" class="img-scale" alt="Structure WPG">
                         <!-- </div> -->
                     </div>
                 </div>
