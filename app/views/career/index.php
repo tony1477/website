@@ -50,17 +50,6 @@
             </div>
             
             <?php endforeach;?>
-            <!-- <div class="col-sm-6 col-lg-3 titlejob" id="Semunai">
-                <div class="team-mem-item">
-                    <figure class="member-pic">
-                        <img src="<?=BASE_URL?>public/assets/img/team/02.jpg" alt="Team-Businex"/>
-                    </figure>
-                    <div class="member-info">
-                        <h5><a href="team-details.html" class="stretched-link">Estate Manager</a></h5>
-                        <span class="designation">Kampar</span>
-                    </div>
-                </div>
-            </div>-->
         </div>
     </div>
 </div>
@@ -94,37 +83,45 @@
 $scriptfooter = <<<EOF
 <script type="text/javascript">
 function showhide(value) {
+    console.log(value)
     const opt = document.querySelectorAll('.titlejob')
     const selected = document.querySelector('.selected-career')
+    console.log(selected.text)
     if(value=='All Branch' && selected.text == 'All Position') {
         $(opt).fadeIn()
-        return
     }
-    for(i=0; i<opt.length; i++) {
-        if(opt[i].id != value) $(opt[i]).fadeOut()
-        else {
-            if(selected.text!='All Position') {
-                // find location
+    if(value=='All Branch' && selected.text == 'Semua Posisi') {
+        $(opt).fadeIn()
+    }
+    else {
+        for(i=0; i<opt.length; i++) {
+            if(opt[i].id != value) $(opt[i]).fadeOut()
+            else {
+                if(selected.text!='All Position') {
+                    // find location
+                    let arr = (opt[i].className)
+                    let toShow = arr.split(" ")
+                    let lastarr = toShow.slice(-1)
+                    // console.log(lastarr)
+                    if(opt[i].classList.contains(selected.text)) {
+                        $(opt[i]).fadeIn()
+                    }
+                    else $(opt[i]).fadeOut()
+                }
+                if(selected.text == 'All Position') $(opt[i]).fadeIn()
+                if(selected.text == 'Semua Posisi') $(opt[i]).fadeIn()
+                
+            }
+            if(value=='All Branch') {
                 let arr = (opt[i].className)
                 let toShow = arr.split(" ")
                 let lastarr = toShow.slice(-1)
-                // console.log(lastarr)
                 if(opt[i].classList.contains(selected.text)) {
+                    console.log(opt[i])
                     $(opt[i]).fadeIn()
                 }
                 else $(opt[i]).fadeOut()
             }
-            if(selected.text == 'All Position') $(opt[i]).fadeIn()
-        }
-        if(value=='All Branch') {
-            let arr = (opt[i].className)
-            let toShow = arr.split(" ")
-            let lastarr = toShow.slice(-1)
-            if(opt[i].classList.contains(selected.text)) {
-                console.log(opt[i])
-                $(opt[i]).fadeIn()
-            }
-            else $(opt[i]).fadeOut()
         }
     }
     

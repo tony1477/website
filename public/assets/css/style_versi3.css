@@ -4171,6 +4171,47 @@ figcaption.detail-thumb {border-radius: 0px 0px 10px 10px;background: linear-gra
     width: 300px !important;
 }
 
+@media only screen and (max-width: 1500px) {
+    .resize-img {
+        width: 250px !important;
+    }
+
+    .main-menu.resize-font {
+        font-size: .9rem;
+    }
+
+    .main-menu {
+        justify-content: end;
+        -webkit-justify-content: end;
+    }
+
+    /* list business */
+    .box.big .text > h1 {
+        font-size: 2rem;
+        padding-bottom: .75rem;
+    }
+
+    .box.big .text > p {
+        font-size: .875rem;
+        text-align: justify;
+    }
+
+    .box.big .text > .link {
+        margin: 25px 0 0 !important;
+    }
+
+    .box.big .text .link > a {
+        font-size: .875rem !important;
+        margin-bottom: .55rem !important;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    h5, .h5 {
+        font-size: 1.15rem;
+    }
+}
+
 .main-menu > li:hover {
     color: aqua;
 }
@@ -4224,6 +4265,7 @@ figcaption.detail-thumb {border-radius: 0px 0px 10px 10px;background: linear-gra
     font-weight: 200;
     font-size: 1rem;
     line-height: 1.5rem;
+    text-align: justify;
 }
 
 .busines_home .list_business .left {
@@ -4321,7 +4363,7 @@ figcaption.detail-thumb {border-radius: 0px 0px 10px 10px;background: linear-gra
 
 .busines_home .list_business .box .text {
     padding: 0 130px 0 60px;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .box.big .text {

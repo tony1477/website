@@ -53,6 +53,36 @@ class Info extends Controller {
         $this->viewwotemplate('career/form',$data);
     }
 
+    public function submitform()
+    {
+        $model = $this->model('InfoModel');
+        $public_key = "6Le-DpMlAAAAALaTmCl5NhpAdMKZPFkwVV1DmRjV";
+        $private_key = "6Le-DpMlAAAAALYjbBcdT7OXDNMMO9V2Q_65uEQX"; 
+        $url_verify = "https://www.google.com/recaptcha/api/siteverify";
+        $request_body = file_get_contents('php://input');
+        $data = json_decode($request_body);
+        $response_key = $data->captcha;
+        $response = file_get_contents($url_verify."?secret=".$private_key."&response=".$response_key);
+        $response = json_decode($response);
+        $message = [
+            'status' => 'fail',
+            'code' => 200,
+            'message' => 'Data tidak tersimpan'
+        ];
+        if($response -> success == 1){
+            $data = (array) $data;
+            $model->saveContactUs($data);
+            $message = [
+                'status' => 'success',
+                'code' => 200,
+                'message' => 'Data berhasil disimpan',
+            ];
+            echo json_encode($message);
+        } else{
+            echo json_encode($message);
+        }
+    }
+
     public function page() {
 
     }
