@@ -109,7 +109,7 @@ class LangModel {
         'sustainability' => ['text' => 'Keberlanjutan','type'=>'detail',
                             'data' => [
                                 'policy' => 'Kebijakan',
-                                'certification' => 'Standard & Sertifikasi',
+                                'certification' => 'Sertifikasi',
                                 'environment' => 'Lingkungan',
                                 // 'community' => 'Pengembangan Komunitas',
                                 'gcg' => 'Tata Kelola Perusahaan',

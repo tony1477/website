@@ -181,7 +181,7 @@
 <script src="<?=BASE_URL?>public/assets/js/main.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <?php 
-    $arrCustomJs = ['about','business','investor','sustainability','info'];
+    $arrCustomJs = ['about','business','investor','sustainability','info','privacy'];
     if(in_array($arr[2],$arrCustomJs)): ?>
     <script src="<?=BASE_URL?>public/assets/js/custom_js.js"></script>
     <?php endif;?>

@@ -111,7 +111,7 @@
                             <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="" />
                                 <div class="direction-l" onclick="showhistory(this)">
                                     <div class="flag-wrapper">
-                                            <span class="flag">PT. Libo Sawit Sejahtera</span>
+                                            <span class="flag">PT. Libo Sawit Perkasa</span>
                                             <span class="time-wrapper"></span>
                                         </div>
                                         <div class="desc">Tonggak Pertama dalam unit operasional dalam memulai bisnis industri pengolahan kelapa sawit pertama  Libo – Siak.</div>

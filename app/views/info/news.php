@@ -1,5 +1,5 @@
 <!--== Start Page Header Area ==-->
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/news/notes3.jpg" style="background-position:top center">
+<div class="page-header-area bg-img-clear" data-bg="<?=BASE_URL?>public/assets/img/news/sawit.jpg" >
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">

@@ -10,7 +10,7 @@
                     data-thumb="<?=BASE_URL?>public/assets/img/slider/01_thumb.jpg" data-rotate="0" data-saveperformance="off"
                     data-title="Slide">
                     <!-- MAIN IMAGE -->
-                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-09.jpeg" alt="Wilian Perkasa" data-bgposition="center center" data-bgfit="cover"
+                    <img src="<?=BASE_URL?>public/assets/img/slider/slider-07.jpg" alt="Wilian Perkasa" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
@@ -30,7 +30,7 @@
                     <div class="tp-caption tp-resizeme slide-txt" data-x="['left','left','left','left']"
                          data-hoffset="['135','135','40','40']" data-y="['top','top','top','top']"
                          data-voffset="['400','370','370','300']" data-fontsize="['16','20','20','20']"
-                         data-fontweight="['400','400','400','400']" data-width="['600','600','6001','320']"
+                         data-fontweight="['400','400','400','400']" data-width="['600','600','6001','320']" data-color="['#fff']"
                          data-height="none" data-whitespace="normal" data-visibility="['on','on','on','on']"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":360,"split":"lines","splitdelay":0.1,"speed":500,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
