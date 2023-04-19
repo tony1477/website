@@ -40,7 +40,7 @@
             <div class="col-sm-6 col-lg-3 titlejob <?=$list['position']?>" id="<?=$list['location']?>">
                 <div class="team-mem-item">
                     <figure class="member-pic">
-                        <img src="<?=BASE_URL?>public/assets/img/career/careerbg.jpg" alt="Team-Businex"/>
+                        <img src="<?=BASE_URL?>public/assets/img/career/careerbg.jpg" alt="career-bg"/>
                     </figure>
                     <div class="member-info">
                         <h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal<?=$list['careerid']?>" class="stretched-link"><?=$list['title']?></a></h5>
@@ -59,7 +59,7 @@
 <?php foreach($data['data'] as $row):?>
     <div class="modal fade" id="exampleModal<?=$row['careerid']?>" tabindex="-1" aria-labelledby="exampleModal<?=$row['careerid']?>Title" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-            <div class="modal-content">
+            <div class="modal-content bg-career">
                 <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalCenterTitle"><?=$row['title']?></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -161,6 +161,6 @@ EOF;
 <script type="text/javascript">
     function applyjob(val) {
         // window.location.href = "<?=BASE_URL?>info/career/careerpath-"+val;
-        window.open("<?=BASE_URL?>info/career/careerpath-"+val, '_blank').focus();
+        window.open("<?=BASE_URL?>career/apply/careerpath-"+val, '_blank').focus();
     }
 </script>

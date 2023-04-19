@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="<?=BASE_URL?>public/assets/img/favicon.png" type="image/x-icon"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
 <link rel="stylesheet" href="<?=BASE_URL?>public/assets/css/form1.css" />
+<title>Wilian Perkasa <?=($data['title'] != '' ? '| '.$data['title'] : '')?></title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.all.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css" rel="stylesheet">
+<style>
+    a.disabled {
+        pointer-events: none;
+        cursor: default;
+    }
+</style>
 </head>
 <body>
 <div class="container-fluid px-0" id="bg-div">
@@ -28,7 +38,7 @@
                                     <i class="fa fa-user px-1"></i>  Data Pribadi
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu2" id="tab2" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu2" id="tab2" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <i class="fa fa-address-book px-1"></i> Kontak dan Alamat
                                 </div>
@@ -38,37 +48,37 @@
                                     <i class="fa fa-id-card px-1"></i> Kartu Identitas 
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu4" id="tab4" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu4" id="tab4" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <i class="fa fa-user-graduate px-1"></i> Riwayat Pendidikan
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu5" id="tab5" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu5" id="tab5" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <i class="fa fa-briefcase px-1"></i> Riwayat Pekerjaan
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu6" id="tab6" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu6" id="tab6" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <i class="fa fa-home"></i> Informasi Keluarga
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu7" id="tab7" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu7" id="tab7" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <div class="fa fa-address-card px-1"></div> Kontak Darurat
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu8" id="tab8" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu8" id="tab8" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <div class="fa fa-sitemap px-1"></div> Daftar Kegiatan Keorganisasian
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu9" id="tab9" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu9" id="tab9" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <div class="fa fa-question-circle px-1"></div> Pertanyaan
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu10" id="tab10" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu10" id="tab10" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <div class="fa fa-paperclip px-1"></div> Lampiran
                                 </div>
@@ -79,56 +89,61 @@
                     </div> <!-- Page Content -->
                     <div id="page-content-wrapper">
                         <div class="row pt-3" id="border-btm">
-                            <div class="col-4"> <button class="btn btn-success mt-4 ml-3 mb-3" id="menu-toggle">
-                                    <div class="bar4"></div>
-                                    <div class="bar4"></div>
-                                    <div class="bar4"></div>
-                                </button> </div>
                             <div class="col-8">
-                                <div class="row justify-content-right">
-                                    <div class="col-6">
-                                        <p class="mb-0 mt-4 text-right font-weight-bold">Position Applied</p>
+                                <div class="row justify-content-start">
+                                    <div class="col-3">
+                                        <p class="mb-0 mt-4 text-start font-weight-bold">Position Applied</p>
                                     </div>
                                     <div class="col-6">
-                                        <p class="mb-0 mt-4 font-weight-bold">: 
+                                    <p class="mb-0 mt-4 font-weight-bold">: 
                                             <?php foreach($data['model'] as $row): ?><?=$row['title']?>
                                         <?php endforeach;?>
-                                        </p>
+                                    </p>
                                     </div>
                                 </div>
                                 <div class="row justify-content-right">
-                                    <div class="col-6">
-                                        <p class="mb-0 text-right font-weight-bold">Submitte Date</p>
+                                    <div class="col-3">
+                                        <p class="mb-0 text-start font-weight-bold">Submitte Date</p>
                                     </div>
                                     <div class="col-6">
                                         <p class="mb-0">: <?=date('d/m/Y')?></p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-4"> 
+                                <button class="d-none btn btn-success mt-4 ml-3 mb-3" id="menu-toggle">
+                                    <div class="bar4"></div>
+                                    <div class="bar4"></div>
+                                    <div class="bar4"></div>
+                                </button>
+                                <img src="http://localhost/webs/public/assets/img/WPG_logo_gold1.png" class="w-25 float-right mr-5">
+                            </div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="text-center" id="test"></div>
                         </div>
-                        <div class="tab-content">
+                        <h6 class="text-center pb-5 text-danger" style="margin-top:-1.5rem">* Harap lengkapi form ini terlebih dahulu , untuk bisa lanjut ke proses berikutnya : </h6>
+                        <div class="tab-content pb-5">
                             <div id="menu1" class="tab-pane active">
                                 <div class="row justify-content-center">
                                     <div class="col-11">
                                         <div class="form-card">
                                             <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data Pribadi</h3>
-                                            <form onsubmit="event.preventDefault()">
+                                            <form onsubmit="event.preventDefault()" id="identityform">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
-                                                    <label for="inputName">Nama Lengkap </label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="Nama Lengkap">
+                                                    <label for="inputName">Nama Lengkap <span class="font-weight-bold text-danger">*</span></label>
+                                                    <input type="hidden" name="careerid" value="<?=$data['careerid']?>" />
+                                                    <input type="text" class="form-control" id="inputName" placeholder="Nama Lengkap" required>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                     <label for="inputSex">Jenis Kelamin</label>  
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="inputSex" value="option1">
+                                                            <input class="form-check-input" type="radio" name="inputSex" value="Pria" required>
                                                             <label class="form-check-label" for="inputSex">Pria</label>
                                                         </div>
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="inputSex" value="option1">
+                                                            <input class="form-check-input" type="radio" name="inputSex" value="Wanita">
                                                             <label class="form-check-label" for="inputSex">Wanita</label>
                                                         </div>
                                                     </div>
@@ -136,21 +151,29 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                     <label for="inputBirthcity">Tempat Kelahiran</label>
-                                                    <input type="text" class="form-control" id="inputBirthcity" placeholder="Tempat Kelahiran">
+                                                    <input type="text" class="form-control" id="inputBirthcity" placeholder="Tempat Kelahiran" required>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                     <label for="inputBirthdate">Tanggal Kelahiran</label>
-                                                    <input type="date" class="form-control" id="inputBirthdate" placeholder="Tanggal Kelahiran">
+                                                    <input type="date" class="form-control" id="inputBirthdate" placeholder="Tanggal Kelahiran" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                     <label for="inputMarital">Status Pernikahan</label>
-                                                    <input type="text" class="form-control" id="inputMarital" name="status" placeholder="Status Pernikahan">
+                                                    <select id="inputMarital" class="custom-select" required>
+                                                        <option value="">Pilih</option>
+                                                        <option value="Belum Menikah">Belum Menikah</option> 
+                                                        <option value="Menikah">Menikah</option>
+                                                    </select>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                     <label for="inputNationally">Kewarganegaraan</label>
-                                                    <input type="text" class="form-control" id="inputNationally" placeholder="Kewarganegaraan">
+                                                    <select id="inputNationally" class="custom-select" required>
+                                                        <option value="">Pilih</option>
+                                                        <option value="WNI">WNI</option> 
+                                                        <option value="WNA">WNA</option>
+                                                    </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -161,7 +184,7 @@
                                                     <div class="form-group col-md-6">
                                                     <label for="inputFresh">Lulusan Terbaru</label>
                                                     <select id="inputFresh" class="custom-select">
-                                                        <option>Pilih</option>
+                                                        <option value="">Pilih</option>
                                                         <option value="Ya">Ya</option> 
                                                         <option value="Tidak">Tidak</option>
                                                     </select>
@@ -173,8 +196,8 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputReligion">Agama</label>
-                                                    <select id="inputReligion" class="custom-select">
-                                                        <option>Pilih</option>
+                                                    <select id="inputReligion" class="custom-select" required>
+                                                        <option value="">Pilih</option>
                                                         <option value="Budha">Budha</option> 
                                                         <option value="Hindu">Hindu</option>
                                                         <option value="Islam">Islam</option>
@@ -185,7 +208,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn-secondary mr-5" onclick="next(1)">Next <i class="fa fa-arrow-right"></i></button>
+                                                    <button type="button" class="btn btn-secondary first-step mr-5 checkverify">Next <i class="fa fa-arrow-right"></i></button>
                                                 </div>
                                             </form>
                                         </div>
@@ -197,7 +220,7 @@
                                     <div class="col-11">
                                         <div class="form-card">
                                             <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data kontak dan alamat</h3>
-                                            <form onsubmit="event.preventDefault()">
+                                            <form onsubmit="event.preventDefault()" id="identitycontact">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="form-group">
@@ -224,7 +247,7 @@
                                                 </div>
                                                 <div class="d-flex justify-content-between">
                                                     <button type="button" class="btn btn-secondary mr-5" onclick="prev(1)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                                    <button type="button" class="btn btn-secondary mr-5" onclick="next(2)">Next <i class="fa fa-arrow-right"></i></button>
+                                                    <button type="button" class="btn page2 btn-secondary mr-5">Next <i class="fa fa-arrow-right"></i></button>
                                                 </div>
                                             </form>
                                         </div>
@@ -232,16 +255,17 @@
                                 </div>
                             </div>
                             <div id="menu3" class="tab-pane">
+                                <form onsubmit="event.preventDefault()" id="identitycard">
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                     <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data Pribadi</h3>
-                                        <div class="form-row" id="srcIdentity" style="display: none">
+                                        <div class="form-row" id="srcIdentity">
                                             <div class="col-1"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
                                             </div>
                                             <div class="form-group col-md-3">
                                                 <label for="inputIdentity1">Kartu Identitas </label>
                                                 <select id="inputIdentity1" class="custom-select">
-                                                        <option>Pilih</option>
+                                                        <option value="">Pilih</option>
                                                         <option value="BPJS">BPJS Kesehatan</option> 
                                                         <option value="KK">Kartu Keluarga</option>
                                                         <option value="KPJ">KPJ</option>
@@ -268,12 +292,28 @@
                                         <div id="dstIdentity"></div>
                                         <div><button class="btn btn-outline-primary btn-sm" id="addfrmIdentity"><i class="fa fa-plus"></i> Add More</button> </div>
                                         <div class="separator"></div>
+                                        <div class="table-responsive d-none">
+                                            <table class="table table-sm table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Jenis Identitas</th>
+                                                <th scope="col">No Identitas</th>
+                                                <th scope="col">Penerbit</th>
+                                                <th scope="col">Tanggal Kadaluarsa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                            </table>
+                                        </div>
                                         <div class="d-flex justify-content-between">
                                             <button type="button" class="btn btn-secondary mr-5" onclick="prev(2)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                            <button type="button" class="btn btn-secondary mr-5" onclick="next(3)">Next <i class="fa fa-arrow-right"></i></button>
+                                            <button type="button" class="btn btn-secondary mr-5 page3" >Next <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                             <div id="menu4" class="tab-pane">
                                 <div class="row justify-content-center">
@@ -640,162 +680,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="<?=BASE_URL?>public/assets/js/easy-number-separator-master/easy-number-separator.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        
-        if(sessionStorage.getItem('fotoprofile')!=null)
-        {
-            document.querySelector('#fotouser').src = '<?=BASE_URL?>public/assets/img/career/jobseeker/'+sessionStorage.getItem('fotoprofile')
-
-            document.querySelector('.editphotobtn').classList.remove('d-none')
-            document.querySelector('#photopersonal').classList.add('d-none')
-        }
-
-        cloneClickHandler();
-        cloneClickEducation();
-        document.querySelector('#test').innerText = 'Personal Identity'
-        // cloneClickJob();
-        // Menu Toggle Script
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-
-        $('#addfrmIdentity').click(function() {
-            cloneClickHandler();
-        })
-
-        $('#addfrmEducation').click(function() {
-            cloneClickEducation();
-        })
-        $('#addfrmJob').click(function() {
-            cloneClickJob();
-        })
-        $('#addfrmFamily').click(function() {
-            cloneClickFamily();
-        })
-        $('#addfrmContactEm').click(function() {
-            cloneClickContact();
-        })
-        $('#addfrmOrg').click(function() {
-            cloneClickOrg();
-        })
-    })
-
-    const tabpane = document.querySelectorAll('.tabs.list-group-item')
-    let arr = [
-        'Personal Identity',
-        'Contact & Address',
-        'Identity Card',
-        'Education History',
-        'Work Experience',
-        'Family',
-        'Emergency Contact',
-        'Organization',
-        'Question',
-        'Attachment',
-    ]
-    for(let i=0; i<tabpane.length; i++)
-    {
-        tabpane[i].addEventListener('click', (e) => {
-            document.querySelector('#test').innerText = arr[i]
-        })
-    }
-
-    let counterIdentity = 1;
-    let counterEducation = 1;
-    let counterJob = 1;
-    function cloneClickHandler() {
-        // console.log($('.headfrmIdentity .frmIdentity'))
-        counterIdentity++
-        let newFields = document.querySelector('#srcIdentity').cloneNode(true)
-        newFields.id = '';
-        newFields.style.display = 'flex'
-        let newField = newFields.childNodes
-        for(let i=0; i<newField.length; i++) {
-            let theName = newField[i].namespace
-            if(theName) newField[i].name = theName + counter
-        }
-        let insertHere = document.querySelector('#dstIdentity')
-        insertHere.parentNode.insertBefore(newFields,insertHere)
-        // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
-    }
-    function cloneClickEducation() {
-        // console.log($('.headfrmIdentity .frmIdentity'))
-        counterEducation++
-        let newFields = document.querySelector('#srcEducation').cloneNode(true)
-        newFields.id = '';
-        newFields.style.display = 'flex'
-        let newField = newFields.childNodes
-        for(let i=0; i<newField.length; i++) {
-            let theName = newField[i].namespace
-            if(theName) newField[i].name = theName + counter
-        }
-        let insertHere = document.querySelector('#dstEducation')
-        insertHere.parentNode.insertBefore(newFields,insertHere)
-        // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
-    }
-    function cloneClickJob() {
-        // console.log($('.headfrmIdentity .frmIdentity'))
-        counterJob++
-        let newFields = document.querySelector('#srcJob').cloneNode(true)
-        newFields.id = '';
-        newFields.style.display = 'flex'
-        let newField = newFields.childNodes
-        for(let i=0; i<newField.length; i++) {
-            let theName = newField[i].namespace
-            if(theName) newField[i].name = theName + counter
-        }
-        let insertHere = document.querySelector('#dstJob')
-        insertHere.parentNode.insertBefore(newFields,insertHere)
-        // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
-    }
-    function cloneClickFamily() {
-        // console.log($('.headfrmIdentity .frmIdentity'))
-        counterJob++
-        let newFields = document.querySelector('#srcFamily').cloneNode(true)
-        newFields.id = '';
-        newFields.style.display = 'flex'
-        let newField = newFields.childNodes
-        for(let i=0; i<newField.length; i++) {
-            let theName = newField[i].namespace
-            if(theName) newField[i].name = theName + counter
-        }
-        let insertHere = document.querySelector('#dstFamily')
-        insertHere.parentNode.insertBefore(newFields,insertHere)
-        // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
-    }
-    function cloneClickContact() {
-        // console.log($('.headfrmIdentity .frmIdentity'))
-        counterJob++
-        let newFields = document.querySelector('#srcContactEm').cloneNode(true)
-        newFields.id = '';
-        newFields.style.display = 'flex'
-        let newField = newFields.childNodes
-        for(let i=0; i<newField.length; i++) {
-            let theName = newField[i].namespace
-            if(theName) newField[i].name = theName + counter
-        }
-        let insertHere = document.querySelector('#dstContactEm')
-        insertHere.parentNode.insertBefore(newFields,insertHere)
-        // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
-    }
-    function cloneClickOrg() {
-        // console.log($('.headfrmIdentity .frmIdentity'))
-        counterJob++
-        let newFields = document.querySelector('#srcOrg').cloneNode(true)
-        newFields.id = '';
-        newFields.style.display = 'flex'
-        let newField = newFields.childNodes
-        for(let i=0; i<newField.length; i++) {
-            let theName = newField[i].namespace
-            if(theName) newField[i].name = theName + counter
-        }
-        let insertHere = document.querySelector('#dstOrg')
-        insertHere.parentNode.insertBefore(newFields,insertHere)
-        // $('.headfrmIdentity .frmIdentity').clone(true).appendTo('.dstfrmIdentity')
-    }
-</script>
+<script src="<?=BASE_URL?>public/assets/js/career-button.js"></script>
 <script type="text/javascript">
     // console.log(tabpane)
     function next(number) 
@@ -831,48 +716,6 @@
       resultInput: '#result_input',
     })
 </script>
-<script type="text/javascript">
-    const input = document.getElementById('photopersonal');
-    const upload = (file) => {
-        const namafile = file.name
-        const formData = new FormData()
-        formData.append('file',file)
-
-        try {
-            console.log('uploading...')
-            $.ajax({
-                url: '<?=BASE_URL?>home/uploadfile',
-                enctype: 'multipart/form-data',
-                type: 'POST',
-                data: formData,
-                dataType: 'json',
-                async: false,
-                success: function(resp) {
-                    sessionStorage.setItem('fotoprofile',resp.nama_file)
-                    document.querySelector('#fotouser').src = '<?=BASE_URL?>public/assets/img/career/jobseeker/'+resp.nama_file
-                    document.querySelector('#photopersonal').value=''
-                    document.querySelector('#photopersonal').classList.add('d-none');
-                    document.querySelector('.editphotobtn').classList.remove('d-none');
-                },
-                cache: false,
-                contentType:false,
-                processData: false
-            });
-        }
-        catch(e) {
-            console.log('Err: ',e)
-        }
-    };
-    const onSelectFile = () => upload(input.files[0]);
-
-    input.addEventListener('change', onSelectFile, false);
-
-    const editphotobtn = document.querySelector('.editphotobtn')
-    hiddenBtn = () => {
-        document.querySelector('.editphotobtn').classList.add('d-none')
-        document.querySelector('#photopersonal').classList.remove('d-none')
-    }
-    editphotobtn.addEventListener('click',hiddenBtn, false);
-</script>
+<script src="<?=BASE_URL?>public/assets/js/career.js"></script>
 </body>
 </html>

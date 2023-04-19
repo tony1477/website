@@ -27,10 +27,10 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="blog-item">
                                 <figure class="blog-thumb">
-                                    <a href="<?=BASE_URL?>info/detail-news/<?=$row['url']?>"><img src="<?=BASE_URL?>public/assets/img/news/<?=$row['img']?>" alt="<?=$row['img']?> Photo's"/></a>
+                                    <a href="<?=BASE_URL?>news/read/<?=$row['url']?>"><img src="<?=BASE_URL?>public/assets/img/news/<?=$row['img']?>" alt="<?=$row['img']?> Photo's"/></a>
                                 </figure>
                                 <div class="blog-content">
-                                    <h2 class="h5"><a href="<?=BASE_URL?>info/detail-news/<?=$row['url']?>detail/<?=$row['url']?>"><?=$this->getNewsTitle($row)?></a></h2>
+                                    <h2 class="h5"><a href="<?=BASE_URL?>news/read/<?=$row['url']?>detail/<?=$row['url']?>"><?=$this->getNewsTitle($row)?></a></h2>
                                     <?=$this->getNewsHighlight($row)?>
                                     <div class="blog-meta">
                                         <a href="#"></a>

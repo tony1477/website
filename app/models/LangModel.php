@@ -118,12 +118,12 @@ class LangModel {
                         ],
         'info' => ['text' => 'Informasi','type'=>'detail',
                             'data' => [
-                            'news' => 'Berita & Event',
+                            '../news' => 'Berita & Event',
                             // 'video' => 'Album Video',
-                            'gallery' => 'Galeri',
-                            'career' => 'Karir'],
+                            '../gallery' => 'Galeri',
+                            '../career' => 'Karir'],
                         ],
-        'info/contact' => ['text' => 'Kontak','type'=>'header'],
+        'contact' => ['text' => 'Kontak','type'=>'header'],
     ];
 
     private $menu3_en = [
@@ -169,10 +169,10 @@ class LangModel {
                         ],
         'info' => ['text' => 'Information','type'=>'detail',
                             'data' => [
-                                'news' => 'News & Event',
+                                '../news' => 'News & Event',
                                 // 'video' => 'Album Video',
-                                'gallery' => 'Gallery',
-                                'career' => 'Career'
+                                '../gallery' => 'Gallery',
+                                '../career' => 'Career'
                             ],
                         ],
         'info/contact' => ['text' => 'Contact','type'=>'header'],
