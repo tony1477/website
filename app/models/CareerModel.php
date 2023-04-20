@@ -87,4 +87,177 @@ class CareerModel {
     $this->db->bind('card_expired',$data['tglkadaluarsa']);
     $this->db->execute();
   }
+
+  public function getDataIdentityCard($employeeid)
+  {
+    $this->table = 'emp_identitycard';
+    $this->db->query('select identityid,card_type,card_number,card_publisher,card_expired from '.$this->table.' where employeeid = :employeeid');
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetchAll();
+  }
+
+  public function delIdentityCard($identityid)
+  {
+    $this->table = 'emp_identitycard';
+    $this->db->query('delete from '.$this->table.' where identityid = :identityid');
+    $this->db->bind('identityid',$identityid);
+    $this->db->execute();
+  }
+
+  public function updateIdentityCard($data)
+  {
+    $this->table = 'emp_identitycard';
+    $sql = 'update '.$this->table.' set card_type=:card_type, card_number=:card_number, card_publisher=:card_publisher, card_expired=:card_expired where identityid = :identityid';
+    $this->db->query($sql);
+    $this->db->bind('card_type',$data['jenisidentitas']);
+    $this->db->bind('card_number',$data['noidentitas']);
+    $this->db->bind('card_publisher',$data['penerbit']);
+    $this->db->bind('card_expired',$data['tglkadaluarsa']);
+    $this->db->bind('identityid',$data['identityid']);
+    $this->db->execute();
+  }
+
+  public function saveEducationHistory($data)
+  {
+    $this->table = 'emp_historyeducation';
+    $sql = 'insert into '.$this->table.' (employeeid,title,major,institute,start_year,end_year) values (:employeeid,:title,:major,:institute,:start_year,:end_year)';
+    $this->db->query($sql);
+    $this->db->bind('employeeid',$data['employeeid']);
+    $this->db->bind('title',$data['jenispendidikan']);
+    $this->db->bind('major',$data['jurusan']);
+    $this->db->bind('institute',$data['institusi']);
+    $this->db->bind('start_year',$data['thnmasuk']);
+    $this->db->bind('end_year',$data['thnselesai']);
+    $this->db->execute();
+  }
+
+  public function getDataEducationHistory($employeeid)
+  {
+    $this->table = 'emp_historyeducation';
+    $this->db->query('select educationid,title,major,institute,start_year,end_year from '.$this->table.' where employeeid = :employeeid');
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetchAll();
+  }
+
+  public function delEducationHistory($educationid)
+  {
+    $this->table = 'emp_historyeducation';
+    $this->db->query('delete from '.$this->table.' where educationid = :educationid');
+    $this->db->bind('educationid',$educationid);
+    $this->db->execute();
+  }
+
+  public function updateEducationHistory($data)
+  {
+    $this->table = 'emp_historyeducation';
+    $sql = 'update '.$this->table.' set title=:title, major=:major, institute=:institute, start_year=:start_year, end_year=:end_year where educationid = :educationid';
+    $this->db->query($sql);
+    $this->db->bind('title',$data['jenispendidikan']);
+    $this->db->bind('major',$data['jurusan']);
+    $this->db->bind('institute',$data['institusi']);
+    $this->db->bind('start_year',$data['thnmasuk']);
+    $this->db->bind('end_year',$data['thnselesai']);
+    $this->db->bind('educationid',$data['educationid']);
+    $this->db->execute();
+  }
+
+  public function saveWorkExperience($data)
+  {
+    $this->table = 'emp_workexperience';
+    $sql = 'insert into '.$this->table.' (employeeid,company,position,start_date,end_date,job_desc,reason_leave,last_wage) values (:employeeid,:company,:position,:start_date,:end_date,:job_desc,:reason_leave,:last_wage)';
+    $this->db->query($sql);
+    $this->db->bind('employeeid',$data['employeeid']);
+    $this->db->bind('company',$data['perusahaan']);
+    $this->db->bind('position',$data['jabatan']);
+    $this->db->bind('start_date',$data['tglgabung']);
+    $this->db->bind('end_date',$data['tglselesai']);
+    $this->db->bind('job_desc',$data['tugas']);
+    $this->db->bind('reason_leave',$data['alasankeluar']);
+    $this->db->bind('last_wage',$data['gajiterakhir']);
+    $this->db->execute();
+  }
+
+  public function getDataWorkExperience($employeeid)
+  {
+    $this->table = 'emp_workexperience';
+    $this->db->query('select experienceid,company,position,start_date,end_date,job_desc,reason_leave,last_wage from '.$this->table.' where employeeid = :employeeid');
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetchAll();
+  }
+
+  public function delWorkExperience($experienceid)
+  {
+    $this->table = 'emp_workexperience';
+    $this->db->query('delete from '.$this->table.' where experienceid = :experienceid');
+    $this->db->bind('experienceid',$experienceid);
+    $this->db->execute();
+  }
+
+  public function updateWorkExperience($data)
+  {
+    $this->table = 'emp_workexperience';
+    $sql = 'update '.$this->table.' set company=:company, position=:position, start_date=:start_date, end_date=:end_date, job_desc=:job_desc, reason_leave=:reason_leave, last_wage=:last_wage where experienceid = :experienceid';
+    $this->db->query($sql);
+    $this->db->bind('company',$data['perusahaan']);
+    $this->db->bind('position',$data['jabatan']);
+    $this->db->bind('start_date',$data['tglgabung']);
+    $this->db->bind('end_date',$data['tglselesai']);
+    $this->db->bind('job_desc',$data['tugas']);
+    $this->db->bind('reason_leave',$data['alasankeluar']);
+    $this->db->bind('last_wage',$data['gajiterakhir']);
+    $this->db->bind('experienceid',$data['experienceid']);
+    $this->db->execute();
+  }
+
+  public function saveFamily($data)
+  {
+    $this->table = 'emp_family';
+    $sql = 'insert into '.$this->table.' (employeeid,relation,name,last_education,occupation,birthcity,birthdate,isalmarhum,company,address_company) values (:employeeid,:relation,:name,:last_education,:occupation,:birthcity,:birthdate,:isalmarhum,:company,:address_company)';
+    $this->db->query($sql);
+    $this->db->bind('employeeid',$data['employeeid']);
+    $this->db->bind('relation',$data['hubungan']);
+    $this->db->bind('name',$data['nama']);
+    $this->db->bind('last_education',$data['pendidikan']);
+    $this->db->bind('occupation',$data['pekerjaan']);
+    $this->db->bind('birthcity',$data['tempatlahir']);
+    $this->db->bind('birthdate',$data['tgllahir']);
+    $this->db->bind('isalmarhum',$data['isalmarhum']);
+    $this->db->bind('company',$data['perusahaan']);
+    $this->db->bind('address_company',$data['alamatperusahaan']);
+    $this->db->execute();
+  }
+
+  public function getDataFamily($employeeid)
+  {
+    $this->table = 'emp_family';
+    $this->db->query('select familyid,relation,name,last_education,occupation,birthcity,birthdate,isalmarhum,company,address_company from '.$this->table.' where employeeid = :employeeid');
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetchAll();
+  }
+
+  public function delFamily($familyid)
+  {
+    $this->table = 'emp_family';
+    $this->db->query('delete from '.$this->table.' where familyid = :familyid');
+    $this->db->bind('familyid',$familyid);
+    $this->db->execute();
+  }
+
+  public function updateFamily($data)
+  {
+    $this->table = 'emp_family';
+    $sql = 'update '.$this->table.' set relation=:relation, name=:name, last_education=:last_education, occupation=:occupation, birthcity=:birthcity, birthdate=:birthdate, isalmarhum=:isalmarhum, company=:company, address_company=:address_company where familyid = :familyid';
+    $this->db->query($sql);
+    $this->db->bind('relation',$data['hubungan']);
+    $this->db->bind('name',$data['nama']);
+    $this->db->bind('last_education',$data['pendidikan']);
+    $this->db->bind('occupation',$data['pekerjaan']);
+    $this->db->bind('birthcity',$data['tempatlahir']);
+    $this->db->bind('birthdate',$data['tgllahir']);
+    $this->db->bind('isalmarhum',$data['isalmarhum']);
+    $this->db->bind('company',$data['perusahaan']);
+    $this->db->bind('address_company',$data['alamatperusahaan']);
+    $this->db->bind('familyid',$data['familyid']);
+    $this->db->execute();
+  }
 }

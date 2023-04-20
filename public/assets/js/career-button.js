@@ -24,13 +24,13 @@ $(document).ready(function(){
     })
 
     $('#addfrmEducation').click(function() {
-        cloneClickEducation();
+        // cloneClickEducation();
     })
     $('#addfrmJob').click(function() {
-        cloneClickJob();
+        // cloneClickJob();
     })
     $('#addfrmFamily').click(function() {
-        cloneClickFamily();
+        // cloneClickFamily();
     })
     $('#addfrmContactEm').click(function() {
         cloneClickContact();

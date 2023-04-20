@@ -43,7 +43,7 @@
                                     <i class="fa fa-address-book px-1"></i> Kontak dan Alamat
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu3" id="tab3" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu3" id="tab3" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <i class="fa fa-id-card px-1"></i> Kartu Identitas 
                                 </div>
@@ -58,7 +58,7 @@
                                     <i class="fa fa-briefcase px-1"></i> Riwayat Pekerjaan
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu6" id="tab6" class="tabs list-group-item bg-light disabled">
+                            <a data-toggle="tab" href="#menu6" id="tab6" class="tabs list-group-item bg-light">
                                 <div class="list-div my-2">
                                     <i class="fa fa-home"></i> Informasi Keluarga
                                 </div>
@@ -260,8 +260,9 @@
                                     <div class="col-12">
                                     <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data Pribadi</h3>
                                         <div class="form-row" id="srcIdentity">
-                                            <div class="col-1"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
+                                            <div class="col-1 d-none"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
                                             </div>
+                                            <input type="hidden" name="identityid" value=""/>
                                             <div class="form-group col-md-3">
                                                 <label for="inputIdentity1">Kartu Identitas </label>
                                                 <select id="inputIdentity1" class="custom-select">
@@ -284,15 +285,15 @@
                                                 <label for="inputPublish1">Penerbit </label>
                                                 <input type="text" class="form-control" id="inputPublish1" placeholder="Penerbit">
                                             </div>
-                                            <div class="form-group col-md-2">
+                                            <div class="form-group col-md-3">
                                                 <label for="inputExpired1">Tanggal Kadaluarsa </label>
                                                 <input type="date" class="form-control" id="inputExpired1" placeholder="Tanggal Kadaluarsa">
                                             </div>
                                         </div>
                                         <div id="dstIdentity"></div>
-                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmIdentity"><i class="fa fa-plus"></i> Add More</button> </div>
+                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmIdentity"><i class="fa fa-save"></i> Simpan</button> </div>
                                         <div class="separator"></div>
-                                        <div class="table-responsive d-none">
+                                        <div class="table-identitycard table-responsive d-none">
                                             <table class="table table-sm table-striped">
                                             <thead>
                                                 <tr>
@@ -301,9 +302,10 @@
                                                 <th scope="col">No Identitas</th>
                                                 <th scope="col">Penerbit</th>
                                                 <th scope="col">Tanggal Kadaluarsa</th>
+                                                <th scope="col">Aksi</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody id="tbidentitycard">
                                             </tbody>
                                             </table>
                                         </div>
@@ -316,16 +318,18 @@
                                 </form>
                             </div>
                             <div id="menu4" class="tab-pane">
+                                <form onsubmit="event.preventDefault()" id="educationhistory">
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                         <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data Pendidikan</h3>
-                                        <div class="form-row" id="srcEducation" style="display: none">
-                                            <div class="col-1"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
+                                        <div class="form-row" id="srcEducation">
+                                            <div class="col-1 d-none"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
                                             </div>
+                                            <input type="hidden" name="educationid" value=""/>
                                             <div class="form-group col-md-3">
-                                                <label for="inputIdentity1">Gelar </label>
-                                                <select id="inputIdentity1" class="custom-select">
-                                                        <option>Pilih</option>
+                                                <label for="inputTitle1">Gelar </label>
+                                                <select id="inputTitle1" class="custom-select">
+                                                        <option value="">Pilih</option>
                                                         <option value="D1">D1</option> 
                                                         <option value="D2">D2</option>
                                                         <option value="D3">D3</option>
@@ -340,39 +344,59 @@
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="inputMajor1">Jurusan </label>
-                                                <input type="text" class="form-control" id="inputMajor1" placeholder="Jurusan">
+                                                <input type="text" class="form-control" id="inputMajor1" placeholder="Jurusan / Isi - jika tidak ada jurusan">
                                             </div>
-                                            <div class="form-group col-md-4">
+                                            <div class="form-group col-md-5">
                                                 <label for="inputInstitute1">Nama Institusi </label>
-                                                <input type="text" class="form-control" id="inputInstitute" placeholder="Nama Institusi">
+                                                <input type="text" class="form-control" id="inputInstitute1" placeholder="Nama Institusi">
                                             </div>
-                                            <div class="col-1"></div>
+                                            <div class="col-1 d-none"></div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputIdentity1">Tahun Masuk </label>
-                                                <input type="number" class="form-control" data-maxlength="4" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" />
+                                                <label for="inputStartEducation1">Tahun Masuk </label>
+                                                <input type="number" class="form-control" data-maxlength="4" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" id="inputStartEducation1" />
                                             </div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputIdentity1">Tahun Keluar </label>
-                                                <input type="number" class="form-control" data-maxlength="4" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" />
+                                                <label for="inputEndEducation1">Tahun Selesai </label>
+                                                <input type="number" class="form-control" data-maxlength="4" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" id="inputEndEducation1" />
                                             </div>
                                         </div>
                                         <div id="dstEducation"></div>
-                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmEducation"><i class="fa fa-plus"></i> Add More</button> </div>
+                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmEducation"><i class="fa fa-save"></i> Simpan</button> </div>
                                         <div class="separator"></div>
+                                        <div class="table-educationhistory table-responsive d-none">
+                                            <table class="table table-sm table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Gelar</th>
+                                                <th scope="col">Jurusan</th>
+                                                <th scope="col">Institusi</th>
+                                                <th scope="col">Tahun Masuk</th>
+                                                <th scope="col">Tahun Selesai</th>
+                                                <th scope="col">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbeducationhistory">
+                                            </tbody>
+                                            </table>
+                                        </div>
                                         <div class="d-flex justify-content-between">
                                             <button type="button" class="btn btn-secondary mr-5" onclick="prev(3)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                            <button type="button" class="btn btn-secondary mr-5" onclick="next(4)">Next <i class="fa fa-arrow-right"></i></button>
+                                            <button type="button" class="btn btn-secondary mr-5 page4" >Next <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                             <div id="menu5" class="tab-pane">
+                                <form onsubmit="event.preventDefault()" id="workexperience">
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                         <h3 class="mt-0 mb-5 text-center content-title d-none d-none">Silahkan lengkapi data Pengalaman Kerja</h3>
-                                        <div class="form-row" id="srcJob" style="display: none">
-                                            <div class="col-1"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
+                                        <div class="form-row" id="srcJob">
+                                            <div class="col-1 d-none"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
                                             </div>
+                                            <input type="hidden" name="experienceid" value=""/>
                                             <div class="form-group col-md-4">
                                                 <label for="inputCompany1">Nama Perusahaan </label>
                                                 <input type="text" class="form-control" id="inputCompany1" placeholder="Nama Perusahaan">
@@ -391,48 +415,66 @@
                                                 <label for="inputResignDate1">Tanggal Berhenti </label>
                                                 <input type="date" class="form-control" id="inputResignDate1" placeholder="Tanggal Berhenti">
                                             </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputLengthWork">Lama Bekerja (Tahun) </label>
-                                                <input type="number" class="form-control" data-maxlength="2" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" />
-                                            </div>
                                             <div class="col-md-2"></div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-11">
-                                                <label for="inputJobDesc">Tugas & Tanggung Jawab </label>
-                                                <textarea class="form-control" id="inputJobDesc" placeholder="Tugas & Tanggung Jawab Pekerjaan"></textarea>
+                                                <label for="inputJobDesc1">Tugas & Tanggung Jawab </label>
+                                                <textarea class="form-control" id="inputJobDesc1" placeholder="Tugas & Tanggung Jawab Pekerjaan"></textarea>
                                             </div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-11">
-                                                <label for="inputReason">Alasan Berhenti </label>
-                                                <textarea class="form-control" id="inputReason" placeholder="Alasan Berhenti"></textarea>
+                                                <label for="inputReason1">Alasan Berhenti </label>
+                                                <textarea class="form-control" id="inputReason1" placeholder="Alasan Berhenti"></textarea>
                                             </div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputLastWage">Penghasilan Terakhir </label>
-                                                <input type="number" class="form-control number-separator" id="inputLastWage"  data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" placeholder="Penghasilan Terakhir" />
+                                                <label for="inputLastWage1">Penghasilan Terakhir </label>
+                                                <input type="number" class="form-control number-separator" id="inputLastWage1"  data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" placeholder="Penghasilan Terakhir" />
                                             </div>
                                         </div>
                                         <div id="dstJob"></div>
-                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmJob"><i class="fa fa-plus"></i> Add More</button> </div>
+                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmJob"><i class="fa fa-save"></i> Simpan</button> </div>
                                         <div class="separator"></div>
+                                        <div class="table-workexperience table-responsive d-none">
+                                            <table class="table table-sm table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Perusahaan</th>
+                                                <th scope="col">Jabatan</th>
+                                                <th scope="col">Tanggal Bergabung</th>
+                                                <th scope="col">Tanggal Berhenti</th>
+                                                <th scope="col">Tugas</th>
+                                                <th scope="col">Alasan Berhenti</th>
+                                                <th scope="col">Penghasilan Terakhir</th>
+                                                <th scope="col">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbworkexperience">
+                                            </tbody>
+                                            </table>
+                                        </div>
                                         <div class="d-flex justify-content-between">
                                             <button type="button" class="btn btn-secondary mr-5" onclick="prev(4)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                            <button type="button" class="btn btn-secondary mr-5" onclick="next(5)">Next <i class="fa fa-arrow-right"></i></button>
+                                            <button type="button" class="btn btn-secondary mr-5 page-5" >Next <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                             <div id="menu6" class="tab-pane">
+                                <form onsubmit="event.preventDefault()" id="family">
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                         <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data Pribadi</h3>
-                                        <div class="form-row" id="srcFamily" style="display: none">
-                                            <div class="col-1"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
+                                        <div class="form-row" id="srcFamily">
+                                            <div class="col-1 d-none"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
                                             </div>
+                                            <input type="hidden" name="familyid" value=""/>
                                             <div class="form-group col-md-4">
                                                 <label for="inputRelationFam1">Hubungan Keluarga </label>
                                                 <select id="inputRelationFam1" class="custom-select">
-                                                        <option>Pilih</option>
+                                                        <option value="">Pilih</option>
                                                         <option value="Adik">Adik</option> 
                                                         <option value="Anak">Anak</option>
                                                         <option value="Ayah">Ayah</option>
@@ -447,19 +489,12 @@
                                                 <label for="inputFamilyName1">Nama </label>
                                                 <input type="text" class="form-control" id="inputFamilyName1" placeholder="Jabatan">
                                             </div>
-                                            <div class="col-md-3">
-                                            <label for="inputFamilyName1">Gender </label>
-                                                <select id="inputGender1" class="custom-select">
-                                                        <option>Pilih</option>
-                                                        <option value="Pria">Pria</option> 
-                                                        <option value="Wanita">Wanita</option>
-                                                </select>
-                                            </div>
+                                            <div class="col-3"></div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-3">
                                                 <label for="inputFamilyEducation1">Pendidikan Terakhir </label>
                                                 <select id="inputFamilyEducation1" class="custom-select">
-                                                        <option>Pilih</option>
+                                                        <option value="">Pilih</option>
                                                         <option value="D1">D1</option> 
                                                         <option value="D2">D2</option>
                                                         <option value="D3">D3</option>
@@ -473,22 +508,22 @@
                                                 </select>
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <label for="inputFamilyJobs">Pekerjaan </label>
-                                                <input type="text" class="form-control" id="inputFamilyJobs" placeholder="Pekerjaan">
+                                                <label for="inputFamilyJobs1">Pekerjaan </label>
+                                                <input type="text" class="form-control" id="inputFamilyJobs1" placeholder="Pekerjaan">
                                             </div>
                                             <div class="col-md-2"></div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputFamilyBirth">Tempat Lahir </label>
-                                                <input type="text" class="form-control" id="inputFamilyBirth" placeholder="Tempat Lahir">
+                                                <label for="inputFamilyBirth1">Tempat Lahir </label>
+                                                <input type="text" class="form-control" id="inputFamilyBirth1" placeholder="Tempat Lahir">
                                             </div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputFamilyBirthdate">Tanggal Lahir </label>
-                                                <input type="text" class="form-control" id="inputFamilyBirthdate" placeholder="Tanggal Lahir">
+                                                <label for="inputFamilyBirthdate1">Tanggal Lahir </label>
+                                                <input type="date" class="form-control" id="inputFamilyBirthdate1" placeholder="Tanggal Lahir">
                                             </div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputFamilyStatus">Almarhum </label>
-                                                <select id="inputFamilyStatus" class="custom-select">
+                                                <label for="inputFamilyStatus1">Almarhum </label>
+                                                <select id="inputFamilyStatus1" class="custom-select">
                                                         <option>Pilih</option>
                                                         <option value="Yes">Yes</option> 
                                                         <option value="No">No</option>
@@ -497,25 +532,47 @@
                                             <div class="col-md-2"></div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-5">
-                                                <label for="inputFamilyComp">Perusahaan </label>
-                                                <input type="text" class="form-control" id="inputFamilyComp" placeholder="Perusahaan">
+                                                <label for="inputFamilyComp1">Perusahaan </label>
+                                                <input type="text" class="form-control" id="inputFamilyComp1" placeholder="Perusahaan">
                                             </div>
                                             <div class="col-md-6"></div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-11">
-                                                <label for="inputFamilyCompAddress">Alamat Perusahaan </label>
-                                                <textarea class="form-control" id="inputFamilyCompAddress" placeholder="Alamat Perusahaan"></textarea>
+                                                <label for="inputFamilyCompAddress1">Alamat Perusahaan </label>
+                                                <textarea class="form-control" id="inputFamilyCompAddress1" placeholder="Alamat Perusahaan"></textarea>
                                             </div>
                                         </div>
                                         <div id="dstFamily"></div>
-                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmFamily"><i class="fa fa-plus"></i> Add More</button> </div>
+                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmFamily"><i class="fa fa-save"></i> Simpan</button> </div>
                                         <div class="separator"></div>
+                                        <div class="table-family table-responsive d-none">
+                                            <table class="table table-sm table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Hubungan</th>
+                                                <th scope="col">Nama</th>
+                                                <th scope="col">Pendidikan</th>
+                                                <th scope="col">Pekerjaan</th>
+                                                <th scope="col">Tempat Lahir</th>
+                                                <th scope="col">Tanggal Lahir</th>
+                                                <th scope="col">Almarhum ?</th>
+                                                <th scope="col">Perusahaan</th>
+                                                <th scope="col">Alamat Perusahaan</th>
+                                                <th scope="col">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbfamily">
+                                            </tbody>
+                                            </table>
+                                        </div>
                                         <div class="d-flex justify-content-between">
                                             <button type="button" class="btn btn-secondary mr-5" onclick="prev(5)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                            <button type="button" class="btn btn-secondary mr-5" onclick="next(6)">Next <i class="fa fa-arrow-right"></i></button>
+                                            <button type="button" class="btn btn-secondary mr-5 page-6">Next <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                             <div id="menu7" class="tab-pane">
                                 <div class="row justify-content-center">
