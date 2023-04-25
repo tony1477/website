@@ -33,7 +33,7 @@ $(document).ready(function(){
         // cloneClickFamily();
     })
     $('#addfrmContactEm').click(function() {
-        cloneClickContact();
+        // cloneClickContact();
     })
     $('#addfrmOrg').click(function() {
         cloneClickOrg();

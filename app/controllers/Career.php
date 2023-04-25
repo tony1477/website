@@ -334,6 +334,76 @@ class Career extends Controller {
         echo json_encode($message);
     }
 
+    public function saveEmergencyContact()
+    {
+        $request_body = file_get_contents('php://input');
+        $data = json_decode($request_body);
+        $this->models = $this->model('CareerModel');
+        $data = (array) $data->dataForm;
+        if($data['emergencyid']=='')
+            $this->models->saveEmergencyContact($data);
+        else
+            $this->models->updateEmergencyContact($data);
+        // $this->models->saveIdentityCard($data);
+        
+        $message = [
+            'status' => 'success',
+            'code' => 200,
+            'id' => $data['employeeid']
+        ];
+
+        echo json_encode($message);
+    }
+
+    public function getDataEmergencyContact()
+    {
+        header("Content-Type: application/json");
+        $arr = array(
+            'fail' => 400,
+            'code' => 'FAILED',
+            'message'=>'NOT ALLOWED'
+        );
+        // if($this->request->isAJAX()) {
+            $request_body = file_get_contents('php://input');
+            $data = json_decode($request_body);
+            $data = (array) $data;
+            try {
+                $this->models = $this->model('CareerModel');
+                $res = $this->models->getDataEmergencyContact($data['employeeid']);
+                $arr = [
+                    'status' => 'success',
+                    'code' => 200,
+                    'data' => $res
+                ];
+            } catch (\Exception $e) {
+                $arr = array(
+                    'status' => $e->getMessage(),
+                    'code' => 400
+                );
+            }
+        // }
+        $response = json_encode($arr);
+        echo $response;
+    }
+
+    public function delEmergencyContact()
+    {
+        $request_body = file_get_contents('php://input');
+        $data = json_decode($request_body);
+        $this->models = $this->model('CareerModel');
+        $data = (array) $data->id;
+        // var_dump($data);
+        $this->models->delEmergencyContact($data[0]);
+        
+        $message = [
+            'status' => 'success',
+            'code' => 200,
+            'message' => 'Data berhasil terhapus'
+        ];
+
+        echo json_encode($message);
+    }
+
     public function getName($filename)
     {
         $rand = rand(0,1000000);

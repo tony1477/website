@@ -260,4 +260,46 @@ class CareerModel {
     $this->db->bind('familyid',$data['familyid']);
     $this->db->execute();
   }
+
+  public function saveEmergencyContact($data)
+  {
+    $this->table = 'emp_emergencycontact';
+    $sql = 'insert into '.$this->table.' (employeeid,relation,name,phone,address) values (:employeeid,:relation,:name,:phone,:address)';
+    $this->db->query($sql);
+    $this->db->bind('employeeid',$data['employeeid']);
+    $this->db->bind('relation',$data['hubungan']);
+    $this->db->bind('name',$data['nama']);
+    $this->db->bind('phone',$data['telp']);
+    $this->db->bind('address',$data['alamat']);
+    $this->db->execute();
+  }
+
+  public function getDataEmergencyContact($employeeid)
+  {
+    $this->table = 'emp_emergencycontact';
+    $this->db->query('select emergencyid,relation,name,phone,address from '.$this->table.' where employeeid = :employeeid');
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetchAll();
+  }
+
+  public function delEmergencyContact($emergencyid)
+  {
+    $this->table = 'emp_emergencycontact';
+    $this->db->query('delete from '.$this->table.' where emergencyid = :emergencyid');
+    $this->db->bind('emergencyid',$emergencyid);
+    $this->db->execute();
+  }
+
+  public function updateEmergencyContact($data)
+  {
+    $this->table = 'emp_emergencycontact';
+    $sql = 'update '.$this->table.' set relation=:relation, name=:name, phone=:phone, address=:address where emergencyid = :emergencyid';
+    $this->db->query($sql);
+    $this->db->bind('relation',$data['hubungan']);
+    $this->db->bind('name',$data['nama']);
+    $this->db->bind('phone',$data['telp']);
+    $this->db->bind('address',$data['alamat']);
+    $this->db->bind('emergencyid',$data['emergencyid']);
+    $this->db->execute();
+  }
 }

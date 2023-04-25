@@ -58,12 +58,12 @@
                                     <i class="fa fa-briefcase px-1"></i> Riwayat Pekerjaan
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu6" id="tab6" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu6" id="tab6" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <i class="fa fa-home"></i> Informasi Keluarga
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu7" id="tab7" class="tabs list-group-item bg-light disabled">
+                            <a data-toggle="tab" href="#menu7" id="tab7" class="tabs list-group-item bg-light">
                                 <div class="list-div my-2">
                                     <div class="fa fa-address-card px-1"></div> Kontak Darurat
                                 </div>
@@ -116,7 +116,7 @@
                                     <div class="bar4"></div>
                                     <div class="bar4"></div>
                                 </button>
-                                <img src="http://localhost/webs/public/assets/img/WPG_logo_gold1.png" class="w-25 float-right mr-5">
+                                <img src="<?=BASE_URL?>public/assets/img/WPG_logo_gold1.png" class="w-25 float-right mr-5">
                             </div>
                         </div>
                         <div class="row justify-content-center">
@@ -575,39 +575,58 @@
                                 </form>
                             </div>
                             <div id="menu7" class="tab-pane">
+                                <form onsubmit="event.preventDefault()" id="emergencycontact">
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                         <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data Pribadi</h3>
-                                        <div class="form-row" id="srcContactEm" style="display: none">
-                                            <div class="col-1"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
+                                        <div class="form-row" id="srcContactEm">
+                                            <div class="col-1 d-none"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
                                             </div>
+                                            <input type="hidden" name="emergencyid" value=""/>
                                             <div class="form-group col-md-3">
-                                                <label for="inputContactFam">Hubungan </label>
-                                                <input type="text" class="form-control"  id="inputContactFam"  placeholder="Hubungan" />
+                                                <label for="inputContactFam1">Hubungan </label>
+                                                <input type="text" class="form-control"  id="inputContactFam1"  placeholder="Hubungan" />
                                             </div>
                                             <div class="form-group col-md-4">
-                                                <label for="inputContactName">Nama </label>
-                                                <input type="text" class="form-control" id="inputContactName" placeholder="Jabatan">
+                                                <label for="inputContactName1">Nama </label>
+                                                <input type="text" class="form-control" id="inputContactName1" placeholder="Nama">
                                             </div>
                                             <div class="form-group col-md-4">
-                                                <label for="inputContactTelp">No. Telepon </label>
-                                                <input type="text" class="form-control" id="inputContactTelp" placeholder="Jabatan">
+                                                <label for="inputContactTelp1">No. Telepon </label>
+                                                <input type="text" class="form-control" id="inputContactTelp1" placeholder="No Telp/HP">
                                             </div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-11">
-                                                <label for="inputContactAddress">Alamat </label>
-                                                <textarea class="form-control" id="inputContactAddress" placeholder="Alamat"></textarea>
+                                                <label for="inputContactAddress1">Alamat </label>
+                                                <textarea class="form-control" id="inputContactAddress1" placeholder="Alamat"></textarea>
                                             </div>
                                         </div>
                                         <div id="dstContactEm"></div>
-                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmContactEm"><i class="fa fa-plus"></i> Add More</button> </div>
+                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmContactEm"><i class="fa fa-save"></i> Simpan</button> </div>
                                         <div class="separator"></div>
+                                        <div class="table-emergencycontact table-responsive d-none">
+                                            <table class="table table-sm table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Hubungan</th>
+                                                <th scope="col">Nama</th>
+                                                <th scope="col">No Telp</th>
+                                                <th scope="col">Alamat</th>
+                                                <th scope="col">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbemergencycontact">
+                                            </tbody>
+                                            </table>
+                                        </div>
                                         <div class="d-flex justify-content-between">
                                             <button type="button" class="btn btn-secondary mr-5" onclick="prev(6)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                            <button type="button" class="btn btn-secondary mr-5" onclick="next(7)">Next <i class="fa fa-arrow-right"></i></button>
+                                            <button type="button" class="btn btn-secondary mr-5 page-7">Next <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                             <div id="menu8" class="tab-pane">
                                 <div class="row justify-content-center">
