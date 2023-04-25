@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     $('#addfrmIdentity').click(function() {
         // cloneClickHandler();
-        console.log('here')
+        // console.log('here')
     })
 
     $('#addfrmEducation').click(function() {
@@ -36,7 +36,7 @@ $(document).ready(function(){
         // cloneClickContact();
     })
     $('#addfrmOrg').click(function() {
-        cloneClickOrg();
+        // cloneClickOrg();
     })
 })
 

@@ -2,7 +2,8 @@
 <html>
 <head>
 <link rel="shortcut icon" href="<?=BASE_URL?>public/assets/img/favicon.png" type="image/x-icon"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" /> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
@@ -43,7 +44,7 @@
                                     <i class="fa fa-address-book px-1"></i> Kontak dan Alamat
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu3" id="tab3" class="tabs list-group-item bg-light disabled">
+                            <a data-toggle="tab" href="#menu3" id="tab3" class="tabs list-group-item bg-light">
                                 <div class="list-div my-2">
                                     <i class="fa fa-id-card px-1"></i> Kartu Identitas 
                                 </div>
@@ -53,7 +54,7 @@
                                     <i class="fa fa-user-graduate px-1"></i> Riwayat Pendidikan
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu5" id="tab5" class="tabs list-group-item bg-light disabled">
+                            <a data-toggle="tab" href="#menu5" id="tab5" class="tabs list-group-item bg-light">
                                 <div class="list-div my-2">
                                     <i class="fa fa-briefcase px-1"></i> Riwayat Pekerjaan
                                 </div>
@@ -63,7 +64,7 @@
                                     <i class="fa fa-home"></i> Informasi Keluarga
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu7" id="tab7" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu7" id="tab7" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <div class="fa fa-address-card px-1"></div> Kontak Darurat
                                 </div>
@@ -96,8 +97,7 @@
                                     </div>
                                     <div class="col-6">
                                     <p class="mb-0 mt-4 font-weight-bold">: 
-                                            <?php foreach($data['model'] as $row): ?><?=$row['title']?>
-                                        <?php endforeach;?>
+                                        <?=$data['model']['title']?>
                                     </p>
                                     </div>
                                 </div>
@@ -247,7 +247,7 @@
                                                 </div>
                                                 <div class="d-flex justify-content-between">
                                                     <button type="button" class="btn btn-secondary mr-5" onclick="prev(1)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                                    <button type="button" class="btn page2 btn-secondary mr-5">Next <i class="fa fa-arrow-right"></i></button>
+                                                    <button type="button" class="btn page-2 btn-secondary mr-5">Next <i class="fa fa-arrow-right"></i></button>
                                                 </div>
                                             </form>
                                         </div>
@@ -311,7 +311,7 @@
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <button type="button" class="btn btn-secondary mr-5" onclick="prev(2)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                            <button type="button" class="btn btn-secondary mr-5 page3" >Next <i class="fa fa-arrow-right"></i></button>
+                                            <button type="button" class="btn btn-secondary mr-5 page-3" >Next <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -382,7 +382,7 @@
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <button type="button" class="btn btn-secondary mr-5" onclick="prev(3)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                            <button type="button" class="btn btn-secondary mr-5 page4" >Next <i class="fa fa-arrow-right"></i></button>
+                                            <button type="button" class="btn btn-secondary mr-5 page-4" >Next <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -629,74 +629,96 @@
                                 </form>
                             </div>
                             <div id="menu8" class="tab-pane">
+                                <form onsubmit="event.preventDefault()" id="organization">
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                         <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data Pribadi</h3>
-                                        <div class="form-row" id="srcOrg" style="display: none">
-                                            <div class="col-1"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
+                                        <div class="form-row" id="srcOrg">
+                                            <div class="col-1 d-none"><button class="btn btn-danger btn-sm" style="margin-top:2.34rem" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);"><i class="fa fa-trash text-end"></i></button>
+                                            </div>
+                                            <input type="hidden" name="organizationid" value=""/>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputOrgName1">Nama Organisasi </label>
+                                                <input type="text" class="form-control"  id="inputOrgName1"  placeholder="Nama Organisasi" />
                                             </div>
                                             <div class="form-group col-md-4">
-                                                <label for="inputOrgName">Nama Organisasi </label>
-                                                <input type="text" class="form-control"  id="inputOrgName"  placeholder="Nama Organisasi" />
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <label for="inputOrgPosition">Jabatan </label>
-                                                <input type="text" class="form-control" id="inputOrgPosition" placeholder="Jabatan">
+                                                <label for="inputOrgPosition1">Jabatan </label>
+                                                <input type="text" class="form-control" id="inputOrgPosition1" placeholder="Jabatan">
                                             </div>
                                             <div class="col-md-3"></div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-4">
-                                                <label for="inputOrgStartPeriod">Periode Mulai </label>
-                                                <input type="text" class="form-control" id="inputOrgStartPeriod" placeholder="Jabatan">
+                                                <label for="inputOrgStartPeriod1">Periode Mulai </label>
+                                                <input type="date" class="form-control" id="inputOrgStartPeriod1" placeholder="Jabatan">
                                             </div>
                                             <div class="form-group col-md-4">
-                                                <label for="inputOrgEndPeriod">Periode Selesai </label>
-                                                <input type="text" class="form-control" id="inputOrgEndPeriod" placeholder="Jabatan">
+                                                <label for="inputOrgEndPeriod1">Periode Selesai </label>
+                                                <input type="date" class="form-control" id="inputOrgEndPeriod1" placeholder="Jabatan">
                                             </div>
                                             <div class="col-md-3"></div>
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-11">
-                                                <label for="inputOrgJobs">Tugas / Kegiatan Organisasi </label>
-                                                <textarea class="form-control" id="inputOrgJobs" placeholder="Tugas / Deskripsi Organisasi"></textarea>
+                                                <label for="inputOrgJobs1">Tugas / Kegiatan Organisasi </label>
+                                                <textarea class="form-control" id="inputOrgJobs1" placeholder="Tugas / Deskripsi Organisasi"></textarea>
                                             </div>
                                         </div>
                                         <div id="dstOrg"></div>
-                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmOrg"><i class="fa fa-plus"></i> Add More</button> </div>
+                                        <div><button class="btn btn-outline-primary btn-sm" id="addfrmOrg"><i class="fa fa-save"></i> Simpan</button> </div>
                                         <div class="separator"></div>
+                                        <div class="table-organization table-responsive d-none">
+                                            <table class="table table-sm table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nama</th>
+                                                <th scope="col">Jabatan</th>
+                                                <th scope="col">Periode Mulai</th>
+                                                <th scope="col">Periode Selesai</th>
+                                                <th scope="col">Tugas & Tanggung Jawab</th>
+                                                <th scope="col">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tborganization">
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                        <h6 class="mb-4 text-danger"><span class="">*</span>Halaman ini bersifat optional.</h6>
                                         <div class="d-flex justify-content-between">
                                             <button type="button" class="btn btn-secondary mr-5" onclick="prev(7)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                            <button type="button" class="btn btn-secondary mr-5" onclick="next(8)">Next <i class="fa fa-arrow-right"></i></button>
+                                            <button type="button" class="btn btn-secondary mr-5 page-8" >Next <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                             <div id="menu9" class="tab-pane">
+                                <form onsubmit="event.preventDefault()" id="question">
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                         <h3 class="mt-0 mb-5 text-center content-title d-none">Silahkan lengkapi data Pribadi</h3>
-                                        <div class="form-row" id="question">
+                                        <div class="form-row" id="srcQuestion">
                                             <div class="form-group col-12">
-                                                <label for="labelTitle"><span class="font-weight-bold">1. Question / Pertanyaan </span></label>
+                                                <label for="question1"><span class="font-weight-bold">1. Question / Pertanyaan </span></label>
                                                 <h6>How much notice are you required to give your current employer? Berapa lama waktu pemberitahuan pengunduran diri Anda yang perlu disampaikan ke pemberi kerja Anda?</h6>
                                                 <input type="text" id="question1" class="form-control" placeholder="answer" />
                                                 <div class="separator"></div>
                                                 <h6>Are you willing to undergo a pre-employment background check? Apakah Anda bersedia menjalani pemeriksaan latar belakang sebelum diterima bekerja?</h6>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="question2" value="Yes">
+                                                    <input class="form-check-input" type="radio" name="question2" value="Ya">
                                                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="question2" value="No">
+                                                    <input class="form-check-input" type="radio" name="question2" value="Tidak">
                                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                                 </div>
                                                 <div class="separator"></div>
                                                 <h6>Are you willing to undergo a pre-employment medical check? Apakah Anda bersedia menjalani pemeriksaan kesehatan sebelum diterima bekerja?</h6>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="question3" value="Yes">
+                                                    <input class="form-check-input" type="radio" name="question3" value="Ya">
                                                     <label class="form-check-label" for="">Yes</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="question3" value="No">
+                                                    <input class="form-check-input" type="radio" name="question3" value="Tidak">
                                                     <label class="form-check-label" for="">No</label>
                                                 </div>
                                                 <div class="separator"></div>
@@ -705,31 +727,46 @@
                                                 <div class="separator"></div>
                                                 <h6>Apakah Anda memiliki buta warna ?</h6>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="question3" value="Yes">
+                                                    <input class="form-check-input" type="radio" name="question5" value="Ya">
                                                     <label class="form-check-label" for="">Yes</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="question3" value="No">
+                                                    <input class="form-check-input" type="radio" name="question5" value="Tidak">
                                                     <label class="form-check-label" for="">No</label>
                                                 </div>
                                                 <div class="separator"></div>
                                                 <div class="d-flex justify-content-between">
                                                     <button type="button" class="btn btn-secondary mr-5" onclick="prev(8)"><i class="fa fa-arrow-left"></i> Prev</button>
-                                                    <button type="button" class="btn btn-secondary mr-5" onclick="next(9)">Next <i class="fa fa-arrow-right"></i></button>
+                                                    <button type="button" class="btn btn-secondary mr-5 page-9" >Next <i class="fa fa-arrow-right"></i></button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                             <div id="menu10" class="tab-pane">
                                 <div class="row justify-content-center">
                                     <div class="col-12">
                                         <div class="form-row" id="attachment">
                                             <div class="form-group col-12">
-                                                <label for="labelTitle"><span class="font-weight-bold">Upload CV </span></label>
-                                                <input type="file" id="attachcv" class="form-control" />
-                                                <button class="btn btn-outline-primary mt-4 text-center" value="Upload">Upload Dokumen CV</button>
+                                                <label for="attachcv"><span class="font-weight-bold">Upload CV </span></label>
+                                                <input type="file" id="attachcv" class="form-control-file" accept="image/*,.pdf" />
+                                                <button class="btn btn-outline-primary mt-4 text-center up-cv" value="Upload">Upload Dokumen CV</button>
+                                                <button class="btn btn-primary mt-4 sr-cv d-none" type="button" disabled="">
+                                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                    Loading...
+                                                </button>
+                                                <div class="cv-file py-3 d-none"><a href="#" alt="link cv" class="file" target="_blank"> </a></div>
+                                                <div class="separator"></div>
+                                                <label for="attachijazah"><span class="font-weight-bold">Upload Ijazah </span></label>
+                                                <input type="file" id="attachijazah" class="form-control-file" accept="image/*,.pdf" />
+                                                <button class="btn btn-outline-primary mt-4 text-center up-ijazah" value="Upload">Upload Dokumen Ijazah</button>
+                                                <button class="btn btn-primary mt-4 sr-ijazah d-none" type="button" disabled="">
+                                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                    Loading...
+                                                </button>
+                                                <div class="ijazah-file py-3 d-none"><a href="#" alt="link ijazah" class="file" target="_blank"> </a></div>
                                                 <div class="separator"></div>
                                                 <div class="d-flex justify-content-between">
                                                     <button type="button" class="btn btn-secondary mr-5" onclick="prev(9)"><i class="fa fa-arrow-left"></i> Prev</button>
@@ -752,9 +789,14 @@
     </div>
 </div>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- OLD 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="<?=BASE_URL?>public/assets/js/easy-number-separator-master/easy-number-separator.js"></script>
 <script src="<?=BASE_URL?>public/assets/js/career-button.js"></script>
 <script type="text/javascript">
@@ -768,6 +810,7 @@
         number++;
         document.querySelector(`#menu${number}`).classList.add('active')
         document.querySelector(`#tab${number}`).classList.add('active')
+        document.querySelector(`#tab${number}`).classList.remove('disabled')
         const tabpaneAll = document.querySelectorAll('.tabs.list-group-item')
         document.querySelector('#test').innerText = arr[number-1]
         

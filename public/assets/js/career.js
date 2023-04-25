@@ -63,13 +63,67 @@ hiddenBtn = () => {
 }
 editphotobtn.addEventListener('click',hiddenBtn, false);
 
+const uploadDoc = (type,file) => {
+    const employeeid = sessionStorage.getItem('employeeid')
+    // const employeeid = 1
+    const namafile = file.name
+    const formData = new FormData()
+    formData.append('file',file)
+    formData.append('type',type)
+    formData.append('employeeid',employeeid)
+    const sr = document.querySelector('.sr-'+type)
+    const btnUpload = sr.previousElementSibling
+    btnUpload.classList.add('d-none')
+    sr.classList.remove('d-none')
+    try {
+        console.log('uploading...')
+        $.ajax({
+            url: base_url()+'career/uploaddoc',
+            enctype: 'multipart/form-data',
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
+            async: false,
+            success: function(resp) {
+                btnUpload.classList.remove('d-none')
+                sr.classList.add('d-none')
+                const container = document.querySelector('.'+type+'-file')
+                const linkfile = container.querySelector('.file')
+                linkfile.innerHTML = '<i class="fa fa-file"></i> '+resp.type+' '+resp.nama;
+                linkfile.href = '../viewfile/careerpath-'+resp.id+'/'+type
+                container.classList.remove('d-none')
+            },
+            cache: false,
+            contentType:false,
+            processData: false
+        });
+    }
+    catch(e) {
+        console.log('Err: ',e)
+    }
+}
+
 const checkverify = document.querySelector('.checkverify');
-const page2 = document.querySelector('.page2');
-const page3 = document.querySelector('.page3');
+const page2 = document.querySelector('.page-2');
 const addfrmIdentity = document.querySelector('#addfrmIdentity');
 const addfrmEducation = document.querySelector('#addfrmEducation');
 const addfrmJob = document.querySelector('#addfrmJob');
 const addfrmFamily= document.querySelector('#addfrmFamily');
+const addfrmContactEm= document.querySelector('#addfrmContactEm');
+const addfrmOrg= document.querySelector('#addfrmOrg');
+const page9 = document.querySelector('.page-9');
+const uploadCV = document.querySelector('.up-cv');
+const uploadIjazah = document.querySelector('.up-ijazah');
+const inputfileIjazah = document.querySelector('#attachijazah');
+const inputfileCV = document.querySelector('#attachcv');
+const page03 = document.querySelector('.page-3');
+const page04 = document.querySelector('.page-4');
+const page05 = document.querySelector('.page-5');
+const page06 = document.querySelector('.page-6');
+const page07 = document.querySelector('.page-7');
+const page08 = document.querySelector('.page-8');
+const page09 = document.querySelector('.page-9');
+const page10 = document.querySelector('.submit-done');
 
 // form 1
 const checkForm = () => {
@@ -169,7 +223,7 @@ const page2Form = () => {
     postData(base_url()+'career/saveidentitycontact', {dataForm})
     .then((data) => {
         if(data.status == 'success') {
-            sessionStorage.setItem('employeeid',data.id)
+            // sessionStorage.setItem('employeeid',data.id)
             $('#tab3').removeClass('disabled')
             // $('.first-step').removeClass('checkverify')
             // $('.first-step').attr('onclick','next(1)');
@@ -254,8 +308,8 @@ const page3Form = () => {
 
 // from 4
 const page4Form = () => {
-    // employeeid = sessionStorage.getItem('employeeid');
-    let employeeid = 1;
+    employeeid = sessionStorage.getItem('employeeid');
+    // let employeeid = 1;
 
     const rules = {
         'jenispendidikan':'required',
@@ -329,8 +383,8 @@ const page4Form = () => {
 
 // form 5
 const page5Form = () => {
-    // employeeid = sessionStorage.getItem('employeeid');
-    let employeeid = 1;
+    employeeid = sessionStorage.getItem('employeeid');
+    // let employeeid = 1;
 
     const rules = {
         'none':'none'
@@ -404,8 +458,8 @@ const page5Form = () => {
 
 // form 6
 const page6Form = () => {
-    // employeeid = sessionStorage.getItem('employeeid');
-    let employeeid = 1;
+    employeeid = sessionStorage.getItem('employeeid');
+    // let employeeid = 1;
 
     const rules = {
         'none':'none'
@@ -481,6 +535,199 @@ const page6Form = () => {
     });
 }
 
+// form 7
+const page7Form = () => {
+    employeeid = sessionStorage.getItem('employeeid');
+    // let employeeid = 1;
+
+    const rules = {
+        'hubungan':'required',
+        'nama':'required',
+        'telp':'required',
+        'alamat':'required'
+    }
+    const form7 = document.forms['emergencycontact'];
+    const hubungan = form7.inputContactFam1.value
+    const nama = form7.inputContactName1.value
+    const telp = form7.inputContactTelp1.value
+    const alamat = form7.inputContactAddress1.value
+    const emergencyid = form7.querySelector('input[name="emergencyid"]').value
+    // const careerid = form1.careerid.value
+
+    const dataForm = {
+        'hubungan':hubungan,
+        'nama':nama,
+        'telp':telp,
+        'alamat':alamat,
+        'employeeid':employeeid,
+        'emergencyid':emergencyid
+    }
+    // console.log(dataForm)
+
+    for(let i in rules) {   
+        if(dataForm[i]=='') return Swal.fire({icon: 'error',title: 'Oops...',text: 'Harap Isi form yang kosong!'})
+    }
+
+    // save to db
+    postData(base_url()+'career/saveemergencycontact', {dataForm})
+    .then((data) => {
+        if(data.status == 'success') {
+            let frmdata = JSON.stringify({'employeeid':employeeid})
+            $.ajax({
+                url: base_url()+'career/getdataemergencycontact',
+                type: 'POST',
+                data: frmdata,
+                dataType: 'json',
+                async: false,
+                success: function(res) {
+                    $('tbody#tbemergencycontact').empty();
+                    Swal.fire(
+                        'Success',
+                        'Data berhasil di simpan',
+                        'success'
+                      )
+                    form7.querySelector('input[name="emergencyid"]').value=''
+                    makeTable(res.data,'tbemergencycontact','emergencyid');
+                },
+                cache: false,
+                contentType:false,
+                processData: false
+            });
+            $('#emergencycontact')[0].reset();
+            $('.table-emergencycontact').removeClass('d-none')
+            // $('#tab4').removeClass('disabled')
+            // $('.first-step').removeClass('checkverify')
+            // $('.first-step').attr('onclick','next(1)');
+
+        }
+        else {
+            return Swal.fire({icon: 'error',title: 'Oops...',text: 'Ada kesalahan saat simpan, hubungi kami di halaman kontak , atau klik link dibawah ini',footer: '<a href="'+base_url()+'contact" target="_blank">Hubungi kesalahan ini</a>'
+            })
+        }
+    });
+}
+
+// form 8
+const page8Form = () => {
+    employeeid = sessionStorage.getItem('employeeid');
+    // let employeeid = 1;
+
+    const rules = {
+        'none':'none'
+    }
+    const form8 = document.forms['organization'];
+    const nama = form8.inputOrgName1.value
+    const posisi = form8.inputOrgPosition1.value
+    const tglmulai = form8.inputOrgStartPeriod1.value
+    const tglselesai = form8.inputOrgEndPeriod1.value
+    const pekerjaan = form8.inputOrgJobs1.value
+    const organizationid = form8.querySelector('input[name="organizationid"]').value
+    // const careerid = form1.careerid.value
+
+    const dataForm = {
+        'nama':nama,
+        'posisi':posisi,
+        'tglmulai':tglmulai,
+        'tglselesai':tglselesai,
+        'pekerjaan':pekerjaan,
+        'employeeid':employeeid,
+        'organizationid':organizationid
+    }
+    // console.log(dataForm)
+
+    for(let i in rules) {   
+        if(dataForm[i]=='') return Swal.fire({icon: 'error',title: 'Oops...',text: 'Harap Isi form yang kosong!'})
+    }
+
+    // save to db
+    postData(base_url()+'career/saveorganization', {dataForm})
+    .then((data) => {
+        if(data.status == 'success') {
+            let frmdata = JSON.stringify({'employeeid':employeeid})
+            $.ajax({
+                url: base_url()+'career/getdataorganization',
+                type: 'POST',
+                data: frmdata,
+                dataType: 'json',
+                async: false,
+                success: function(res) {
+                    $('tbody#tborganization').empty();
+                    Swal.fire(
+                        'Success',
+                        'Data berhasil di simpan',
+                        'success'
+                      )
+                    form8.querySelector('input[name="organizationid"]').value=''
+                    makeTable(res.data,'tborganization','organizationid');
+                },
+                cache: false,
+                contentType:false,
+                processData: false
+            });
+            $('#organization')[0].reset();
+            $('.table-organization').removeClass('d-none')
+            // $('#tab4').removeClass('disabled')
+            // $('.first-step').removeClass('checkverify')
+            // $('.first-step').attr('onclick','next(1)');
+
+        }
+        else {
+            return Swal.fire({icon: 'error',title: 'Oops...',text: 'Ada kesalahan saat simpan, hubungi kami di halaman kontak , atau klik link dibawah ini',footer: '<a href="'+base_url()+'contact" target="_blank">Hubungi kesalahan ini</a>'
+            })
+        }
+    });
+}
+
+// form 9
+const page9Form = () => {
+    employeeid = sessionStorage.getItem('employeeid');
+    // employeeid = 1;
+
+    const rules = {
+        'pertanyaan1':'required',
+        'pertanyaan2':'required',
+        'pertanyaan3':'required',
+        'pertanyaan4':'required',
+        'pertanyaan5':'required',
+    }
+    const form9 = document.forms['question'];
+    const pertanyaan1 = form9.question1.value
+    const pertanyaan2 = form9.question2.value
+    const pertanyaan3 = form9.question3.value
+    const pertanyaan4 = form9.question4.value
+    const pertanyaan5 = form9.question5.value
+    // const careerid = form1.careerid.value
+
+    const dataForm = {
+        'pertanyaan1':pertanyaan1,
+        'pertanyaan2':pertanyaan2,
+        'pertanyaan3':pertanyaan3,
+        'pertanyaan4':pertanyaan4,
+        'pertanyaan5':pertanyaan5,
+        'employeeid':employeeid
+    }
+
+    for(let i in rules) {   
+        if(dataForm[i]=='') return Swal.fire({icon: 'error',title: 'Oops...',text: 'Harap Isi form yang kosong!'})
+    }
+
+    // save to db
+    postData(base_url()+'career/savequestion', {dataForm})
+    .then((data) => {
+        if(data.status == 'success') {
+            // sessionStorage.setItem('employeeid',data.id)
+            $('#tab9').removeClass('disabled')
+            // $('.first-step').removeClass('checkverify')
+            // $('.first-step').attr('onclick','next(1)');
+            next(9);
+        }
+        else {
+            return Swal.fire({icon: 'error',title: 'Oops...',text: 'Ada kesalahan saat simpan, hubungi kami di halaman kontak , atau klik link dibawah ini',footer: '<a href="'+base_url()+'contact" target="_blank">Hubungi kesalahan ini</a>'
+            })
+        }
+    });
+}
+
 function base_url() {
     var pathparts = location.pathname.split('/');
     if (location.host == 'localhost') {
@@ -508,6 +755,22 @@ async function postData(url = "", data = {}) {
 }
 
 async function deleteData(url='', data={}) {
+    const response = await fetch(url, {
+        method: "POST", 
+        mode: "cors", 
+        cache: "no-cache", 
+      //   credentials: "same-origin", 
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        referrerPolicy: "no-referrer", 
+        body: JSON.stringify(data), 
+      });
+      return response.json();
+}
+
+async function getData(url='', data={}) {
     const response = await fetch(url, {
         method: "POST", 
         mode: "cors", 
@@ -717,10 +980,168 @@ const editRowtbfamily = (el,id) => {
     form.inputFamilyCompAddress1.value = cells[9].innerHTML
     idform.value = idfield.value
 }
+
+const delRowtbemergencycontact = (el,id) => {
+    let idfield = el.parentNode.nextSibling
+    Swal.fire({
+        title: 'Apakah kamu yakin?',
+        text: "Data yang dipilih akan terhapus!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            deleteData(base_url()+'career/delemergencycontact', {'id':idfield.value})
+            .then((data) => {
+                if(data.status == 'success') {
+                    Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                    )
+                    let tr = el.parentNode.parentNode
+                    // console.log(id)
+                    tr.parentNode.removeChild(tr);
+                }
+                else {
+                    return Swal.fire({icon: 'error',title: 'Oops...',text: 'Ada kesalahan saat hapus, hubungi kami di halaman kontak , atau klik link dibawah ini',footer: '<a href="'+base_url()+'contact" target="_blank">Hubungi kesalahan ini</a>'
+                    })
+                }
+            });
+        }
+    })
+}
+
+const editRowtbemergencycontact = (el,id) => {
+    let idfield = el.parentNode.nextSibling
+    let tr = el.parentNode.parentNode
+    let cells = tr.getElementsByTagName("td");
+    const form = document.forms['emergencycontact'];
+    const idform = form.querySelector(`input[name="${id}"]`)
+    form.inputContactFam1.value = cells[1].innerHTML
+    form.inputContactName1.value = cells[2].innerHTML
+    form.inputContactTelp1.value = cells[3].innerHTML
+    form.inputContactAddress1.value = cells[4].innerHTML
+    idform.value = idfield.value
+}
+
+const delRowtborganization = (el,id) => {
+    let idfield = el.parentNode.nextSibling
+    Swal.fire({
+        title: 'Apakah kamu yakin?',
+        text: "Data yang dipilih akan terhapus!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            deleteData(base_url()+'career/delorganization', {'id':idfield.value})
+            .then((data) => {
+                if(data.status == 'success') {
+                    Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                    )
+                    let tr = el.parentNode.parentNode
+                    // console.log(id)
+                    tr.parentNode.removeChild(tr);
+                }
+                else {
+                    return Swal.fire({icon: 'error',title: 'Oops...',text: 'Ada kesalahan saat hapus, hubungi kami di halaman kontak , atau klik link dibawah ini',footer: '<a href="'+base_url()+'contact" target="_blank">Hubungi kesalahan ini</a>'
+                    })
+                }
+            });
+        }
+    })
+}
+
+const editRowtborganization = (el,id) => {
+    let idfield = el.parentNode.nextSibling
+    let tr = el.parentNode.parentNode
+    let cells = tr.getElementsByTagName("td");
+    const form = document.forms['organization'];
+    const idform = form.querySelector(`input[name="${id}"]`)
+    form.inputOrgName1.value = cells[1].innerHTML
+    form.inputOrgPosition1.value = cells[2].innerHTML
+    form.inputOrgStartPeriod1.value = cells[3].innerHTML
+    form.inputOrgEndPeriod1.value = cells[4].innerHTML
+    form.inputOrgJobs1.value = cells[5].innerHTML
+    idform.value = idfield.value
+}
+const verifyPage = (number) => {
+    let mandatory;
+    const rules = {
+        minimumRows1 : [
+            'Minimum must have 1 row',
+            'required'
+        ],
+        canBeNull: [
+            'This page may empty if You dont have data',
+            'null'
+        ],
+    }
+
+    switch(number) {
+        case 3:
+            mandatory = rules.minimumRows1
+            break;
+        case 4:
+            mandatory = rules.minimumRows1
+            break;
+        case 5:
+            mandatory = rules.canBeNull
+            break;
+        case 6:
+            mandatory = rules.minimumRows1
+            break;
+        case 7:
+            mandatory = rules.minimumRows1
+            break;
+        case 8:
+            mandatory = rules.canBeNull
+            break;
+        case 9:
+            mandatory = rules.minimumRows1;
+            break;
+        case 10:
+            mandatory = rules.canBeNull
+            break;
+        default:
+            mandatory = rules.minimumRows1
+    }
+    if(mandatory[1]=='required')
+    {
+        getData(base_url()+'career/getformdata', {'number':number})
+        .then((data) => {
+            if(data.status == 'success') {
+                next(number);
+            }
+            else {
+                return Swal.fire({icon: 'error',title: 'Oops...',text: mandatory[0]
+                })
+            }
+        });
+        // return Swal.fire({icon: 'error',title: 'Oops...',text: mandatory[0]})
+    }
+}
 checkverify.addEventListener('click',checkForm);
 page2.addEventListener('click',page2Form);
+page03.addEventListener('click',() => verifyPage(3));
+page04.addEventListener('click',() => verifyPage(4));
+page05.addEventListener('click',() => verifyPage(5));
+
+// trigger button save
 addfrmIdentity.addEventListener('click',page3Form);
 addfrmEducation.addEventListener('click',page4Form);
 addfrmJob.addEventListener('click',page5Form);
 addfrmFamily.addEventListener('click',page6Form);
-// const formIdentity = document.querySelector('#identityform');
+addfrmContactEm.addEventListener('click',page7Form);
+addfrmOrg.addEventListener('click',page8Form);
+page9.addEventListener('click',page9Form);
+uploadCV.addEventListener('click', () => uploadDoc('cv',inputfileCV.files[0]));
+uploadIjazah.addEventListener('click', () => uploadDoc('ijazah',inputfileIjazah.files[0]));

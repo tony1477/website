@@ -14,13 +14,24 @@ class CareerModel {
     $where = null;
     if($id!=null) $where = ' and careerid = :careerid';
     
+    $this->table = 'career';
     $this->db->query("select careerid,postdate,lastdate,title,location,requirement,jobdesc,notes,position from ".$this->table." where status = :status {$where}");
     $this->db->bind(':status',1);
     
-    if($where!=null) $this->db->bind(':careerid',$id);
+    if($where!=null) {
+      $this->db->bind(':careerid',$id); 
+      return $this->db->fetch();
+    } 
     return $this->db->fetchAll();
   }
 
+  public function getDataEmployee($employeeid)
+  {
+    $this->table = 'new_employee';
+    $this->db->query('select careerid,lower(replace(fullname," ","-")) as fullname from '.$this->table.' where employeeid = :employeeid');
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetch();
+  }
   public function saveProfile($data)
   {
     $this->table = 'new_employee';
@@ -72,6 +83,30 @@ class CareerModel {
     $this->db->bind('address_real',$data['alamat2']);
     $this->db->bind('mobilephone',$data['nohp']);
     $this->db->bind('employeeid',$data['employeeid']);
+    $this->db->execute();
+  }
+
+  public function updateQuestion($data)
+  {
+    $this->table = 'new_employee';
+    $sql = 'update '.$this->table.' set question1=:question1, question2=:question2, question3=:question3, question4=:question4, question5=:question5 where employeeid = :employeeid';
+    $this->db->query($sql);
+    $this->db->bind('question1',$data['pertanyaan1']);
+    $this->db->bind('question2',$data['pertanyaan2']);
+    $this->db->bind('question3',$data['pertanyaan3']);
+    $this->db->bind('question4',$data['pertanyaan4']);
+    $this->db->bind('question5',$data['pertanyaan5']);
+    $this->db->bind('employeeid',$data['employeeid']);
+    $this->db->execute();
+  }
+
+  public function updateDoc($file,$type,$employeeid)
+  {
+    $this->table = 'new_employee';
+    $sql = 'update '.$this->table.' set '.$type. '=:type where employeeid = :employeeid';
+    $this->db->query($sql);
+    $this->db->bind('type',$file);
+    $this->db->bind('employeeid',$employeeid);
     $this->db->execute();
   }
 
@@ -301,5 +336,64 @@ class CareerModel {
     $this->db->bind('address',$data['alamat']);
     $this->db->bind('emergencyid',$data['emergencyid']);
     $this->db->execute();
+  }
+
+  public function saveOrganization($data)
+  {
+    $this->table = 'emp_organization';
+    $sql = 'insert into '.$this->table.' (employeeid,name,position,startdate,enddate,jobdesc) values (:employeeid,:name,:position,:startdate,:enddate,:jobdesc)';
+    $this->db->query($sql);
+    $this->db->bind('employeeid',$data['employeeid']);
+    $this->db->bind('name',$data['nama']);
+    $this->db->bind('position',$data['posisi']);
+    $this->db->bind('startdate',$data['tglmulai']);
+    $this->db->bind('enddate',$data['tglselesai']);
+    $this->db->bind('jobdesc',$data['pekerjaan']);
+    $this->db->execute();
+  }
+
+  public function getDataOrganization($employeeid)
+  {
+    $this->table = 'emp_organization';
+    $this->db->query('select organizationid,name,position,startdate,enddate,jobdesc from '.$this->table.' where employeeid = :employeeid');
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetchAll();
+  }
+
+  public function delOrganization($organizationid)
+  {
+    $this->table = 'emp_organization';
+    $this->db->query('delete from '.$this->table.' where organizationid = :organizationid');
+    $this->db->bind('organizationid',$organizationid);
+    $this->db->execute();
+  }
+
+  public function updateOrganization($data)
+  {
+    $this->table = 'emp_organization';
+    $sql = 'update '.$this->table.' set name=:name, position=:position, startdate=:startdate, enddate=:enddate, jobdesc=:jobdesc where organizationid = :organizationid';
+    $this->db->query($sql);
+    $this->db->bind('name',$data['nama']);
+    $this->db->bind('position',$data['posisi']);
+    $this->db->bind('startdate',$data['tglmulai']);
+    $this->db->bind('enddate',$data['tglselesai']);
+    $this->db->bind('jobdesc',$data['pekerjaan']);
+    $this->db->bind('organizationid',$data['organizationid']);
+    $this->db->execute();
+  }
+
+  public function getFile($employeeid,$type)
+  {
+    $this->table = 'new_employee';
+    $this->db->query('select '.$type.' from '.$this->table.' where employeeid = :employeeid');
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetch();
+  }
+
+  public function getRowsofTable($table,$employeeid)
+  {
+    $this->db->query("select ifnull(count(1),0) as total from ".$table." where employeeid = :employeeid");
+    $this->db->bind('employeeid',$employeeid);
+    return $this->db->fetch();
   }
 }
