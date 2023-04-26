@@ -123,7 +123,7 @@ const page06 = document.querySelector('.page-6');
 const page07 = document.querySelector('.page-7');
 const page08 = document.querySelector('.page-8');
 const page09 = document.querySelector('.page-9');
-const page10 = document.querySelector('.submit-done');
+const page10 = document.querySelector('.submitform');
 
 // form 1
 const checkForm = () => {
@@ -286,7 +286,7 @@ const page3Form = () => {
                         'success'
                       )
                     makeTable(res.data,'tbidentitycard','identityid');
-                    form3.querySelector('input[name="identitycard"]').value=''
+                    form3.querySelector('input[name="identityid"]').value=''
                 },
                 cache: false,
                 contentType:false,
@@ -786,6 +786,7 @@ async function getData(url='', data={}) {
       return response.json();
 }
 
+
 const delRowtbidentitycard = (el,id) => {
     let idfield = el.parentNode.nextSibling
     Swal.fire({
@@ -1074,6 +1075,7 @@ const editRowtborganization = (el,id) => {
     idform.value = idfield.value
 }
 const verifyPage = (number) => {
+    // console.log('here')
     let mandatory;
     const rules = {
         minimumRows1 : [
@@ -1119,7 +1121,7 @@ const verifyPage = (number) => {
         getData(base_url()+'career/getformdata', {'number':number})
         .then((data) => {
             if(data.status == 'success') {
-                next(number);
+                return next(number);
             }
             else {
                 return Swal.fire({icon: 'error',title: 'Oops...',text: mandatory[0]
@@ -1128,12 +1130,179 @@ const verifyPage = (number) => {
         });
         // return Swal.fire({icon: 'error',title: 'Oops...',text: mandatory[0]})
     }
+
+    if(mandatory[1]=='null') return next(number)
+    
 }
+
+const getdatafromdb = (employeeid) => {
+    const form1 = document.forms['identityform'];
+    const form2 = document.forms['identitycontact'];
+    const form3 = document.forms['identitycard'];
+    const form4 = document.forms['educationhistory'];
+    const form5 = document.forms['workexperience'];
+    const form6 = document.forms['family'];
+    const form7 = document.forms['emergencycontact'];
+    const form8 = document.forms['organization'];
+    const form9 = document.forms['question'];
+
+    // getdatafromdb to form1
+    getData(base_url()+'career/getDataEmployee', { 'employeeid':employeeid})
+    .then((data1) => {
+        if(data1.status == 'success') {
+            form1.inputName.value = data1.data.realname
+            form1.inputSex.value = data1.data.sex
+            form1.inputBirthcity.value = data1.data.birthcity
+            form1.inputBirthdate.value = data1.data.birthdate
+            form1.inputMarital.value = data1.data.status
+            form1.inputNationally.value = data1.data.nationally
+            form1.inputNPWP.value = data1.data.npwp
+            form1.inputFresh.value = data1.data.isfresh
+            form1.inputEmail.value = data1.data.email
+            form1.inputReligion.value = data1.data.religion
+            form1.careerid.value = data1.data.careerid
+            form2.inputAddress1.value = data1.data.address_ktp
+            form2.inputAddress2.value = data1.data.address_real
+            form2.inputMobile.value = data1.data.mobilephone
+            form9.question1.value = data1.data.question1
+            form9.question2.value = data1.data.question2
+            form9.question3.value = data1.data.question3
+            form9.question4.value = data1.data.question4
+            form9.question5.value = data1.data.question5
+            // console.log(data1.data)
+
+            if(data1.data.cv!=null) 
+            {
+                const containercv = document.querySelector('.cv-file')
+                const linkfilecv = containercv.querySelector('.file')
+                linkfilecv.innerHTML = '<i class="fa fa-file"></i> CV '+data1.data.realname;
+                linkfilecv.href = '../viewfile/careerpath-'+data1.data.careerid+'/cv'
+                containercv.classList.remove('d-none')
+            }
+
+            if(data1.data.ijazah!=null) 
+            {
+                const containerijazah = document.querySelector('.ijazah-file')
+                const linkfileijazah = containerijazah.querySelector('.file')
+                linkfileijazah.innerHTML = '<i class="fa fa-file"></i> IJAZAH '+data1.data.realname;
+                linkfileijazah.href = '../viewfile/careerpath-'+data1.data.careerid+'/ijazah'
+                containerijazah.classList.remove('d-none')
+            }
+        }
+    });
+
+    getData(base_url()+'career/getDataIdentityCard', { 'employeeid':employeeid})
+    .then((data2) => {
+        if(data2.status == 'success') {
+            makeTable(data2.data,'tbidentitycard','identityid');
+            $('.table-identitycard').removeClass('d-none')
+            form3.querySelector('input[name="identityid"]').value=''
+        }
+    });
+
+    getData(base_url()+'career/getDataEducationHistory', { 'employeeid':employeeid})
+    .then((data3) => {
+        if(data3.status == 'success') {
+            makeTable(data3.data,'tbeducationhistory','educationid');
+            form4.querySelector('input[name="educationid"]').value=''
+            $('.table-educationhistory').removeClass('d-none')
+        }
+    });
+
+    getData(base_url()+'career/getDataWorkExperience', { 'employeeid':employeeid})
+    .then((data4) => {
+        if(data4.status == 'success') {
+            form5.querySelector('input[name="experienceid"]').value=''
+            makeTable(data4.data,'tbworkexperience','experienceid');
+            $('.table-workexperience').removeClass('d-none')
+        }
+    });
+
+    getData(base_url()+'career/getDataFamily', { 'employeeid':employeeid})
+    .then((data5) => {
+        if(data5.status == 'success') {
+            makeTable(data5.data,'tbfamily','familyid');
+            form6.querySelector('input[name="familyid"]').value=''
+            $('.table-family').removeClass('d-none')
+        }
+    });
+
+    getData(base_url()+'career/getDataEmergencyContact', { 'employeeid':employeeid})
+    .then((data6) => {
+        if(data6.status == 'success') {
+            makeTable(data6.data,'tbemergencycontact','emergencyid');
+            form7.querySelector('input[name="emergencyid"]').value=''
+            $('.table-emergencycontact').removeClass('d-none')
+        }
+    });
+
+    getData(base_url()+'career/getDataOrganization', { 'employeeid':employeeid})
+    .then((data7) => {
+        if(data7.status == 'success') {
+            makeTable(data7.data,'tborganization','organizationid');
+            form8.querySelector('input[name="organizationid"]').value=''
+            $('.table-organization').removeClass('d-none')
+        }
+    });
+}
+
+const submitform = () => {
+    if(sessionStorage.getItem('fotoprofile')==null) {
+        return Swal.fire(
+            'Photo Profile',
+            'Anda belum unggah foto',
+            'warning'
+        )
+    }
+    const dataForm = {
+        'photo':sessionStorage.getItem('fotoprofile'),
+        'employeeid':sessionStorage.getItem('employeeid')
+    }
+    Swal.fire({
+        title: 'Apakah Anda yakin?',
+        text: "Saya menyatakan bahwa data-data yang saya masukkan sudah valid!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya'
+    }).then((result) => {
+    if (result.isConfirmed) {
+        $('#myModal').modal()                      
+        $('#myModal').modal({ keyboard: false })   
+        $('#myModal').modal('show') 
+
+        postData(base_url()+'career/submitData', {dataForm})
+        .then((data) => {
+            if(data.status == 'success') {
+                $('#myModal').modal('hide') 
+                sessionStorage.clear()
+                Swal.fire(
+                    'Success!',
+                    'Data sudah tersimpan.',
+                    'success'
+                ).then(
+                    setTimeout((e) => {
+                        location.href = base_url()+'career';
+                    }, 1000)
+                )
+            }
+        });
+    }
+    })
+}
+
 checkverify.addEventListener('click',checkForm);
 page2.addEventListener('click',page2Form);
 page03.addEventListener('click',() => verifyPage(3));
 page04.addEventListener('click',() => verifyPage(4));
 page05.addEventListener('click',() => verifyPage(5));
+page06.addEventListener('click',() => verifyPage(6));
+page07.addEventListener('click',() => verifyPage(7));
+page08.addEventListener('click',() => verifyPage(8));
+page09.addEventListener('click',() => verifyPage(9));
+page10.addEventListener('click',() => submitform());
+// page09.addEventListener('click',() => verifyPage(5));
 
 // trigger button save
 addfrmIdentity.addEventListener('click',page3Form);

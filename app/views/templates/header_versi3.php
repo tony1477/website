@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="id">
+<html class="no-js" lang="<?=($_SESSION['lang']=='id' ? 'id' : 'en')?>">
 
 <head>
     <meta charset="utf-8">

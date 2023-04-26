@@ -65,17 +65,17 @@
             [
                 'year' => '<h5 class="about milestone-year text-white fw-bold">2012</h5>',
                 'title' => '<h5 class="about milestone-subtitle text-white fw-bold">CV. Tani Sejahtera Perkasa</h5>',
-                'caption' => '<p>Second Oil Palm Plantation established in 2012.</p>'
+                'caption' => '<p>Development of the second Palm Oil Plantation established in 2012.</p>'
             ],
             [
                 'year' => '<h5 class="about milestone-year text-white fw-bold">2014</h5>',
                 'title' => '<h5 class="about milestone-subtitle text-white fw-bold">PT. Libo Sawit Perkasa</h5>',
-                'caption' => '<p>The first palm kernel oil processing run by the Founder.</p>'
+                'caption' => '<p>Operational First Palm Kernel Processing Plant</p>'
             ],
             [
                 'year' => '<h5 class="about milestone-year text-white fw-bold">2017</h5>',
                 'title' => '<h5 class="about milestone-subtitle text-white fw-bold">PT. Semunai Sawit Perkasa</h5>',
-                'caption' => '<p>The second palm oil kernel mill to be run operating in the Siak Region.</p>'
+                'caption' => '<p>Operation of the First Palm Oil Processing to become an Integrated and Sustainable Agribusiness Industry.</p>'
             ]
         ],
         // for vision-topbar-title

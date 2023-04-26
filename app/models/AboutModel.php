@@ -27,7 +27,7 @@ class AboutModel {
   }
 
   public function getBOD() {
-    $this->db->query('select profilename,profileposition,profiledesc,profilephoto from '.$this->tablebod." where status=:status");
+    $this->db->query('select profilename,profileposition,profiledesc_id,profiledesc_en,profilephoto from '.$this->tablebod." where status=:status");
     $this->db->bind('status',1);
     return $this->db->fetchAll();
   }

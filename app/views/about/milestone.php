@@ -36,14 +36,7 @@
                                 <p class="time-timeline-l">2023</p>
                                 <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="mx-3" />
                                 <div class="direction-r" onclick="showhistory(this)">
-                                    <div class="flag-wrapper">
-                                        <span class="flag">PT. Karya Boga Perkasa</span>
-                                        <span class="time-wrapper"></span>
-                                    </div>
-                                    <div class="desc">Tahun 2023, melakukan pengembangan unit usaha di sektor makanan & minuman untuk berkonsentrasi dibidangnya dengan nama PT Karya Boga Perkasa. </div>
-                                    <div class="detailhist d-none"><img src="<?=BASE_URL?>public/assets/img/about/milestone/kbp.jpg" style="margin:5px; width:350px;" class="rounded">
-                                    <p style="text-align:justify;">Pengembangan Bisnis Food & Beverages "FlipNFry".<br />
-                                    Gerai dan Cabang makanan & minuman opening awal wilayah jakarta dan akan berkembang ke wilayah lain.</p></div>
+                                    <?=$this->getContentDb('about-milestone-kbp')?>
                                 </div>
                             </li>
                         
@@ -52,13 +45,7 @@
                                 <p class="time-timeline-r">2022</p>
                                 <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="" />
                                 <div class="direction-l" onclick="showhistory(this)">
-                                    <div class="flag-wrapper">
-                                        <span class="flag">PT. Semunai Sawit Perkasa Unit 2</span>
-                                        <span class="time-wrapper"></span>
-                                    </div>
-                                    <div class="desc">Pabrik kelapa Sawit  ketiga diresmikan di Bengkalis, Indonesia pada tahun 2022.</div>
-                                    <div class="detailhist-r d-none" style="margin-left:-3.5rem;"><img src="<?=BASE_URL?>public/assets/img/about/milestone/ssp2.jpg" style="margin:5px; width:350px;" class="rounded">
-                                    <p style="text-align:justify;">Pabrik minyak kelapa sawit Semunai Sawit Perkasa Unit II di Riau mulai beroperasi.  Hal ini menandai langkah ketiga PKS di Wilian Perkasa  khususnya dalam pengoperasian pengelolaan hasil perkebunan kelapa sawit lanjutan.</p></div>
+                                <?=$this->getContentDb('about-milestone-ssp2')?>
                                 </div>
                             </li>
 
@@ -67,13 +54,7 @@
                                 <p class="time-timeline-l">2020</p>
                                 <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="mx-3" />
                                 <div class="direction-r" onclick="showhistory(this)">
-                                    <div class="flag-wrapper">
-                                        <span class="flag">PT. Serai Wangi Perkasa</span>
-                                        <span class="time-wrapper"></span>
-                                    </div>
-                                    <div class="desc">Wilian Perkasa melakukan pengembangan unit usaha di sektor Agronomi untuk berkonsentrasi di bidang agribisnis, produksi pangan sebagai unit usaha terbarukan  dgn beroperasinya PT Serai Wangi Perkasa.</div>
-                                    <div class="detailhist d-none"><img src="<?=BASE_URL?>public/assets/img/about/milestone/swp.jpg" style="margin:5px; width:350px" class="rounded">
-                                    <p style="text-align:justify;">Pengembangan sektor agronomi  sebagai bagian dalam pengembangan usaha dalam pemenuhan pangan masyarakat, etc.</p></div>
+                                    <?=$this->getContentDb('about-milestone-swp')?>
                                 </div>
                             </li>
                             <!-- Item 4 -->
@@ -81,14 +62,7 @@
                             <p class="time-timeline-r">2019</p>
                             <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="" />
                                 <div class="direction-l" onclick="showhistory(this)">
-                                    <div class="flag-wrapper">
-                                            <span class="flag">PT. Wilian Multi Sejahtera</span>
-                                            <span class="time-wrapper"></span>
-                                        </div>
-                                        <div class="desc">PT Wilian Multi Sejahtera berdiri dengan Perseroan.PT WMS menyelesaikan pembangunan Office Building  di Pekanbaru.</div>
-                                        <div class="detailhist-r d-none" style="margin-left:-3.5rem;"><img src="<?=BASE_URL?>public/assets/img/about/milestone/wms.jpg" style="margin:5px; width:350px;" class="rounded">
-                                        <p style="text-align:justify;">Pengelolaan dan manajemen perkantoran yang lebih sustainable dalam tata keloa administrasi dan fungsi manjemen yang terintegrasi.</p>
-                                        </div>
+                                    <?=$this->getContentDb('about-milestone-wms')?>
                                 </div>
                             </li>
                             <!-- Item 5 -->
@@ -96,13 +70,7 @@
                                 <p class="time-timeline-l">2017</p>
                                 <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="mx-3" />
                                 <div class="direction-r" onclick="showhistory(this)">
-                                    <div class="flag-wrapper">
-                                        <span class="flag">PT. Semunai Sawit Perkasa</span>
-                                        <span class="time-wrapper"></span>
-                                    </div>
-                                    <div class="desc">Tahun 2017, Pabrik kelapa Sawit  kedua diresmikan di Bengkalis, Indonesia. Hal ini menandai langkah kedua kami dalam pengelolaan hasil perkebunan kelapa sawit.</div>
-                                    <div class="detailhist d-none"><img src="<?=BASE_URL?>public/assets/img/about/milestone/ssp.jpg" style="margin:5px; width:350px" class="rounded">
-                                    <p style="text-align:justify;">PT. Semunai Sawit Perkasa beroperasi sebagai wujud tumbuh dan berkembangnya unit usaha pabrik pengolahan kelapa sawit yang menjadi intetitas perusahaan secara global.</p></div>
+                                    <?=$this->getContentDb('about-milestone-ssp')?>
                                 </div>
                             </li>
                             <!-- Item 6 -->
@@ -110,14 +78,7 @@
                             <p class="time-timeline-r">2014</p>
                             <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="" />
                                 <div class="direction-l" onclick="showhistory(this)">
-                                    <div class="flag-wrapper">
-                                            <span class="flag">PT. Libo Sawit Perkasa</span>
-                                            <span class="time-wrapper"></span>
-                                        </div>
-                                        <div class="desc">Tonggak Pertama dalam unit operasional dalam memulai bisnis industri pengolahan kelapa sawit pertama  Libo – Siak.</div>
-                                        <div class="detailhist-r d-none" style="margin-left:-3.5rem;"><img src="<?=BASE_URL?>public/assets/img/about/milestone/lsp.jpg" style="margin:5px; width:350px;" class="rounded">
-                                        <p style="text-align:justify;">Beroperasinya PKS PT.Libo Sawit Perkasa tahun 2014, sebagai unit PKS pertama unit pengolahan buah kelapa sawit, dengan semangat terus tumbuh dan berkembang menjadi perusahaan multi Industri.</p>
-                                        </div>
+                                    <?=$this->getContentDb('about-milestone-lsp')?>
                                 </div>
                             </li>
                             <!-- Item 7 -->
@@ -126,13 +87,7 @@
                                 <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="mx-3" />
                                 <div class="direction-r">
                                     <div class="direction-r" onclick="showhistory(this)">
-                                        <div class="flag-wrapper">
-                                            <span class="flag">CV. Tani Sejahtera Perkasa</span>
-                                            <span class="time-wrapper"></span>
-                                        </div>
-                                        <div class="desc">Perkebunan Kelapa Sawit kedua yang didirikan pada tahun 2012.</div>
-                                        <div class="detailhist d-none"><img src="<?=BASE_URL?>public/assets/img/about/milestone/tsp.jpg" style="margin:5px; width:350px" class="rounded">
-                                        <p style="text-align:justify;">Pertengahan tahun 2012, ekspansi dan berkembangunan unit operasional perkebunan baru akhirnya dapat  terealisasi,  dimana unit perkebunan  kelapa sawit kembali, yang berada di daerah Kampar – Riau.</p></div>
+                                        <?=$this->getContentDb('about-milestone-tsp')?>
                                     </div>
                                 </div>
                             </li>
@@ -141,14 +96,7 @@
                             <p class="time-timeline-r">2009</p>
                             <img src="<?=BASE_URL?>public/assets/img/WPG_logo_complete123.png" width="200" class="" />
                                 <div class="direction-l" onclick="showhistory(this)">
-                                    <div class="flag-wrapper">
-                                            <span class="flag">PT. Surya Palma Sejahtera</span>
-                                            <span class="time-wrapper"></span>
-                                        </div>
-                                        <div class="desc">Bisnis Perkebunan Kelapa Sawit Pertama yang menjadi industri agribisnis terpadu dan berkelanjutan.</div>
-                                        <div class="detailhist-r d-none" style="margin-left:-3.5rem;"><img src="<?=BASE_URL?>public/assets/img/about/milestone/sps.jpg" style="margin:5px; width:350px;" class="rounded">
-                                        <p style="text-align:justify;">Tahun 2009 merupakan awal dari Wilian Perkasa memulai bisnis di bidang Kelapa Sawit, khususnya di perkebunan. Dengan perkebunan kelapa sawit ini, nanti nya membawa berbagai perubahan yang membuat Wilian Perkasa menjadi korporasi yang lebih baik.</p>
-                                        </div>
+                                    <?=$this->getContentDb('about-milestone-sps')?>
                                 </div>
                             </li>
                         

@@ -17,6 +17,26 @@ class Career extends Controller {
         $this->viewwotemplate('career/form',$data);
     }
 
+    public function getDataEmployee()
+    {
+        $arr = array(
+            'status' => 'fail',
+            'code' => 400,
+        );
+        $request_body = file_get_contents('php://input');
+        $data = json_decode($request_body);
+        $employeeid = $data->employeeid;
+
+        $row = $this->model('CareerModel')->getDataEmployee($employeeid);
+        
+        $arr = array(
+            'status' => 'success',
+            'code' => 200,
+            'data' => $row
+        );
+        
+        echo json_encode($arr);
+    }
     public function getFormData()
     {
         $arr = array(
@@ -57,10 +77,20 @@ class Career extends Controller {
             $minimum=0;
             break;
 
+            case "9":
+            $table='new_employee';
+            $minimum=1;
+            break;
+
             default:
             $table = 'null';
         }
 
+        if(!isset($_SESSION['employeeid'])) 
+        {
+            echo json_encode($arr); 
+            return;
+        }
         $row = $this->model('CareerModel')->getRowsofTable($table,$_SESSION['employeeid']);
         if($row['total']>=$minimum) 
         {
@@ -72,8 +102,10 @@ class Career extends Controller {
         echo json_encode($arr);
     }
     public function viewfile($careerid,$opt) {
-        if(!isset($_SESSION['employeeid']) || $_SESSION['employeeid']=='')
-        header('location: '.BASE_URL.'career/apply/'.$careerid); exit();
+        if(!isset($_SESSION['employeeid']) || $_SESSION['employeeid']=='') {
+            header('location: '.BASE_URL.'career/apply/'.$careerid); 
+            exit();
+        }
 
         // $employeeid = 1;
         $employeeid = $_SESSION['employeeid'];
@@ -656,6 +688,22 @@ class Career extends Controller {
         // }
         $response = json_encode($arr);
         echo $response;
+    }
+
+    public function submitData()
+    {
+        $request_body = file_get_contents('php://input');
+        $data = json_decode($request_body);
+        $this->models = $this->model('CareerModel');
+        $data = (array) $data->dataForm;
+        $this->models->submitForm($data);
+        $message = [
+            'status' => 'success',
+            'code' => 200,
+        ];
+
+        unset($_SESSION['employeeid']);
+        echo json_encode($message);
     }
     public function page() {
 

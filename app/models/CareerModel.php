@@ -28,7 +28,7 @@ class CareerModel {
   public function getDataEmployee($employeeid)
   {
     $this->table = 'new_employee';
-    $this->db->query('select careerid,lower(replace(fullname," ","-")) as fullname from '.$this->table.' where employeeid = :employeeid');
+    $this->db->query('select careerid,lower(replace(fullname," ","-")) as fullname, fullname as realname, sex,birthcity,birthdate,status,nationally,npwp,isfresh,email,religion,address_ktp,address_real,mobilephone,question1,question2,question3,question4,question5,ijazah,cv from '.$this->table.' where employeeid = :employeeid');
     $this->db->bind('employeeid',$employeeid);
     return $this->db->fetch();
   }
@@ -395,5 +395,14 @@ class CareerModel {
     $this->db->query("select ifnull(count(1),0) as total from ".$table." where employeeid = :employeeid");
     $this->db->bind('employeeid',$employeeid);
     return $this->db->fetch();
+  }
+
+  public function submitForm($data)
+  {
+    $this->table = 'new_employee';
+    $this->db->query('update '.$this->table.' set photo=:photo where employeeid=:employeeid');
+    $this->db->bind('photo',$data['photo']);
+    $this->db->bind('employeeid',$data['employeeid']);
+    $this->db->execute();
   }
 }

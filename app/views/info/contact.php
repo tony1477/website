@@ -106,7 +106,7 @@
                             <div class="single-input-item mb-3 my-5 row">
                                 <label class="col-sm-2 col-form-label"></label>
                                 <div class="col-sm-10">
-                                <!-- <div class="g-recaptcha mb-5" data-sitekey="6Le-DpMlAAAAALaTmCl5NhpAdMKZPFkwVV1DmRjV"></div> -->
+                                <div class="g-recaptcha mb-5" data-sitekey="6Le-DpMlAAAAALaTmCl5NhpAdMKZPFkwVV1DmRjV"></div>
                                 <div id="flash-alert" class="alert alert-success alert-dismissible d-none fade show cf_alert" role="alert">
                                     <strong>Terimakasih!</strong> Pesan Anda sudah kami terima.
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

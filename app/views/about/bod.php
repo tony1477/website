@@ -27,7 +27,7 @@
             <div class="detail">
                 <!-- <h3 ><?php //$row['profileposition']?></h3>
                 <h5 class="mb-lg-4 mb-3 name "><?php //$row['profilename']?></h5> -->
-                <?=$row['profiledesc']?>
+                <?=($_SESSION['lang']=='en' ? $row['profiledesc_en'] : $row['profiledesc_id'])?>
             </div>
             <div class="pict">
                 <div class="card" style="margin-right:1.5rem; margin-top:1.4rem">

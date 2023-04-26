@@ -175,7 +175,7 @@ class LangModel {
                                 '../career' => 'Career'
                             ],
                         ],
-        'info/contact' => ['text' => 'Contact','type'=>'header'],
+        'contact' => ['text' => 'Contact','type'=>'header'],
     ];
 
     public function getMenu() {

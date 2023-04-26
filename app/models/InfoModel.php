@@ -10,15 +10,15 @@
 
         public function saveContactUs($data)
         {
-            $query = 'insert into contact(perihal,nama,perusahaan,alamat,notelp,email,pesan) values (:perihal,:nama,:perusahaan,:alamat,:notelp,:email,:pesan)';
+            $query = 'insert into contact(about,name,company,address,phone,email,message) values (:about,:name,:company,:address,:phone,:email,:message)';
             $this->db->query($query);
-            $this->db->bind('perihal',$data['perihal']);
-            $this->db->bind('nama',$data['nama']);
-            $this->db->bind('perusahaan',$data['perusahaan']);
-            $this->db->bind('alamat',$data['alamat']);
-            $this->db->bind('notelp',$data['phone']);
+            $this->db->bind('about',$data['perihal']);
+            $this->db->bind('name',$data['nama']);
+            $this->db->bind('company',$data['perusahaan']);
+            $this->db->bind('address',$data['alamat']);
+            $this->db->bind('phone',$data['phone']);
             $this->db->bind('email',$data['email']);
-            $this->db->bind('pesan',$data['pesan']);
+            $this->db->bind('message',$data['pesan']);
             return $this->db->execute();
         }
     }

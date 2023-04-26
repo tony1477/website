@@ -44,7 +44,7 @@
                                     <i class="fa fa-address-book px-1"></i> Kontak dan Alamat
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu3" id="tab3" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu3" id="tab3" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <i class="fa fa-id-card px-1"></i> Kartu Identitas 
                                 </div>
@@ -54,7 +54,7 @@
                                     <i class="fa fa-user-graduate px-1"></i> Riwayat Pendidikan
                                 </div>
                             </a>
-                            <a data-toggle="tab" href="#menu5" id="tab5" class="tabs list-group-item bg-light">
+                            <a data-toggle="tab" href="#menu5" id="tab5" class="tabs list-group-item bg-light disabled">
                                 <div class="list-div my-2">
                                     <i class="fa fa-briefcase px-1"></i> Riwayat Pekerjaan
                                 </div>
@@ -429,7 +429,7 @@
                                             <div class="col-md-1"></div>
                                             <div class="form-group col-md-3">
                                                 <label for="inputLastWage1">Penghasilan Terakhir </label>
-                                                <input type="number" class="form-control number-separator" id="inputLastWage1"  data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" placeholder="Penghasilan Terakhir" />
+                                                <input type="number" class="form-control " id="inputLastWage1"  data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" placeholder="Penghasilan Terakhir" />
                                             </div>
                                         </div>
                                         <div id="dstJob"></div>
@@ -487,7 +487,7 @@
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="inputFamilyName1">Nama </label>
-                                                <input type="text" class="form-control" id="inputFamilyName1" placeholder="Jabatan">
+                                                <input type="text" class="form-control" id="inputFamilyName1" placeholder="Nama">
                                             </div>
                                             <div class="col-3"></div>
                                             <div class="col-md-1"></div>
@@ -750,8 +750,8 @@
                                     <div class="col-12">
                                         <div class="form-row" id="attachment">
                                             <div class="form-group col-12">
-                                                <label for="attachcv"><span class="font-weight-bold">Upload CV </span></label>
-                                                <input type="file" id="attachcv" class="form-control-file" accept="image/*,.pdf" />
+                                                <label for="attachcv"><span class="font-weight-bold">Upload CV <sup class="text-danger">*Only PDF File</sup> </span></label>
+                                                <input type="file" id="attachcv" class="form-control-file" accept=".pdf" />
                                                 <button class="btn btn-outline-primary mt-4 text-center up-cv" value="Upload">Upload Dokumen CV</button>
                                                 <button class="btn btn-primary mt-4 sr-cv d-none" type="button" disabled="">
                                                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -759,8 +759,8 @@
                                                 </button>
                                                 <div class="cv-file py-3 d-none"><a href="#" alt="link cv" class="file" target="_blank"> </a></div>
                                                 <div class="separator"></div>
-                                                <label for="attachijazah"><span class="font-weight-bold">Upload Ijazah </span></label>
-                                                <input type="file" id="attachijazah" class="form-control-file" accept="image/*,.pdf" />
+                                                <label for="attachijazah"><span class="font-weight-bold">Upload Ijazah <sup class="text-danger">*Only PDF File</sup></span></label>
+                                                <input type="file" id="attachijazah" class="form-control-file" accept=".pdf" />
                                                 <button class="btn btn-outline-primary mt-4 text-center up-ijazah" value="Upload">Upload Dokumen Ijazah</button>
                                                 <button class="btn btn-primary mt-4 sr-ijazah d-none" type="button" disabled="">
                                                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -777,11 +777,26 @@
                                 </div>
                                 
                                 <div class="submit my-5 d-flex justify-content-center gap-3">
-                                    <button type="submit" class="btn btn-success mr-5">Kirim</button>
+                                    <button type="submit" class="btn btn-success mr-5 submitform">Kirim</button>
                                     <button type="button" class="btn btn-danger">Reset Form</button>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Proses Simpan Data</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -799,6 +814,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="<?=BASE_URL?>public/assets/js/easy-number-separator-master/easy-number-separator.js"></script>
 <script src="<?=BASE_URL?>public/assets/js/career-button.js"></script>
+<script type="text/javascript">
+    $('document').ready(() => {
+        const sessionEmp = sessionStorage.getItem('employeeid');
+        if(sessionEmp!=null) return getdatafromdb(sessionEmp)
+        console.log('belum')
+    })
+</script>
 <script type="text/javascript">
     // console.log(tabpane)
     function next(number) 

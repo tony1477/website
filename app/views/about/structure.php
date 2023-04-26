@@ -25,7 +25,7 @@
             </div>
             <div class="col-md-6 col-lg-9 order-1">
                 <div class="about-content ms-0">
-                    <h2 class="text-center">Struktur Organisasi</h2>
+                    <h2 class="text-center"><?=$this->getContent('structure-org')?></h2>
                     <div class="row">
                         <!-- <a href="<?=BASE_URL?>public/assets/img/about/struktur-org.png"><img src="<?=BASE_URL?>public/assets/img/about/struktur-org.png" alt="Sturcture Organization" class="img-scale" /></a> -->
                         <!-- <div class="img-magnifier-container"> -->
