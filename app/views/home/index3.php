@@ -257,7 +257,7 @@
                 -->
                 <div class="video-player">
                     <video controls="" poster="<?=BASE_URL?>public/assets/img/video-sample.jpg" class="home-video">
-                        <source src="<?=BASE_URL?>public/assets/videos/5 MIN.mp4" type="video/mp4">
+                        <source src="<?=BASE_URL?>public/assets/videos/WP 5 MIN.mp4" type="video/mp4">
                         <source src="video.webm" type="video/webm">
                         <source src="video.ogv" type="video/ogg">
                         Your browser does not support HTML5 video.
