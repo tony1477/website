@@ -48,7 +48,7 @@
                                                     <span class="mx-4">PT. Surya Palma Sejahtera</span><br />
                                                     <div class="box-company color-plant"></div>
                                                     <span class="text-location-map">TSP</span>
-                                                    <span class="mx-4">PT. Surya Palma Sejahtera</span>
+                                                    <span class="mx-4">CV. Tani Sejahtera Perkasa</span>
                                                 </td>
                                             </tr>
                                             <tr>

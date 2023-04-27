@@ -45,7 +45,7 @@
         'privacy-policy' => 'Privacy Policy',
         // for about-sidebar
         'about-sidebar-profile' => 'Company Profile',
-        'about-sidebar-vision' => 'Vision - Mission, Core Values',
+        'about-sidebar-vision' => 'Vision Mission - Values',
         'about-sidebar-strategic' => 'Business Strategic',
         'about-sidebar-bod' => 'Management Structure',
         'about-sidebar-structure' => 'Structure Organization',

@@ -88,11 +88,11 @@ class LangModel {
         'about' => ['text' => 'Tentang','type'=>'detail',
                     'data' => [
                         'profile' => 'Profil Perusahaan',
-                        'vision' => 'Visi Misi',
+                        'vision' => 'Visi-Misi, Nilai Luhur',
                         'strategic' => 'Strategi Bisnis',
-                        'bod' => 'Management',
+                        'bod' => 'Struktur Manajemen',
                         'structureorg' => 'Struktur Organisasi',
-                        'milestone' => 'Sejarah Penting']
+                        'milestone' => 'Peristiwa Penting']
                     ],
         'business' => ['text' => 'Bisnis Kami','type'=>'detail',
                        'data' => [
@@ -138,9 +138,9 @@ class LangModel {
         'about' => ['text' => 'About','type'=>'detail',
                     'data' => [
                         'profile' => 'Company Profile',
-                        'vision' => 'Vision Mission',
-                        'strategic' => 'Strategic',
-                        'bod' => 'Management',
+                        'vision' => 'Vision Mission - Values',
+                        'strategic' => 'Business Strategic',
+                        'bod' => 'Management Structure',
                         'structureorg' => 'Structure Organization',
                         'milestone' => 'Milestone'
                         ]
