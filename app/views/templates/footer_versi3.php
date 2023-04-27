@@ -37,9 +37,9 @@
                         <div class="widget-body">
                             <ul class="widget-list">
                                 <li><a href="<?=BASE_URL?>about/profile"><?=$this->getContent('footer-info-about')?></a></li>
-                                <li><a href="<?=BASE_URL?>info/contact"><?=$this->getContent('footer-info-contact')?></a></li>
+                                <li><a href="<?=BASE_URL?>contact"><?=$this->getContent('footer-info-contact')?></a></li>
                                 <li><a href="<?=BASE_URL?>about/bod"><?=$this->getContent('footer-info-management')?></a></li>
-                                <li><a href="<?=BASE_URL?>info/career"><?=$this->getContent('footer-info-career')?></a></li>
+                                <li><a href="<?=BASE_URL?>career"><?=$this->getContent('footer-info-career')?></a></li>
                             </ul>
                         </div>
                     </div>
