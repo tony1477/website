@@ -22,7 +22,7 @@
         <div class="contact-content-wrap">
             <div class="row">
                 <div class="col-lg-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.649463039454!2d101.47618733346462!3d0.5271358181762673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ad31cdf3cea7%3A0xfae8b0a4ba97ac91!2sGedung%20Wilian%20Perkasa!5e0!3m2!1sid!2sid!4v1677115227893!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.412388725954!2d101.47947859383025!3d0.526992407367028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ad5fce178bb7%3A0xed000acbc09d7711!2sWilian%20Perkasa%20Office!5e0!3m2!1sen!2sid!4v1682583465229!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <div class="col-lg-4">
@@ -35,7 +35,7 @@
                                     <i class="mdi mdi-map-marker-radius" style="margin-left: -.7rem;"></i>
                                     <?=$this->getContent('contact-sidebar-address')?>
                                     <br>
-                                    <i class="mdi mdi-web" style="margin-left: -.7rem;"></i> wilianperkasa.com
+                                    <i class="mdi mdi-web" style="margin-left: -.7rem;"></i> www.wilianperkasa.com
                                     <br>
                                     <i class="mdi mdi-email" style="margin-left: -.7rem;"></i> info@wilianperkasa.com
                                     <br>

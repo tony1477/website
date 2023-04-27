@@ -151,7 +151,7 @@
         'contact-topbar-title' => 'HUBUNGI KAMI',
         // for contact-sidebar
         'contact-sidebar-title' => 'Informasi Kontak',
-        'contact-sidebar-address' => 'Sail 01 Street 28261, Rejosari<br />
+        'contact-sidebar-address' => 'Jalan Sail 01 28112, Rejosari<br />
         &nbsp; Kec. Tenayan Raya, Kota Pekanbaru<br />
         &nbsp; Riau - Indonesia',
         // for contact-form
