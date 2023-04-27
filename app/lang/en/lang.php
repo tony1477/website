@@ -150,8 +150,8 @@
         'contact-topbar-title' => 'CONTACT US',
         // for contact-sidebar
         'contact-sidebar-title' => 'Contact Info',
-        'contact-sidebar-address' => 'Sail 01 Street 28112, Rejosari<br />
-        Kec. Tenayan Raya, Kota Pekanbaru<br />
+        'contact-sidebar-address' => 'Sail 01 Street, Rejosari
+        Tenayan <br/>Raya Regency, Pekanbaru<br/>City, 28112 
         Riau - Indonesia',
         // for contact-form
         'contact-form-title' => "Feel free to reach out to us",
