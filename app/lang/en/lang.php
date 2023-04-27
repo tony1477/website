@@ -103,7 +103,7 @@
         'about-bod-content' => "All members of the Board, apart from the affiliated Main Commissioner, are professionals with their respective specialist fields. The Board of Commissioners always monitors the implementation of GCG on an ongoing basis, provides input and encourages the Board of Directors to be able to achieve operational performance including optimal efforts to increase the company's competitiveness by achieving higher productivity.",
         // for business-topbar
         'business-plant-topbar' => 'Plantation',
-        'business-mill-topbar' => 'Oil Palm',
+        'business-mill-topbar' => 'Palm Oil Mill',
         'business-trading-topbar' => 'Trading',
         // for sustain-topbar
         'sustain-policy-topbar' => 'Policy',
