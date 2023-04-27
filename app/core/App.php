@@ -35,7 +35,9 @@ class App {
             $this->params = array_values($url);
         }
 
-        if($this->method != 'idn' || $this->method != 'eng') $_SESSION['last_page'] = $_SESSION['last_page'].'/'.$this->method;
+        if($this->method != 'idn' || $this->method != 'eng') 
+            if($this->params!=null) $_SESSION['last_page'] = $_SESSION['last_page'].'/'.$this->method.'/'.$this->params[0];
+            else $_SESSION['last_page'] = $_SESSION['last_page'].'/'.$this->method;
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
 
