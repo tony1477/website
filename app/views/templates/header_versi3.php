@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>Wilian Perkasa <?=($data['title'] != '' ? '| '.$data['title'] : '')?></title>
-
+    <meta name="description" content="<?=(isset($data['meta-description']) && $data['meta-description']!='' ? $data['meta-description'] : 'Wilian Perkasa merupakan perusahaan induk yang terlibat, baik secara langsung maupun melalui anak perusahaannya, dalam produksi dan penjualan minyak sawit mentah, inti sawit, produk Agronomi, Trading Cangkang, serta produk bahan makanan dan minuman.')?>" />
+    <meta name="keywords" content="<?=(isset($data['meta-keywords']) && $data['meta-keywords']!='' ? $data['meta-keywords'] : 'Website Wilian Perkasa, Wilian Perkasa')?>" />
     <!--== Favicon ==-->
     <link rel="shortcut icon" href="<?=BASE_URL?>public/assets/img/favicon.png" type="image/x-icon"/>
 
