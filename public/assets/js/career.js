@@ -1300,7 +1300,7 @@ page05.addEventListener('click',() => verifyPage(5));
 page06.addEventListener('click',() => verifyPage(6));
 page07.addEventListener('click',() => verifyPage(7));
 page08.addEventListener('click',() => verifyPage(8));
-page09.addEventListener('click',() => verifyPage(9));
+// page09.addEventListener('click',() => verifyPage(9));
 page10.addEventListener('click',() => submitform());
 // page09.addEventListener('click',() => verifyPage(5));
 
