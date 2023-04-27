@@ -177,8 +177,10 @@ class Career extends Controller {
         $data = json_decode($request_body);
         $this->models = $this->model('CareerModel');
         $data = (array) $data->dataForm;
-        if($data['employeeid']==0)
+        if($data['employeeid']==0) {
             $employeeid = $this->models->saveProfile($data);
+            $_SESSION['employeeid'] = $employeeid;
+        }
         else
             $this->models->updateProfile($data);
         
@@ -187,7 +189,6 @@ class Career extends Controller {
             'code' => 200,
             'id' => ($data['employeeid']==0 ? $employeeid : $data['employeeid'])
         ];
-        $_SESSION['employeeid'] = $data['employeeid'];
         echo json_encode($message);
     }
 
