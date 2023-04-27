@@ -28,8 +28,9 @@
                     <div class="bg-light border-right" id="sidebar-wrapper">
                         <div class="sidebar-heading pt-5 pb-4 d-flex flex-column align-items-center">
                             <img src="<?=BASE_URL?>public/assets/img/unknown-user.png" alt="..." class="img-thumbnail" style="width: 125px" id="fotouser">
+                            <span class="font-weight-bold text-danger" style="font-size: .5rem;">* Only jpg,jpeg, and png files</span>
                             <div class="upload-foto">
-                                <input type="file" name="photo" id="photopersonal" class="form-control mt-3 border-0 p-0" />
+                                <input type="file" name="photo" id="photopersonal" class="form-control mt-3 border-0 p-0" accept=".jpg, .jpeg, .png"/>
                                 <button type="button" class="editphotobtn btn btn-sm btn-outline-secondary mt-3 d-none"><i class="fa fa-pencil-alt"></i>  Ubah Foto</button>
                             </div>
                         </div>
