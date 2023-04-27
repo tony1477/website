@@ -79,20 +79,7 @@
                         <div class="widget-body">
                             <div class="newsletter-section">
                                 Never miss a thing, sign up to the <span class="fw-bold">mailing list</span>
-                                <div class="newsletter-form">
-                                    <form name="subscribeForm" id="subscribeForm" novalidate="" class="">
-                                        <ul>
-                                            <li class="form-icon">
-                                                <i class="icofont-paper-plane"></i>
-                                            </li>
-                                            <li class="form-input">
-                                                <input ng-model="tb_sub_email" ng-required="true" type="email" placeholder="Enter your email" class="" required="required">
-                                            </li>
-                                            <!-- <li class="form-button">
-                                                <button type="button" class="" value="">Ikuti</button>
-                                            </li> -->
-                                        </ul>
-                                    </form>
+                                <div class="newsletter-form mt-3">
                                 </div>
                             </div>
                             <!-- <i class="fa fa-facebook fs-4" style="padding:5px;"></i> -->

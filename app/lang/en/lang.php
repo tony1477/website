@@ -40,6 +40,8 @@
         'click-to-detail' => 'Click title to see details',
         // for privacy
         'home-topbar-privacy' => 'Privacy & Policy',
+        'home-sustain-title' => 'The principle of sustainability in managing business needs',
+        'home-sustain-content' => 'A good business transformation in our view is a business that is carried out in a sustainable manner according to the three main pillars.',
         'privacy-policy' => 'Privacy Policy',
         // for about-sidebar
         'about-sidebar-profile' => 'Company Profile',

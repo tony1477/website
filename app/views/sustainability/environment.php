@@ -1,4 +1,4 @@
-<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/sustainability/environment.jpg" >
+<div class="page-header-area bg-img-news" data-bg="<?=BASE_URL?>public/assets/img/sustainability/environment.jpg" style="background-position:top -300px center">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8 m-auto text-center">
