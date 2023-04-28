@@ -62,14 +62,21 @@ class Info extends Controller {
         $request_body = file_get_contents('php://input');
         $data = json_decode($request_body);
         $response_key = $data->captcha;
-        $response = file_get_contents($url_verify."?secret=".$private_key."&response=".$response_key);
+        // $response = file_get_contents($url_verify."?secret=".$private_key."&response=".$response_key);
+        $url = $url_verify."?secret=".$private_key."&response=".$response_key;
+        $ch = curl_init();
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch,CURLOPT_URL,$url);
+        $response = curl_exec($ch);
+        curl_close($ch);
+        
         $response = json_decode($response);
         $message = [
             'status' => 'fail',
             'code' => 200,
             'message' => 'Data tidak tersimpan'
         ];
-        if($response -> success == 1){
+        if($response -> success == true){
             $data = (array) $data;
             $model->saveContactUs($data);
             $message = [
