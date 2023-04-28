@@ -407,7 +407,7 @@
                         <h3 class="fw-400 text-center">Gallery</h3>
                     </div>
                     <div class="col-md-12 text-end about-content">
-                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>info/gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
+                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
                     </div>
                 </div>
             </div>
