@@ -328,7 +328,7 @@
             <div class="col-md-6 col-lg-6">
                 <figure class="about-thumb">
                     <img src="<?=BASE_URL?>public/assets/img/sustainability/policy.jpg" alt="Sustainability Image" class="rounded img-thumb"/>
-                    <figcaption class="detail-thumb"><p>Berkomitmen untuk menghasilkan produk terbaik.</p></figcaption>
+                    <figcaption class="detail-thumb"><?=$this->getContent('home-sustain-caption')?></figcaption>
                 </figure>
             </div>          
         </div>

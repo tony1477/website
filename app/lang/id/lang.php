@@ -42,6 +42,7 @@
         'home-topbar-privacy' => 'Kebijakan Privasi',
         'home-sustain-title' => 'Prinsip Keberlanjutan Dalam Menjalankan Bisnis Usaha',
         'home-sustain-content' => 'Transformasi bisnis yang baik dalam pandangan kami, adalah bisnis yang dilakukan secara berkelanjutan sesuai dengan tiga pilar utama.',
+        'home-sustain-caption' => '<p>Berkomitmen untuk menghasilkan produk terbaik.</p>',
         'privacy-policy' => 'Kebijakan Privasi',
         // for about-sidebar
         'about-sidebar-profile' => 'Profil Perusahaan',

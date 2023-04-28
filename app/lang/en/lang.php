@@ -42,6 +42,7 @@
         'home-topbar-privacy' => 'Privacy & Policy',
         'home-sustain-title' => 'The principle of sustainability in managing business needs',
         'home-sustain-content' => 'A good business transformation in our view is a business that is carried out in a sustainable manner according to the three main pillars.',
+        'home-sustain-caption' => '<p>Committed to produce the best products.</p>',
         'privacy-policy' => 'Privacy Policy',
         // for about-sidebar
         'about-sidebar-profile' => 'Company Profile',
