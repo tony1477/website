@@ -2,7 +2,7 @@
                     <!-- Start Single Sidebar Wrap -->
                     <div class="single-sidebar-item-wrap">
                         <h3 class="sidebar-title">Quick Links</h3>
-                        <div class="sidebar-body">
+                        <div class="sidebar-body" style="width:300px">
                             <ul class="sidebar-list">
                                 <li><a href="<?=BASE_URL?>sustainability/policy" class="<?=((isset($data['active']) && $data['active']=='policy') ? 'active' : '')?>"><?=$this->getContent('sustain-sidebar-policy')?></a></li>
                                 <li><a href="<?=BASE_URL?>sustainability/certification" class="<?=((isset($data['active']) && $data['active']=='certification') ? 'active' : '')?>"><?=$this->getContent('sustain-sidebar-certification')?></a></li>

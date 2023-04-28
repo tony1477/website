@@ -109,12 +109,12 @@
         'sustain-policy-topbar' => 'Policy',
         'sustain-certification-topbar' => 'Certification',
         'sustain-environment-topbar' => 'Environment',
-        'sustain-gcg-topbar' => 'Good Corp. Governance',
+        'sustain-gcg-topbar' => 'Good Corporate Governance',
         // for sustain-sidebar
         'sustain-sidebar-policy' => 'Policy',
         'sustain-sidebar-certification' => 'Certification',
         'sustain-sidebar-environment' => 'Environment',
-        'sustain-sidebar-gcg' => 'Good Corp. Governance',
+        'sustain-sidebar-gcg' => 'Good Corporate Governance',
         // for investor-topbar
         'investor-topbar-title' => 'Highlights Production',
         // for news-topbar
@@ -189,6 +189,6 @@
         'footer-sustain-policy' => 'Policy',
         'footer-sustain-certification' => 'Certification',
         'footer-sustain-environment' => 'Environment',
-        'footer-sustain-gcg' => 'Good Corp. Governance',
+        'footer-sustain-gcg' => 'Good Corporate Governance',
         'footer-social-title' => 'Follow Us',
     ];

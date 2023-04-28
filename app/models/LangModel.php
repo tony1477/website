@@ -163,7 +163,7 @@ class LangModel {
                                 'certification' => 'Certification',
                                 'environment' => 'Environment',
                                 // 'community' => 'Pengembangan Komunitas',
-                                'gcg' => 'Good Corp. Governance',
+                                'gcg' => 'Good Corporate Governance',
                                 // 'osh' => 'Keselamatan & Kesehatan Kerja'
                             ],
                         ],

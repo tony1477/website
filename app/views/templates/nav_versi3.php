@@ -26,7 +26,7 @@
                             <a href="#"><?=$link['text']?></a>
                             <ul class="submenu-nav">
                                 <?php foreach($link['data'] as $subUrl => $subLink):?> 
-                                <li><a href="<?=BASE_URL.$url.'/'.$subUrl?>"><?=$subLink?></a></li>
+                                <li <?=($subUrl=='gcg' ? 'style="width:260px"' : '')?>><a href="<?=BASE_URL.$url.'/'.$subUrl?>"><?=$subLink?></a></li>
                                 <?php endforeach;?>
                             </ul>
                         </li>
