@@ -41,6 +41,7 @@
     <link href="<?=BASE_URL?>public/assets/css/bootstrap.min.css" rel="stylesheet"/>
     <!--== Main Style CSS ==-->
     <link href="<?=BASE_URL?>public/assets/css/style_versi3.css" rel="stylesheet"/>
+    <link href="<?=BASE_URL?>public/assets/css/responsive.css" rel="stylesheet"/>
     <!-- TimeLine CSS -->
     <link href="<?=BASE_URL?>public/assets/css/timeline.style.css" rel="stylesheet"/>
 

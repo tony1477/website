@@ -236,7 +236,7 @@
     </div>
 </div>
 <!--== End Slider Area Wrapper ==-->
-<div class="arrow-button">
+<div class="arrow-button d-none d-lg-flex">
     <a href="#">
     <span class="visually-hidden">Scroll down you dafty</span>
     <svg class="circle" xmlns="http://www.w3.org/2000/svg">
@@ -337,7 +337,7 @@
 <!--== End Feature Area Wrapper ==-->
 
 <!--== Start Service Area Wrapper ==-->
-<section class="animate-box busines_home" style="padding: 3.5rem 5rem .5rem;" data-animate-effect="fadeInUp">
+<section class="animate-box busines_home" data-animate-effect="fadeInUp">
 	<div class="list_business clearfix">
         <div class="box big">
             <div class="img">

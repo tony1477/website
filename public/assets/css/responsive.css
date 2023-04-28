@@ -1,0 +1,34 @@
+@media screen and (min-width:360px) and (max-width: 640px) {
+    .busines_home {
+        padding: 0px .75rem;
+    }
+
+    .busines_home .list_business .box.big {
+        width:100%;
+        height: 100%;
+    }
+
+    .busines_home .list_business .box .text {
+        padding:0px .75rem;
+    }
+
+    .busines_home .list_business .box .img {
+        height: 100%;
+    }
+
+    .busines_home .list_business .box .img-business {
+        height: 550px;
+    }
+
+    .busines_home .list_business .left {
+        width:100%;
+    }
+
+    .busines_home .list_business .box .hov h2 {
+        font-size: .85rem;
+    }
+
+    .busines_home .list_business .left .box {
+        width: 50%;
+    }
+}
