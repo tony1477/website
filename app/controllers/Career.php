@@ -5,6 +5,8 @@ class Career extends Controller {
     public function index() {
         $data['data'] = $this->model('CareerModel')->getData(null);
         $data['title'] = $this->getContent('career');
+        $data['meta-description'] = 'Kembangkan karir Anda di Wilian Perkasa. Bergabunglah dengan tim kami dan jadilah bagian dari perusahaan yang inovatif dan berkembang pesat.';
+        $data['meta-keywords'] = 'karir, lowongan pekerjaan, tim, inovatif, berkembang pesat, industri kelapa sawit.';
         $this->view_versi3('career/index',$data);
     }
 

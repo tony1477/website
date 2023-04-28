@@ -5,6 +5,8 @@ class Investor extends Controller {
         // $this->comp_release();
         $data['active'] = 'index';
         $data['title'] = $this->getContent('investor-relation');
+        $data['meta-description'] = 'Cari tahu bagaimana Wilian Perkasa bisa membantu Anda mencapai tujuan keuangan Anda dengan investasi yang tepat. Bergabunglah dengan investor kami yang sukses dan nikmati pengembalian investasi yang mengesankan';
+        $data['meta-keywords'] = 'Investasi yang menguntungkan, Investasi kelapa sawit, Harga minyak sawit mentah (CPO), Industri kelapa sawit yang berkembang, Penelitian dan pengembangan kelapa sawit';
         $this->view_versi3('investor/index',$data);
     }
 
