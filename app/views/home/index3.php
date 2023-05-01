@@ -341,7 +341,7 @@
 	<div class="list_business clearfix">
         <div class="box big">
             <div class="img">
-                <img src="<?=BASE_URL?>public/assets/img/business/business-1.jpg">
+                <img src="<?=BASE_URL?>public/assets/img/business/business-1.jpg" class="img-business">
             </div>
             <div class="text">
                 <?=$this->getContentDb('home-business-content')?>
@@ -406,8 +406,8 @@
                     <div class="col-md-12 pl-4">
                         <h3 class="fw-400 text-center">Gallery</h3>
                     </div>
-                    <div class="col-md-12 text-end about-content">
-                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>info/gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
+                    <div class="col-md-12 text-end about-content d-lg-block d-xl-block d-none">
+                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
                     </div>
                 </div>
             </div>
@@ -443,6 +443,9 @@
                     </div>
 
                 </div>
+            </div>
+            <div class="d-lg-none d-xl-none col-md-12 text-end about-content">
+                <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
             </div>
         </div>
     </div>

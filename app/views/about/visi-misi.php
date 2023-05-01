@@ -16,16 +16,16 @@
 <div class="testimonial-area testimonial-area--2 bg-offwhite bg-overlay">
     <div class="container">
         <div class="row sp-top">
-            <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
+            <div class="col-md-6 col-lg-3 order-lg-0 order-xl-0 order-3 col-12">
                 <?php require_once('sidebar.php')?>
             </div>
-            <div class="col-md-6 col-lg-9">
+            <div class="col-md-6 col-lg-9 col-xl-9 order-0 order-lg-1 order-xl-1 col-12">
                 <div class="animate-box card mb-3" style="border: 1px solid rgb(177 163 163 / 75%);" data-animate-effect="fadeIn">
                     <div class="row g-0">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-lg-4 col-xl-4 col-12">
                             <img src="<?=BASE_URL?>public/assets/img/Bendera.jpg" class="img-fluid rounded" alt="...">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-lg-8 col-xl-8 col-12">
                             <div class="card-body">
                                 <h3 class="text-center pb-5 text-visi-misi"><?=$this->getContent('about-vision-title')?></h3>
                                 <p class="text-visi"><?=$this->getContent('about-vision-content')?></p>
@@ -35,10 +35,10 @@
                 </div>
                 <div class="animate-box card mb-3" style="margin-top: 5rem;" data-animate-effect="fadeInUp">
                     <div class="row g-0 align-items-center">
-                        <div class="col-md-4">
-                            <img src="<?=BASE_URL?>public/assets/img/about/wp-mill.jpg" class="rounded-start" alt="..." style="height: 412px;display: inline-block;">
+                        <div class="col-md-4 col-lg-4 col-xl-4 col-12">
+                            <img src="<?=BASE_URL?>public/assets/img/about/wp-mill.jpg" class="rounded-start img-vision" alt="...">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-lg-8 col-xl-8 col-12">
                             <div class="card-body">
                                 <h3 class="text-center pb-5 text-visi-misi"><?=$this->getContent('about-mission-title')?></h3>
                                 <ul class="text-misi" style="margin-left: 1.5rem;">
@@ -122,8 +122,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-3"></div>
-            <div class="col-md-9 col-lg-9">
+            <div class="col-md-3 col-lg-3 col-xl-3 col-3 order-lg-2 order-xl-2 order-1"></div>
+            <div class="col-md-9 col-lg-9 col-xl-9 col-12 order-lg-3 order-xl-3 order-2">
                 <div class="animate-box row values justify-content-lg-center" data-animate-effect="fadeIn">
                     <h3 class="text-center"><?=$this->getContent('about-values-title')?></h3>
                     <div class="icon-values">

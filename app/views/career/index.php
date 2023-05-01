@@ -18,13 +18,13 @@
     <div class="col-12 justify-content-center">
         <h3 class="text-center m-sm-5"><?=$this->getContent('career-content-title')?> : </h3>
     </div>
-    <div class="col-5"></div>
-    <div class="col-2 d-flex justify-content-center" style="margin-top:-15px">
+    <div class="col-lg-5 col-xl-5 col-2"></div>
+    <div class="col-lg-2 col-xl-2 col-8 d-flex justify-content-center list-position">
         <select name="list_career" id="list_career" class="form-select d-flex justify-content-center mx-auto">
             <?=$this->getContent('career-content-select')?>
         </select>
     </div>
-    <div class="col-5"></div>
+    <div class="col-lg-5 col-xl-5 col-2"></div>
     <div class="col-12 d-flex justify-content-center">
         <div class="listjob" style="position:relative;">
             <?=$this->getContent('career-content-position')?>

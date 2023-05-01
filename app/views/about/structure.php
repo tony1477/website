@@ -20,10 +20,10 @@
 <div class="team-page-area-wrapper bg-offwhite sp-y bg-overlay">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-3 order-lg-0 order-md-0 order-md-0">
+            <div class="col-md-6 col-lg-3 order-lg-0 order-xl-0 order-1">
                 <?php require_once('sidebar.php')?>
             </div>
-            <div class="col-md-6 col-lg-9 order-1">
+            <div class="col-md-6 col-lg-9 order-lg-1 order-xl-1 order-0">
                 <div class="about-content ms-0">
                     <h2 class="text-center"><?=$this->getContent('structure-org')?></h2>
                     <div class="row">

@@ -1,4 +1,48 @@
+.about-video {
+    padding-right: 5rem !important;
+}
+
+.img-vision {
+    height: 412px;
+    display: inline-block;
+}
+
+.photo-director {
+    margin-right: 1.5rem;
+    margin-top: 1.4rem;
+}
+
+.nav-businesspage {
+    padding-right: 3.5rem;
+}
+
+.subsidiaries-company {
+    display: inline-block;
+}
+
+.td-subsidiaries {
+    vertical-align: bottom;
+}
+
+.subsidiaries-company.ssp2 {
+    margin-left: 10px !important;
+}
+
+.feature-area-wrapper {
+    margin-top: 100px;
+}
+
+.list-position {
+    margin-top: -15px;
+}
+
+
+
 @media screen and (min-width:360px) and (max-width: 640px) {
+    /* home*/
+    .feature-area-wrapper {
+        margin-top: .5rem;
+    }
     .busines_home {
         padding: 0px .75rem;
     }
@@ -30,5 +74,76 @@
 
     .busines_home .list_business .left .box {
         width: 50%;
+    }
+
+    /* about*/
+    /*profile*/
+    .about-video {
+        padding-right: .85rem !important;
+    }
+
+    .title-profile {
+        margin:0px;
+    }
+    .img_profile {
+        padding:0px;
+    }
+
+    /* vision*/
+    .img-vision {
+        height: 100%;
+    }
+
+    /* values */
+    .icon-values {
+        flex-wrap:wrap;
+        gap: 2.5rem .5rem;
+        /* border:1px solid #000; */
+        justify-content: space-around;
+    }
+    /* bod */
+    .about-content h2 {
+        margin-top:.75rem;
+        text-align: center;
+    }
+    .profile.line-board {
+        width: 100%;
+    }
+
+    .inner-container {
+        margin-top: 40px !important;
+    }
+    .modal-director .detail, .modal-director .pict {
+        width: auto;
+    }
+    .photo-director {
+        margin: .5rem 1.3rem;
+        padding-bottom: 7rem;
+    }
+
+    /* business */
+    /* plantation */
+    .business-page-title h4.title {
+        text-align: center;
+        width: 100%;
+        font-size: 1.15rem;
+    }
+    /* mill */
+    .nav-businesspage {
+        padding: 0px .975rem;
+    }
+    /*location-map*/
+    .subsidiaries-company {
+        display: block;
+    }
+    .td-subsidiaries {
+        vertical-align: middle;
+    }
+    .subsidiaries-company.ssp2 {
+        margin-left: 0px;
+    }
+    /*career*/
+    .list-position {
+        margin-top: 0px;
     }
 }

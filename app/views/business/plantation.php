@@ -32,7 +32,7 @@
 
 <!--== Start Fun Fact Area Wrapper ==-->
 <div class="our-business">
-    <div class="container" style="padding-right:3.5rem">
+    <div class="container nav-busineepage">
         <div class="row mtn-40">
             <div class="col-6 col-md-6"></div>
             <div class="col-6 col-md-6 text-end">
