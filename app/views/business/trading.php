@@ -28,14 +28,14 @@
 
 <!--== Start Fun Fact Area Wrapper ==-->
 <div class="our-business">
-    <div class="container" style="padding-right:3.5rem">
+    <div class="container nav-businesspage">
         <div class="row mtn-40 justify-content-between">
-            <div class="col-lg-4 col-md-6 text-start">
+            <div class="col-lg-4 col-xl-4 col-7 text-start">
             <div class="counter-item">
                     <h6 class="counter-txt prev"><a href="<?=BASE_URL?>business/fnb" class="text-white"><i class="mdi mdi-arrow-left-bold-circle"></i> <?=$this->getContent('prev')?> <br /><?=$this->getContent('fnb')?></a></h6>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-end">
+            <div class="col-lg-3 col-xl-3 col-5 text-end">
                 <div class="counter-item">
                     <h6 class="counter-txt next"><a href="<?=BASE_URL?>business/location-map" class="text-white"><?=$this->getContent('next')?> <i class="mdi mdi-arrow-right-bold-circle"></i><br /><?=$this->getContent('location-map')?></a></h6>
                 </div>

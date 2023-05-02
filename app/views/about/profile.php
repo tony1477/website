@@ -18,10 +18,10 @@
 <div class="about-area-wrapper sm-top bg-overlay">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
+            <div class="col-md-6 col-lg-3 order-lg-0 order-xl-0 order-3">
                 <?php require_once('sidebar.php')?>
             </div>
-            <div class="col-md-6 col-lg-9 order-md-2 order-lg-2 order-2 justify-content-md-end">
+            <div class="col-md-6 col-lg-9 order-0 order-lg-1 order-xl-1 justify-content-md-end">
                 <div class="about-content ms-0">
                     
                     <!-- <h2><?php //$data['data']['title']?></h2> -->
@@ -30,8 +30,8 @@
                     <?php //endforeach;?>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 order-3"></div>
-            <div class="animate-box col-md-6 col-lg-9 order-4 mt-5" data-animate-effect="fadeIn" style="padding-right:5rem">
+            <div class="col-md-6 col-lg-3 order-lg-2 order-xl-2"></div>
+            <div class="animate-box col-md-6 col-lg-9 mt-5 order-1 order-lg-3 order-xl-3 about-video" data-animate-effect="fadeIn">
                 <figure class="about-thumb video-button-thumb" style="border-radius: .55rem;">
                 <img src="<?=BASE_URL?>public/assets/img/video-sample2.jpg" alt="Wilian Perkasa's Company Profile">
                     <a href="<?=BASE_URL?>/public/assets/videos/WP 15 MIN.mp4" class="btn-play"><i class="fa fa-play"></i></a>
@@ -63,7 +63,7 @@
                     <?php 
                     $i=0;
                     foreach($this->getContent('about-profile-milestone') as $milestone):?>
-                    <div class="animate-box col-6 content-profile" data-animate-effect="fadeInUp">
+                    <div class="animate-box col-lg-6 col-xl-6 col-12 content-profile" data-animate-effect="fadeInUp">
                         <div class="content-year-border">
                            <?=$milestone['year']?>
                         </div>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <p>&nbsp;</p>                   
-            <div class="animate-box col-md-12 text-end mt-3 about-content">
+            <div class="animate-box col-md-12 text-lg-end text-xl-end text-start mt-3 about-content">
                 <p><a href="<?=BASE_URL?>about/milestone" class="btn-about text-white"><?=$this->getContent('readmore')?> <i class="mdi mdi-chevron-double-right"></i></a></p>
             </div>
         </div>

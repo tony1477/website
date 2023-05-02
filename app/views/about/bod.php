@@ -23,15 +23,18 @@
 <div class="modal fade modal-director" id="<?=$name?>Modal" role="dialog" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-        <div class="modal-body p-0 d-flex">
+        <div class="modal-header d-lg-none d-xl-none d-flex">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 d-flex flex-wrap">
             <div class="detail">
                 <!-- <h3 ><?php //$row['profileposition']?></h3>
                 <h5 class="mb-lg-4 mb-3 name "><?php //$row['profilename']?></h5> -->
                 <?=($_SESSION['lang']=='en' ? $row['profiledesc_en'] : $row['profiledesc_id'])?>
             </div>
             <div class="pict">
-                <div class="card" style="margin-right:1.5rem; margin-top:1.4rem">
-                    <img class="card-img-top rounded-end" src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="<?=$row['profileposition']?> - <?=$row['profilename']?>" />
+                <div class="card photo-director">
+                    <img class="card-img-top rounded-end" src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="<?=strip_tags($row['profileposition'])?> - <?=$row['profilename']?>" />
                     <div class="card-body">
                         <h3 class="card-text text-center"><?=$row['profilename']?></h3>
                         <h5 class="text-center"><?=$row['profileposition']?></h5>
@@ -46,10 +49,10 @@
 <div class="team-page-area-wrapper bg-offwhite sp-y bg-overlay">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-3 order-lg-0 order-md-3">
+            <div class="col-md-6 col-lg-3 col-xl-3 order-lg-0 order-xl-0 order-3">
                 <?php require_once('sidebar.php')?>
             </div>
-            <div class="col-md-6 col-lg-9">
+            <div class="col-md-6 col-lg-9 col-xl-9 order-lg-1 order-xl-1 order-0">
                 <div class="about-content ms-0">
                     <div class="row">
                         <div class="col-lg-7 col-md-6 left order-md-1 order-2">
@@ -63,8 +66,8 @@
                     </div>
                 </div> 
             </div>
-            <div class="col-lg-3"></div>
-            <div class="col-lg-9">
+            <div class="col-lg-3 order-1"></div>
+            <div class="col-lg-9 col-xl-9 order-lg-3 order-2">
                 <div class="animate-box profile line-board"></div>
                 <div class="profile board-title">
                     <h3 class="animate-box"><?=$this->getContent('about-bod-management')?></h3>

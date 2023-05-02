@@ -30,7 +30,7 @@
                        <?=$this->getContentDb('business-location-content')?>
 
                         <div class="animate-box row">
-                            <div class="col-8">
+                            <div class="col-lg-8 col-xl-8 col-12">
                                 <div class="row">
                                     <table class="table">
                                         <thead>
@@ -41,60 +41,60 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-plant.png" width="32"/> <?=$this->getContent('plantation')?></td>
+                                                <td class="td-subsidiaries"><img src="<?=BASE_URL?>public/assets/img/icons/icon-plant.png" width="32"/> <?=$this->getContent('plantation')?></td>
                                                 <td>
                                                     <div class="box-company color-plant"></div>
                                                     <span class="text-location-map">SPS</span>
-                                                    <span class="mx-4">PT. Surya Palma Sejahtera</span><br />
+                                                    <div class="mx-4 subsidiaries-company">PT. Surya Palma Sejahtera</div><br />
                                                     <div class="box-company color-plant"></div>
                                                     <span class="text-location-map">TSP</span>
-                                                    <span class="mx-4">CV. Tani Sejahtera Perkasa</span>
+                                                    <div class="mx-4 subsidiaries-company subsidiaries-company">CV. Tani Sejahtera Perkasa</div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-mill.png" width="32"/> <?=$this->getContent('mills')?></td>
+                                                <td class="td-subsidiaries"><img src="<?=BASE_URL?>public/assets/img/icons/icon-mill.png" width="32"/> <?=$this->getContent('mills')?></td>
                                                 <td>
                                                     <div class="box-company color-mill"></div>
                                                     <span class="text-location-map">SSP</span>
-                                                    <span class="mx-4">PT. Semunai Sawit Perkasa</span><br />
+                                                    <div class="mx-4 subsidiaries-company">PT. Semunai Sawit Perkasa</div><br />
                                                     <div class="box-company color-mill"></div>
                                                     <span class="text-location-map">SSP II</span>
-                                                    <span class="mx-4" style="margin-left:10px !important">PT. Semunai Sawit Perkasa Unit II</span><br />
+                                                    <div class="mx-4 subsidiaries-company ssp2">PT. Semunai Sawit Perkasa Unit II</div><br />
                                                     <div class="box-company color-mill"></div>
                                                     <span class="text-location-map">LSP</span>
-                                                    <span class="mx-4">PT. Libo Sawit Perkasa</span>
+                                                    <div class="mx-4 subsidiaries-company">PT. Libo Sawit Perkasa</div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-ho.png" width="32"/> <?=$this->getContent('head-office')?></td>
+                                                <td class="td-subsidiaries"><img src="<?=BASE_URL?>public/assets/img/icons/icon-ho.png" width="32"/> <?=$this->getContent('head-office')?></td>
                                                 <td>
                                                     <div class="box-company color-ho"></div>
                                                     <span class="text-location-map">WMS</span>
-                                                    <span class="mx-4">PT. Wilian Multi Sejahtera</span>
+                                                    <div class="mx-4 subsidiaries-company">PT. Wilian Multi Sejahtera</div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-fnb.png" width="32"/> <?=$this->getContent('fnb')?></td>
+                                                <td class="td-subsidiaries"><img src="<?=BASE_URL?>public/assets/img/icons/icon-fnb.png" width="32"/> <?=$this->getContent('fnb')?></td>
                                                 <td>
                                                     <div class="box-company color-fnb"></div>
                                                     <span class="text-location-map">KBP</span>
-                                                    <span class="mx-4">PT. Karya Boga Perkasa</span>
+                                                    <div class="mx-4 subsidiaries-company">PT. Karya Boga Perkasa</div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-trading.png" width="32"/> <?=$this->getContent('trading')?></td>
+                                                <td class="td-subsidiaries"><img src="<?=BASE_URL?>public/assets/img/icons/icon-trading.png" width="32"/> <?=$this->getContent('trading')?></td>
                                                 <td>
                                                     <div class="box-company color-trading"></div>
                                                     <span class="text-location-map">WTP</span>
-                                                    <span class="mx-4">PT. Wilian Trading Perkasa</span>
+                                                    <div class="mx-4 subsidiaries-company">PT. Wilian Trading Perkasa</div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="vertical-align: bottom;"><img src="<?=BASE_URL?>public/assets/img/icons/icon-nilam.png" width="32"/> <?=$this->getContent('agronomy')?></td>
+                                                <td class="td-subsidiaries"><img src="<?=BASE_URL?>public/assets/img/icons/icon-nilam.png" width="32"/> <?=$this->getContent('agronomy')?></td>
                                                 <td>
                                                     <div class="box-company color-nilam"></div>
                                                     <span class="text-location-map">SWP</span>
-                                                    <span class="mx-4">PT. Serai Wangi Perkasa</span>
+                                                    <div class="mx-4 subsidiaries-company">PT. Serai Wangi Perkasa</div>
                                                 </td>
                                             </tr>
                                         </tbody>
