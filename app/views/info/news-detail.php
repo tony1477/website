@@ -23,7 +23,7 @@
                         <div class="row">
                             <div class="col-md-3 col-lg-3 order-1 order-md-0">
                                 
-                                <aside class="sidebar-area-wrapper mt-md-80 mt-sm-60 sticky-top" style="top:7rem">
+                                <aside class="sidebar-area-wrapper mt-md-80 mt-sm-60 sticky-top" style="top:7rem; z-index:1">
                                     <div class="single-sidebar-item-wrap">
                                         <h3 class="sidebar-title">Featured Posts</h3>
                                         <div class="sidebar-body">
