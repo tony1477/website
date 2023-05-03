@@ -298,7 +298,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="icon-sustain warp-icons d-sm-flex d-none justify-content-between" style="margin-left:-3.5rem">
+                <div class="icon-sustain warp-icons d-lg-flex d-xl-flex d-none justify-content-between" style="margin-left:-3.5rem">
                     <div class="symbol text-center">
                         <div class="icon-sus active">
                             <img class="w-100 dark d-none" src="<?=BASE_URL?>public/assets/img/feature/privacy-policy.png" data-value="1">
@@ -330,6 +330,32 @@
                     <img src="<?=BASE_URL?>public/assets/img/sustainability/policy.jpg" alt="Sustainability Image" class="rounded img-thumb"/>
                     <figcaption class="detail-thumb"><?=$this->getContent('home-sustain-caption')?></figcaption>
                 </figure>
+                <div class="icon-sustain warp-icons d-lg-none d-xl-none d-flex justify-content-between" style="margin-left:-3.5rem; position:relative">
+                    <div class="symbol text-center">
+                        <div class="icon-sus active">
+                            <img class="w-100 dark d-none" src="<?=BASE_URL?>public/assets/img/feature/privacy-policy.png" data-value="1">
+                            <img class="w-100" src="<?=BASE_URL?>public/assets/img/feature/privacy-policy-white.png" >
+                        </div><span><?=$this->getContent('policy')?></span>
+                    </div>
+                    <div class="symbol text-center">
+                        <div class="icon-sus">
+                            <img class="w-100 dark" src="<?=BASE_URL?>public/assets/img/feature/badge.png" data-value="2">
+                            <img class="w-100 d-none" src="<?=BASE_URL?>public/assets/img/feature/badge-white.png" >
+                        </div><span><?=$this->getContent('certification')?></span>
+                    </div>
+                    <div class="symbol text-center">
+                        <div class="icon-sus">
+                            <img class="w-100 dark" src="<?=BASE_URL?>public/assets/img/feature/ecology-and-environment.png" data-value="3">
+                            <img class="w-100 d-none" src="<?=BASE_URL?>public/assets/img/feature/ecology-and-environment-white.png" >
+                        </div><span><?=$this->getContent('environment')?></span>
+                    </div>
+                    <div class="symbol text-center">
+                        <div class="icon-sus">
+                            <img class="w-100 dark" src="<?=BASE_URL?>public/assets/img/feature/community.png" data-value="4">
+                            <img class="w-100 d-none" src="<?=BASE_URL?>public/assets/img/feature/community-white.png">
+                        </div><span><?=$this->getContent('gcg')?></span>
+                    </div>
+                </div>
             </div>          
         </div>
     </div>

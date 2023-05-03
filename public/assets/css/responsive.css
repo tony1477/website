@@ -50,7 +50,50 @@
     text-align: right;
 }
 
+@media screen and (min-width: 717px) and (max-width: 800px) {
+    .off-canvas-wrapper .close-btn {
+        font-size: 2rem;
+    }
+    .busines_home .list_business .box.big {
+        width: 100%;
+        height: auto;
+    }
+    .busines_home .list_business .left {
+        width:100%;
+    }
+    .busines_home .list_business .box .hov h2 {
+        font-size: 1rem;
+    }
+    .busines_home .list_business .left .box {
+        width: 50%;
+    }
+    .page-header-content h2 {
+        font-size: 2rem !important;
+    }
+    .profile.line-board {
+        width: 100%;
+    }
+    .business-page-title h4.title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.35rem;
+    }
+    .btn-investor-link {
+        text-align: start;
+        margin-top: 1.75rem;
+    }
+    a.title {
+        font-size: 1rem;
+    }
+    .contentweb h4 {
+        font-size: 1.1rem;
+    }
+}
 @media screen and (min-width:158px) and (max-width: 640px) {
+    /*navbar menu*/
+    .off-canvas-wrapper .close-btn {
+        font-size: 1rem;
+    }
     /* home*/
     .header-area.transparent .logo-area {
         width: 150%;
