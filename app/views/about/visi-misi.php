@@ -156,19 +156,19 @@
                         <div class="row">
                             <div class="col-4">
                                 <div class="img-values text-center">
-                                    <img src="http://localhost/website/public/assets/img/about/flat/1.png" class="imgmodal" id="wisdom" onclick="showModal(this)">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/1.png" class="imgmodal" id="wisdom" onclick="showModal(this)">
                                     <?=$this->getContent('about-values-wisdom-dual')?>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="img-values text-center">
-                                    <img src="http://localhost/website/public/assets/img/about/flat/2.png" class="imgmodal" id="intellectual" onclick="showModal(this)">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/2.png" class="imgmodal" id="intellectual" onclick="showModal(this)">
                                     <?=$this->getContent('about-values-intellectual-dual')?>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="img-values text-center">
-                                    <img src="http://localhost/website/public/assets/img/about/flat/3.png" class="imgmodal" id="loyal" onclick="showModal(this)">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/3.png" class="imgmodal" id="loyal" onclick="showModal(this)">
                                     <?=$this->getContent('about-values-loyal-dual')?>
                                 </div>
                             </div>
@@ -176,19 +176,19 @@
                         <div class="row">
                             <div class="col-4">
                                 <div class="img-values text-center">
-                                    <img src="http://localhost/website/public/assets/img/about/flat/4.png" class="imgmodal" id="integrity" onclick="showModal(this)">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/4.png" class="imgmodal" id="integrity" onclick="showModal(this)">
                                 <?=$this->getContent('about-values-integrity-dual')?>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="img-values text-center">
-                                    <img src="http://localhost/website/public/assets/img/about/flat/5.png" class="imgmodal" id="accomplished" onclick="showModal(this)">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/5.png" class="imgmodal" id="accomplished" onclick="showModal(this)">
                                     <?=$this->getContent('about-values-accomplished-dual')?>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="img-values text-center">
-                                    <img src="http://localhost/website/public/assets/img/about/flat/6.png" class="imgmodal" id="noble" onclick="showModal(this)">
+                                    <img src="<?=BASE_URL?>public/assets/img/about/flat/6.png" class="imgmodal" id="noble" onclick="showModal(this)">
                                     <?=$this->getContent('about-values-noble-dual')?>
                                 </div>
                             </div>

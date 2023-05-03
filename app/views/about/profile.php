@@ -34,7 +34,7 @@
             <div class="animate-box col-md-6 col-lg-9 mt-5 order-1 order-lg-3 order-xl-3 about-video" data-animate-effect="fadeIn">
                 <figure class="about-thumb video-button-thumb" style="border-radius: .55rem;">
                 <img src="<?=BASE_URL?>public/assets/img/video-sample2.jpg" alt="Wilian Perkasa's Company Profile">
-                    <a href="<?=BASE_URL?>/public/assets/videos/WP 15 MIN.mp4" class="btn-play"><i class="fa fa-play"></i></a>
+                    <a href="<?=BASE_URL?>/public/assets/videos/WP 15 MIN.webm" class="btn-play"><i class="fa fa-play"></i></a>
                 </figure>
             </div>
         </div>
