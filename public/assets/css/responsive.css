@@ -50,8 +50,16 @@
     text-align: right;
 }
 
-@media screen and (min-width:360px) and (max-width: 640px) {
+@media screen and (min-width:158px) and (max-width: 640px) {
     /* home*/
+    .header-area.transparent .logo-area {
+        width: 150%;
+    }
+
+    .header-area.transparent.sticky .logo-area {
+        top:0;
+        width: 150%;
+    }
     .feature-area-wrapper {
         margin-top: .5rem;
     }
