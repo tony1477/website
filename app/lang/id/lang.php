@@ -17,7 +17,8 @@
         'gcg-title' => 'Tata Kelola Perusahaan yang Baik',
         'news' => 'Berita & Event',
         'detail-news' => 'Baca ',
-        'gallery' => 'Galeri Album',
+        'gallery' => 'Galeri',
+        'more' => 'Selengkapnya',
         'career' => 'Karir di Wilian Perkasa',
         'contact' => 'Hubungi Kami',
         'readmore' => 'BACA LEBIH LANJUT',
@@ -37,7 +38,7 @@
         'head-office' => 'Kantor Pusat / Regional',
         'moreinfo-visit-us' => 'Informasi lebih lanjut, kunjungi',
         'subsdiary-location' => 'Anak Perusahaan Dan Peta Lokasi',
-        'click-to-detail' => 'Click judul untuk lihat detail',
+        'click-to-detail' => 'Click judul untuk lihat detail peristiwa',
         // for privacy
         'home-topbar-privacy' => 'Kebijakan Privasi',
         'home-sustain-title' => 'Prinsip Keberlanjutan Dalam Menjalankan Bisnis Usaha',
@@ -193,4 +194,5 @@
         'footer-sustain-environment' => 'Lingkungan',
         'footer-sustain-gcg' => 'Tata Kelola Perusahaan',
         'footer-social-title' => 'Ikuti Kami',
+        'never-miss-updates' => 'Jangan lewatkan berita dan update di<span class="fw-bold"> media sosial</span> kami',
     ];

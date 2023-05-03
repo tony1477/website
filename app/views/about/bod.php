@@ -27,12 +27,12 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-0 d-flex flex-wrap">
-            <div class="detail">
+            <div class="order-lg-0 order-xl-0 order-1 detail">
                 <!-- <h3 ><?php //$row['profileposition']?></h3>
                 <h5 class="mb-lg-4 mb-3 name "><?php //$row['profilename']?></h5> -->
                 <?=($_SESSION['lang']=='en' ? $row['profiledesc_en'] : $row['profiledesc_id'])?>
             </div>
-            <div class="pict">
+            <div class="order-lg-1 order-xl-1 order-0 pict">
                 <div class="card photo-director">
                     <img class="card-img-top rounded-end" src="<?=BASE_URL?>public/assets/img/team/<?=$row['profilephoto']?>" alt="<?=strip_tags($row['profileposition'])?> - <?=$row['profilename']?>" />
                     <div class="card-body">
@@ -60,7 +60,7 @@
                                 <?=$this->getContentDb('about-bod-content')?>
                             </div>
                         </div>
-                        <div class="animate-box col-lg-5 col-md-6 px-md-3 px-0 right order-md-2 order-1" data-animate-effect="fadeIn">
+                        <div class="animate-box mt-lg-5 mt-xl-5 pt-lg-3 pt-xl-3 col-lg-5 col-md-6 px-md-3 px-0 right order-md-2 order-1" data-animate-effect="fadeIn">
                             <img alt="" class="w-100 rounded shadow" src="<?=BASE_URL?>public/assets/img/team/2Ver2.jpg">
                         </div>
                     </div>

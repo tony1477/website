@@ -7,7 +7,7 @@
         <div class="row align-items-end">
             <div class="col-5 col-lg-2">
                 <!-- Start Logo Area -->
-                <div class="logo-area resize-img">
+                <div class="logo-area ">
                     <a href="<?=BASE_URL?>"><img src="<?=BASE_URL?>public/assets/img/WPG_logo_white.png" alt="Brand-Logo"></a>
                     <!-- <div class="container-motto">
                         <p class="logo-motto">be Wise be Excellent</p>
@@ -19,7 +19,7 @@
             <div class="col-lg-10 d-none d-lg-block">
                 <!-- Start Navigation Area -->
                 <div class="navigation-area mt-lg-3">
-                    <ul class="main-menu nav resize-font">
+                    <ul class="main-menu nav ">
                         <?php foreach($menu as $url => $link): ?>
                         <?php if($link['type'] == 'detail'): ?>
                         <li class="has-submenu">

@@ -26,7 +26,7 @@
                             <h4 class="widget-title"><?=$this->getContent('footer-location-title')?></h4>
                             <p style="font-size:.85rem"><i class="mdi mdi-map-marker-radius"></i> <?=$this->getContent('footer-location-address')?> <br />
                             <i class="mdi mdi-phone"></i> +62761 (31953) <br /> <i class="mdi mdi-email"></i> info@wilianperkasa.com</p>
-                            <p style="font-size:.85rem"><a href="<?=BASE_URL?>privacy" class="btn-about text-privacy"><i class="mdi mdi-marker-check"></i> Privacy & Policy</a></p>
+                            <p style="font-size:.85rem"><a href="<?=BASE_URL?>privacy" class="btn-about text-privacy"><i class="mdi mdi-marker-check"></i> <?=$this->getContent('privacy-policy')?></a></p>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                         <h4 class="widget-title"><?=$this->getContent('footer-social-title')?></h4>
                         <div class="widget-body">
                             <div class="newsletter-section">
-                                Never miss a thing, sign up to the <span class="fw-bold">mailing list</span>
+                                <?=$this->getContent('never-miss-updates')?>
                                 <div class="newsletter-form mt-3">
                                 </div>
                             </div>

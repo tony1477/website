@@ -404,10 +404,10 @@
             <div class="col-lg-12 col-sm-11 mx-auto">
                 <div class="row align-items-end mb-4">
                     <div class="col-md-12 pl-4">
-                        <h3 class="fw-400 text-center">Gallery</h3>
+                        <h3 class="fw-400 text-center"><?=$this->getContent('gallery')?></h3>
                     </div>
                     <div class="col-md-12 text-end about-content d-lg-block d-xl-block d-none">
-                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
+                        <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> <?=$this->getContent('more')?> <i class="mdi mdi-chevron-double-right"></i> </a>
                     </div>
                 </div>
             </div>
@@ -445,7 +445,7 @@
                 </div>
             </div>
             <div class="d-lg-none d-xl-none col-md-12 text-end about-content">
-                <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> More <i class="mdi mdi-chevron-double-right"></i> </a>
+                <a class="link-page btn-about mx-5" href="<?=BASE_URL?>gallery"> <?=$this->getContent('more')?> <i class="mdi mdi-chevron-double-right"></i> </a>
             </div>
         </div>
     </div>

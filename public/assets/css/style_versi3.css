@@ -49,7 +49,7 @@ body {
 }
 @media only screen and (max-width: 575.98px) {
     body {
-        font-size: 1rem;
+        font-size: .85rem;
     }
 }
 ::-moz-selection {
@@ -529,9 +529,9 @@ Container
 }
 @media only screen and (max-width: 767.98px) {
     .btn-scroll-top {
-        line-height: 50px;
-        height: 50px;
-        width: 50px;
+        line-height: 35px;
+        height: 35px;
+        width: 35px;
     }
 }
 .btn-scroll-top:hover {
@@ -3690,6 +3690,7 @@ img .icon-language {
     /* border: 2px solid #000; */
     background-color: rgba(248,248,248,.5);
     font-size: .8rem;
+    margin-left: -3.5rem;
  }
 
  .detailhist-r {
@@ -4626,7 +4627,7 @@ form#contact-form label {
 
 .img-values h5 {
     font-size: .95rem;
-    color: #b6932d;    
+    color: #b6932d;
     font-weight: 600;
     margin-top: .6rem;
 }

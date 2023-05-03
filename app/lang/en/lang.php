@@ -18,6 +18,7 @@
         'news' => 'News & Event',
         'detail-news' => 'Read ',
         'gallery' => 'Gallery',
+        'more' => 'More',
         'career' => 'Career at Wilian Perkasa',
         'contact' => 'Contact Us',
         'readmore' => 'READ MORE',
@@ -37,7 +38,7 @@
         'head-office' => 'Head Office / Regional Office',
         'moreinfo-visit-us' => 'For more information, please visit',
         'subsdiary-location' => 'Subsidiaries and Location Map',
-        'click-to-detail' => 'Click title to see details',
+        'click-to-detail' => 'Click title to see details history',
         // for privacy
         'home-topbar-privacy' => 'Privacy & Policy',
         'home-sustain-title' => 'The principle of sustainability in managing business needs',
@@ -137,7 +138,7 @@
             <option value="Bengkalis">Bengkalis Regency</option>
             <option value="Kampar">Kampar Regency</option>',
         'career-content-position' => '<a href="javascript:void(0)" class="fw-bold selected-career" onclick="getList(this)">All Position</a>
-            <a href="javascript:void(0)" class="" onclick="getList(this)">Directore</a>
+            <a href="javascript:void(0)" class="" onclick="getList(this)">Director</a>
             <a href="javascript:void(0)" class="" onclick="getList(this)">Sr. Manager</a>
             <a href="javascript:void(0)" class="" onclick="getList(this)">Manager</a>
             <a href="javascript:void(0)" class="" onclick="getList(this)">Asst.Manager</a>
@@ -192,4 +193,5 @@
         'footer-sustain-environment' => 'Environment',
         'footer-sustain-gcg' => 'Good Corporate Governance',
         'footer-social-title' => 'Follow Us',
+        'never-miss-updates' => 'Never miss a thing, follow our <span class="fw-bold">social media</span>',
     ];
