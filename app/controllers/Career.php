@@ -1,5 +1,7 @@
 <?php
 
+namespace WPG\IT\Website\controllers;
+use WPG\IT\Website\core\Controller;
 class Career extends Controller {
     private $models;
     public function index() {

@@ -1,5 +1,7 @@
 <?php
 
+namespace WPG\IT\Website\controllers;
+use WPG\IT\Website\core\Controller;
 class Investor extends Controller {
     public function index() {
         // $this->comp_release();

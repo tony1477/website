@@ -1,5 +1,7 @@
 <?php
 
+namespace WPG\IT\Website\controllers;
+use WPG\IT\Website\core\Controller;
 class Gallery extends Controller {
     public function index() {
         $data['active'] = 'strategic';

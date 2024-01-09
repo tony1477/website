@@ -1,5 +1,7 @@
 <?php
 
+namespace WPG\IT\Website\models;
+
 class LangModel {
 
     private $nav = [

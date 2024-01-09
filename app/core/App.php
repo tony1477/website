@@ -1,10 +1,13 @@
 <?php
 
+namespace WPG\IT\Website\core;
+use WPG\IT\Website\core\Config;
 class App {
 
-    protected $controller = 'Home';
+    protected $controller = 'home';
     protected $method = 'index';
     protected $params = [];
+    private $class_prefix = Config::APP_NAMESPACE.'controllers\\';
     public $controllers;
 
 
@@ -13,15 +16,15 @@ class App {
         $url = $this->parseURL();
         // var_dump($url);
         
-        if(empty($url)) $url[0] = 'home';
+        if(empty($url)) $url[0] = 'Home';
         if(file_exists('app/controllers/'.ucfirst($url[0]).'.php')) {
             $this->controller = $url[0];
             unset($url[0]);
         }
         
         if($this->controller != 'lang') $_SESSION['last_page'] = $this->controller;
-        require_once 'app/controllers/'.ucfirst($this->controller).'.php';
-        $this->controller = new $this->controller;
+        $class = $this->class_prefix.$this->controller;
+        $this->controller = new $class();
         
         if(isset($url[1])) {
             $url[1] = str_replace('-','_',$url[1]);

@@ -1,5 +1,8 @@
 <?php
 
+namespace WPG\IT\Website\controllers;
+use WPG\IT\Website\core\Controller;
+
 class Business extends Controller {
     public function index() {
         $this->view('about/index');

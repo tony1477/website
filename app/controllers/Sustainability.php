@@ -1,5 +1,7 @@
 <?php
 
+namespace WPG\IT\Website\controllers;
+use WPG\IT\Website\core\Controller;
 class Sustainability extends Controller {
 
   public function index() {

@@ -1,5 +1,7 @@
 <?php
 
+namespace WPG\IT\Website\models;
+use WPG\IT\Website\core\Database;
 class SustainabilityModel {
 
   private $table = 'article';

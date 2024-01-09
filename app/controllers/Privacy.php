@@ -1,4 +1,7 @@
 <?php
+
+namespace WPG\IT\Website\controllers;
+use WPG\IT\Website\core\Controller;
 class Privacy extends Controller {
     
     public function index() {

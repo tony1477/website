@@ -1,5 +1,8 @@
 <?php
 
+namespace WPG\IT\Website\helper;
+use WPG\IT\Website\models\ContentModel;
+use WPG\IT\Website\models\NewsModel;
 class Helper {
 
   private $model;
