@@ -1,0 +1,14 @@
+{
+  "name": "wpg-project/website",
+  "description": "Website Company Profile for Wilian Perkasa",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "WPG\\IT\\Website\\": "app/"
+    }
+  },
+  "require": {
+    "firebase/php-jwt": "^6.10"
+  }
+}

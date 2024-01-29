@@ -1,5 +1,8 @@
 <?php
 
+namespace WPG\IT\Website\core;
+use WPG\IT\Website\helper\Helper;
+use WPG\IT\Website\core\Config;
 // require_once('../app/helper/Helper.php');
 class Controller {
     public $layout = 'templates/template';
@@ -38,8 +41,9 @@ class Controller {
     }
 
     public function model($model) {
-        require_once('app/models/'.$model.'.php');
-        return new $model;
+        // require_once('app/models/'.$model.'.php');
+        $class = Config::APP_NAMESPACE.'models\\'.$model;
+        return new $class();
     }
 
     public function getUrl()

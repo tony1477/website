@@ -1,5 +1,8 @@
 <?php
 
+namespace WPG\IT\Website\models;
+use WPG\IT\Website\core\Database;
+
 class NewsModel {
 
   private $table = 'content_news';
