@@ -19,6 +19,8 @@ class AuthModel
             // try to update other token 
             // to make expired
             if(count($this->checkAvailableToken($data['userid']))>0) $this->updateRestToken($data['userid']);
+            // $check = $this->checkAvailableToken($data['userid']);
+            // if($check!=false) $this->updateRestToken($data['userid']);
             
             $this->db->query('INSERT INTO authtoken (token,userid,issued,audience,issuedAt,notBefore,expired) VALUES(?,?,?,?,?,?,?)');
             $this->db->bind(1,$data['token']);
@@ -54,7 +56,8 @@ class AuthModel
             $this->db->query('SELECT id FROM authtoken WHERE userid = ? and expired > ? ');
             $this->db->bind(1,$userid);
             $this->db->bind(2,time());
-            return $this->db->fetch();
+            $res = $this->db->fetch();
+            return $res !== false ? $res : [];
         }
         catch(\Exception $e) {
             return null;

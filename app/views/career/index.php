@@ -15,8 +15,8 @@
 </div>
 <!--== End Page Header Area ==-->
 <div class="row">
-    <div class="col-12 justify-content-center">
-        <h3 class="text-center m-sm-5"><?=$this->getContent('career-content-title')?> : </h3>
+    <div class="col-12 justify-content-center my-3">
+        <h3 class="text-center"><?=$this->getContent('career-content-title')?> : </h3>
     </div>
     <div class="col-lg-5 col-xl-5 col-2"></div>
     <div class="col-lg-2 col-xl-2 col-8 d-flex justify-content-center list-position">
@@ -25,7 +25,7 @@
         </select>
     </div>
     <div class="col-lg-5 col-xl-5 col-2"></div>
-    <div class="col-12 d-flex justify-content-center">
+    <div class="col-12 d-lg-flex d-xl-flex d-none justify-content-center">
         <div class="listjob" style="position:relative;">
             <?=$this->getContent('career-content-position')?>
         </div>
@@ -88,6 +88,7 @@ function showhide(value) {
     const selected = document.querySelector('.selected-career')
     console.log(selected.text)
     if(value=='All Branch' && selected.text == 'All Position') {
+        console.log('test')
         $(opt).fadeIn()
     }
     if(value=='All Branch' && selected.text == 'Semua Posisi') {

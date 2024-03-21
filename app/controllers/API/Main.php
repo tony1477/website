@@ -28,6 +28,15 @@ class Main
         if(!$this->verifyToken()) exit();
         Router::add('GET','employee',CareerApi::class,'getEmployee');
         Router::add('GET','employee/([0-9]*)',CareerApi::class,'getDetail');
+        Router::add('GET','employee/([0-9]*)/photo',CareerApi::class,'getPhoto');
+        Router::add('GET','employee/([0-9]*)/ijazah',CareerApi::class,'getIjazah');
+        Router::add('GET','employee/([0-9]*)/cv',CareerApi::class,'getCv');
+        Router::add('GET','employee/([0-9]*)/identity',CareerApi::class,'getIdentity');
+        Router::add('GET','employee/([0-9]*)/education',CareerApi::class,'getEducation');
+        Router::add('GET','employee/([0-9]*)/experience',CareerApi::class,'getExperience');
+        Router::add('GET','employee/([0-9]*)/family',CareerApi::class,'getFamily');
+        Router::add('GET','employee/([0-9]*)/emergency',CareerApi::class,'getEmergency');
+        Router::add('GET','employee/([0-9]*)/organization',CareerApi::class,'getOrganization');
         Router::run($endpoint);
     }
 

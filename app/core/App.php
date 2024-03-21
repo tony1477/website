@@ -19,8 +19,8 @@ class App {
         $url = $this->parseURL();
         // var_dump($url);
     
-        if($url[0] == 'api') return $this->ApiController($url);
         if(empty($url)) $url[0] = 'Home';
+        if($url[0] == 'api') return $this->ApiController($url);
         if(file_exists('app/controllers/'.ucfirst($url[0]).'.php')) {
             $this->controller = ucfirst($url[0]);
             unset($url[0]);

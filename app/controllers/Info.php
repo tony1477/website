@@ -95,4 +95,27 @@ class Info extends Controller {
     public function page() {
 
     }
+
+    public function photo() {
+        header("Access-Control-Allow-Origin: *");
+        $fileType = 'jpg';
+        $data['fullpath'] = 'public/assets/img/career/jobseeker/user-487152-overlay_logo.jpg';
+        try {
+            $contentType = 'image/jpeg';
+            if ($fileType === 'pdf') $contentType = 'application/pdf';
+            if(!file_exists($data['fullpath'])) {
+                throw new \Exception('File not found',404);
+            }
+            header('Content-Type: '.$contentType);
+            header('Content-Disposition: inline; filename='.basename($data['fullpath']));
+            readfile($data['fullpath']);
+            // return $data['fullpath'];
+            // echo "<img src=http://localhost/website/".$data['fullpath']."></img>";
+
+        }
+        catch(\Exception $e) {
+            $code = $e->getCode() ?? 404;
+            echo 'failed '.$e->getMessage();
+        }
+    }
 }

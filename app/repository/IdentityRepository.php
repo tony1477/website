@@ -30,7 +30,6 @@ class IdentityRepository
         }
         return null;
         // return $result;
-        
     }
 
     private function hashPassword(string $password,string $hash) :bool

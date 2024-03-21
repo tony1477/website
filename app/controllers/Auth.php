@@ -4,6 +4,7 @@ namespace WPG\IT\Website\controllers;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
+use WPG\IT\Website\controllers\API\ResponseAPI;
 use WPG\IT\Website\core\Config;
 use WPG\IT\Website\core\Controller;
 use WPG\IT\Website\entity\Identity;
@@ -119,5 +120,16 @@ class Auth extends Controller
         // if(!$this->IdentityRepository->verify($user)); return null;
         if(!$verify=$this->IdentityRepository->verify($user)) return null;
         return $verify;
+    }
+
+    public function checkToken() :void
+    {
+        $check = json_decode($this->verifyToken());
+        if($check->status !== 'success') {
+            echo ResponseAPI::failed($check->message,401);
+            return;
+        }
+        $data['status'] = 'success';
+        echo ResponseAPI::success($data);
     }
 }
